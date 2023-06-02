@@ -1,1 +1,2 @@
-# https://github.com/esthermoraes/eventando_web/index.html
+- https://github.com/esthermoraes/eventando_web/index.html
+- https://eventando.rf.gd
