@@ -1,13 +1,12 @@
 /* importando a fonte Montserrat do Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Julee&family=Montserrat:wght@500&display=swap');
 
-/* Colocando a fonte em toda a tela html*/
+/* Colocando a fonte e a cor em toda a tela html*/
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #ededed !important
 }
 
-/* Definindo a estilização do elemento com ID "divMenu*/
 /* #Cabecalho{
     position: relative;
     background-color: #bedef2;
@@ -16,6 +15,7 @@ body{
     top: -7px;
 } */
 
+/* Definindo a estilização do elemento com ID "Cabecalho*/
 #Cabecalho{
     background-color: #bedef2;
     height: 80px;
@@ -48,14 +48,22 @@ body{
     align-items: center;
 }
 
-/* Definindo a estilização do elemento com ID "lupa*/
-#lupa{
-    /* position: absolute; */
-    /* width: 10px; */
+/* Definindo a estilização do elemento com a class "lupa*/
+.lupa{
+    background-color: transparent;
+    cursor: pointer;
     height: 20px;
-    /* top:20%;
-    left:97%; */
+    border: none;
+    color: #000000;
 }
+
+/* #lupa{
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    top:20%;
+    left:97%; 
+}*/
 
 /* Definindo a estilização do elemento com a class "buscar"*/
 .buscar{
