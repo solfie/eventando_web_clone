@@ -4,6 +4,7 @@
 /* Colocando a fonte em toda a tela html*/
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #bedef2;
 }
 
 .btn{

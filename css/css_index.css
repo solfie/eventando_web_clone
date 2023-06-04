@@ -3,7 +3,8 @@
 
 /* Colocando a fonte em toda a tela html*/
 body{
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ededed !important
 }
 
 /* Definindo a estilização do elemento com ID "divMenu*/
