@@ -17,13 +17,13 @@ body{
 
 /* Definindo a altura e largura da logo"*/
 #logo{
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: 100px;
 }
 
 /* Definindo a estilização do elemento com ID "divLogoP"*/
 #divLogoP{
-    top: -100%;
+    top: 15%;
     align-items: center;
     position: relative;
     right: 3px;
