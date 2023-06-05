@@ -94,7 +94,11 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     padding: 14px;
 }
 
-#menu-login button:hover {
+#login:hover {
+    color: #770089;
+}
+
+#cadastro:hover {
     color: #37008a;
 }
 
@@ -133,7 +137,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 
 #txt_ckb {
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
 }
 
