@@ -3,7 +3,13 @@
 <head>
 	<meta charset = "utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <!-- CSS externo-->
     <link rel="stylesheet" type="text/css" href="css/css_menu.css"/>
     <!-- JS externo-->
@@ -12,45 +18,45 @@
 	<title> MENU </title>
 </head>
 
-<!-- Definimos a cor da página -->
 <body>
 <!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
-	<header id = "Cabecalho" name = "Cabecalho">
-        <div id = "divLogoP" name = "divLogoP">
-            <img id = logo src = "img/logo.png">
+<header id="Cabecalho" name="Cabecalho" class="row">
+    <div id="divLogoP" name="divLogoP" class="col">
+        <img id=logo src="img/logo.png">
+    </div>
+
+    <div class="divBuscar col-md-6 col-sm">
+        <input type="search" class="buscar" placeholder="Buscar eventos" required>
+        <a href="#" class="pesquisa">
+            <img id="lupa" src="img/lupa.png" alt="Lupa">
+        </a>
+
+    </div>
+
+    <div class="col d-flex align-items-center justify-content-end adicionais">
+        <button class="criar" name="criar" onclick="CriarEvento()"> Criar Evento </button>
+
+        <button class="d-none short-criar criar" name="criar" onclick="CriarEvento()">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+
+        <button class="btn" onclick="mDropDown()">
+            <i class="fa fa-bars"></i>
+        </button>
+        <!-- Definimos quais seriam os elementos presentes no menu DropDown. -->
+        <div id="dropDown" class="dropDown">
+            <a id="b" href=#> PERFIL </a>
+            <a id="c" href=#> FAVORITOS </a>
+            <a id="d" href=#> SOBRE NÓS </a>
+            <a id="e" href="menu.html"> ENCERRAR SESSÃO </a>
         </div>
-        <!--<div id = "divLogoP" name = "divLogoP">
-            <a href="index.html">
-                <img id = logo src = "img/logo.png">
-            </a>
-        </div>-->
-        <br> <br>
-
-		<div class="divBuscar">
-            <input type="search" class="buscar" placeholder="Buscar eventos" required>
-            <a href="#">
-				<img id="lupa" src="img/lupa.png" alt="Lupa">
-			</a>
-		</div>
-
-		<button id = "criar" name = "criar" onclick = "CriarEvento()"> Criar Evento </button>
-
-        <div id = "menu_hamburguer">
-			<button class="btn" onclick="mDropDown()" >
-                <i class="fa fa-bars"></i>
-            </button>
-            <!-- Definimos quais seriam os elementos presentes no menu DropDown. -->
-            <div id = "dropDown" class = "dropDown">
-                <a id = "b" href = "perfil.html"> PERFIL </a>
-                <a id = "c" href = #> FAVORITOS </a>
-                <a id = "d" href = #> SOBRE NÓS </a>
-                <a id = "e" href = "index.html"> ENCERRAR SESSÃO </a>
-            </div>
-        </div>
-	</header>	
+    </div>
+</header>
 
 <!-- Criamos uma div, onde nela vamos ter uma outra div onde tem as imagens de vários eventos -->
-    <div class="EventosR">
+<div class="container-fluid">
+
+    <div class="container-fluid EventosR ps-5 mt-5">
         <label>EVENTOS RECENTES</label>
         <div class="barraE">
             <img class="evento" src="img/evento1.jpeg" alt="evento1">
@@ -69,61 +75,74 @@
         </div>
     </div>
 
-<!-- Criamos uma div, onde nela vamos ter uma outra div onde tem as imagens dos evetos criados pelo usuário -->
-    <div id = "MyEventos">
-        <label> MEUS </label> 
-        <br>
-        <label> EVENTOS </label>
-        <br>
-        <div id = "barraMyE">
-            <img class = "evento2" src = "img/evento14.jfif" alt = "evento14">
-            <img id = "favorito14" src = "img/favorito.png">
-            <img class = "evento2" src = "img/evento15.jfif" alt = "evento15">
-            <img id = "favorito15" src = "img/favorito.png">
-            <img class = "evento2" src = "img/evento16.jpeg" alt = "evento16">
-            <img id = "favorito16" src = "img/favorito.png">
-            <img class = "evento2" src = "img/evento17.jpeg" alt = "evento17">
-            <img id = "favorito17" src = "img/favorito.png">
-            <img class = "evento2" src = "img/evento18.jpeg" alt = "evento18">
-            <img id = "favorito18" src = "img/favorito.png">
-            <img class = "evento2_2" src = "img/evento19.jpeg" alt = "evento19">
-            <img id = "favorito19" src = "img/favorito.png">
-            <img class = "evento2_2" src = "img/evento20.jfif" alt = "evento20">
-            <img id = "favorito20" src = "img/favorito.png">
-            <img class = "evento2_2" src = "img/evento21.jpeg" alt = "evento21">
-            <img id = "favorito21" src = "img/favorito.png">
-            <img class = "evento2_2" src = "img/evento22.jpeg" alt = "evento22">
-            <img id = "favorito22" src = "img/favorito.png">
-            <img class = "evento2_2" src = "img/evento23.jpeg" alt = "evento23">
-            <img id = "favorito23" src = "img/favorito.png">
-        </div>
-    </div>
 
-<!-- Criamos uma div, onde nela vamos ter um slideShow com os principais eventos do momento -->
-    <div id = "EventosM">
-        <label> EVENTOS DO MOMENTO </label>
-        <div class = "container">
-        
-            <div class = "momento fade">
-                <img class = "evento3" src = "img/evento24.jpg" alt = "evento24">
-            </div>
-    
-            <div class = "momento fade">
-                <img class = "evento3" src = "img/evento25.jpg" alt = "evento25">
-            </div>
-    
-            <div class = "momento fade">
-                <img class = "evento3" src = "img/evento26.jpg" alt = "evento26">
-            </div>
+    <!-- Criamos uma div, onde nela vamos ter uma outra div onde tem as imagens dos evetos criados pelo usuário -->
+    <div class="row mt-5">
+        <div id="MyEventos" class="col-md-6">
+            <label> MEUS <br> EVENTOS </label>
             <br>
-
-            <!--<div class = "momento fade">
-                <img class = "evento3" src = "img/evento27.jpg" alt = "evento27">
+            <div id="barraMyE" class="row">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/evento14.jfif" alt="Imagem 1">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/evento15.jfif" alt="Imagem 1">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/evento16.jpeg" alt="Imagem 1">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/evento17.jpeg" alt="Imagem 2">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/evento18.jpeg" alt="Imagem 3">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/evento19.jpeg" alt="Imagem 3">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/evento20.jfif" alt="Imagem 1">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/evento21.jpeg" alt="Imagem 3">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/evento22.jpeg" alt="Imagem 1">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/evento23.jpeg" alt="Imagem 1">
+                    </div>
+                </div>
             </div>
-            <br>-->
-                                   
         </div>
 
+
+        <!-- Criamos uma div, onde nela vamos ter um slideShow com os principais eventos do momento -->
+
+        <div id="EventosM" class="col-md-6">
+            <div class="col-md-12 mt-5">
+                <label> EVENTOS DO MOMENTO </label>
+            </div>
+
+            <div class="col-md-12">
+                <div class="momento">
+                    <img class="evento3" src="img/evento24.jpg" alt="evento24">
+                </div>
+
+                <div class="momento">
+                    <img class="evento3" src="img/evento25.jpg" alt="evento25">
+                </div>
+
+                <div class="momento">
+                    <img class="evento3" src="img/evento26.jpg" alt="evento26">
+                </div>
+            </div>
+
+
+        </div>
     </div>
+</div>
 </body>
+
 </html>

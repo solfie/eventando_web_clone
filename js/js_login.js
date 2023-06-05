@@ -2,30 +2,50 @@ var divCadastro = document.getElementById('divCadastro');
 var divLogin = document.getElementById('divLogin');  
 var divRecuperar = document.getElementById('divRecuperar');
 
-function exibirpadrao(){  
-    divLogin.style.display = 'block';
-    divCadastro.style.display = 'none';
-    divRecuperar.style.display = 'none';
-}
+var menus = document.querySelectorAll('#menu-login > div');
 
 function exibirLogin(){
-    divLogin.style.display = 'block';
-    divCadastro.style.display = 'none';
-    divRecuperar.style.display = 'none';
+    divLogin.classList.remove('d-none');
+    divCadastro.classList.add('d-none');
+    divRecuperar.classList.add('d-none');
+
+    menus[0].classList.remove('d-none');
+    menus[1].classList.remove('d-none');
+    menus[2].classList.add('d-none');
+    
+    menus[0].children[0].classList.add('active');
+    menus[1].children[0].classList.remove('active');
+    menus[2].children[0].classList.remove('active');
 }
 
 function exibirCadastro(){
-    divLogin.style.display = 'none';
-    divCadastro.style.display = 'block';
-    divRecuperar.style.display = 'none';
+    divCadastro.classList.remove('d-none');
+    divLogin.classList.add('d-none');
+    divRecuperar.classList.add('d-none');
+
+    menus[0].classList.remove('d-none');
+    menus[1].classList.remove('d-none');
+    menus[2].classList.add('d-none');
+
+    menus[0].children[0].classList.remove('active');
+    menus[1].children[0].classList.add('active');
+    menus[2].children[0].classList.remove('active');
 }
 
 function exibirRecuperar(){
-    console.log("testando");
-    divLogin.style.display = 'none';
-    divCadastro.style.display = 'none';
-    divRecuperar.style.display = 'block';
+    divRecuperar.classList.remove('d-none');
+    divLogin.classList.add('d-none');
+    divCadastro.classList.add('d-none');
+
+    menus[0].classList.add('d-none');
+    menus[1].classList.add('d-none');
+    menus[2].classList.remove('d-none');
+
+    menus[0].children[0].classList.remove('active');
+    menus[1].children[0].classList.remove('active');
+    menus[2].children[0].classList.add('active');
 }
+
 
 function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential)
@@ -40,8 +60,7 @@ function handleCredentialResponse(response) {
     verifiedEmail.textContent = data.email_verified
     picture.setAttribute("src", data.picture)
 }
- 
-exibirpadrao();
+
 window.onload = function () {
     //const clientID = window.prompt("Cole a sua Cliente ID", "")
     google.accounts.id.initialize({

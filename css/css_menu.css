@@ -2,97 +2,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Julee&family=Montserrat:wght@500&display=swap');
 
 /* Colocando a fonte em toda a tela html*/
-body{
+body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #ededed;
+    background-color: #ededed !important;
 }
 
 /* Definindo a estilização do elemento com ID "divMenu"*/
-#Cabecalho{
-    position: relative;
+#Cabecalho {
     background-color: #bedef2;
-    width: 1910px;
-    height: 80px;
-    top: -7px;
 }
 
 /* Definindo a altura e largura da logo"*/
-#logo{
-    width: 300px;
-    height: 100px;
+#logo {
+    width: 350px;
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 /* Definindo a estilização do elemento com ID "divLogoP"*/
-#divLogoP{
-    top: 15%;
-    align-items: center;
-    position: relative;
-    right: 3px;
-    left: 0px;
+
+#divLogoP {
+    height: 85px;
+    overflow: visible;
+}
+
+.pesquisa {
+    position: absolute;
+    right: 30px;
 }
 
 /* Definindo a estilização do elemento com ID "divBuscar"*/
-.divBuscar{
-    position:absolute;
-    top:25%;
-    left:20%;
+.divBuscar {
+    position: relative;
     transform: translate(-0%, - 50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
- /* Definindo a estilização do elemento com ID "lupa"*/
-#lupa{
-    position: absolute;
+
+/* Definindo a estilização do elemento com ID "lupa"*/
+#lupa {
     width: 10x;
     height: 20px;
-    top:15%;
-    left:97%;
 }
 
 /* Definindo a estilização do elemento com ID "buscar"*/
-.buscar{
-    width: 1150px;
+.buscar {
     background-color: #ededed;
-    height:15px;
+    height: 15px;
     padding: 15px;
     border: 2px solid #b25abf;
     border-radius: 40px;
+    width: 100%;
 }
-    
+
+.buscar:focus {
+    outline: none !important;
+}
+
 /* Definindo a estilização do elemento com ID "CriarEvento"*/
-#criar{
-    position: absolute;
-    top: 26%;
-    left: 82.5%;
+.criar {
     border: solid 3px;
     border-color: #770089;
     border-radius: 40px;
-    background-color:#b25abf;
+    background-color: #b25abf;
     text-align: center;
     height: 33px;
     width: 170px;
     font-size: 15px;
     color: white;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
-/*#criar:hover{
-    background-color: #b900d5;
-    transition-duration: all 0.4s;
-}*/
-     
-/* Definindo a estilização do elemento com ID "menu_hamburguer"*/
-#menu_hamburguer{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 25%;
-    left: 94%;
-    background-color: #bedef2;  
+.short-criar {
+    font-size: 14px;
+    width: 34px;
 }
+
+#logo {
+    z-index: 2
+}
+
+/*<mediaquery responsividade do header*/
+@media screen and (max-width: 1238px) {
+    .short-criar {
+        display: block !important;
+    }
+
+    .criar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 965px) {
+
+    .criar {
+        display: block !important;
+    }
+
+    .short-criar {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .criar {
+        display: none !important;
+    }
+
+    .short-criar {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 965px) {
+
+    .divBuscar {
+        position: absolute;
+        top: 85px;
+        left: 0px;
+        width: 100%;
+        background: #bedef2;
+        padding: 20px;
+    }
+
+    .short-pesquisa {
+        padding: 0px 15px;
+    }
+}
+/*final mediaquery>*/
+
 
 /* Definindo a estilização do elemento com ID "btn_menuHamburguer"*/
 .btn {
@@ -104,21 +147,25 @@ body{
 }
 
 /* Definindo a estilização do elemento com ID "dropDown"*/
-.dropDown{
+.dropDown {
     display: none;
     position: absolute;
     background-color: #b058bd;
     min-width: 160px;
-    z-index: 1;
+    z-index: 3;
+    top: 85px;
+    height: 100%;
+    width: 240px;
+
 }
 
 /* Definindo a estilização do elemento com ID "dropDown a"*/
-.dropDown a{
+.dropDown a {
     float: none;
     color: white;
     font-size: 14px;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
     height: 65px;
     text-decoration: none;
     display: block;
@@ -128,53 +175,49 @@ body{
     border-right: 1px solid #770089;
 }
 
-#e{
+#e {
     border-top: 1px solid white;
     border-bottom: none;
 }
 
 /* Esta regra define o estilo de fundo de um link dentro do dropdown quando o cursor do mouse é colocado sobre ele (hover). 
 Nesse caso, o fundo é definido como uma cor azul clara (#bedef2)."*/
-#e:hover{ 
+#e:hover {
     background-color: rgb(255, 0, 0);
 }
 
-.dropDown a:hover{ 
+.dropDown a:hover {
     background-color: #6d007d;
 }
 
 /* Esta regra define o estilo de exibição de uma classe "show", que é adicionada à lista suspensa para torná-la visível. 
 A propriedade display define como o elemento deve ser exibido na página, e block significa que o elemento deve ser exibido como um bloco, ocupando toda a largura disponível. 
 Quando a classe "show" é adicionada ao dropdown, ele se torna visível na página, já que sua propriedade display é definida como block.*/
-.show{
+.show {
     display: block;
 }
-    
+
 /* Definindo a estilização do elemento com ID "EventosR*/
-.EventosR{
+.EventosR {
     font-weight: bold;
     font-size: 25px;
     color: #424242;
-    position: absolute;
-    top: 15%;
-    left: 3.8%;
+    margin-top: 80px;
 }
-    
+
 /* Definindo a estilização do elemento com ID "barraE"*/
-.barraE{
+.barraE {
     margin-top: 20px;
     background-color: #dccce0;
     border-radius: 13px;
-    /*width: 1750px;*/
-    width: 1810px;
     height: 150px;
     display: flex;
     align-items: center;
-    overflow:auto; 
+    overflow: auto;
 }
-         
+
 /* Definindo a estilização do elemento com ID "evento"*/
-.evento{
+.evento {
     width: 150px;
     height: 100px;
     border-radius: 9px;
@@ -184,52 +227,58 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     cursor: pointer;
 }
 
-.evento:hover{
+.evento:hover {
     border: 6px solid #770089;
     transition-duration: all 0.4s;
 }
-         
+
 /* Definindo a estilização do elemento com ID "MyEventos"*/
-#MyEventos{
+#MyEventos {
     font-weight: bold;
     font-size: 50px;
     color: #770089;
-    position: absolute;
-    top: 370px;
-    left: 3.8%;
-}
-     
-/* Definindo a estilização do elemento com ID "barraMyE"*/
-#barraMyE{
-    margin-top: 20px;
-    background-color: #dccce0;
-    border-radius: 13px;
-    width: 975px;
-    height: 350px;
-    display: flex;
-    /*overflow:auto;*/
-}
-     
-/* Definindo a estilização do elemento com ID "evento2"*/
-.evento2{
-    width: 150px;
-    height: 100px;
-    border-radius: 9px;
-    margin-left: 35px;
-    border: solid 2px;
-    border-color: #770089;
-    cursor: pointer;
-    position: relative;
-    top: 50px;
+    height: 100%;
 }
 
-.evento2:hover{
+/* Definindo a estilização do elemento com ID "barraMyE"*/
+#barraMyE {
+    margin-top: 4px;
+    background-color: #dccce0;
+    border-radius: 13px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Adicionado */
+    padding: 36px 26px;
+    margin-left: 4px;
+}
+
+#barraMyE img{
+    width: 100%;
+}
+
+/* Definindo a estilização do elemento com ID "evento2"*/
+.image-container:hover {
     border: 6px solid #770089;
     transition-duration: all 0.4s;
 }
-     
+
+.image-container {
+    width: 100%;
+    /* Largura desejada */
+    height: 150px;
+    margin-bottom: 25px;
+    /* Altura desejada */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 9px;
+    border: solid 2px;
+    border-color: #770089;
+    cursor: pointer;
+}
+
 /* Definindo a estilização do elemento com ID "favorito14*/
-#favorito14{
+#favorito14 {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -239,7 +288,7 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 }
 
 /* Definindo a estilização do elemento com ID "favorito15"*/
-#favorito15{
+#favorito15 {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -247,9 +296,9 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     left: 230px;
     cursor: pointer;
 }
-     
+
 /* Definindo a estilização do elemento com ID "favorito16"*/
-#favorito16{
+#favorito16 {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -259,7 +308,7 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 }
 
 /* Definindo a estilização do elemento com ID "favorito17"*/
-#favorito17{
+#favorito17 {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -269,7 +318,7 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 }
 
 /* Definindo a estilização do elemento com ID "favorito18"*/
-#favorito18{
+#favorito18 {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -279,17 +328,17 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 }
 
 /* Definindo a estilização do elemento com ID "favorito19*/
-#favorito19{
+#favorito19 {
     width: 15px;
     height: 15px;
     position: absolute;
     top: 350px;
     left: 40px;
-    cursor: pointer;  
+    cursor: pointer;
 }
-  
+
 /* Definindo a estilização do elemento com ID "favorito20"*/
-#favorito20{
+#favorito20 {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -297,9 +346,9 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     left: 230px;
     cursor: pointer;
 }
-     
+
 /* Definindo a estilização do elemento com ID "favorito21"*/
-#favorito21{
+#favorito21 {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -307,9 +356,9 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     left: 420px;
     cursor: pointer;
 }
-     
+
 /* Definindo a estilização do elemento com ID "favorito22"*/
-#favorito22{
+#favorito22 {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -319,7 +368,7 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 }
 
 /* Definindo a estilização do elemento com ID "favorito23"*/
-#favorito23{
+#favorito23 {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -329,7 +378,7 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 }
 
 /* Definindo a estilização do elemento com ID "evento2_2" */
-.evento2_2{
+/* .evento2_2 {
     width: 150px;
     height: 100px;
     border-radius: 9px;
@@ -342,21 +391,18 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     left: -943px
 }
 
-.evento2_2:hover{
+.evento2_2:hover {
     border: 6px solid #770089;
     transition-duration: all 0.4s;
-}
+} */
 
 /* Definindo a estilização do elemento com ID "EventosM" */
-#EventosM{
+#EventosM {
     font-weight: bold;
     font-size: 32px;
     color: #770089;
-    position: absolute;
-    top: 370px;
-    left: 1150px;
 }
- 
+
 /* Definindo a estilização do elemento com ID "container" */
 .container {
     max-width: 1000px;
@@ -364,60 +410,53 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     margin: auto;
 }
 
-/* Definindo a estilização do elemento com ID "momento"*/ 
-.momento{
+/* Definindo a estilização do elemento com ID "momento"*/
+.momento {
     margin-top: 10px;
-    width: 500px;
-    height: 250px;
+    width: 100%;
     display: none;
 }
- 
+
 /* Estlizando a cor de fundo do elemento com id "active "*/
 .active {
-    background-color: #ededed; 
+    background-color: #ededed;
 }
-  
+
 /* animation-name: Essa propriedade define o nome da animação que será aplicada a um elemento. 
 No caso desse código, o nome da animação é "fade". */
 .desaparecer {
     animation-name: fade;
-    /* Essa propriedade define a duração de 2s; */
+    /* Defina a duração da animação */
     animation-duration: 2s;
+    /* Defina como a animação deve ser aplicada ao elemento */
+    animation-fill-mode: forwards;
 }
 
-/* Esta regra define o nome da animação e as etapas que ela segue.*/
-from {
-    opacity: .5
-}  
- 
-/* Essa etapa define o estilo do elemento no início da animação, no momento em que a 
-    animação começa. Nesse caso, o opacity (opacidade) do 
-    elemento é definido como 0,5, o que significa que ele será ligeiramente transparente. */
 @keyframes fade {
-from {
-    opacity: .5
-}  
-/* Essa etapa define o estilo do elemento no final da animação, quando ela termina. 
-Nesse caso, o opacity do elemento é definido como 1, o que significa que ele será completamente opaco.*/
-to {
-    opacity: 1
-}
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 /* Definindo a estilização do elemento com ID "evento3"*/
-.evento3{
-    width: 725px;
-    height: 430px;
-    margin-left: 35px;
+.evento3 {
+    width: 100%;
+    max-height: 600px;
     cursor: pointer;
     position: relative;
-    top: 10px;
-    left: -32px;
     border: 3px solid;
     border-radius: 5px;
     border-color: #770089;
 }
- 
+
+#MyEventos>label {
+    font-size: 34px;
+}
+
 /* Definindo a estilização do html scrollbar*/
 html ::-webkit-scrollbar {
     height: 14px;
@@ -429,5 +468,14 @@ html ::-webkit-scrollbar-thumb {
 }
 
 html ::-webkit-scrollbar-track {
-    background: #ededed;   
+    background: #ededed;
+}
+
+.css-selector {
+    background: linear-gradient(22deg, #69d006, #dd8448, #ae17d0);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
 }
