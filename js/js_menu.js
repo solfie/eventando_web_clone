@@ -7,23 +7,23 @@ a variável é reiniciada para 1. O elemento atual é mostrado definindo o estil
 é usada para chamar a função verSlides() novamente após um intervalo de tempo de 2 segundos (ou 2000 milissegundos), 
 criando assim um slideshow automático. Em resumo, esse código cria um slideshow de elementos com a classe "momento" que é 
 atualizado automaticamente a cada 2 segundos. */
-let slidesP = 0;
-verSlides();
+// let slidesP = 0;
+// verSlides();
 
-function verSlides() {
-    let i;
-    const slides = document.getElementsByClassName("momento");
+// function verSlides() {
+//     let i;
+//     const slides = document.getElementsByClassName("momento");
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slidesP++;
-    if (slidesP > slides.length) {
-        slidesP = 1
-    }    
-    slides[slidesP - 1].style.display = "block";
-    setTimeout(verSlides, 2000); 
-}
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";  
+//     }
+//     slidesP++;
+//     if (slidesP > slides.length) {
+//         slidesP = 1
+//     }    
+//     slides[slidesP - 1].style.display = "block";
+//     setTimeout(verSlides, 2000); 
+// }
 
 /* Esta função é responsável por mostrar ou ocultar um menu dropdown quando um botão é clicado. Ela faz isso adicionando ou removendo 
 a classe "show" do elemento com o ID "dropDown". Isso é feito usando a função classList.toggle(), que adiciona a classe "show" se ela 

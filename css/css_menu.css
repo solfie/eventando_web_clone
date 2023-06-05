@@ -240,20 +240,41 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     height: 100%;
 }
 
+#MyEventos>label {
+    font-size: 34px;
+}
+
 /* Definindo a estilização do elemento com ID "barraMyE"*/
 #barraMyE {
     margin-top: 4px;
     background-color: #dccce0;
     border-radius: 13px;
-    width: 100%;
     display: flex;
     flex-wrap: wrap; /* Adicionado */
+    justify-content: center;
     padding: 36px 26px;
-    margin-left: 4px;
 }
 
-#barraMyE img{
-    width: 100%;
+.teste{
+    margin-left: 20px;
+}
+.teste > div{
+    min-width: 100px;
+}
+
+.evento1 {
+    width: 150px;
+    height: 100px;
+    border-radius: 9px;
+    /* margin-left: 35px; */
+    border: solid 2px;
+    border-color: #770089;
+    cursor: pointer;
+}
+
+.evento1:hover {
+    border: 6px solid #770089;
+    transition-duration: all 0.4s;
 }
 
 /* Definindo a estilização do elemento com ID "evento2"*/
@@ -263,7 +284,7 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 }
 
 .image-container {
-    width: 100%;
+    width: 100px;
     /* Largura desejada */
     height: 150px;
     margin-bottom: 25px;
@@ -410,52 +431,26 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     margin: auto;
 }
 
-/* Definindo a estilização do elemento com ID "momento"*/
-.momento {
-    margin-top: 10px;
-    width: 100%;
-    display: none;
+.tamanhocarrocel{
+    width: 80rem;
+    height: 80rem;
 }
-
 /* Estlizando a cor de fundo do elemento com id "active "*/
 .active {
     background-color: #ededed;
 }
 
-/* animation-name: Essa propriedade define o nome da animação que será aplicada a um elemento. 
-No caso desse código, o nome da animação é "fade". */
-.desaparecer {
-    animation-name: fade;
-    /* Defina a duração da animação */
-    animation-duration: 2s;
-    /* Defina como a animação deve ser aplicada ao elemento */
-    animation-fill-mode: forwards;
-}
-
-@keyframes fade {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
 /* Definindo a estilização do elemento com ID "evento3"*/
-.evento3 {
-    width: 100%;
+/* .evento3 {
+    width: 90%;
+    height: 90%;
     max-height: 600px;
     cursor: pointer;
     position: relative;
     border: 3px solid;
     border-radius: 5px;
     border-color: #770089;
-}
-
-#MyEventos>label {
-    font-size: 34px;
-}
+} */
 
 /* Definindo a estilização do html scrollbar*/
 html ::-webkit-scrollbar {
@@ -479,3 +474,4 @@ html ::-webkit-scrollbar-track {
     -moz-animation: AnimationName 3s ease infinite;
     animation: AnimationName 3s ease infinite;
 }
+
