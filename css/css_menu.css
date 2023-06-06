@@ -29,11 +29,6 @@ html {
     overflow: visible;
 }
 
-.pesquisa {
-    position: absolute;
-    right: 30px;
-}
-
 /* Definindo a estilização do elemento com ID "divBuscar"*/
 .divBuscar {
     position: relative;
@@ -41,12 +36,6 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-/* Definindo a estilização do elemento com ID "lupa"*/
-#lupa {
-    width: 10x;
-    height: 20px;
 }
 
 /* Definindo a estilização do elemento com ID "buscar"*/
@@ -61,6 +50,16 @@ html {
 
 .buscar:focus {
     outline: none !important;
+}
+
+.pesquisa {
+    position: absolute;
+    right: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    border: none;
+    color: #000000;
 }
 
 /* Definindo a estilização do elemento com ID "CriarEvento"*/
@@ -237,11 +236,14 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     font-weight: bold;
     font-size: 50px;
     color: #770089;
-    height: 100%;
 }
 
 #MyEventos>label {
     font-size: 34px;
+}
+
+#barraMyE {
+    height: 70%;
 }
 
 /* Definindo a estilização do elemento com ID "barraMyE"*/
@@ -278,17 +280,17 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 }
 
 /* Definindo a estilização do elemento com ID "evento2"*/
-.image-container:hover {
+/* .image-container:hover {
     border: 6px solid #770089;
     transition-duration: all 0.4s;
 }
 
 .image-container {
     width: 100px;
-    /* Largura desejada */
+    Largura desejada
     height: 150px;
     margin-bottom: 25px;
-    /* Altura desejada */
+    Altura desejada
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -296,7 +298,7 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     border: solid 2px;
     border-color: #770089;
     cursor: pointer;
-}
+} */
 
 /* Definindo a estilização do elemento com ID "favorito14*/
 #favorito14 {

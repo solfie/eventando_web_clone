@@ -24,26 +24,29 @@
 <body>
 <!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
 <header id="Cabecalho" name="Cabecalho" class="row">
-    <div id="divLogoP" name="divLogoP" class="col">
+    <div id="divLogoP" name="divLogoP" class="col-md-3 ps-5">
         <img id=logo src="img/logo.png">
     </div>
 
     <div class="divBuscar col-md-6 col-sm">
-        <input type="search" class="buscar" placeholder="Buscar eventos" required>
-        <a href="#" class="pesquisa">
+        <input type="search" class="buscar" placeholder="Buscar eventos">
+        <button class = "pesquisa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <!-- <a href="#" class="lupa">
             <img id="lupa" src="img/lupa.png" alt="Lupa">
-        </a>
+        </a> -->
 
     </div>
 
     <div class="col d-flex align-items-center justify-content-end adicionais">
-        <button class="criar" name="criar" onclick="CriarEvento()"> Criar Evento </button>
+        <button class="col-4 criar" name="criar" onclick="CriarEvento()"> Criar Evento </button>
 
         <button class="d-none short-criar criar" name="criar" onclick="CriarEvento()">
             <i class="fa fa-plus" aria-hidden="true"></i>
         </button>
 
-        <button class="btn" onclick="mDropDown()">
+        <button class=" col-4 btn" onclick="mDropDown()">
             <i class="fa fa-bars"></i>
         </button>
         <!-- Definimos quais seriam os elementos presentes no menu DropDown. -->
@@ -51,7 +54,7 @@
             <a id="b" href=#> PERFIL </a>
             <a id="c" href=#> FAVORITOS </a>
             <a id="d" href=#> SOBRE NÓS </a>
-            <a id="e" href="menu.html"> ENCERRAR SESSÃO </a>
+            <a id="e" href="login.html"> ENCERRAR SESSÃO </a>
         </div>
     </div>
 </header>
@@ -82,8 +85,8 @@
     <!-- Criamos uma div, onde nela vamos ter uma outra div onde tem as imagens dos evetos criados pelo usuário -->
     <div class="container-fluid row ps-5 mt-5">
         <div class="col-md-6">
-            <div id="MyEventos">
-                <label> MEUS <br> EVENTOS </label>
+            <div class = "barraMyE">
+                <label id="MyEventos"> MEUS <br> EVENTOS </label>
                 <br>
                 <div id="barraMyE" class="row ms-1">
                     <div class="row teste">
@@ -120,10 +123,10 @@
         </div>
     </div>
 
-    <div id="EventosM" class="col-md-6" >
+    <div class="col-md-6" >
         <!-- Criamos uma div, onde nela vamos ter um slideShow com os principais eventos do momento -->
         <div class="container tamanhocarrocel">
-            <p>EVENTOS DO MOMENTO </p>
+            <p id="EventosM">EVENTOS DO MOMENTO</p>
             <div id="myCarousel" class="carousel slide" data-ride="carousel" >
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -135,7 +138,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="img/evento24.jpg" alt="evento24" class="img-fluid  mx-auto" style="width: 100%;">
+                        <img src="img/evento24.jpg" alt="evento24" class="img-fluid  mx-auto" style="width: 100%; height: 54%;">
                     </div>
             
                     <div class="item">
