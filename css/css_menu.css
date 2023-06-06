@@ -135,7 +135,6 @@ html {
 }
 /*final mediaquery>*/
 
-
 /* Definindo a estilização do elemento com ID "btn_menuHamburguer"*/
 .btn {
     background-color: #bedef2;
@@ -155,7 +154,6 @@ html {
     top: 85px;
     height: 100%;
     width: 240px;
-
 }
 
 /* Definindo a estilização do elemento com ID "dropDown a"*/
@@ -476,4 +474,3 @@ html ::-webkit-scrollbar-track {
     -moz-animation: AnimationName 3s ease infinite;
     animation: AnimationName 3s ease infinite;
 }
-
