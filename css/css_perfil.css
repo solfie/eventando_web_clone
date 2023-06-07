@@ -204,10 +204,25 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     background-color: #770089;
     color:#ffffff;
     border-radius: 15px;
-    border: 2px solid #ffffff;
+    border: 3px solid #ffffff;
     width: 141px;
     height: 26px;
     font-size: 12px;
+}
+
+.botao:hover{
+    background-color: #6600ff;
+    color:#ffffff;
+    border: 3px solid #ffffff;
+}
+
+.editar{
+    background-color: #ffffff !important;
+    color: #770089 !important;
+    border: 3px solid #ffffff;
+    width: 40px !important;
+    height: 43px !important;
+    font-size: 18px !important;
 }
 
 .bg-secondary-soft {
