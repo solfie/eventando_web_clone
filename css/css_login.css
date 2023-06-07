@@ -103,7 +103,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 }
 
 #menu-login .active {
-    border-bottom: 3px solid #bedef2;
+    border-bottom: 3px solid #99d6fc;
 }
 
 /* Definindo a estilização do elemento com ID "emEmail"*/
