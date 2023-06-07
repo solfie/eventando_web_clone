@@ -18,7 +18,9 @@
 	<!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
 	<header id="Cabecalho" name="Cabecalho" class="row">
 		<div id="divLogoP" name="divLogoP" class="col-md-3 ps-3">
-			<img id=logo src="img/logo.png">
+			<a href="menu.html">
+				<img id=logo src="img/logo.png" >
+			</a>
 		</div>
 	
 		<div class="divBuscar col-md-6 col-sm">
@@ -48,15 +50,32 @@
 		</div>
 	</header>
 
+	<!-- Upload profile -->
+	<div class="col-xxl-4">
+		<div class="px-4 py-5 rounded">
+			<div class="row g-3">
+				<div class="text-center">
+					<!-- Image upload -->
+					<div class="position-relative display-2 mb-3 rounded-circle">
+						<i class="fa-solid fa-circle-user text-secondary"></i>
+					</div>
+					<!-- Button -->
+					<input type="file" id="customFile" name="file" hidden="">
+					<label class="btn btn-success-soft btn-block" for="customFile"><i class="fa-solid fa-pencil fa-beat"></i></label>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" style="width: 150px;"alt="Avatar"/> -->
 
 	<!-- button -->
-	<div class="gap-3 d-md-flex justify-content-md-end text-center">
-		<button type="button" class="btn btn-primary btn-lg">Update profile</button>
+	<div class="gap-3 d-md-flex justify-content-md-start text-center">
+		<button type="button" class="botao btn btn-sm mt-5 mb-2">SALVAR EDIÇÕES</button>
 	</div>
 	
 	<div class = "row ms-5 me-5 teste">
-		<!-- Social media detail -->
+		
 		<div class="row ms-2 me-2 mt-5 mb-5 gx-5">
 			<div class="col-xxl-6 mb-5 mb-xxl-0">
 				<div class="bg-secondary-soft px-4 py-5 rounded">
@@ -106,11 +125,10 @@
 								<option value="TO">Tocantins</option>
 							</select>
 						</div>
-					</div> <!-- Row END -->
+					</div>
 				</div>
 			</div>
 
-			<!-- change password -->
 			<div class="col-xxl-6  mb-5 mb-xxl-0">
 				<div class="bg-secondary-soft px-4 py-5 rounded">
 					<div class="row g-3">
@@ -128,11 +146,8 @@
 					</div>
 				</div>
 			</div>
-		</div> <!-- Row END -->
+		</div>
 	</div>
 
-
-
 </body>
-
 </html>
