@@ -50,7 +50,7 @@
 		</div>
 	</header>
 
-	<div class="container-fluid col-4 row-1">
+	<div class="container-fluid col-4 row-1 ms-0">
 		<!-- Upload profile -->
 		<div class="">
 			<div class="">
@@ -59,11 +59,9 @@
 						<!-- Image upload  -->
 						<div class="avatar position-absolute ms-5 mt-5 rounded-circle">
 							<i class="fa-solid fa-circle-user text-secondary"></i>
+							<input type="file" id="customFile" name="file" hidden="">
+							<label class="editar btn btn-success-soft rounded-circle mb-xxl-1 ms-1" for="customFile"><i class="fa-solid fa-pencil fa-rotate-270"></i></label>
 						</div>
-
-						<!-- Button -->
-						<input type="file" id="customFile" name="file" hidden="">
-						<label class="editar btn btn-success-soft btn-block rounded-circle" for="customFile"><i class="fa-solid fa-pencil fa-rotate-270"></i></label>
 					</div>
 				</div>
 			</div>
@@ -151,7 +149,7 @@
 			<div class="col-xxl-6  mb-5 mb-xxl-0">
 				<div class="bg-secondary-soft mt-5 px-4 py-5 rounded">
 					<div class="row g-3">
-						<h4 class="my-4 mb-4 mt-0"><i class="fa-solid fa-phone fa-shake me-2"></i>INFORMAÇÕES DE CONTATO</h4>
+						<h4 class="my-4 mb-4 mt-0"><i class="fa-solid fa-phone me-2"></i>INFORMAÇÕES DE CONTATO</h4>
 				
 						<div class="col-md-12">
 							<label for="exampleInputPassword2" class="form-label">Telefone</label>

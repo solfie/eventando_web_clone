@@ -202,8 +202,6 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 
 .avatar{
     display: flex;
-    left: 25px !important;
-    top: 100px !important;
 }
 
 .botao{
