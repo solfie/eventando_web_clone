@@ -196,8 +196,14 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 }
 
 .teste{
-    background-color: #e5dfe4;
+    background-color: #dccce0;
     border-radius: 10px;
+}
+
+.avatar{
+    display: flex;
+    left: 25px !important;
+    top: 100px !important;
 }
 
 .botao{
@@ -206,7 +212,7 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     border-radius: 15px;
     border: 3px solid #ffffff;
     width: 141px;
-    height: 26px;
+    height: 30px;
     font-size: 12px;
 }
 
@@ -241,8 +247,8 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 }
 
 .rounded-circle {
-    height: 117px;
-    width: 117px;
+    height: 120px;
+    width: 120px;
     margin: auto;
     vertical-align: middle;
     background-color: #770089;
@@ -251,11 +257,9 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 .text-secondary {
     --bs-text-opacity: 1;
     color: #ffffff !important;
-    width: 50px;
-    height: 50px;
     position: absolute;
-    top:50;
-    left:50;
+    left: 50px !important;
+    top: 50px !important;
     translate: middle;
 }
 
