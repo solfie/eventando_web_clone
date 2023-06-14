@@ -14,9 +14,10 @@ class BuscaCest
     // tests
     public function buscarResultadosNaPaginaTest(AcceptanceTester $I)
     {
-		$I->amOnPage('/');
-		$I->fillField('searchword', 'edital');
-		$I->click('Buscar');
-		$I->see('resultados encontdos');
+		$I->amOnPage('/eventando_web/menu.html');
+	    	$I->click('');
+		$I->click('PERFIL');
+		$I->seeCurrentURLEquals('/eventando_web/perfil.html');
+		$I->see('Data de nascimento');
     }
 }
