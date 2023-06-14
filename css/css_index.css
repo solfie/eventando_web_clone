@@ -7,49 +7,54 @@ body{
     background-color: #ededed !important
 }
 
-/* #Cabecalho{
-    position: relative;
+/* Definindo a estilização do elemento com ID "divMenu"*/
+#Cabecalho {
     background-color: #bedef2;
-    width: 1910px;
-    height: 80px;
-    top: -7px;
-} */
-
-/* Definindo a estilização do elemento com ID "Cabecalho*/
-#Cabecalho{
-    background-color: #bedef2;
-    height: 80px;
-    /* width: 100%; */
 }
 
-/* Definindo a estilização do elemento com ID "logo*/
-#logo{
-    /* width: 300px; */
-    height: 100px;
+/* Definindo a altura e largura da logo"*/
+#logo {
+    width: 350px;
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 /* Definindo a estilização do elemento com ID "divLogoP"*/
-#divLogoP{
-    /* top: -100%; */
-    align-items: center;
-    /* position: relative;
-    right: 3px;
-    left: 0px; */
+
+#divLogoP {
+    height: 85px;
+    overflow: visible;
 }
 
-/* Definindo a estilização do elemento com a class "divBuscar*/
-.divBuscar{
-    /* position:absolute;
-    top:25%;
-    left:20%; */
+/* Definindo a estilização do elemento com ID "divBuscar"*/
+.divBuscar {
+    position: relative;
     transform: translate(-0%, - 50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Definindo a estilização do elemento com a class "lupa*/
-.lupa{
+/* Definindo a estilização do elemento com ID "buscar"*/
+.buscar {
+    background-color: #ededed;
+    height: 15px;
+    padding: 15px;
+    border: 2px solid #b25abf;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.buscar:focus {
+    outline: none !important;
+}
+
+.pesquisa {
+    position: absolute;
+    right: 30px;
     background-color: transparent;
     cursor: pointer;
     height: 20px;
@@ -57,46 +62,82 @@ body{
     color: #000000;
 }
 
-/* #lupa{
-    position: absolute;
-    width: 10px;
-    height: 20px;
-    top:20%;
-    left:97%; 
-}*/
-
-/* Definindo a estilização do elemento com a class "buscar"*/
-.buscar{
-    width: 1150px;
-    background-color: #ededed;
-    height:15px;
-    padding: 15px;
-    border: 3px solid #b25abf;
-    border-radius: 40px;
-}
-
-/* Definindo a estilização do elemento com ID "criar"*/
-#criar{
-    /* position: absolute;
-    top: 26%;
-    left: 82.5%; */
+/* Definindo a estilização do elemento com ID "CriarEvento"*/
+.criar {
     border: solid 3px;
     border-color: #770089;
     border-radius: 40px;
-    background-color:#b25abf;
+    background-color: #b25abf;
     text-align: center;
     height: 33px;
-    /* width: 120px; */
+    width: 170px;
     font-size: 15px;
     color: white;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
 
-#criar:hover{
-    background-color: #b900d5; 
-    transition-duration: all 0.4s;
+.criar:hover{
+    background-color: #b900d5;
 }
+
+.short-criar {
+    font-size: 14px;
+    width: 34px;
+}
+
+#logo {
+    z-index: 2
+}
+
+/*mediaquery responsividade do header*/
+@media screen and (max-width: 1238px) {
+    .short-criar {
+        display: block !important;
+    }
+
+    .criar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 965px) {
+
+    .criar {
+        display: block !important;
+    }
+
+    .short-criar {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .criar {
+        display: none !important;
+    }
+
+    .short-criar {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 965px) {
+
+    .divBuscar {
+        position: absolute;
+        top: 85px;
+        left: 0px;
+        width: 100%;
+        background: #bedef2;
+        padding: 20px;
+    }
+
+    .short-pesquisa {
+        padding: 0px 15px;
+    }
+}
+/*final mediaquery>*/
 
 /* Definindo a altura, cursor e largura do elemento com ID "login"*/
 #login{

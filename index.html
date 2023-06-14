@@ -15,35 +15,40 @@
 </head>
 
 <body>
-	<!-- Criamos um cabeçalho que dentro dele tem a logo, a barra de buscar, o botão de se criar evento e o de logar. -->
-	<header class = "container-fluid row d-flex justify-content-center" id = "Cabecalho" name = "Cabecalho">
-		<div class = "col-3" id = "divLogoP" name = "divLogoP">
-			<img class = "img-fluid"  src = "img/logo.png">
+	<!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
+	<header id="Cabecalho" name="Cabecalho" class="row">
+		<div id="divLogoP" name="divLogoP" class="col">
+			<img id=logo src="img/logo.png">
 		</div>
 
-		<div class = "divBuscar col-5">
-			<input type = "text" class = "buscar" placeholder = "Buscar eventos">
-				<button class = "lupa">
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</button>
-				<!-- <a href="#">
-		    		<img id = "lupa" src="img/lupa.png" alt = "Lupa">
-				</a> -->
+		<div class="divBuscar col-md-6 col-sm me-5">
+			<input type="search" class="buscar" placeholder="Buscar eventos">
+			<button class = "pesquisa">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</button>
 		</div>
 
-		<div class = "col-2">
+		<div class="col d-flex align-items-center justify-content-end adicionais">
 			<a href = "login.html"> 
-				<button id = "criar" name = "criar"> Criar Evento </button>
+				<button class="criar" name="criar" onclick="CriarEvento()"> Criar Evento </button>
 			</a> 
-		</div>
 
-		<div class = "login col-2">
-			<a href = "login.html">
-				<button class = "btn">
-					<i class = "fa fa-arrow-right-to-bracket"></i> 
-					&nbsp;LOGIN
-				</button>
-			</a>
+			<button class="d-none short-criar criar" name="criar" onclick="CriarEvento()">
+				<a href = "login.html"> 
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</a> 
+			</button>
+		</div>  
+
+		<div class = "login col-2 pt-3 ps-5">
+			<div class="ms-5 pt-1">
+				<a href = "login.html">
+					<button class = "btn">
+						<i class = "fa fa-arrow-right-to-bracket"></i> 
+						&nbsp;LOGIN
+					</button>
+				</a>
+			</div>
 		</div>
 	</header>
 
@@ -80,26 +85,28 @@
 			</div>
 		</div>
 
-		<!-- Criamos a div rodapé, que contém o icon do instagram que ao clicar é direcionado para uma nova aba com o instagram -->
-		<div class = "container-fluid row">
-			<div class = "col-4 d-flex align-items-center">
-				<a href = "https://www.instagram.com/eventando.nozes/" target = "_blank">
-					<i id = "insta" class = "fa-brands fa-instagram"></i>
-					<!--<img id="insta" src="img/insta.png" alt="insta">-->
-				</a>
-				<!-- Ainda na div rodapé, tem uma label sobre nozes, que futuramente será um link para uma página sobre nós -->
-				<p class = "d-flex align-items-center ms-2" id = "sobreN"><a href = "sobreNos.html" id = "sobreNozes">SOBRE NÓS</a></p>
-			</div>
+		<footer>
+			<!-- Criamos a div rodapé, que contém o icon do instagram que ao clicar é direcionado para uma nova aba com o instagram -->
+			<div class = "container-fluid row">
+				<div class = "col-4 d-flex align-items-center">
+					<a href = "https://www.instagram.com/eventando.nozes/" target = "_blank">
+						<i id = "insta" class = "fa-brands fa-instagram"></i>
+						<!--<img id="insta" src="img/insta.png" alt="insta">-->
+					</a>
+					<!-- Ainda na div rodapé, tem uma label sobre nozes, que futuramente será um link para uma página sobre nós -->
+					<p class = "d-flex align-items-center ms-2" id = "sobreN"><a href = "sobreNos.html" id = "sobreNozes">SOBRE NÓS</a></p>
+				</div>
 
-			<div class = "col-4">
-				<!-- Ainda na div rodapé, inserimos as imagens do from nozes e depois da playStore juntamente da label -->
-				<img class = "img-fluid" id = "from" src = "img/rodape.png" alt = "from">
-			</div>
+				<div class = "col-4">
+					<!-- Ainda na div rodapé, inserimos as imagens do from nozes e depois da playStore juntamente da label -->
+					<img class = "img-fluid" id = "from" src = "img/rodape.png" alt = "from">
+				</div>
 
-			<div class = "store col-4">
-				<img class = "img-fluid" id = "baixar" src = "img/baixar.png" alt = "baixar">
-				<p id = "app">Obtenha o aplicativo</p>	
+				<div class = "store col-4">
+					<img class = "img-fluid" id = "baixar" src = "img/baixar.png" alt = "baixar">
+					<p id = "app">Obtenha o aplicativo</p>	
+				</div>
 			</div>
-		</div>
+		</footer>
 </body>
 </html>
