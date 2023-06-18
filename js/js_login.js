@@ -1,3 +1,4 @@
+
 var divCadastro = document.getElementById('divCadastro');
 var divLogin = document.getElementById('divLogin');  
 var divRecuperar = document.getElementById('divRecuperar');
@@ -46,7 +47,7 @@ function exibirRecuperar(){
     menus[2].children[0].classList.add('active');
 }
 
-
+// Botão do Google
 function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential)
   
@@ -81,4 +82,24 @@ window.onload = function () {
     );
   
     google.accounts.id.prompt(); // also display the One Tap dialog
+}
+
+//Mascara do Telefone
+const handlePhone = (event) => {
+    let input = event.target
+    input.value = phoneMask(input.value)
+  }
+  
+  const phoneMask = (value) => {
+    if (!value) return ""
+    value = value.replace(/\D/g,'')
+    value = value.replace(/(\d{2})(\d)/,"($1) $2")
+    value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+    return value
+  }
+
+//Mascara Recuperar Senha
+function RecuperarSenha(){
+    let email = document.querySelector("#emEmail3").value;
+    if (email != null)
 }

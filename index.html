@@ -17,31 +17,31 @@
 <body>
 	<!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
 	<header id="Cabecalho" name="Cabecalho" class="row">
-		<div id="divLogoP" name="divLogoP" class="col">
-			<img id=logo src="img/logo.png">
+		<div id="divLogoP" name="divLogoP" class="col-4 col-md-4 col-lg-3 col-xl col-xxl-3">
+			<img id="logo" class="img-fluid mt-4 mt-sm-4 mt-lg-3 mt-xl-0" src="img/logo.png">
 		</div>
 
-		<div class="divBuscar col-md-6 col-sm me-5">
+		<div class="divBuscar ms-md-3 col-md-5 col-lg-3 col-xl-3 col-sm-5 col-4 col-xxl-4 me-lg-5">
 			<input type="search" class="buscar" placeholder="Buscar eventos">
 			<button class = "pesquisa">
 				<i class="fa-solid fa-magnifying-glass"></i>
 			</button>
 		</div>
 
-		<div class="col d-flex align-items-center justify-content-end adicionais">
+		<div class="col col-sm-1 col-lg-2 d-flex align-items-center justify-content-end adicionais">
 			<a href = "login.html"> 
 				<button class="criar" name="criar" onclick="CriarEvento()"> Criar Evento </button>
 			</a> 
 
 			<button class="d-none short-criar criar" name="criar" onclick="CriarEvento()">
 				<a href = "login.html"> 
-					<i class="fa fa-plus" aria-hidden="true"></i>
+					<i class="fa fa-plus mais" aria-hidden="true"></i>
 				</a> 
 			</button>
 		</div>  
 
-		<div class = "login col-2 pt-3 ps-5">
-			<div class="ms-5 pt-1">
+		<div class = "login col-md-1 col-sm-1 col-xl-1 col-lg-2 pt-3 ps-xl-4 col me-md-4 col-xxl-2 ps-xxl-5">
+			<div class="ms-lg-5 pt-1 ms-xxl-5">
 				<a href = "login.html">
 					<button class = "btn">
 						<i class = "fa fa-arrow-right-to-bracket"></i> 
