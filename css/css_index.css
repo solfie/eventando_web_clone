@@ -1,6 +1,3 @@
-/* importando a fonte Montserrat do Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Julee&family=Montserrat:wght@500&display=swap');
-
 /* Colocando a fonte e a cor em toda a tela html*/
 body{
     font-family: 'Montserrat', sans-serif;
@@ -23,7 +20,6 @@ html {
 }
 
 /* Definindo a estilização do elemento com ID "divLogoP"*/
-
 #divLogoP {
     height: 85px;
     overflow: visible;
@@ -90,8 +86,11 @@ html {
     z-index: 2
 }
 
-/*mediaquery responsividade do header*/
-@media screen and (max-width: 1238px) {
+.mais{
+    color: #FFF !important;
+}
+
+@media screen and (max-width: 991px) {
     .short-criar {
         display: block !important;
     }
@@ -101,60 +100,17 @@ html {
     }
 }
 
-@media screen and (max-width: 965px) {
-
-    .criar {
-        display: block !important;
-    }
-
-    .short-criar {
-        display: none !important;
-    }
-}
-
-@media screen and (max-width: 615px) {
-    .criar {
-        display: none !important;
-    }
-
-    .short-criar {
-        display: block !important;
-    }
-}
-
-@media screen and (max-width: 965px) {
-
-    .divBuscar {
-        position: absolute;
-        top: 85px;
-        left: 0px;
-        width: 100%;
-        background: #bedef2;
-        padding: 20px;
-    }
-
-    .short-pesquisa {
-        padding: 0px 15px;
-    }
-}
-/*final mediaquery>*/
-
 /* Definindo a altura, cursor e largura do elemento com ID "login"*/
 #login{
     cursor: pointer; 
-    height :70px; 
-    /* width:150px; */
+    height :70px;
 }
 
 /* Definindo a estilização do elemento com a class "btn"*/
 .btn{
-    /* position: absolute;
-    top: 85%;
-    left: 80%; */
     background-color: transparent;
     cursor: pointer;
     height: 33px;
-    /* width: 150px; */
     border: none;
     border-radius: 40px;
     font-size: 20px;
@@ -166,16 +122,6 @@ html {
     color: #b900d5 !important;
     transition-duration: all 0.4s;
 }
-
-/* Definindo a estilização do elemento com a class "login"*/
-/* .login{
-    width: 5px;
-    height: 20px;
-    position: absolute;
-    top: 7%;
-    left: 91%;
-    background-color: #bedef2;
-} */
 
 /* Definindo a estilização do elemento com a class "EventosR"*/
 .EventosR{
@@ -191,10 +137,8 @@ html {
     margin-top: 20px;
     background-color: #dccce0;
     border-radius: 13px;
-    /* width: 1750px; */
     height: 150px;
     display: flex;
-    /*justify-content: space-around;*/
     align-items: center;
     overflow:auto; 
 }
@@ -210,10 +154,10 @@ html {
     cursor: pointer;
 }
 
-/*.evento:hover{
+.evento:hover {
     border: 6px solid #770089;
     transition-duration: all 0.4s;
-}*/
+}
 
 /* Definindo a estilização do html scrollbar*/
 html ::-webkit-scrollbar {
@@ -229,52 +173,28 @@ html ::-webkit-scrollbar-track {
     background: #ededed;
 }
 
-/* Definindo a posição do elemento com a class "Slogan"*/
-/* .Slogan{
-    position: relative;
-    top: 350px;
-} */
-
 /* Definindo a estilização do elemento com ID "slogan"*/
 #slogan{
     font-weight: bold;
     font-size: 45px;
-    /* position: absolute;
-    left: 3.8%; */
     color: #770089;
 }
 
 /* Definindo a estilização do elemento com ID "sobre"*/
 #sobre{
-    /* top: 225px;
-    left: 3.8%;
-    position: absolute; */
     font-weight: bold;
     font-size: 18px;
 }
 
 /* Definindo a estilização do elemento com ID "fotosIniciais"*/
 #fotosIniciais{
-    /* width: 1250px;
-    position: absolute; 
-    top: 41%;
-    left: 30%;
-    height: 350px;*/
     border-radius: 10px;
     border: solid 3px;
     border-color: #770089;
 }
 
-/* Definindo a posição do elemento com class "rodape"*/
-/* .rodape{
-    position: absolute;
-} */
-
 /* Definindo a estilização do elemento com ID "insta"*/
 #insta{
-    /* position: relative;
-    top: 88.1%;
-    left: 3.7%; */
     color: black;
     font-size: 25px;
     font-weight: bold;
@@ -289,10 +209,7 @@ html ::-webkit-scrollbar-track {
 
 /* Definindo a estilização do elemento com ID "sobreN"*/
 #sobreN{
-    /* position: relative;
-    top: 88%; */
     font-size: 20px;
-    /* left: 4%; */
 }
 
 /* Definindo a estilização do elemento com ID "sobreNozes"*/
@@ -310,34 +227,22 @@ html ::-webkit-scrollbar-track {
 #from{
     width: 150px;
     height: 80px;
-    /* position: absolute;
-    top: 90%;
-    left: 45%; */
 }
 
 /* Definindo a estilização do elemento com class "store*/
 .store{
     width: 30px;
     height: 50px;
-    /* 
-    position: absolute;
-    top: 93%;
-    left: 85.5%;  */
 }
 
 /* Definindo a estilização do elemento com ID "baixar"*/
 #baixar{
-    /* position: absolute;
-    left: 90%; */
     width: 130px;
     height: 50px;
 }
 
 /* Definindo a estilização do elemento com ID "app"*/
 #app{
-    /* position: relative;
-    top: 83%; */
     font-size: 11px;
-    /* left: 78%; */
     font-weight: bold;
 }

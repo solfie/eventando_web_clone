@@ -63,25 +63,25 @@ function handleCredentialResponse(response) {
 }
 
 window.onload = function () {
-    //const clientID = window.prompt("Cole a sua Cliente ID", "")
-    google.accounts.id.initialize({
-      client_id: "902423440925-nklj2agoogc587cuqng0gpjr6vus43pr.apps.googleusercontent.com",
-      callback: handleCredentialResponse
-    });
-  
-    google.accounts.id.renderButton(
-      document.getElementById("buttonG"), {
-      theme: "outline",
-      size: "large",
-      type: "standard",
-      type:"standard",
-      shape:"pill",
-      text:"$ {button.text}",
-      logo_alignment:"left",
-    } // customization attributes
-    );
-  
-    google.accounts.id.prompt(); // also display the One Tap dialog
+  //const clientID = window.prompt("Cole a sua Cliente ID", "")
+  google.accounts.id.initialize({
+    client_id: "902423440925-nklj2agoogc587cuqng0gpjr6vus43pr.apps.googleusercontent.com",
+    callback: handleCredentialResponse
+  });
+
+  google.accounts.id.renderButton(
+    document.getElementById("buttonG"), {
+    theme: "outline",
+    size: "large",
+    type: "standard",
+    type:"standard",
+    shape:"pill",
+    text:"$ {button.text}",
+    logo_alignment:"left",
+  } // customization attributes
+  );
+
+  google.accounts.id.prompt(); // also display the One Tap dialog
 }
 
 //Mascara Recuperar Senha
@@ -156,13 +156,13 @@ pwdSenha2.onchange = verificarSenha;
 
 //Verificando o formulário
 const formulario = document.getElementById('formulario3');
-  formulario.addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
-    autenticacao(); // Executa a função de autenticação
+formulario.addEventListener('submit', function(event) {
+  event.preventDefault(); // Impede o envio padrão do formulário
+  autenticacao(); // Executa a função de autenticação
 
-    // Verifica se o formulário é válido
-    if (formulario.checkValidity()) {
-      // Redireciona para a página de destino após o cadastro
-      window.location.href = "login.html";
-    }
-  });
+  // Verifica se o formulário é válido
+  if (formulario.checkValidity()) {
+    // Redireciona para a página de destino após o cadastro
+    window.location.href = "login.html";
+  }
+});
