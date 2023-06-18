@@ -1,4 +1,4 @@
-
+// Exibir Login / Cadastro / Recuperação de Senha
 var divCadastro = document.getElementById('divCadastro');
 var divLogin = document.getElementById('divLogin');  
 var divRecuperar = document.getElementById('divRecuperar');
@@ -84,25 +84,85 @@ window.onload = function () {
     google.accounts.id.prompt(); // also display the One Tap dialog
 }
 
-//Mascara do Telefone
-const handlePhone = (event) => {
-    let input = event.target
-    input.value = phoneMask(input.value)
-  }
+//Mascara Recuperar Senha
+document.getElementById("formulario2").addEventListener("submit", function(event) {
+  event.preventDefault(); // Impede o envio padrão do formulário
+
+  var emailInput = document.getElementById("emEmail3");
+  var email = emailInput.value.trim();
   
-  const phoneMask = (value) => {
-    if (!value) return ""
-    value = value.replace(/\D/g,'')
-    value = value.replace(/(\d{2})(\d)/,"($1) $2")
-    value = value.replace(/(\d)(\d{4})$/,"$1-$2")
-    return value
+  // Expressão regular para validar o formato do e-mail
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(email)) {
+      // E-mail inválido, exiba uma mensagem de erro
+      alert("Por favor, informe um endereço de e-mail válido.");
+      return false;
   }
 
-//Mascara Recuperar Senha
-function RecuperarSenha(){
-    let email = document.querySelector("#emEmail3").value;
-    if (email != null){
-        alert("Cheque sua caixa de email");
-        window.location.href()
-    }
+  // E-mail correto, exiba um alerta e redirecione para a página de login
+  alert("Verifique sua caixa de e-mail para instruções de recuperação de senha.");
+  window.location.href = "login.html";
+});
+
+function exibirLogin() {
+  // Redirecione para a página de login
+  window.location.href = "login.html";
 }
+
+//Mascaras Cadastro
+//Macara Telefone
+const telTelefone = document.getElementById("telTelefone");
+
+telTelefone.addEventListener("input", function (e) {
+    let telefone = e.target.value.replace(/\D/g, "").substring(0, 11);
+    const tamanho = telefone.length;
+
+    if (tamanho === 11) {
+      telefone = telefone.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+    } else if (tamanho === 10) {
+      telefone = telefone.replace(/^(\d{2})(\d{4})(\d{4})$/, "($1) $2-$3");
+    } else if (tamanho === 9) {
+      telefone = telefone.replace(/^(\d{5})(\d{4})$/, "$1-$2");
+    } else if (tamanho === 8) {
+      telefone = telefone.replace(/^(\d{4})(\d{4})$/, "$1-$2");
+    }
+
+    e.target.value = telefone;
+  });
+
+//Mascara Senha == Confirmação de Senha
+let pwdSenha2 = document.getElementById("pwdSenha2");
+let pwdConfSenha = document.getElementById("pwdConfSenha");
+
+function autenticacao() {
+  if (pwdConfSenha.value === "") {
+    pwdConfSenha.setCustomValidity("Preencha esse campo!");
+  } else if (pwdSenha2.value !== pwdConfSenha.value) {
+    pwdConfSenha.setCustomValidity("Senhas diferentes!");
+  } else {
+    pwdConfSenha.setCustomValidity("");
+  }
+}
+
+function verificarSenha() {
+  if (pwdConfSenha.value !== "") {
+    autenticacao();
+  }
+}
+
+pwdConfSenha.onkeyup = verificarSenha;
+pwdSenha2.onchange = verificarSenha;
+
+//Verificando o formulário
+const formulario = document.getElementById('formulario3');
+  formulario.addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+    autenticacao(); // Executa a função de autenticação
+
+    // Verifica se o formulário é válido
+    if (formulario.checkValidity()) {
+      // Redireciona para a página de destino após o cadastro
+      window.location.href = "menu.html";
+    }
+  });

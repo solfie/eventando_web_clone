@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/css_login.css"/>
     <!-- JS externo-->
     <script src = 'js/js_login.js' defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/jquery.inputmask.min.js"></script>
     <!-- JS botão do google-->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 	<script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
@@ -94,7 +96,7 @@
                                 <br>
 
                                 <!-- botão "ENVIAR" que futuramente terá a funcionalidade de enviar um código de verificação para poder trocar a senha, quando clicado -->
-                                <button class="botao" type="submit" id="enviar" onclick="RecuperarSenha()"> ENVIAR </button>
+                                <button class="botao" type="submit" id="enviar"> ENVIAR </button>
                             </div>
                             <!--<a href = "#" id = "loginR"  onclick = "exibirLogin()"> LOGIN </a>-->
                             <div>
@@ -154,12 +156,11 @@
 
                             <input class="form-control" type="password" id="pwdSenha2" placeholder="Senha" required>
 
-                            <input class="form-control" type="password" id="pwdConfSenha" placeholder="Confirmar Senha"
-                                required>
+                            <input class="form-control" type="password" id="pwdConfSenha" placeholder="Confirmar Senha" required>
 
                             <!-- botão "CADASTRAR" que redireciona para uma página "menu.html" quando clicado -->
 
-                            <button type="submit" class="botao mt-3" type="submit" id="cadastrar"> CADASTRAR </button>
+                            <button class="botao mt-3" type="submit" id="cadastrar"> CADASTRAR </button>
 
                         </form>
 
