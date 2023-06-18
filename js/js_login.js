@@ -163,6 +163,6 @@ const formulario = document.getElementById('formulario3');
     // Verifica se o formulário é válido
     if (formulario.checkValidity()) {
       // Redireciona para a página de destino após o cadastro
-      window.location.href = "menu.html";
+      window.location.href = "login.html";
     }
   });
