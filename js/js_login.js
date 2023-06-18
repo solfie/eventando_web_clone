@@ -101,5 +101,8 @@ const handlePhone = (event) => {
 //Mascara Recuperar Senha
 function RecuperarSenha(){
     let email = document.querySelector("#emEmail3").value;
-    if (email != null)
+    if (email != null){
+        alert("Cheque sua caixa de email");
+        window.location.href()
+    }
 }
