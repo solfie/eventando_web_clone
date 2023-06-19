@@ -1,10 +1,6 @@
-/* importando a fonte Montserrat do Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Julee&family=Montserrat:wght@500&display=swap');
-
 /* Colocando a fonte em toda a tela html*/
-body{
+body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     background-color: #ededed !important;
 }
 
@@ -15,7 +11,7 @@ body{
 
 /* Definindo a altura e largura da logo"*/
 #logo {
-    width: 350px;
+    width: 22rem;
     position: relative;
 }
 
@@ -26,7 +22,7 @@ html {
 /* Definindo a estilização do elemento com ID "divLogoP"*/
 
 #divLogoP {
-    height: 85px;
+    height: 5rem;
     overflow: visible;
 }
 
@@ -87,7 +83,7 @@ html {
     z-index: 2
 }
 
-/*<mediaquery responsividade do header*/
+/*mediaquery responsividade do header*/
 @media screen and (max-width: 1238px) {
     .short-criar {
         display: block !important;
@@ -120,11 +116,29 @@ html {
 }
 
 @media screen and (max-width: 965px) {
+  
+    .divLogoP{
+        position: absolute;
+        width: 100%;
+    }
+    .short-criar {
+        position: absolute;
+        left: 90%;
+        top:2%;
+    }
+    
+    .divBtn{
+        position: absolute;
+        left: 87%;
+        top:2%;
+    }
+
 
     .divBuscar {
         position: absolute;
         top: 85px;
         left: 0px;
+        height: 10%;
         width: 100%;
         background: #bedef2;
         padding: 20px;
@@ -136,63 +150,158 @@ html {
 }
 /*final mediaquery>*/
 
-/* Definindo a estilização do elemento com ID "btn_menuHamburguer"*/
-.btn {
-    background-color: #bedef2;
+.css-selector {
+    background: linear-gradient(22deg, #69d006, #dd8448, #ae17d0);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+}
+
+.navbar-toggler-icon {
+    width:4rem; 
+    height: 4rem;
+}
+
+.xis{
+    position: relative;
+    right: 2rem;
+}
+
+.btn{
     border: none;
-    color: #424242;
-    font-size: 35px;
-    cursor: pointer;
+    background-color:transparent;
+    width:5rem; 
+    height: 5rem;
+    top: -4.5%;
+    position: relative;
+    left:-1%;
+}
+.btn:hover{
+    border: none;
+    background-color:transparent ;
+    width:5rem; 
+    height: 5rem;
+    top: -4.5%;
+    position: relative;
+    left:-1%;
 }
 
-/* Definindo a estilização do elemento com ID "dropDown"*/
-.dropDown {
-    display: none;
-    position: absolute;
-    background-color: #b058bd;
-    min-width: 160px;
-    z-index: 3;
-    top: 85px;
+.option{
+    width: 7rem;  
+}
+
+.sidenav{
+    width: fit-content;
+}
+
+.tamanhoLogo{
+    width: 30rem;
+}
+.logot{
+    height: fit-content;
+}
+
+.modal-header{
+    width: 100%;
+    height: fit-content;
+}
+.modal-footer {
+    width: 100%;
+    border: none;
+    background-color:#e0e0e0;
+}
+
+#sair:hover {
+    color: rgb(255, 255, 255);
+}
+
+.modal-header{
+    background-color: #bedef2;
+    
+}
+
+.logo{
+  background-color: #bedef2;
+}
+
+li{
+    margin-top: 4rem;
+}
+
+li:hover{
+    margin-top: 4rem;;
+    color:#770089;
+}
+
+.list-group-item{
+    width: 100%;
+    background-color:#e0e0e0;
+}
+
+.overlay {
+    display: none; /* Esconde a camada de sobreposição por padrão */
+    position: fixed; /* Permanece fixo na tela */
+    z-index: 1; /* Define uma ordem de camada acima dos outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
     height: 100%;
-    width: 240px;
+    background-color: rgba(212, 212, 212, 0.5); /* Define uma cor de fundo semitransparente */
+    backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
+  }
+
+.modal-body{
+    background-color:#e0e0e0;
+    font-size:1.5rem;
+  }
+  
+#sair{
+    width: 100%;
+    padding-left: 2%; 
+  }
+
+svg.bi.bi-box-arrow-right{
+    width: 10%;
 }
 
-/* Definindo a estilização do elemento com ID "dropDown a"*/
-.dropDown a {
-    float: none;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    height: 65px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    border-bottom: 1px solid white;
-    border-left: 1px solid #770089;
-    border-right: 1px solid #770089;
+svg{
+    padding-right:5%;
 }
 
-#e {
-    border-top: 1px solid white;
-    border-bottom: none;
+
+li#sair.list-group-item.d-flex.d-inline-flex{
+    border-left:none;
+    border-bottom:none;
+    border-right :none;
 }
 
-/* Esta regra define o estilo de fundo de um link dentro do dropdown quando o cursor do mouse é colocado sobre ele (hover). 
-Nesse caso, o fundo é definido como uma cor azul clara (#bedef2)."*/
-#e:hover {
-    background-color: rgb(255, 0, 0);
+li#sair.list-group-item.d-flex.d-inline-flex:hover{ 
+    color:rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.658);
 }
 
-.dropDown a:hover {
-    background-color: #6d007d;
+.modal-content {
+    animation-name: modal-animacao;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    transform-origin: left center;
+}   
+    
+@keyframes modal-animacao {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
 }
 
-/* Esta regra define o estilo de exibição de uma classe "show", que é adicionada à lista suspensa para torná-la visível. 
-A propriedade display define como o elemento deve ser exibido na página, e block significa que o elemento deve ser exibido como um bloco, ocupando toda a largura disponível. 
-Quando a classe "show" é adicionada ao dropdown, ele se torna visível na página, já que sua propriedade display é definida como block.*/
-.show {
-    display: block;
+a {
+    color: #000000;
 }
 
 .teste{
@@ -205,18 +314,21 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
 }
 
 .botao{
-    background-color: #770089;
-    color:#ffffff;
-    border-radius: 15px;
-    border: 3px solid #ffffff;
-    width: 141px;
-    font-size: 12px;
+    background-color: #770089 !important; 
+    color:#ffffff !important;
+    border-radius: 15px !important;
+    border: 3px solid #ffffff !important;
+    width: 141px !important;
+    width: 141px !important;
+    font-size: 12px !important;
 }
 
 .botao:hover{
-    background-color: #6600ff;
-    color:#ffffff;
-    border: 3px solid #ffffff;
+    width: 141px !important;
+    background-color: #6600ff !important;
+    width: 141px !important;
+    color:#ffffff !important;
+    border: 3px solid #ffffff !important;
 }
 
 .editar{
