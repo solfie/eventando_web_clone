@@ -92,9 +92,6 @@ html {
     .criar {
         display: none;
     }
-}
-
-@media screen and (max-width: 600px) {
   
     .divLogoP{
         position: absolute;
@@ -109,7 +106,7 @@ html {
     
     .divBtn{
         position: absolute;
-        left: -230%;
+        left: -170%;
         top:100%;
     }
 
@@ -117,8 +114,8 @@ html {
         position: absolute;
         top: 65px;
         left: 0px;
-        height: 10%;
-        width: 100%;
+        height: 11%;
+        width: 110% !important;
         background: #bedef2;
         padding: 20px;
         margin-top: 4px;
@@ -181,6 +178,7 @@ html {
         display: block;
         align-items: center !important;
         overflow: auto;
+        /* overflow-x: hidden; */
         overflow-y: hidden;
         white-space: nowrap
     }
@@ -206,7 +204,7 @@ html {
         height: 100% !important;
         border-radius: 9px;
         border: solid 2px #770089;;
-        left: -6%;
+        left: -1%;
         top: 8% !important;
         /* left: -6%;
         top: -8%; */
@@ -218,6 +216,48 @@ html {
     }
     
     .moment{
+        display: none;
+    }
+
+    footer{
+        position: absolute;
+        top: 95%;
+    }
+
+    /* Definindo a estilização do elemento com ID "insta"*/
+    #insta{
+        display: none !important;
+    }
+
+    #sobreNozes{
+        display: none;
+    }
+
+    /* Definindo a estilização do elemento com ID "from"*/
+    #from{
+        width: 130px !important;
+        height: 70px !important;
+        position: relative !important;
+        top: -140% !important;
+        left: 65% !important;
+    }
+
+    /* Definindo a estilização do elemento com ID "baixar"*/
+    #baixar{
+        /* width: 80px !important;
+        height: 30px !important;
+        position: relative !important;
+        top: -280% !important;
+        left: 70% !important; */
+        display: none;
+    }
+
+    /* Definindo a estilização do elemento com ID "app"*/
+    #app{
+        /* font-size: 0.85rem !important;
+        position: relative !important;
+        top: -400% !important;
+        left: 70% !important; */
         display: none;
     }
 }
@@ -550,8 +590,9 @@ a {
 }
 
 .teste{
-    margin-left: 20px;
+    margin-left: 10px !important;
 }
+
 .teste > div{
     min-width: 100px;
 }
@@ -608,20 +649,6 @@ a {
       min-height: 90%;   
 }
 
-/* Definindo a estilização do html scrollbar*/
-html ::-webkit-scrollbar {
-    height: 14px;
-}
-
-html ::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    background: #770089;
-}
-
-html ::-webkit-scrollbar-track {
-    background: #ededed;
-}
-
 /* Definindo a estilização do elemento com ID "slogan"*/
 #slogan{
     font-weight: bold;
@@ -643,7 +670,7 @@ html ::-webkit-scrollbar-track {
 }
 
 /* Definindo a estilização do elemento com ID "insta"*/
-#insta{
+/* #insta{
     color: black;
     font-size: 25px;
     font-weight: bold;
@@ -654,21 +681,21 @@ html ::-webkit-scrollbar-track {
 #insta:hover{
     color: #b900d5;
     transition-duration: all 0.4s;
-}
+} */
 
 /* Definindo a estilização do elemento com ID "sobreN"*/
-#sobreN{
+#insta{
     font-size: 20px;
 }
 
 /* Definindo a estilização do elemento com ID "sobreNozes"*/
-#sobreNozes{
-    color: black;
+#instagram{
+    color: black !important;
     font-weight: bold;
 }
 
-#sobreNozes:hover{
-    color: #b25abf;
+#instagram:hover{
+    color: #b25abf !important;
     transition-duration: all 0.4s;
 }
 
@@ -694,4 +721,18 @@ html ::-webkit-scrollbar-track {
 #app{
     font-size: 11px;
     font-weight: bold;
+}
+
+/* Definindo a estilização do html scrollbar*/
+html ::-webkit-scrollbar {
+    height: 14px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #770089;
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
 }
