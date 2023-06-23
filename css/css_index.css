@@ -71,6 +71,7 @@ html {
     color: white;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none !important;
 }
 
 .criar:hover{
@@ -80,6 +81,7 @@ html {
 .short-criar {
     font-size: 14px;
     width: 34px;
+    text-decoration: none !important;
 }
 
 #logo {
@@ -88,16 +90,6 @@ html {
 
 .mais{
     color: #FFF !important;
-}
-
-@media screen and (max-width: 991px) {
-    .short-criar {
-        display: block !important;
-    }
-
-    .criar {
-        display: none;
-    }
 }
 
 /* Definindo a altura, cursor e largura do elemento com ID "login"*/
@@ -116,6 +108,7 @@ html {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif; 
     font-weight: bold;
+    text-decoration-line: none !important;
 }
 
 .btn:hover{
@@ -123,28 +116,222 @@ html {
     transition-duration: all 0.4s;
 }
 
-/* Definindo a estilização do elemento com a class "EventosR"*/
-.EventosR{
-    font-weight: bold;
-    font-size: 25px;
-    /* position: absolute;
-    top: 15%;
-    left: 3.8%; */
+.short-login {
+    font-size: 18px;
+    width: 34px;
+    text-decoration: none !important;
 }
 
-/* Definindo a estilização do elemento com a class "barraE"*/
-.barraE{
+/*mediaquery responsividade do header*/
+@media screen and (max-width: 600px) {
+    .short-criar {
+        display: block !important;
+    }
+
+    .criar {
+        display: none;
+    }
+
+    .short-login {
+        display: block !important;
+    }
+
+    .btn {
+        display: none;
+    }
+  
+    .divLogoP{
+        position: absolute;
+        width: 100%;
+    }
+
+    .short-criar {
+        position: absolute;
+        left: 85%;
+        top:2%;
+    }
+    
+    .short-login {
+        position: absolute !important;
+        left: 83.5% !important;
+        top: 7% !important;
+    }
+
+    .divBuscar {
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        height: 11%;
+        width: 110% !important;
+        background: #bedef2;
+        padding: 20px;
+        margin-top: 4px;
+    }
+
+    .short-pesquisa {
+        padding: 0px 15px;
+    }
+
+    #EventosR{
+        position: absolute !important;
+        left: 0% !important;
+        top: 17%;
+        height: 20% !important;
+        align-items: center !important;
+    }
+
+    .barraE{
+        position: absolute;
+        width: 90%;
+        overflow: none;
+        border: solid 3px #b25abf;
+    }
+
+    .evento {
+        display: none;
+    }
+
+    #eventoAparece{
+        display: block !important;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    #seta{
+        position: relative;
+        display: block !important;
+    }
+
+    #seta:hover{
+        color:#b25abf;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 798px) {
+
+    .criar {
+        display: block !important;
+    }
+
+    .short-criar {
+        display: none !important;
+    }
+
+    .btn {
+        display: block !important;
+    }
+
+    .short-login {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 798px) and (max-width: 1199px) {
+  
+    .divLogoP{
+        position: absolute;
+        width: 90%;
+    }
+
+    .criar {
+        position: absolute;
+        left: 50%;
+        top: 3.5%;
+    }
+    
+    .btn{
+        position: absolute;
+        left: 80%;
+        top: 3%;
+    }
+
+    .divBuscar {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        height: 15%;
+        width: 100%;
+        background: #bedef2;
+        padding: 20px;
+        margin-top: 1%;
+    }
+
+    .short-pesquisa {
+        padding: 0px 15px;
+    }
+
+    #EventosR{
+        position: absolute !important;
+        left: 0%;
+        top: 24%;
+        height: 20% !important;
+        align-items: center !important;
+    }
+
+    footer{
+        position: absolute;
+        top: 85%;
+    }
+
+    #insta{
+        font-size: 15px !important;
+    }
+
+    #sobreN{
+        font-size: 15px !important;
+    }
+
+    #from{
+        position: relative;
+        left: 165% !important;
+        width: 8rem !important;
+        height: 4rem !important;
+    }
+
+    #app{
+        position: relative;
+        left: 362%;
+        font-size: 8px !important;
+        top: 30% !important;
+    }
+
+    #baixar{
+        position: relative;
+        left: 355% !important;
+        width: 6rem !important;
+        height: 2.5rem !important;
+        top: 8% !important;
+    }
+}
+/*final mediaquery>*/
+
+/* Definindo a estilização do elemento com ID "EventosR*/
+.EventosR {
+    font-weight: bold;
+    font-size: 25px;
+    color: #424242;
+    margin-top: 80px;
+}
+
+/* Definindo a estilização do elemento com ID "barraE"*/
+.barraE {
     margin-top: 20px;
     background-color: #dccce0;
     border-radius: 13px;
     height: 150px;
     display: flex;
     align-items: center;
-    overflow:auto; 
+    overflow: auto;
 }
 
-/* Definindo a estilização do elemento com a class "evento"*/
-.evento{
+/* Definindo a estilização do elemento com ID "evento"*/
+.evento {
     width: 150px;
     height: 100px;
     border-radius: 9px;
@@ -157,6 +344,10 @@ html {
 .evento:hover {
     border: 6px solid #770089;
     transition-duration: all 0.4s;
+}
+
+#eventoAparece{
+    display: none;
 }
 
 /* Definindo a estilização do html scrollbar*/
