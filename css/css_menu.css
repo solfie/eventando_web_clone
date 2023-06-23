@@ -1,7 +1,7 @@
-/* Colocando a fonte em toda a tela html*/
-body {
+/* Colocando a fonte e a cor em toda a tela html*/
+body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #ededed !important;
+    background-color: #ededed !important
 }
 
 /* Definindo a estilização do elemento com ID "divMenu"*/
@@ -11,7 +11,7 @@ body {
 
 /* Definindo a altura e largura da logo"*/
 #logo {
-    width: 35rem;
+    width: 350px;
     position: relative;
 }
 
@@ -20,9 +20,8 @@ html {
 }
 
 /* Definindo a estilização do elemento com ID "divLogoP"*/
-
 #divLogoP {
-    height: 5rem;
+    height: 85px;
     overflow: visible;
 }
 

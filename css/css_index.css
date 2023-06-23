@@ -58,6 +58,10 @@ html {
     color: #000000;
 }
 
+.alogar{
+    text-decoration: none !important;   
+}
+
 /* Definindo a estilização do elemento com ID "CriarEvento"*/
 .criar {
     border: solid 3px;
@@ -276,7 +280,7 @@ html {
 
     footer{
         position: absolute;
-        top: 85%;
+        top: 75%;
     }
 
     #insta{
