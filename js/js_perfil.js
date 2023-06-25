@@ -1,29 +1,50 @@
-const inputFile = document.querySelector("#picture__input");
-const pictureImage = document.querySelector(".picture__image");
-const pictureImageTxt = "Choose an image";
-pictureImage.innerHTML = pictureImageTxt;
+// const inputFile = document.querySelector("#picture__input");
+// const pictureImage = document.querySelector(".picture__image");
+// const pictureImageTxt = "Choose an image";
+// pictureImage.innerHTML = pictureImageTxt;
 
-inputFile.addEventListener("change", function (e) {
-  const inputTarget = e.target;
-  const file = inputTarget.files[0];
+// inputFile.addEventListener("change", function (e) {
+//   const inputTarget = e.target;
+//   const file = inputTarget.files[0];
 
-  if (file) {
-    const reader = new FileReader();
+//   if (file) {
+//     const reader = new FileReader();
 
-    reader.addEventListener("load", function (e) {
-      const readerTarget = e.target;
+//     reader.addEventListener("load", function (e) {
+//       const readerTarget = e.target;
 
-      const img = document.createElement("img");
-      img.src = readerTarget.result;
-      img.classList.add("picture__img");
+//       const img = document.createElement("img");
+//       img.src = readerTarget.result;
+//       img.classList.add("picture__img");
 
-      pictureImage.innerHTML = "";
-      pictureImage.appendChild(img);
-    });
+//       pictureImage.innerHTML = "";
+//       pictureImage.appendChild(img);
+//     });
 
-    reader.readAsDataURL(file);
-  } else {
-    pictureImage.innerHTML = pictureImageTxt;
+//     reader.readAsDataURL(file);
+//   } else {
+//     pictureImage.innerHTML = pictureImageTxt;
+//   }
+// });
+
+const telTelefone = document.getElementById("telTelefone");
+
+telTelefone.addEventListener("input", function (e) {
+  let telefone = e.target.value.replace(/\D/g, "").substring(0, 11);
+  const tamanho = telefone.length;
+
+  if (tamanho === 11) {
+    telefone = telefone.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+  } 
+  else if (tamanho === 10) {
+    telefone = telefone.replace(/^(\d{2})(\d{4})(\d{4})$/, "($1) $2-$3");
+  } 
+  else if (tamanho === 9) {
+    telefone = telefone.replace(/^(\d{5})(\d{4})$/, "$1-$2");
+  } 
+  else if (tamanho === 8) {
+    telefone = telefone.replace(/^(\d{4})(\d{4})$/, "$1-$2");
   }
-});
 
+  e.target.value = telefone;
+});
