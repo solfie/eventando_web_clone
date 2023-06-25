@@ -386,6 +386,26 @@ a {
     font-size: 1.4rem !important;
 }
 
+.form-select{
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem !important;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ededed;
+    background-clip: padding-box;
+    border: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
 
 .form-control {
     display: block;
