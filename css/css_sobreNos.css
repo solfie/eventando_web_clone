@@ -1,7 +1,7 @@
-/* Colocando a fonte em toda a tela html*/
-body {
+/* Colocando a fonte e a cor em toda a tela html*/
+body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #ededed !important;
+    background-color: #ededed !important
 }
 
 /* Definindo a estilização do elemento com ID "divMenu"*/
@@ -11,7 +11,7 @@ body {
 
 /* Definindo a altura e largura da logo"*/
 #logo {
-    width: 35rem;
+    width: 350px;
     position: relative;
 }
 
@@ -20,9 +20,8 @@ html {
 }
 
 /* Definindo a estilização do elemento com ID "divLogoP"*/
-
 #divLogoP {
-    height: 5rem;
+    height: 85px;
     overflow: visible;
 }
 
@@ -84,7 +83,7 @@ html {
 }
 
 /*mediaquery responsividade do header*/
-@media screen and (max-width: 1238px) {
+@media screen and (max-width: 600px) {
     .short-criar {
         display: block !important;
     }
@@ -92,64 +91,274 @@ html {
     .criar {
         display: none;
     }
-}
-
-@media screen and (max-width: 965px) {
-
-    .criar {
-        display: block !important;
-    }
-
-    .short-criar {
-        display: none !important;
-    }
-}
-
-@media screen and (max-width: 615px) {
-    .criar {
-        display: none !important;
-    }
-
-    .short-criar {
-        display: block !important;
-    }
-}
-
-@media screen and (max-width: 965px) {
   
     .divLogoP{
         position: absolute;
         width: 100%;
     }
+
     .short-criar {
         position: absolute;
-        left: 90%;
+        left: 85%;
         top:2%;
     }
     
     .divBtn{
         position: absolute;
-        left: 87%;
-        top:2%;
+        left: -265% !important;
+        top:50% !important;
     }
-
 
     .divBuscar {
         position: absolute;
-        top: 85px;
+        top: 65px;
         left: 0px;
-        height: 10%;
-        width: 100%;
+        height: 11%;
+        width: 110% !important;
         background: #bedef2;
         padding: 20px;
+        margin-top: 4px;
     }
 
     .short-pesquisa {
         padding: 0px 15px;
     }
+
+    .titulo{
+        position: absolute;
+        left: 6%;
+    }
+
+    .teste{
+        position: relative;
+        left:-8% !important;
+        height:90% !important;
+      
+    }
+    
+    .divSobre{
+        position: absolute;
+        top: 6% !important;
+        width: 90% !important;
+        height: 55% !important;
+        left: 7% !important;
+        
+    }
+
+    .footerSobre{
+        position: absolute;
+        left: 0% !important;
+        font-size:60%!important;
+        
+    
+    }
+    .insta{
+        position: absolute;
+        top: -160% !important;
+        left: 40% !important;
+    }
+    
+    
+    #email{
+        position: relative;
+        left: -2%;
+    }
+    
+    
+    .email{
+        position: absolute;
+        left: 41% !important;
+        top: -100% !important;
+    }
+    
+    .nozes{
+        position: absolute;
+        left: 10% !important;
+        top: 63% !important;
+        width: 100% !important;
+        height:35% !important;
+    }
+    
+    #instaE{
+        position: absolute;
+        left: 30% !important;
+        top: -4% !important;
+    }
+    
+    #emailE{
+        position: absolute;
+        left: 31% !important;
+        top: 3% !important;
+    }
+    
+    #instaL{
+        position: absolute;
+        left: 30% !important;
+        top: 30% !important;
+    }
+    
+    #emailL{
+        position: absolute;
+        left: 31% !important;
+        top: 37% !important;
+    }
+    
+    
+    #instaS{
+        position: absolute;
+        left: 30% !important;
+        top: 63% !important;
+    }
+    
+    #emailS{
+        position: absolute;
+        left: 31% !important;
+        top: 70% !important;
+    }
+        
+}
+
+@media screen and (min-width: 798px) {
+
+    .criar {
+        display: block !important;
+    }
+
+    .short-criar {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 798px) and (max-width: 1199px) {
+  
+    .divLogoP{
+        position: absolute;
+        width: 90%;
+    }
+
+    .criar {
+        position: absolute;
+        left: 65%;
+        top: 2.5%;
+    }
+    
+    .divBtn{
+        position: absolute;
+        left: 70%;
+        top: 20%;
+    }
+
+    .divBuscar {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        height: 15%;
+        width: 100%;
+        background: #bedef2;
+        padding: 20px;
+        margin-top: 1%;
+    }
+
+    .short-pesquisa {
+        padding: 0px 15px;
+    }
+    .titulo{
+        position: absolute;
+        left: 5% !important;
+        top:24% !important;
+    }
+
+    .teste{
+        position: relative;
+        left:-3% !important;
+        height:90% !important;
+      
+    }
+    
+    .divSobre{
+        position: absolute;
+        top: 6% !important;
+        width: 90% !important;
+        height: 30% !important;
+        left: 7% !important;
+        
+    }
+    
+    .footerSobre{
+        position: absolute;
+        left: 0% !important;
+        font-size:60%!important;
+    }
+    .insta{
+        position: absolute;
+        top: -145% !important;
+        left: 35% !important;
+    }
+    
+    #email{
+        position: relative;
+        left: -2%;
+    }
+    
+    .nozes{
+        position: absolute;
+        left: 10% !important;
+        top: 39% !important;
+        width: 100% !important;
+        height:35% !important;
+    }
+    
+    #instaE{
+        position: absolute;
+        left: 30% !important;
+        top: -2% !important;
+    }
+    
+    .emailE{
+        position: absolute;
+        left: 30% !important;
+        top: -3% !important;
+    }
+    
+    #instaL{
+        position: absolute;
+        left: 30% !important;
+        top: 30% !important;
+    }
+    
+    #emailL{
+        position: absolute;
+        left: 31% !important;
+        top: 37% !important;
+    }
+    
+    
+    #instaS{
+        position: absolute;
+        left: 30% !important;
+        top: 63% !important;
+    }
+    
+    #emailS{
+        position: absolute;
+        left: 31% !important;
+        top: 70% !important;
+    }
+        
+}
+
+@media screen and (min-width: 798px) {
+
+    .criar {
+        display: block !important;
+    }
+
+    .short-criar {
+        display: none !important;
+    }
+   
 }
 /*final mediaquery>*/
-
 .css-selector {
     background: linear-gradient(22deg, #69d006, #dd8448, #ae17d0);
     background-size: 600% 600%;
@@ -172,24 +381,29 @@ html {
 .btn{
     border: none;
     background-color:transparent;
-    width:5rem; 
-    height: 5rem;
-    top: -4.5%;
-    position: relative;
-    left:-1%;
+    width:3rem; 
+    height: 3rem;
+    top: 10%;
+    position: absolute;
+    left: -15% !important;
 }
+
+span.navbar-toggler-icon{
+    width:3rem; 
+    height: 3rem;
+}
+
 .btn:hover{
     border: none;
     background-color:transparent ;
-    width:5rem; 
-    height: 5rem;
-    top: -4.5%;
-    position: relative;
-    left:-1%;
+    width:3rem; 
+    height: 3rem;
+    top: 10%;
+    position:absolute;
 }
 
 .option{
-    width: 7rem;  
+    width: 4rem;  
 }
 
 .sidenav{
@@ -197,7 +411,7 @@ html {
 }
 
 .tamanhoLogo{
-    width: 30rem;
+    width: 20rem;
 }
 .logot{
     height: fit-content;
@@ -208,6 +422,7 @@ html {
     height: fit-content;
 }
 .modal-footer {
+
     width: 100%;
     border: none;
     background-color:#e0e0e0;
@@ -303,3 +518,190 @@ li#sair.list-group-item.d-flex.d-inline-flex:hover{
 a {
     color: #000000;
 }
+
+.teste{
+    background-color: #dccce0;
+    border-radius: 10px;
+    position: absolute;
+    top:28%;
+    height: 60%;
+    width: 95%;
+}
+.titulo{
+    position: absolute;
+    top: 23%;
+}
+
+.divSobre{
+    position: absolute;
+    background-image: url('./../img/fundoSobre.png');
+
+    border: solid 3px ;
+    border-color: #770089;
+    border-radius: 13px;
+    top: 10%;
+    width: 45%;
+    height: 85%;
+    left: 3%;
+  
+}
+
+.sobre{
+    position: relative;
+    top: 10%;
+    color: #ededed;
+    font-size: 75%;
+}
+
+.footerSobre{
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    color: #e0e0e0;
+    font-size: 75%;
+    
+
+}
+.insta{
+    position: absolute;
+    top: -140%;
+    left: 30%;
+    color: #e0e0e0;
+    float: right;
+}
+
+
+#email{
+    position: relative;
+    left: -2%;
+
+}
+
+
+.email{
+    position: absolute;
+    left: 55%;
+    top: -140%;
+    color: #e0e0e0;
+ 
+
+}
+
+.nozes{
+    position: absolute;
+    left: 55%;
+    top: 10%;
+    width: 48%;
+    height: 85%;
+    
+}
+
+#esther{
+    position: absolute;
+    width: 17%;
+    height: 28%;
+    border-radius:100%;
+}
+
+#labelE{
+    position: absolute;
+    left: 30%;
+    color: #400049;
+    font-weight: bold;
+    font-size: 90%;
+
+}
+
+#instaE{
+    position: absolute;
+    left: 30%;
+    top: -2%;
+    font-size: 85%;
+    font-weight: bold;
+
+}
+
+#emailE{
+    position: absolute;
+    left: 31%;
+    top: 5%;
+    font-size: 85%;
+    font-weight: bold;
+
+}
+
+.iconE{
+    position: relative;
+    left: -2%;
+}
+
+#lorena{
+    position: absolute;
+    width: 17%;
+    height: 28%;
+    border-radius:100%;
+}
+
+#labelL{
+    position: absolute;
+    left: 30%;
+    color: #400049;
+    font-weight: bold;
+    font-size: 90%;
+
+
+}
+
+#instaL{
+    position: absolute;
+    left: 30%;
+    top: 33%;
+    font-size: 85%;
+    font-weight: bold;
+
+}
+
+#emailL{
+    position: absolute;
+    left: 31%;
+    top: 40%;
+    font-size: 85%;
+    font-weight: bold;
+
+}
+
+#sofia{
+    position: absolute;
+    width: 17%;
+    height: 28%;
+    border-radius:100%;
+}
+
+#labelS{
+    position: absolute;
+    left: 30%;
+    color: #400049;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+#instaS{
+    position: absolute;
+    left: 30%;
+    top: 65%;
+    font-size: 85%;
+    font-weight: bold;
+
+}
+
+#emailS{
+    position: absolute;
+    left: 31%;
+    top: 72%;
+    font-size: 85%;
+    font-weight: bold;
+
+}
+
+
+
