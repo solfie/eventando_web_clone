@@ -106,7 +106,7 @@ html {
     .divBtn{
         position: absolute;
         left: -170%;
-        top:100%;
+        top:90%;
     }
 
     .divBuscar {
@@ -177,8 +177,8 @@ html {
         display: block;
         align-items: center !important;
         overflow: auto;
-        /* overflow-x: hidden; */
-        overflow-y: hidden;
+        overflow-x: hidden;
+        /* overflow-y: hidden; */
         white-space: nowrap
     }
 
@@ -632,20 +632,6 @@ a {
     border: solid 3px;
     border-color: #770089;
 }
-
-/* Definindo a estilização do elemento com ID "insta"*/
-/* #insta{
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-}
-
-#insta:hover{
-    color: #b900d5;
-    transition-duration: all 0.4s;
-} */
 
 /* Definindo a estilização do elemento com ID "sobreN"*/
 #insta{

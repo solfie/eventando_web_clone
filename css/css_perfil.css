@@ -1,7 +1,7 @@
-/* Colocando a fonte em toda a tela html*/
-body {
+/* Colocando a fonte e a cor em toda a tela html*/
+body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #ededed !important;
+    background-color: #ededed !important
 }
 
 /* Definindo a estilização do elemento com ID "divMenu"*/
@@ -11,7 +11,7 @@ body {
 
 /* Definindo a altura e largura da logo"*/
 #logo {
-    width: 22rem;
+    width: 350px;
     position: relative;
 }
 
@@ -20,9 +20,8 @@ html {
 }
 
 /* Definindo a estilização do elemento com ID "divLogoP"*/
-
 #divLogoP {
-    height: 5rem;
+    height: 85px;
     overflow: visible;
 }
 
@@ -84,7 +83,7 @@ html {
 }
 
 /*mediaquery responsividade do header*/
-@media screen and (max-width: 1238px) {
+@media screen and (max-width: 600px) {
     .short-criar {
         display: block !important;
     }
@@ -92,60 +91,118 @@ html {
     .criar {
         display: none;
     }
-}
-
-@media screen and (max-width: 965px) {
-
-    .criar {
-        display: block !important;
-    }
-
-    .short-criar {
-        display: none !important;
-    }
-}
-
-@media screen and (max-width: 615px) {
-    .criar {
-        display: none !important;
-    }
-
-    .short-criar {
-        display: block !important;
-    }
-}
-
-@media screen and (max-width: 965px) {
   
     .divLogoP{
         position: absolute;
         width: 100%;
     }
+
     .short-criar {
         position: absolute;
-        left: 90%;
+        left: 85%;
         top:2%;
     }
     
     .divBtn{
-        position: absolute;
-        left: 87%;
-        top:2%;
+        position: absolute !important;
+        left: 200% !important;
+        top:90% !important;
     }
-
 
     .divBuscar {
         position: absolute;
-        top: 85px;
+        top: 65px;
         left: 0px;
-        height: 10%;
-        width: 100%;
+        height: 11%;
+        width: 110% !important;
         background: #bedef2;
         padding: 20px;
+        margin-top: 4px;
     }
 
     .short-pesquisa {
         padding: 0px 15px;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 798px) {
+
+    .criar {
+        display: block !important;
+    }
+
+    .short-criar {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 798px) and (max-width: 1199px) {
+  
+    .divLogoP{
+        position: absolute;
+        width: 90%;
+    }
+
+    .criar {
+        position: absolute;
+        left: 65%;
+        top: 2.5%;
+    }
+    
+    .divBtn{
+        position: absolute;
+        left: 110%;
+        top: 20%;
+    }
+
+    .divBuscar {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        height: 15%;
+        width: 100%;
+        background: #bedef2;
+        padding: 20px;
+        margin-top: 1%;
+    }
+
+    .short-pesquisa {
+        padding: 0px 15px;
+    }
+
+    footer{
+        position: absolute;
+        top: 105%;
+    }
+
+    #insta{
+        font-size: 15px !important;
+    }
+
+    #from{
+        position: relative;
+        left: 200% !important;
+        width: 10rem !important;
+        height: 5rem !important;
+    }
+
+    #app{
+        position: relative;
+        left: 450%;
+        font-size: 8px !important;
+        top: 0% !important;
+    }
+
+    #baixar{
+        position: relative;
+        left: 450%;
+        width: 10rem !important;
+        height: 4rem !important;
+        top: 0% !important;
     }
 }
 /*final mediaquery>*/
@@ -176,16 +233,11 @@ html {
     height: 5rem;
     top: -4.5%;
     position: relative;
-    left:-1%;
+    left:-200%;
 }
 .btn:hover{
     border: none;
     background-color:transparent ;
-    width:5rem; 
-    height: 5rem;
-    top: -4.5%;
-    position: relative;
-    left:-1%;
 }
 
 .option{
@@ -313,14 +365,20 @@ a {
     display: flex;
 }
 
+.font-adjust {
+    font-size: 5rem;
+}
+
 .botao{
     background-color: #770089 !important; 
     color:#ffffff !important;
     border-radius: 15px !important;
     border: 3px solid #ffffff !important;
     width: 141px !important;
-    width: 141px !important;
     font-size: 12px !important;
+    position: relative;
+    left:0%;
+    top:15%;
 }
 
 .botao:hover{
@@ -338,6 +396,9 @@ a {
     width: 40px !important;
     height: 43px !important;
     font-size: 18px !important;
+    position: relative;
+    left:0%;
+    top:15%;
 }
 
 .editar:hover{
@@ -397,6 +458,7 @@ a {
     background-color: #ededed;
     background-clip: padding-box;
     border: none !important;
+    border-top: solid 1.5px #e2dcdc !important;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -428,6 +490,46 @@ a {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
+/* Definindo a estilização do elemento com ID "sobreN"*/
+#insta{
+    font-size: 20px;
+}
+
+/* Definindo a estilização do elemento com ID "sobreNozes"*/
+#instagram{
+    color: black !important;
+    font-weight: bold;
+}
+
+#instagram:hover{
+    color: #b25abf !important;
+    transition-duration: all 0.4s;
+}
+
+/* Definindo a estilização do elemento com ID "from"*/
+#from{
+    width: 150px;
+    height: 80px;
+}
+
+/* Definindo a estilização do elemento com class "store*/
+.store{
+    width: 30px;
+    height: 50px;
+}
+
+/* Definindo a estilização do elemento com ID "baixar"*/
+#baixar{
+    width: 130px;
+    height: 50px;
+}
+
+/* Definindo a estilização do elemento com ID "app"*/
+#app{
+    font-size: 11px;
+    font-weight: bold;
+}
+
 /* Definindo a estilização do html scrollbar*/
 html ::-webkit-scrollbar {
     height: 14px;
@@ -441,3 +543,4 @@ html ::-webkit-scrollbar-thumb {
 html ::-webkit-scrollbar-track {
     background: #ededed;
 }
+
