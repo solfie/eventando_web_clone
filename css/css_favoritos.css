@@ -1,0 +1,397 @@
+/* Colocando a fonte e a cor em toda a tela html*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ededed !important
+}
+
+/* Definindo a estilização do elemento com ID "divMenu"*/
+#Cabecalho {
+    background-color: #bedef2;
+}
+
+/* Definindo a altura e largura da logo"*/
+#logo {
+    width: 350px;
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* Definindo a estilização do elemento com ID "divLogoP"*/
+#divLogoP {
+    height: 85px;
+    overflow: visible;
+}
+
+/* Definindo a estilização do elemento com ID "divBuscar"*/
+.divBuscar {
+    position: relative;
+    transform: translate(-0%, - 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Definindo a estilização do elemento com ID "buscar"*/
+.buscar {
+    background-color: #ededed;
+    height: 15px;
+    padding: 15px;
+    border: 2px solid #b25abf;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.buscar:focus {
+    outline: none !important;
+}
+
+.pesquisa {
+    position: absolute;
+    right: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    border: none;
+    color: #000000;
+}
+
+/* Definindo a estilização do elemento com ID "CriarEvento"*/
+.criar {
+    border: solid 3px;
+    border-color: #770089;
+    border-radius: 40px;
+    background-color: #b25abf;
+    text-align: center;
+    height: 33px;
+    width: 170px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.short-criar {
+    font-size: 14px;
+    width: 34px;
+}
+
+#logo {
+    z-index: 2
+}
+
+/*mediaquery responsividade do header*/
+@media screen and (max-width: 600px) {
+    .short-criar {
+        display: block !important;
+    }
+
+    .criar {
+        display: none;
+    }
+  
+    .divLogoP{
+        position: absolute;
+        width: 100%;
+    }
+
+    .short-criar {
+        position: absolute;
+        left: 85%;
+        top:2%;
+    }
+    
+    .divBtn{
+        position: absolute !important;
+        left: 200% !important;
+        top:90% !important;
+    }
+
+    .divBuscar {
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        height: 11%;
+        width: 110% !important;
+        background: #bedef2;
+        padding: 20px;
+        margin-top: 4px;
+    }
+
+    .short-pesquisa {
+        padding: 0px 15px;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 798px) {
+
+    .criar {
+        display: block !important;
+    }
+
+    .short-criar {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 798px) and (max-width: 1199px) {
+  
+    .divLogoP{
+        position: absolute;
+        width: 90%;
+    }
+
+    .criar {
+        position: absolute;
+        left: 65%;
+        top: 2.5%;
+    }
+    
+    .divBtn{
+        position: absolute;
+        left: 110%;
+        top: 20%;
+    }
+
+    .divBuscar {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        height: 15%;
+        width: 100%;
+        background: #bedef2;
+        padding: 20px;
+        margin-top: 1%;
+    }
+
+    .short-pesquisa {
+        padding: 0px 15px;
+    }
+
+    footer{
+        position: absolute;
+        top: 105%;
+    }
+
+    #insta{
+        font-size: 15px !important;
+    }
+
+    #from{
+        position: relative;
+        left: 200% !important;
+        width: 10rem !important;
+        height: 5rem !important;
+    }
+
+    #app{
+        position: relative;
+        left: 450%;
+        font-size: 8px !important;
+        top: 0% !important;
+    }
+
+    #baixar{
+        position: relative;
+        left: 450%;
+        width: 10rem !important;
+        height: 4rem !important;
+        top: 0% !important;
+    }
+}
+/*final mediaquery>*/
+
+.css-selector {
+    background: linear-gradient(22deg, #69d006, #dd8448, #ae17d0);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+}
+
+.navbar-toggler-icon {
+    width:4rem; 
+    height: 4rem;
+}
+
+.xis{
+    position: relative;
+    right: 2rem;
+}
+
+.btn{
+    border: none;
+    background-color:transparent;
+    width:5rem; 
+    height: 5rem;
+    top: -4.5%;
+    position: relative;
+    left:-200%;
+}
+.btn:hover{
+    border: none;
+    background-color:transparent ;
+}
+
+.option{
+    width: 7rem;  
+}
+
+.sidenav{
+    width: fit-content;
+}
+
+.tamanhoLogo{
+    width: 30rem;
+}
+.logot{
+    height: fit-content;
+}
+
+.modal-header{
+    width: 100%;
+    height: fit-content;
+}
+.modal-footer {
+    width: 100%;
+    border: none;
+    background-color:#e0e0e0;
+}
+
+#sair:hover {
+    color: rgb(255, 255, 255);
+}
+
+.modal-header{
+    background-color: #bedef2;
+    
+}
+
+.logo{
+  background-color: #bedef2;
+}
+
+li{
+    margin-top: 4rem;
+}
+
+li:hover{
+    margin-top: 4rem;;
+    color:#770089;
+}
+
+.list-group-item{
+    width: 100%;
+    background-color:#e0e0e0;
+}
+
+.overlay {
+    display: none; /* Esconde a camada de sobreposição por padrão */
+    position: fixed; /* Permanece fixo na tela */
+    z-index: 1; /* Define uma ordem de camada acima dos outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(212, 212, 212, 0.5); /* Define uma cor de fundo semitransparente */
+    backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
+  }
+
+.modal-body{
+    background-color:#e0e0e0;
+    font-size:1.5rem;
+  }
+  
+#sair{
+    width: 100%;
+    padding-left: 2%; 
+  }
+
+svg.bi.bi-box-arrow-right{
+    width: 10%;
+}
+
+svg{
+    padding-right:5%;
+}
+
+
+li#sair.list-group-item.d-flex.d-inline-flex{
+    border-left:none;
+    border-bottom:none;
+    border-right :none;
+}
+
+li#sair.list-group-item.d-flex.d-inline-flex:hover{ 
+    color:rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.658);
+}
+
+.modal-content {
+    animation-name: modal-animacao;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    transform-origin: left center;
+}   
+    
+@keyframes modal-animacao {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+a {
+    color: #000000;
+}
+
+/* Definindo a estilização do elemento com ID "sobreN"*/
+#insta{
+    font-size: 20px;
+}
+
+/* Definindo a estilização do elemento com ID "sobreNozes"*/
+#instagram{
+    color: black !important;
+    font-weight: bold;
+}
+
+#instagram:hover{
+    color: #b25abf !important;
+    transition-duration: all 0.4s;
+}
+
+/* Definindo a estilização do elemento com ID "from"*/
+#from{
+    width: 150px;
+    height: 80px;
+}
+
+/* Definindo a estilização do elemento com class "store*/
+.store{
+    width: 30px;
+    height: 50px;
+}
+
+/* Definindo a estilização do elemento com ID "baixar"*/
+#baixar{
+    width: 130px;
+    height: 50px;
+}
+
+/* Definindo a estilização do elemento com ID "app"*/
+#app{
+    font-size: 11px;
+    font-weight: bold;
+}
