@@ -285,6 +285,7 @@ html {
     .short-pesquisa {
         padding: 0px 15px;
     }
+    
     .titulo{
         position: absolute;
         left: 5% !important;
@@ -568,30 +569,32 @@ a {
 }
 
 .divSobre{
-    position: absolute;
+    /* position: absolute; */
     background-image: url('./../img/fundoSobre.png');
     border: solid 3px ;
     border-color: #770089;
     border-radius: 13px;
-    top: 10%;
-    width: 45%;
-    height: 85%;
-    left: 3%;
+    /* top: 10%; */
+    width: min(45vw, 650px);
+    /* left: 3%; */
 }
 
 .sobre{
-    position: relative;
-    top: 10%;
     color: #ededed;
-    font-size: 150%;
+    font-size: min(3vw, 14px);
 }
 
-.footerSobre{
+/* .footerSobre{
     position: absolute;
     top: 90%;
     left: -0.5%;
     color: #e0e0e0;
     font-size: 150%;
+} */
+
+/* #ìnsta{
+    position: relative;
+    left: -4%;
 }
 
 .insta{
@@ -612,7 +615,7 @@ a {
     left: 50%;
     top: -48%;
     color: #e0e0e0;
-}
+} */
 
 .nozes{
     position: absolute;
