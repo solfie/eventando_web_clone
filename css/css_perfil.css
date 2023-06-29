@@ -226,6 +226,7 @@ html {
     right: 2rem;
 }
 
+/*MAMIN COMENTOU PRA TESTAR
 .btn{
     border: none;
     background-color:transparent;
@@ -238,7 +239,7 @@ html {
 .btn:hover{
     border: none;
     background-color:transparent ;
-}
+}*/
 
 .option{
     width: 7rem;  
@@ -361,8 +362,9 @@ a {
     border-radius: 10px;
 }
 
-.avatar{
-    display: flex;
+.avatar:hover{
+    background-color: #6600ff !important;
+    border: 3px solid #ffffff;
 }
 
 .font-adjust {
@@ -374,19 +376,17 @@ a {
     color:#ffffff !important;
     border-radius: 15px !important;
     border: 3px solid #ffffff !important;
-    width: 141px !important;
+    width: (40vw, 650px) !important;
     font-size: 12px !important;
     position: relative;
     left:0%;
-    top:15%;
+    top:15%; /*MAMIN QUE TIROU*/
 }
 
 .botao:hover{
-    width: 141px !important;
     background-color: #6600ff !important;
-    width: 141px !important;
-    color:#ffffff !important;
-    border: 3px solid #ffffff !important;
+    /*color:#ffffff !important;
+    border: 3px solid #ffffff !important; MAMIN QUE TIROU*/
 }
 
 .editar{
@@ -544,3 +544,7 @@ html ::-webkit-scrollbar-track {
     background: #ededed;
 }
 
+/*TESTE MAMIN APAGAR DEPOIS*/
+.opa{
+    color: #28a745 !important;
+}

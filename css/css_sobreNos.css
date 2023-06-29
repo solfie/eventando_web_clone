@@ -84,6 +84,17 @@ html {
 
 /*mediaquery responsividade do header*/
 @media screen and (max-width: 600px) {
+    #esther{
+        height: 25% !important;
+    }
+
+    #lorena{
+        height: 25% !important;
+    }
+
+    #sofia{
+        height: 25% !important;
+    }
     .short-criar {
         display: block !important;
     }
@@ -105,8 +116,8 @@ html {
     
     .divBtn{
         position: absolute;
-        left: -265% !important;
-        top:50% !important;
+        left: -175% !important;
+        top:80% !important;
     }
 
     .divBuscar {
@@ -131,7 +142,7 @@ html {
 
     .teste{
         position: relative;
-        left:-8% !important;
+        left:-5% !important;
         height:90% !important;
       
     }
@@ -141,21 +152,23 @@ html {
         top: 6% !important;
         width: 90% !important;
         height: 55% !important;
-        left: 7% !important;
-        
+        left: 6% !important;
+    }
+    .sobre{
+        font-size: 120%!important;
     }
 
     .footerSobre{
         position: absolute;
         left: 0% !important;
-        font-size:60%!important;
+        font-size:110%!important;
         
     
     }
     .insta{
         position: absolute;
-        top: -160% !important;
-        left: 40% !important;
+        top: -70% !important;
+        left: -18% !important;
     }
     
     
@@ -168,57 +181,67 @@ html {
     .email{
         position: absolute;
         left: 41% !important;
-        top: -100% !important;
+        top: -30% !important;
     }
     
     .nozes{
         position: absolute;
-        left: 10% !important;
+        left: 5% !important;
         top: 63% !important;
-        width: 100% !important;
+        width: 95% !important;
         height:35% !important;
     }
     
     #instaE{
-        position: absolute;
-        left: 30% !important;
-        top: -4% !important;
+        position: relative!important;
+        left: -30% !important;
+        top: -5% !important;
+        font-size: 150%!important;
     }
     
     #emailE{
         position: absolute;
-        left: 31% !important;
-        top: 3% !important;
+        left: 28% !important;
+        top: 10% !important;
+        font-size: 150%!important;
     }
     
     #instaL{
-        position: absolute;
-        left: 30% !important;
-        top: 30% !important;
+        position: relative!important;
+        left: -35% !important;
+        top: -5% !important;
+        font-size: 150%!important;
     }
     
     #emailL{
         position: absolute;
-        left: 31% !important;
-        top: 37% !important;
+        left: 28% !important;
+        top: 43% !important;
+        font-size: 150%!important;
     }
     
     
     #instaS{
-        position: absolute;
-        left: 30% !important;
-        top: 63% !important;
+        position: relative!important;
+        left: -48% !important;
+        top: -5% !important;
+        font-size: 150%!important;
     }
     
     #emailS{
         position: absolute;
-        left: 31% !important;
-        top: 70% !important;
+        left: 28% !important;
+        top: 77% !important;
+        font-size: 150%!important;
+    }
+
+    footer{
+        display: none;
     }
         
 }
 
-@media screen and (min-width: 798px) {
+@media screen and (min-width: 798px){
 
     .criar {
         display: block !important;
@@ -265,12 +288,13 @@ html {
     .titulo{
         position: absolute;
         left: 5% !important;
-        top:24% !important;
+        top:27% !important;
     }
 
     .teste{
-        position: relative;
-        left:-3% !important;
+        top:32% !important;
+        position: absolute;
+        left:-1% !important;
         height:90% !important;
       
     }
@@ -279,22 +303,26 @@ html {
         position: absolute;
         top: 6% !important;
         width: 90% !important;
-        height: 30% !important;
+        height: 40% !important;
         left: 7% !important;
         
+    }
+    .sobre{
+        font-size:120%!important;
     }
     
     .footerSobre{
         position: absolute;
-        left: 0% !important;
-        font-size:60%!important;
+        left: 2% !important;
+        font-size:120%!important;
+        top: 88% !important;
     }
     .insta{
         position: absolute;
-        top: -145% !important;
-        left: 35% !important;
+        top: -65% !important;
+        left: -40% !important;
     }
-    
+
     #email{
         position: relative;
         left: -2%;
@@ -302,47 +330,52 @@ html {
     
     .nozes{
         position: absolute;
-        left: 10% !important;
-        top: 39% !important;
+        left: 8% !important;
+        top: 50% !important;
         width: 100% !important;
-        height:35% !important;
+        height:50% !important;
     }
     
     #instaE{
         position: absolute;
-        left: 30% !important;
-        top: -2% !important;
+        left: 28% !important;
+        top: 3% !important;
     }
     
     .emailE{
         position: absolute;
-        left: 30% !important;
-        top: -3% !important;
+        left: 28% !important;
+        top: 7% !important;
     }
     
     #instaL{
         position: absolute;
-        left: 30% !important;
-        top: 30% !important;
+        left: 28% !important;
+        top: 36% !important;
     }
     
     #emailL{
         position: absolute;
-        left: 31% !important;
-        top: 37% !important;
+        left: 29% !important;
+        top: 43% !important;
     }
     
     
     #instaS{
         position: absolute;
-        left: 30% !important;
-        top: 63% !important;
+        left: 28% !important;
+        top: 68% !important;
     }
     
     #emailS{
         position: absolute;
-        left: 31% !important;
-        top: 70% !important;
+        left: 29% !important;
+        top: 75% !important;
+    }
+    
+    footer{
+        position: relative!important;
+        top: 96%!important;
     }
         
 }
@@ -381,29 +414,30 @@ html {
 .btn{
     border: none;
     background-color:transparent;
-    width:3rem; 
-    height: 3rem;
-    top: 10%;
-    position: absolute;
-    left: -15% !important;
+    width:5rem; 
+    height: 5rem;
+    top: -4.5%;
+    position: relative;
+    left: -30% !important;
 }
 
 span.navbar-toggler-icon{
-    width:3rem; 
-    height: 3rem;
+    width:4rem; 
+    height: 4rem;
 }
 
 .btn:hover{
     border: none;
     background-color:transparent ;
-    width:3rem; 
-    height: 3rem;
-    top: 10%;
-    position:absolute;
+    width:5rem; 
+    height: 5rem;
+    top: -4.5%;
+    position: relative;
+    left: -30% !important;
 }
 
 .option{
-    width: 4rem;  
+    width: 7rem;  
 }
 
 .sidenav{
@@ -411,7 +445,7 @@ span.navbar-toggler-icon{
 }
 
 .tamanhoLogo{
-    width: 20rem;
+    width: 30rem;
 }
 .logot{
     height: fit-content;
@@ -527,6 +561,7 @@ a {
     height: 60%;
     width: 95%;
 }
+
 .titulo{
     position: absolute;
     top: 23%;
@@ -535,7 +570,6 @@ a {
 .divSobre{
     position: absolute;
     background-image: url('./../img/fundoSobre.png');
-
     border: solid 3px ;
     border-color: #770089;
     border-radius: 13px;
@@ -543,57 +577,49 @@ a {
     width: 45%;
     height: 85%;
     left: 3%;
-  
 }
 
 .sobre{
     position: relative;
     top: 10%;
     color: #ededed;
-    font-size: 75%;
+    font-size: 150%;
 }
 
 .footerSobre{
     position: absolute;
     top: 90%;
-    left: 5%;
+    left: -0.5%;
     color: #e0e0e0;
-    font-size: 75%;
-    
-
+    font-size: 150%;
 }
+
 .insta{
-    position: absolute;
-    top: -140%;
-    left: 30%;
+    position: relative;
+    top:-57%;
+    left: -44%;
     color: #e0e0e0;
     float: right;
 }
 
-
 #email{
     position: relative;
     left: -2%;
-
 }
-
 
 .email{
     position: absolute;
-    left: 55%;
-    top: -140%;
+    left: 50%;
+    top: -48%;
     color: #e0e0e0;
- 
-
 }
 
 .nozes{
     position: absolute;
     left: 55%;
     top: 10%;
-    width: 48%;
+    width: 43%;
     height: 85%;
-    
 }
 
 #esther{
@@ -608,26 +634,23 @@ a {
     left: 30%;
     color: #400049;
     font-weight: bold;
-    font-size: 90%;
-
+    font-size: 180%;
 }
 
 #instaE{
     position: absolute;
-    left: 30%;
-    top: -2%;
-    font-size: 85%;
+    left: 28.5%;
+    top: 3%;
+    font-size: 150%;
     font-weight: bold;
-
 }
 
 #emailE{
     position: absolute;
-    left: 31%;
-    top: 5%;
-    font-size: 85%;
+    left: 29%;
+    top: 10%;
+    font-size: 150%;
     font-weight: bold;
-
 }
 
 .iconE{
@@ -647,27 +670,23 @@ a {
     left: 30%;
     color: #400049;
     font-weight: bold;
-    font-size: 90%;
-
-
+    font-size: 180%;
 }
 
 #instaL{
     position: absolute;
-    left: 30%;
-    top: 33%;
-    font-size: 85%;
+    left: 28.5%;
+    top: 36%;
+    font-size: 150%;
     font-weight: bold;
-
 }
 
 #emailL{
     position: absolute;
-    left: 31%;
-    top: 40%;
-    font-size: 85%;
+    left: 29%;
+    top: 43%;
+    font-size: 150%;
     font-weight: bold;
-
 }
 
 #sofia{
@@ -682,25 +701,68 @@ a {
     left: 30%;
     color: #400049;
     font-weight: bold;
-    font-size: 90%;
+    font-size: 180%;
 }
 
 #instaS{
     position: absolute;
-    left: 30%;
-    top: 65%;
-    font-size: 85%;
+    left: 28.5%;
+    top: 69%;
+    font-size: 150%;
     font-weight: bold;
-
 }
 
 #emailS{
     position: absolute;
-    left: 31%;
-    top: 72%;
-    font-size: 85%;
+    left: 29%;
+    top: 76%;
+    font-size: 150%;
     font-weight: bold;
+}
 
+/* Definindo a estilização do elemento com ID "sobreN"*/
+#insta{
+    font-size: 20px;
+}
+
+/* Definindo a estilização do elemento com ID "sobreNozes"*/
+#instagram{
+    color: black !important;
+    font-weight: bold;
+}
+
+#instagram:hover{
+    color: #b25abf !important;
+    transition-duration: all 0.4s;
+}
+
+/* Definindo a estilização do elemento com ID "from"*/
+#from{
+    width: 150px;
+    height: 80px;
+}
+
+/* Definindo a estilização do elemento com class "store*/
+.store{
+    width: 30px;
+    height: 50px;
+}
+
+/* Definindo a estilização do elemento com ID "baixar"*/
+#baixar{
+    width: 130px;
+    height: 50px;
+}
+
+/* Definindo a estilização do elemento com ID "app"*/
+#app{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+footer{
+    position: relative;
+    top: 65%
 }
 
 
