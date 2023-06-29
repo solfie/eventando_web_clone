@@ -24,7 +24,7 @@
     <header id="Cabecalho" name="Cabecalho" class="row">
         <div id="divLogoP" name="divLogoP" class="col ">
 			<a href="menu.html">
-				<img id=logo src="img/logo.png">
+				<img id=logo class="img-fluid" src="img/logo.png"> <!--mamin add img-fluid-->
 			</a>
         </div>
     
@@ -113,27 +113,15 @@
 
 	<div class="container-fluid row-2 col-11 ms-5">
 		<!-- Upload profile -->
-		<div class="row">
-			<div class="col-xxl-4 col-sm-2">
-				<div class="px-4 py-5 rounded">
-					<div class="row-1 g-3">
-						<div class="text-center">
-							<!-- Image upload  -->
-							<div class="avatar rounded-circle" style="margin: 0 0 -60px 0;">
-								<i class="fa-solid fa-circle-user text-secondary font-adjust" style="margin-top: 9%; margin-left: 5%;"></i>
-								<input type="file" id="wizard-picture" name="file" hidden="">
-								<label class="editar btn btn-success-soft rounded-circle ms-1" style ="margin-top: 50%" for="customFile">
-									<i class="fa-solid fa-pencil fa-rotate-270" style ="margin-top: 25%"></i>
-								</label>
-							</div>
-						</div>
-					</div>
-				</div> 
+		<div class="d-flex">
+			<div class="flex-grow-1 justify-content-md-start"> 
+				<button class="btn mt-5 mb-2 rounded-circle w-0 h-0 avatar" style="background-color: #770089;">
+					<i class="fa-solid fa-circle-user text-center" style="font-size: 8rem; color: #ffffff"></i>
+				</button>
 			</div>
-
 			<!-- button -->
 			<div class="col-xxl-4 col-sm-2 gap-3 d-md-flex justify-content-md-end text-center">
-				<button type="submit" class="botao btn btn-sm mt-5 mb-2   text-center align-items-center">SALVAR EDIÇÕES</button>
+				<button type="submit" class="botao btn btn-sm mt-5 mb-2 text-center align-items-center">SALVAR EDIÇÕES</button>
 			</div>
 		</div>
 	</div>	
@@ -208,6 +196,7 @@
 						</div>
 					</div>
 				</div>
+				<div class=""><button type="submit" class="botao btn mt-5 mb-2 text-center align-items-center">SALVAR EDIÇÕES</button></div>
 			</div>
 		</div>
 	</div>
