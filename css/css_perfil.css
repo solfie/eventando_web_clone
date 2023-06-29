@@ -91,7 +91,7 @@ html {
     .criar {
         display: none;
     }
-  
+
     .divLogoP{
         position: absolute;
         width: 100%;
@@ -102,7 +102,7 @@ html {
         left: 85%;
         top:2%;
     }
-    
+
     .divBtn{
         position: absolute !important;
         left: 200% !important;
@@ -141,7 +141,7 @@ html {
 }
 
 @media screen and (min-width: 798px) and (max-width: 1199px) {
-  
+
     .divLogoP{
         position: absolute;
         width: 90%;
@@ -152,7 +152,7 @@ html {
         left: 65%;
         top: 2.5%;
     }
-    
+
     .divBtn{
         position: absolute;
         left: 110%;
@@ -217,7 +217,7 @@ html {
 }
 
 .navbar-toggler-icon {
-    width:4rem; 
+    width:4rem;
     height: 4rem;
 }
 
@@ -230,7 +230,7 @@ html {
 .btn{
     border: none;
     background-color:transparent;
-    width:5rem; 
+    width:5rem;
     height: 5rem;
     top: -4.5%;
     position: relative;
@@ -242,7 +242,7 @@ html {
 }*/
 
 .option{
-    width: 7rem;  
+    width: 7rem;
 }
 
 .sidenav{
@@ -272,7 +272,7 @@ html {
 
 .modal-header{
     background-color: #bedef2;
-    
+
 }
 
 .logo{
@@ -309,10 +309,10 @@ li:hover{
     background-color:#e0e0e0;
     font-size:1.5rem;
   }
-  
+
 #sair{
     width: 100%;
-    padding-left: 2%; 
+    padding-left: 2%;
   }
 
 svg.bi.bi-box-arrow-right{
@@ -330,7 +330,7 @@ li#sair.list-group-item.d-flex.d-inline-flex{
     border-right :none;
 }
 
-li#sair.list-group-item.d-flex.d-inline-flex:hover{ 
+li#sair.list-group-item.d-flex.d-inline-flex:hover{
     color:rgb(255, 255, 255);
     background-color: rgba(255, 0, 0, 0.658);
 }
@@ -340,8 +340,8 @@ li#sair.list-group-item.d-flex.d-inline-flex:hover{
     animation-duration: 0.3s;
     animation-timing-function: ease-in-out;
     transform-origin: left center;
-}   
-    
+}
+
 @keyframes modal-animacao {
     from {
       opacity: 0;
@@ -362,6 +362,10 @@ a {
     border-radius: 10px;
 }
 
+.avatar{
+    margin: 10px 0 -50px 25px !important;
+}
+
 .avatar:hover{
     background-color: #6600ff !important;
     border: 3px solid #ffffff;
@@ -372,21 +376,27 @@ a {
 }
 
 .botao{
-    background-color: #770089 !important; 
-    color:#ffffff !important;
+    /* background-color: #770089 !important; */
+    background-color: #ffffff !important;
     border-radius: 15px !important;
-    border: 3px solid #ffffff !important;
-    width: (40vw, 650px) !important;
-    font-size: 12px !important;
+    /* border: 3px solid #ffffff !important; */
+    border: solid 3px #770089 !important;
+    width: min(45vw, 695px) !important;
+    /* height: min(5vw, 50px) !important; */
+    /* color:#ffffff !important; */
+    color:#770089 !important;
+    font-size: min(3vw, 16px);
+    font-weight: bold;
     position: relative;
     left:0%;
     top:15%; /*MAMIN QUE TIROU*/
 }
 
 .botao:hover{
+    /* background-color: #6600ff !important; */
     background-color: #6600ff !important;
-    /*color:#ffffff !important;
-    border: 3px solid #ffffff !important; MAMIN QUE TIROU*/
+    border: 3px solid #ffffff !important;
+    color:#ffffff !important;
 }
 
 .editar{
