@@ -135,106 +135,6 @@ html {
         padding: 0px 15px;
     }
 
-    .titulo{
-        position: absolute;
-        left: 6%;
-    }
-
-    .teste{
-        position: relative;
-        left:-5% !important;
-        height:90% !important;
-      
-    }
-    
-    .divSobre{
-        position: absolute;
-        top: 6% !important;
-        width: 90% !important;
-        height: 55% !important;
-        left: 6% !important;
-    }
-    .sobre{
-        font-size: 120%!important;
-    }
-
-    .footerSobre{
-        position: absolute;
-        left: 0% !important;
-        font-size:110%!important;
-        
-    
-    }
-    .insta{
-        position: absolute;
-        top: -70% !important;
-        left: -18% !important;
-    }
-    
-    
-    #email{
-        position: relative;
-        left: -2%;
-    }
-    
-    
-    .email{
-        position: absolute;
-        left: 41% !important;
-        top: -30% !important;
-    }
-    
-    .nozes{
-        position: absolute;
-        left: 5% !important;
-        top: 63% !important;
-        width: 95% !important;
-        height:35% !important;
-    }
-    
-    #instaE{
-        position: relative!important;
-        left: -30% !important;
-        top: -5% !important;
-        font-size: 150%!important;
-    }
-    
-    #emailE{
-        position: absolute;
-        left: 28% !important;
-        top: 10% !important;
-        font-size: 150%!important;
-    }
-    
-    #instaL{
-        position: relative!important;
-        left: -35% !important;
-        top: -5% !important;
-        font-size: 150%!important;
-    }
-    
-    #emailL{
-        position: absolute;
-        left: 28% !important;
-        top: 43% !important;
-        font-size: 150%!important;
-    }
-    
-    
-    #instaS{
-        position: relative!important;
-        left: -48% !important;
-        top: -5% !important;
-        font-size: 150%!important;
-    }
-    
-    #emailS{
-        position: absolute;
-        left: 28% !important;
-        top: 77% !important;
-        font-size: 150%!important;
-    }
-
     footer{
         display: none;
     }
@@ -286,94 +186,6 @@ html {
         padding: 0px 15px;
     }
     
-    .titulo{
-        position: absolute;
-        left: 5% !important;
-        top:27% !important;
-    }
-
-    .teste{
-        top:32% !important;
-        position: absolute;
-        left:-1% !important;
-        height:90% !important;
-      
-    }
-    
-    .divSobre{
-        position: absolute;
-        top: 6% !important;
-        width: 90% !important;
-        height: 40% !important;
-        left: 7% !important;
-        
-    }
-    .sobre{
-        font-size:120%!important;
-    }
-    
-    .footerSobre{
-        position: absolute;
-        left: 2% !important;
-        font-size:120%!important;
-        top: 88% !important;
-    }
-    .insta{
-        position: absolute;
-        top: -65% !important;
-        left: -40% !important;
-    }
-
-    #email{
-        position: relative;
-        left: -2%;
-    }
-    
-    .nozes{
-        position: absolute;
-        left: 8% !important;
-        top: 50% !important;
-        width: 100% !important;
-        height:50% !important;
-    }
-    
-    #instaE{
-        position: absolute;
-        left: 28% !important;
-        top: 3% !important;
-    }
-    
-    .emailE{
-        position: absolute;
-        left: 28% !important;
-        top: 7% !important;
-    }
-    
-    #instaL{
-        position: absolute;
-        left: 28% !important;
-        top: 36% !important;
-    }
-    
-    #emailL{
-        position: absolute;
-        left: 29% !important;
-        top: 43% !important;
-    }
-    
-    
-    #instaS{
-        position: absolute;
-        left: 28% !important;
-        top: 68% !important;
-    }
-    
-    #emailS{
-        position: absolute;
-        left: 29% !important;
-        top: 75% !important;
-    }
-    
     footer{
         position: relative!important;
         top: 96%!important;
@@ -393,6 +205,7 @@ html {
    
 }
 /*final mediaquery>*/
+
 .css-selector {
     background: linear-gradient(22deg, #69d006, #dd8448, #ae17d0);
     background-size: 600% 600%;
@@ -557,171 +370,130 @@ a {
 .teste{
     background-color: #dccce0;
     border-radius: 10px;
-    position: absolute;
-    top:28%;
-    height: 60%;
-    width: 95%;
+    border-color: transparent;
 }
 
 .titulo{
-    position: absolute;
-    top: 23%;
+    font-size: min(3vw, 24px);
+    margin: 0 0 -100px 0;
 }
 
 .divSobre{
-    /* position: absolute; */
     background-image: url('./../img/fundoSobre.png');
     border: solid 3px ;
     border-color: #770089;
     border-radius: 13px;
-    /* top: 10%; */
     width: min(45vw, 650px);
-    /* left: 3%; */
 }
 
 .sobre{
     color: #ededed;
-    font-size: min(3vw, 14px);
-}
-
-/* .footerSobre{
-    position: absolute;
-    top: 90%;
-    left: -0.5%;
-    color: #e0e0e0;
-    font-size: 150%;
-} */
-
-/* #ìnsta{
-    position: relative;
-    left: -4%;
+    font-size: min(2vw, 14px);
 }
 
 .insta{
-    position: relative;
-    top:-57%;
-    left: -44%;
-    color: #e0e0e0;
-    float: right;
-}
-
-#email{
-    position: relative;
-    left: -2%;
+    text-decoration: none; 
+    color:#e0e0e0;
 }
 
 .email{
-    position: absolute;
-    left: 50%;
-    top: -48%;
-    color: #e0e0e0;
-} */
+    text-decoration: none; 
+    color:#e0e0e0;
+}
+
+.titulo-card{
+    font-family: 'Montserrat', sans-serif;
+    color: #770089;
+    font-weight: bold;
+}
 
 .nozes{
-    position: absolute;
-    left: 55%;
-    top: 10%;
-    width: 43%;
-    height: 85%;
+    width: min(45vw, 650px);
+}
+
+.iconI{
+    font-weight: bold;
 }
 
 #esther{
-    position: absolute;
     width: 17%;
     height: 28%;
     border-radius:100%;
 }
 
 #labelE{
-    position: absolute;
-    left: 30%;
     color: #400049;
     font-weight: bold;
-    font-size: 180%;
+    font-size: min(3vw, 18px);
 }
 
 #instaE{
-    position: absolute;
-    left: 28.5%;
-    top: 3%;
-    font-size: 150%;
+    font-size: min(3vw, 15px);
     font-weight: bold;
+    text-decoration: none; 
+    color:#000000;
 }
 
 #emailE{
-    position: absolute;
-    left: 29%;
-    top: 10%;
-    font-size: 150%;
+    font-size: min(3vw, 15px);
     font-weight: bold;
-}
-
-.iconE{
-    position: relative;
-    left: -2%;
+    text-decoration: none; 
+    color:#000000;
 }
 
 #lorena{
-    position: absolute;
     width: 17%;
     height: 28%;
     border-radius:100%;
 }
 
 #labelL{
-    position: absolute;
-    left: 30%;
     color: #400049;
     font-weight: bold;
-    font-size: 180%;
+    font-size: min(3vw, 18px);
 }
 
 #instaL{
-    position: absolute;
-    left: 28.5%;
-    top: 36%;
-    font-size: 150%;
+    font-size: min(3vw, 15px);
     font-weight: bold;
+    text-decoration: none; 
+    color:#000000;
 }
 
 #emailL{
-    position: absolute;
-    left: 29%;
-    top: 43%;
-    font-size: 150%;
+    font-size: min(3vw, 15px);
     font-weight: bold;
+    text-decoration: none; 
+    color:#000000;
 }
 
 #sofia{
-    position: absolute;
     width: 17%;
     height: 28%;
     border-radius:100%;
 }
 
 #labelS{
-    position: absolute;
-    left: 30%;
     color: #400049;
     font-weight: bold;
-    font-size: 180%;
+    font-size: min(3vw, 18px);
 }
 
 #instaS{
-    position: absolute;
-    left: 28.5%;
-    top: 69%;
-    font-size: 150%;
+    font-size: min(3vw, 15px);
     font-weight: bold;
+    text-decoration: none; 
+    color:#000000;
 }
 
 #emailS{
-    position: absolute;
-    left: 29%;
-    top: 76%;
-    font-size: 150%;
+    font-size: min(3vw, 15px);
     font-weight: bold;
+    text-decoration: none; 
+    color:#000000;
 }
+
+/*FOOTER*/
 
 /* Definindo a estilização do elemento com ID "sobreN"*/
 #insta{
@@ -768,5 +540,16 @@ footer{
     top: 65%
 }
 
+/* Definindo a estilização do html scrollbar*/
+html ::-webkit-scrollbar {
+    height: 14px;
+}
 
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #770089;
+}
 
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}

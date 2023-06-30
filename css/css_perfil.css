@@ -226,21 +226,6 @@ html {
     right: 2rem;
 }
 
-/*MAMIN COMENTOU PRA TESTAR
-.btn{
-    border: none;
-    background-color:transparent;
-    width:5rem;
-    height: 5rem;
-    top: -4.5%;
-    position: relative;
-    left:-200%;
-}
-.btn:hover{
-    border: none;
-    background-color:transparent ;
-}*/
-
 .option{
     width: 7rem;
 }
@@ -376,24 +361,19 @@ a {
 }
 
 .botao{
-    /* background-color: #770089 !important; */
     background-color: #ffffff !important;
     border-radius: 15px !important;
-    /* border: 3px solid #ffffff !important; */
     border: solid 3px #770089 !important;
     width: min(45vw, 695px) !important;
-    /* height: min(5vw, 50px) !important; */
-    /* color:#ffffff !important; */
     color:#770089 !important;
     font-size: min(3vw, 16px);
     font-weight: bold;
     position: relative;
     left:0%;
-    top:15%; /*MAMIN QUE TIROU*/
+    top:15%;
 }
 
 .botao:hover{
-    /* background-color: #6600ff !important; */
     background-color: #6600ff !important;
     border: 3px solid #ffffff !important;
     color:#ffffff !important;
@@ -446,11 +426,6 @@ a {
     left: 50px !important;
     top: 50px !important;
     translate: middle;
-}
-
-.btn-success-soft {
-    color: #28a745;
-    background-color: rgba(40, 167, 69, 0.1);
 }
 
 .form-label{
@@ -554,7 +529,3 @@ html ::-webkit-scrollbar-track {
     background: #ededed;
 }
 
-/*TESTE MAMIN APAGAR DEPOIS*/
-.opa{
-    color: #28a745 !important;
-}
