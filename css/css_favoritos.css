@@ -124,9 +124,6 @@ html {
         padding: 0px 15px;
     }
 
-    footer{
-        display: none;
-    }
 }
 
 @media screen and (min-width: 798px) {
@@ -174,39 +171,10 @@ html {
         padding: 0px 15px;
     }
 
-    footer{
-        position: absolute;
-        top: 105%;
-    }
-
-    #insta{
-        font-size: 15px !important;
-    }
-
-    #from{
-        position: relative;
-        left: 200% !important;
-        width: 10rem !important;
-        height: 5rem !important;
-    }
-
-    #app{
-        position: relative;
-        left: 450%;
-        font-size: 8px !important;
-        top: 0% !important;
-    }
-
-    #baixar{
-        position: relative;
-        left: 450%;
-        width: 10rem !important;
-        height: 4rem !important;
-        top: 0% !important;
-    }
 }
 /*final mediaquery>*/
 
+/* INICIO MODAL */
 .css-selector {
     background: linear-gradient(22deg, #69d006, #dd8448, #ae17d0);
     background-size: 600% 600%;
@@ -225,22 +193,6 @@ html {
     position: relative;
     right: 2rem;
 }
-
-
-/*MAMIN COMENTOU PRA TESTAR
-.btn{
-    border: none;
-    background-color:transparent;
-    width:5rem; 
-    height: 5rem;
-    top: -4.5%;
-    position: relative;
-    left:-200%;
-}
-.btn:hover{
-    border: none;
-    background-color:transparent ;
-}*/
 
 .option{
     width: 7rem;  
@@ -357,13 +309,44 @@ li#sair.list-group-item.d-flex.d-inline-flex:hover{
 a {
     color: #000000;
 }
+/* FIM MODAL*/
 
-/* Definindo a estilização do elemento com ID "sobreN"*/
-#insta{
-    font-size: 20px;
+.titulo{
+    font-size: min(3vw, 24px);
+    margin: 0 0 -100px 0;
 }
 
-/* Definindo a estilização do elemento com ID "sobreNozes"*/
+.form-select{
+    width: 25%;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem !important;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ededed;
+    background-clip: padding-box;
+    border: solid 2px #770089 !important;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.teste{
+    background-color: #dccce0;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+/* INICIO FOOTER */
+#insta{
+    font-size: min(3vh, 20px);
+}
+
 #instagram{
     color: black !important;
     font-weight: bold;
@@ -376,24 +359,31 @@ a {
 
 /* Definindo a estilização do elemento com ID "from"*/
 #from{
-    width: 150px;
-    height: 80px;
-}
-
-/* Definindo a estilização do elemento com class "store*/
-.store{
-    width: 30px;
-    height: 50px;
+    width: min(50vw, 150px);
 }
 
 /* Definindo a estilização do elemento com ID "baixar"*/
 #baixar{
-    width: 130px;
-    height: 50px;
+    width: min(50vw, 130px);
 }
 
 /* Definindo a estilização do elemento com ID "app"*/
 #app{
-    font-size: 11px;
+    font-size: min(3vh, 11px);
     font-weight: bold;
+}
+/* FIM FOOTER */
+
+/* Definindo a estilização do html scrollbar*/
+html ::-webkit-scrollbar {
+    height: 14px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #770089;
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
 }
