@@ -393,12 +393,21 @@ a {
     color:#e0e0e0;
 }
 
+.email{
+    text-decoration: none; 
+    color:#e0e0e0;
+}
+
 .email:hover{
     color:#e0e0e0;
 }
 
-.email{
+.whats{
     text-decoration: none; 
+    color:#e0e0e0;
+}
+
+.whats:hover{
     color:#e0e0e0;
 }
 

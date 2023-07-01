@@ -1,4 +1,4 @@
-<!-- Aqui iniciamos o código html, e já chamamos o arquivo css para estilizar -->
+<!-- Aqui iniciamos o código html -->
 <html>
 <head>
 	<meta charset = "utf-8">
@@ -16,106 +16,104 @@
 </head>
 
 <body>
-	<!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
-    <header id="Cabecalho" name="Cabecalho" class="row">
-        <div id="divLogoP" name="divLogoP" class="col">
-            <img id=logo src="img/logo.png">
-        </div>
-    
-        <div class="divBuscar col-md-5 col-sm me-5">
-            <input type="search" class="buscar" placeholder="Buscar eventos">
-            <button class = "pesquisa">
-                <i class="fa-solid fa-magnifying-glass"></i>
+    <header class="row p-0 m-0 d-flex flex-wrap justify-content-center align-content-center">
+        <div class="col-2">
+			<img class="logo-header img-fluid" src="./img/logo.png">
+		</div>
+
+        <div class="col-6 col-lg-6 d-flex flex-wrap justify-content-center align-content-center">
+			<div class="area-pesquisar">
+                <input type="search" class="me-2" placeholder="Buscar eventos">
+                <button class = "btn-pesquisar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+		</div>
+
+        <div class="col col-md-2 d-flex flex-wrap align-content-center justify-content-end criar">
+			<a href = "login.html"> 
+				<button class="btn-criar-evento"> Criar Evento </button>
+			</a>
+		</div>
+
+        <div class="col-1 d-none justify-content-center flex-wrap align-content-center short-criar">
+            <button class="">
+                <a href = "login.html"> 
+                    <i class="fa fa-plus mais" aria-hidden="true"></i>
+                </a> 
             </button>
         </div>
-    
-        <div class="col d-flex align-items-center justify-content-end adicionais">
-			<a class = "alogar" href = "login.html">
-				<button class="criar" name="criar" onclick="CriarEvento()"> Criar Evento </button>
-		
-				<button class="d-none short-criar criar" name="criar" onclick="CriarEvento()">
-					<i class="fa fa-plus" aria-hidden="true"></i>
-				</button>
-			</a>
-        </div>  
 
-		<div class = "login col-md-1 mt-1 col-sm-1 col-xl-1 col-lg-2 pt-3 ps-xl-4 col me-md-4 col-xxl-2 ps-xxl-5">
-			<div class="ms-lg-5 pt-1 ms-xxl-5">
-				<a class = "alogar" href = "login.html">
-					<button class = "btn" name="logar">
-						<i class = "fa fa-arrow-right-to-bracket"></i> 
-						&nbsp;LOGIN
-					</button>
-
-					<button class = "d-none short-login btn" name="logar">
-						<i class = "fa fa-arrow-right-to-bracket" aria-hidden="true"></i> 
-					</button>
-				</a>
-			</div>
+        <div class = "col col-md-2 mt-1 d-flex flex-wrap justify-content-end align-content-center login">
+            <a href = "login.html">
+                <button class = "btn btn-login">
+                    <i class = "fa fa-arrow-right-to-bracket"></i> 
+                    &nbsp;LOGIN
+                </button>
+            </a>
 		</div>
-	</header>
 
-	 <!-- Criamos uma div, onde nela vamos ter uma outra div onde tem as imagens de vários eventos -->
-	 <div class="container-fluid mb-5">
-        <div class="row">
-            <div class="col">
-                <div class="container-fluid EventosR ps-4 mt-5" id="EventosR">
-                    <label>EVENTOS RECENTES</label>
-                    <div class="barraE">
-                        <img id="eventoAparece" src="img/evento1.jpeg" alt="evento1">
-                        <i class="fa-solid fa-angles-right d-none" id="seta" style="color: #1f003d;"></i>
-                        <img class="evento" src="img/evento1.jpeg" alt="evento1">
-                        <img class="evento" src="img/evento2.jpeg" alt="evento2">
-                        <img class="evento" src="img/evento3.jpeg" alt="evento3">
-                        <img class="evento" src="img/evento4.jpeg" alt="evento4">
-                        <img class="evento" src="img/evento5.jpeg" alt="evento5">
-                        <img class="evento" src="img/evento6.jpeg" alt="evento6">
-                        <img class="evento" src="img/evento7.jpeg" alt="evento7">
-                        <img class="evento" src="img/evento8.jpeg" alt="evento8">
-                        <img class="evento" src="img/evento9.jpeg" alt="evento9">
-                        <img class="evento" src="img/evento10.jpg" alt="evento10">
-                        <img class="evento" src="img/evento11.jpg" alt="evento11">
-                        <img class="evento" src="img/evento12.jfif" alt="evento12">
-                        <img class="evento" src="img/evento13.jfif" alt="evento13">
-                    </div>
-                </div>
-            </div>
+        <div class = "d-none justify-content-center flex-wrap align-content-center col-1 login-short">
+            <a class="d-flex align-content-center flex-wrap" href = "login.html">
+                <button class = "btn btn-login d-flex align-content-center flex-wrap">
+                    <i class = "fa fa-arrow-right-to-bracket"></i>
+                </button>
+            </a>
+		</div>
+    </header>
+
+    <div class="m-5">
+        <p class="eventosR">EVENTOS RECENTES</p>
+        <div class = "barraE">
+            <img class="img-fluid evento" src="img/evento1.jpeg" alt="evento1">
+            <img class="img-fluid evento" src="img/evento2.jpeg" alt="evento2">
+            <img class="img-fluid evento" src="img/evento3.jpeg" alt="evento3">
+            <img class="img-fluid evento" src="img/evento4.jpeg" alt="evento4">
+            <img class="img-fluid evento" src="img/evento5.jpeg" alt="evento5">
+            <img class="img-fluid evento" src="img/evento6.jpeg" alt="evento6">
+            <img class="img-fluid evento" src="img/evento7.jpeg" alt="evento7">
+            <img class="img-fluid evento" src="img/evento8.jpeg" alt="evento8">
+            <img class="img-fluid evento" src="img/evento9.jpeg" alt="evento9">
+            <img class="img-fluid evento" src="img/evento10.jpg" alt="evento10">
+            <img class="img-fluid evento" src="img/evento11.jpg" alt="evento11">
+            <img class="img-fluid evento" src="img/evento12.jfif" alt="evento12">
+            <img class="img-fluid evento" src="img/evento13.jfif" alt="evento13">
         </div>
-	 </div>
+    </div>
 
-	<!-- Criamos uma div, onde colocamos na label o slogan e um pouco sobre o site -->
-	<div class = "container-fluid row ps-5 mt-5">
-		<div class = "col-4">
-			<p class = "mb-5" id = "slogan"> CRIE AGORA<br>O SEU<br>EVENTO &rarr;</p>
-			<p id = "sobre"> Organize seus eventos de maneira prática!<br>Essa ferramenta te ajuda a PLANEJAR, <br>GERENCIAR e EXECUTAR seus eventos <br>PRESENCIAIS ou VIRTUAIS.</p>
-		</div>
+    <!-- Criamos uma div, onde colocamos na label o slogan e um pouco sonbre o site -->
+    <div class = "container-fluid row ps-5 mt-5">
+        <div class = "col-4 mt-3">
+            <p id = "slogan"> CRIE AGORA<br>O SEU<br>EVENTO &rarr;</p>
+            <p id = "sobre" class="mt-4"> Organize seus eventos de maneira prática!<br>Essa ferramenta te ajuda a PLANEJAR, <br>GERENCIAR e EXECUTAR seus eventos <br>PRESENCIAIS ou VIRTUAIS.</p>
+        </div>
 
-		<!-- adicionamos uma imagem "estética" -->	
-		<div class = "col-8">
-			<img class = "img-fluid" id = "fotosIniciais" src = "img/fotosIniciais.png" alt = "fotosIniciais">
-		</div>
-	</div>
-
+        <div class = "col-8 mt-3">
+            <!-- adicionamos uma imagem "estética" -->	
+            <img class = "img-fluid" id = "fotosIniciais" src = "img/fotosIniciais.png" alt = "fotosIniciais">
+        </div>
+    </div>
+    
 	<!-- Criamos um footer -->
 	<footer>
-		<div class="container-fluid mt-5">
+		<div class="container-fluid mt-0">
 			<div class="row align-items-center justify-content-between">
 				<div class="col-4 mt-5 d-none d-sm-flex align-items-center justify-content-start">
-					<a href="https://www.instagram.com/eventando.nozes/" target="_blank">
-						<i id="insta" class="fa-brands fa-instagram mt-5"></i>
-					</a>
-					<p class="d-flex align-items-center ms-2 mt-5 mb-0" id="sobreN">
-						<a href="sobreNos.html" id="sobreNozes">SOBRE NÓS</a>
+					<p class="d-flex align-items-center ms-1 mt-5 mb-0" id="sobreN">
+						<a href="https://www.instagram.com/eventando.nozes/" class="me-1 mb-1" target="_blank">
+							<i id="instagram" class="fa-brands fa-instagram mt-0 mb-1 me-1"></i>
+						</a>
+						<a href="sobreNos.html" class="mb-1" id="sobreNozes">SOBRE NÓS</a>
 					</p>
 				</div>
-
+		
 				<div class="col-4 mt-5 d-none d-sm-flex align-items-center justify-content-center">
 					<img class="img-fluid" id="from" src="img/rodape.png" alt="from">
 				</div>
 
 				<div class="col-4 mt-5 d-none d-sm-flex flex-column align-items-end text-center">
-					<p id="app" class="mb-0 mt-0 me-3"> Obtenha o aplicativo </p>
-					<img class="img-fluid mt-3 my-0" id="baixar" src="img/baixar.png" alt="baixar">
+					<p id="app" class="mb-0 mt-0 me-2"> Obtenha o aplicativo </p>
+					<img class="img-fluid mt-1 my-0" id="baixar" src="img/baixar.png" alt="baixar">
 				</div>
 			</div>
 		</div>

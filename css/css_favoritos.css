@@ -316,6 +316,11 @@ a {
     margin: 0 0 -100px 0;
 }
 
+.filtro{
+    font-size: min(3vw, 26px);
+    margin: 0 0 -100px -5px;
+}
+
 .form-select{
     width: 25%;
     padding: 0.5rem 1rem;
@@ -340,6 +345,27 @@ a {
     background-color: #dccce0;
     border-radius: 10px;
     border-color: transparent;
+}
+
+
+.config-card{
+    border: 3px solid #770089;
+    border-radius: 9px;
+    width: 154px;
+    height: 104px;
+}
+
+.config-img{
+    width: 150px;
+    height: 100px;
+    border-radius: 7px;
+}
+
+.titulo-card{
+    /*background-color: #e1d1e5;*/
+    font-family: 'Montserrat', sans-serif;
+    color: #f5d742;
+    font-weight: bold;
 }
 
 /* INICIO FOOTER */

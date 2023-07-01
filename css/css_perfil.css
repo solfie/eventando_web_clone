@@ -321,7 +321,7 @@ a {
 }
 
 .avatar:hover{
-    background-color: #6600ff !important;
+    background-color: #b900d5 !important;
     border: 3px solid #ffffff;
 }
 
@@ -348,26 +348,9 @@ a {
 }
 
 .botao:hover{
-    background-color: #6600ff !important;
+    background-color: #b900d5 !important;
     border: 3px solid #ffffff !important;
     color:#ffffff !important;
-}
-
-.editar{
-    background-color: #ffffff !important;
-    color: #770089 !important;
-    border: 3px solid #ffffff;
-    width: 40px !important;
-    height: 43px !important;
-    font-size: 18px !important;
-    position: relative;
-    left:0%;
-    top:15%;
-}
-
-.editar:hover{
-    background-color: #770089 !important;
-    color: #ffffff !important;
 }
 
 .bg-secondary-soft {
