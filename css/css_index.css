@@ -69,6 +69,11 @@ header input{
     border: #b25abf 2px solid;
 }
 
+header input:hover{
+    border: #b25abf 3px solid;
+    transition-duration: all 0.4s;
+}
+
 .area-pesquisar{
     position: relative;
 }
@@ -78,8 +83,8 @@ input[type='search']{
 }
 
 .btn-pesquisar{
-    background-color: #000;
-    color: #FFF;
+    background-color: transparent;
+    color: #000000;
     border: none;
     border-radius: 4px;
     margin-left: -45px;
@@ -99,15 +104,17 @@ input[type='search']{
 
 .btn-criar-evento:hover{
     background-color: #b900d5;
+    transition-duration: all 0.4s;
 }
 
 .btn-login{
-    font-size: min(3vw, 18px);
+    font-size: min(4vw, 18px);
     font-weight: bold;
 }
 
 .btn-login:hover{
     color: #b25abf;
+    transition-duration: all 0.4s;
 }
 
 .btn-login:active{
@@ -116,7 +123,7 @@ input[type='search']{
 }
 
 .eventosR{
-    font-size: min(3vw, 22px);
+    font-size: min(4vw, 24px);
     font-weight: bold;
 }
 
