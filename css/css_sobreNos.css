@@ -373,6 +373,8 @@ a {
 
 .divSobre{
     background-image: url('./../img/fundoSobre.png');
+    /* background-repeat: no-repeat;
+    background-size: 2000%; */
     border: solid 3px ;
     border-color: #770089;
     border-radius: 13px;
