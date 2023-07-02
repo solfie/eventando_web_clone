@@ -1,12 +1,18 @@
-/* Colocando a fonte e a cor em toda a tela html*/
-body{
+*{
     font-family: 'Montserrat', sans-serif;
-    background-color: #ededed !important
+} 
+
+body{
+    background-color: #ededed;
 }
 
-/* Definindo a estilização do elemento com ID "divMenu"*/
-#Cabecalho {
+a{
+    text-decoration: none;
+}
+
+header{
     background-color: #bedef2;
+    height: 80px;
 }
 
 /* Definindo a altura e largura da logo"*/
