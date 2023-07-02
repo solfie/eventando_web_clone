@@ -11,13 +11,13 @@ header{
     height: 70px;
 }
 
-/*MEDIA QUERY*/
+/*INICIO MEDIA QUERY*/
 @media screen and (max-width: 429px) {
     .login{
         display: none!important;
     }
 
-    .login-short{
+    .short-login{
         display: flex!important;
         margin-left: 7px;
     }
@@ -39,7 +39,7 @@ header{
     }
 
     .short-criar i {
-        color: #FFF;
+        color: #ffffff;
     }
 
     .criar{
@@ -57,10 +57,10 @@ header{
         padding: 0;
     }
 }
-/*MEDIA QUERY*/
+/*FIM MEDIA QUERY*/
 
 .logo-header{
-    margin-bottom: -28px;
+    margin-bottom: -45px;
 }
 
 header input{
@@ -96,7 +96,7 @@ input[type='search']{
 .btn-criar-evento{
     background-color: #b25abf;
     border: #770089 3px solid;
-    color: #FFF;
+    color: #ffffff;
     border-radius: 40px;
     width: 141px;
     font-size: min(3vw, 14px);
