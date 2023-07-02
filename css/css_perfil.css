@@ -424,6 +424,7 @@ a {
 }
 
 /* INICIO FOOTER */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rochester&family=Satisfy&display=swap'); */
 #insta{
     font-size: min(3vh, 20px);
 }
@@ -431,6 +432,8 @@ a {
 #instagram{
     color: black !important;
     font-weight: bold;
+    /* font-family: 'Satisfy', cursive;
+    text-decoration: none; */
 }
 
 #instagram:hover{
