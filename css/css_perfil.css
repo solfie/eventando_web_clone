@@ -15,169 +15,133 @@ header{
     height: 80px;
 }
 
-/* Definindo a altura e largura da logo"*/
-#logo {
-    width: 350px;
-    position: relative;
+/*INICIO MEDIA QUERY*/
+@media screen and (max-width: 429px) {
+    .login{
+        display: none!important;
+    }
+
+    .short-login{
+        display: flex!important;
+        margin-left: 7px;
+    }
 }
 
-html {
-    overflow-x: hidden;
+@media screen and (max-width: 748px) {
+    .short-criar{
+        display: flex!important;
+    }
+
+    .short-criar button{     
+        border-radius: 100%;
+        border: #770089 1px solid;
+        height: 30px;
+        background-color: #b25abf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .short-criar i {
+        color: #ffffff;
+    }
+
+    .criar{
+        display: none!important;
+    }
 }
 
-/* Definindo a estilização do elemento com ID "divLogoP"*/
-#divLogoP {
-    height: 85px;
-    overflow: visible;
+.logo-header{
+    padding-bottom: 20px;
 }
 
-/* Definindo a estilização do elemento com ID "divBuscar"*/
-.divBuscar {
-    position: relative;
-    transform: translate(-0%, - 50%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media screen and (max-width: 820px){
+    .logo-header{
+        padding-top: 20px;
+    }
 }
 
-/* Definindo a estilização do elemento com ID "buscar"*/
-.buscar {
-    background-color: #ededed;
-    height: 15px;
-    padding: 15px;
-    border: 2px solid #b25abf;
+@media screen and (max-width: 1024px){
+    .logo-header{
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    header input{
+        width: min(5vw, 300px);
+        margin-right: 60px;
+    }
+
+    .criar{
+        padding: 0;
+    }
+
+    .logo-short{
+        display: block!important;
+
+    }
+
+    .logo-header{
+        display: none!important;
+    }
+}
+/*FIM MEDIA QUERY*/
+
+.logo-header{
+    margin-bottom: -45px;
+}
+
+header input{
+    width: min(45vw, 700px);
+    height: min(45vw, 29px);
+    font-size: min(3vw, 16px);
     border-radius: 40px;
-    width: 100%;
+    border: #b25abf 2px solid;
 }
 
-.buscar:focus {
-    outline: none !important;
+header input:hover{
+    border: #b25abf 3px solid;
+    transition-duration: all 0.4s;
 }
 
-.pesquisa {
-    position: absolute;
-    right: 30px;
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 16px;
+  }
+
+.area-pesquisar{
+    position: relative;
+}
+
+input[type='search']{
+    padding-left: 10px;
+}
+
+.btn-pesquisar{
     background-color: transparent;
-    cursor: pointer;
-    height: 20px;
-    border: none;
     color: #000000;
+    border: none;
+    border-radius: 4px;
+    margin-left: -45px;
+    margin-top: 5px;
+    max-height: 25px;
+    position: absolute;
+    font-size: min(3vw, 16px);
 }
 
-/* Definindo a estilização do elemento com ID "CriarEvento"*/
-.criar {
-    border: solid 3px;
-    border-color: #770089;
-    border-radius: 40px;
+.btn-criar-evento{
     background-color: #b25abf;
-    text-align: center;
-    height: 33px;
-    width: 170px;
-    font-size: 15px;
-    color: white;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    border: #770089 3px solid;
+    color: #ffffff;
+    border-radius: 40px;
+    width: 141px;
+    font-size: min(3vw, 14px);
 }
 
-.short-criar {
-    font-size: 14px;
-    width: 34px;
+.btn-criar-evento:hover{
+    background-color: #b900d5;
+    transition-duration: all 0.4s;
 }
-
-#logo {
-    z-index: 2
-}
-
-/*mediaquery responsividade do header*/
-@media screen and (max-width: 600px) {
-    .short-criar {
-        display: block !important;
-    }
-
-    .criar {
-        display: none;
-    }
-
-    .divLogoP{
-        position: absolute;
-        width: 100%;
-    }
-
-    .short-criar {
-        position: absolute;
-        left: 85%;
-        top:2%;
-    }
-
-    .divBtn{
-        position: absolute !important;
-        left: 200% !important;
-        top:90% !important;
-    }
-
-    .divBuscar {
-        position: absolute;
-        top: 65px;
-        left: 0px;
-        height: 11%;
-        width: 110% !important;
-        background: #bedef2;
-        padding: 20px;
-        margin-top: 4px;
-    }
-
-    .short-pesquisa {
-        padding: 0px 15px;
-    }
-}
-
-@media screen and (min-width: 798px) {
-
-    .criar {
-        display: block !important;
-    }
-
-    .short-criar {
-        display: none !important;
-    }
-}
-
-@media screen and (min-width: 798px) and (max-width: 1199px) {
-
-    .divLogoP{
-        position: absolute;
-        width: 90%;
-    }
-
-    .criar {
-        position: absolute;
-        left: 65%;
-        top: 2.5%;
-    }
-
-    .divBtn{
-        position: absolute;
-        left: 110%;
-        top: 20%;
-    }
-
-    .divBuscar {
-        position: absolute;
-        top: 60px;
-        left: 0px;
-        height: 15%;
-        width: 100%;
-        background: #bedef2;
-        padding: 20px;
-        margin-top: 1%;
-    }
-
-    .short-pesquisa {
-        padding: 0px 15px;
-    }
-    
-}
-/*final mediaquery>*/
 
 /* INICIO MODAL */
 .css-selector {
@@ -438,8 +402,7 @@ a {
 #instagram{
     color: black !important;
     font-weight: bold;
-    /* font-family: 'Satisfy', cursive;
-    text-decoration: none; */
+    text-decoration: underline;
 }
 
 #instagram:hover{
