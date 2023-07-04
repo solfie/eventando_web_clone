@@ -349,7 +349,8 @@ a {
 .form-label{
     font-size: 1.4rem !important;
 }
-
+/*Ela define várias propriedades, como largura de 100%, preenchimento interno, tamanho de fonte de 1.4rem, cor de texto,
+ cor de fundo, remoção de borda, aparência do elemento, borda arredondada, efeitos de transição para cor da borda e sombra*/
 .form-control {
     display: block;
     width: 100%;

@@ -1,15 +1,20 @@
-// Exibir Login / Cadastro / Recuperação de Senha
+/* Exibir Login / Cadastro / Recuperação de Senha */
 var divCadastro = document.getElementById('divCadastro');
 var divLogin = document.getElementById('divLogin');  
 var divRecuperar = document.getElementById('divRecuperar');
 
+/* Selecionando os elementos do menu de login*/
 var menus = document.querySelectorAll('#menu-login > div');
 
+/* Função para exibir a seção de login */
+
 function exibirLogin(){
+  /* Mostra a seção de login e esconde as outras seções (cadastro e recuperação) */
+
     divLogin.classList.remove('d-none');
     divCadastro.classList.add('d-none');
     divRecuperar.classList.add('d-none');
-
+    /*Ativa a guia de login no menu*/
     menus[0].classList.remove('d-none');
     menus[1].classList.remove('d-none');
     menus[2].classList.add('d-none');
@@ -18,11 +23,15 @@ function exibirLogin(){
     menus[1].children[0].classList.remove('active');
     menus[2].children[0].classList.remove('active');
 }
+/* Função para exibir a seção de cadastro */
 
 function exibirCadastro(){
+    /* Mostra a seção de login e esconde as outras seções (login e recuperação) */
+
     divCadastro.classList.remove('d-none');
     divLogin.classList.add('d-none');
     divRecuperar.classList.add('d-none');
+    /*Ativa a guia de cadastro no menu*/
 
     menus[0].classList.remove('d-none');
     menus[1].classList.remove('d-none');
@@ -32,12 +41,14 @@ function exibirCadastro(){
     menus[1].children[0].classList.add('active');
     menus[2].children[0].classList.remove('active');
 }
-
+  
+   /*Função para exibir a seção de recuperação de senha*/
 function exibirRecuperar(){
+      /*Mostra a seção de recuperação de senha e esconde as outras seções (login e cadastro)*/
     divRecuperar.classList.remove('d-none');
     divLogin.classList.add('d-none');
     divCadastro.classList.add('d-none');
-
+   /* Ativa a guia de recuperação de senha no menu*/
     menus[0].classList.add('d-none');
     menus[1].classList.add('d-none');
     menus[2].classList.remove('d-none');
@@ -47,10 +58,10 @@ function exibirRecuperar(){
     menus[2].children[0].classList.add('active');
 }
 
-// Botão do Google
+/*Botão do Google*/
 function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential)
-  
+  /* Exibe algumas informações do usuário (nome, e-mail, etc.) na página*/
     console.log(data);
   
     fullName.textContent = data.name
@@ -63,7 +74,7 @@ function handleCredentialResponse(response) {
 }
 
 window.onload = function () {
-  //const clientID = window.prompt("Cole a sua Cliente ID", "")
+  /*const clientID = window.prompt("Cole a sua Cliente ID", "")*/
   google.accounts.id.initialize({
     client_id: "902423440925-nklj2agoogc587cuqng0gpjr6vus43pr.apps.googleusercontent.com",
     callback: handleCredentialResponse
@@ -78,40 +89,40 @@ window.onload = function () {
     shape:"pill",
     text:"$ {button.text}",
     logo_alignment:"left",
-  } // customization attributes
+  } /*customization attributes*/
   );
 
-  google.accounts.id.prompt(); // also display the One Tap dialog
+  google.accounts.id.prompt(); /* also display the One Tap dialog*/
 }
 
-//Mascara Recuperar Senha
+/*Mascara Recuperar Senha*/
 document.getElementById("formulario2").addEventListener("submit", function(event) {
-  event.preventDefault(); // Impede o envio padrão do formulário
+  event.preventDefault(); /* Impede o envio padrão do formulário*/
 
   var emailInput = document.getElementById("emEmail3");
   var email = emailInput.value.trim();
   
-  // Expressão regular para validar o formato do e-mail
+  /* Expressão regular para validar o formato do e-mail*/
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!emailRegex.test(email)) {
-      // E-mail inválido, exiba uma mensagem de erro
+      /* E-mail inválido, exiba uma mensagem de erro*/
       alert("Por favor, informe um endereço de e-mail válido.");
       return false;
   }
 
-  // E-mail correto, exiba um alerta e redirecione para a página de login
+  /* E-mail correto, exiba um alerta e redirecione para a página de login*/
   alert("Verifique sua caixa de e-mail para instruções de recuperação de senha.");
   window.location.href = "login.html";
 });
 
 function exibirLogin() {
-  // Redirecione para a página de login
+  /* Redirecione para a página de login*/
   window.location.href = "login.html";
 }
 
-//Mascaras Cadastro
-//Macara Telefone
+/*Mascaras Cadastro*/
+/*Macara Telefone*/
 const telTelefone = document.getElementById("telTelefone");
 
 telTelefone.addEventListener("input", function (e) {
@@ -131,7 +142,7 @@ telTelefone.addEventListener("input", function (e) {
     e.target.value = telefone;
   });
 
-//Mascara Senha == Confirmação de Senha
+/*Mascara Senha == Confirmação de Senha*/
 let pwdSenha2 = document.getElementById("pwdSenha2");
 let pwdConfSenha = document.getElementById("pwdConfSenha");
 
@@ -154,15 +165,15 @@ function verificarSenha() {
 pwdConfSenha.onkeyup = verificarSenha;
 pwdSenha2.onchange = verificarSenha;
 
-//Verificando o formulário
+/*Verificando o formulário*/
 const formulario = document.getElementById('formulario3');
 formulario.addEventListener('submit', function(event) {
-  event.preventDefault(); // Impede o envio padrão do formulário
-  autenticacao(); // Executa a função de autenticação
+  event.preventDefault(); /* Impede o envio padrão do formulário*/
+  autenticacao(); /* Executa a função de autenticação*/
 
-  // Verifica se o formulário é válido
+  /* Verifica se o formulário é válido*/
   if (formulario.checkValidity()) {
-    // Redireciona para a página de destino após o cadastro
+    /* Redireciona para a página de destino após o cadastro*/
     window.location.href = "login.html";
   }
 });

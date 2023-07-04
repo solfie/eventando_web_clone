@@ -4,7 +4,7 @@ body{
     background-color: #ededed !important
 }
 
-/* Definindo a estilização do elemento com ID "divMenu"*/
+/* Definindo a estilização do elemento com ID "Cabecalho"*/
 #Cabecalho {
     background-color: #bedef2;
 }
@@ -58,7 +58,7 @@ html {
     color: #000000;
 }
 
-/* Definindo a estilização do elemento com ID "CriarEvento"*/
+/* Definindo a estilização do elemento com ID "Criar"*/
 .criar {
     border: solid 3px;
     border-color: #770089;
@@ -83,6 +83,7 @@ html {
 }
 
 /*mediaquery responsividade do header*/
+
 @media screen and (max-width: 600px) {
     .short-criar {
         display: block !important;
@@ -109,7 +110,7 @@ html {
         top:90%;
     }
 
-    .divBuscar {
+    .divBuscar {                                    
         position: absolute;
         top: 65px;
         left: 0px;
@@ -438,6 +439,7 @@ li:hover{
     background-color: rgba(212, 212, 212, 0.5); /* Define uma cor de fundo semitransparente */
     backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
   }
+/* Estilização do modal */
 
 .modal-body{
     background-color:#e0e0e0;
@@ -448,6 +450,7 @@ li:hover{
     width: 100%;
     padding-left: 2%; 
   }
+/* Estilização do ícone de seta para a direita */
 
 svg.bi.bi-box-arrow-right{
     width: 10%;
@@ -457,6 +460,7 @@ svg{
     padding-right:5%;
 }
 
+/* Estilização do item "sair" na lista */
 
 li#sair.list-group-item.d-flex.d-inline-flex{
     border-left:none;
@@ -468,6 +472,7 @@ li#sair.list-group-item.d-flex.d-inline-flex:hover{
     color:rgb(255, 255, 255);
     background-color: rgba(255, 0, 0, 0.658);
 }
+/* Animação de entrada do modal */
 
 .modal-content {
     animation-name: modal-animacao;
@@ -486,6 +491,7 @@ li#sair.list-group-item.d-flex.d-inline-flex:hover{
       transform: translateX(0);
     }
 }
+/* Estilização dos links */
 
 a {
     color: #000000;
@@ -633,12 +639,12 @@ a {
     border-color: #770089;
 }
 
-/* Definindo a estilização do elemento com ID "sobreN"*/
+/* Definindo a estilização do elemento com ID "insta"*/
 #insta{
     font-size: 20px;
 }
 
-/* Definindo a estilização do elemento com ID "sobreNozes"*/
+/* Definindo a estilização do elemento com ID "instagram"*/
 #instagram{
     color: black !important;
     font-weight: bold;

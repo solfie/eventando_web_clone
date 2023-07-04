@@ -1,7 +1,8 @@
-*{
+*{ /*Fonte utilizada no site*/
     font-family: 'Montserrat', sans-serif;
-} 
+}
 
+/*Cor de fundo utilizada na tela*/
 body{
     background-color: #ededed;
 }
@@ -26,11 +27,15 @@ header{
         margin-left: 7px;
     }
 }
+/* Estilos aplicados quando a largura da tela é menor ou igual a 748px */
 
 @media screen and (max-width: 748px) {
+        /* Estilização da classe .short-criar */
+
     .short-criar{
         display: flex!important;
     }
+    /* Estilização dos botões dentro da classe .short-criar */
 
     .short-criar button{     
         border-radius: 100%;
@@ -41,45 +46,58 @@ header{
         justify-content: center;
         align-items: center;
     }
+    /* Estilização do ícone dentro da classe .short-criar */
 
     .short-criar i {
         color: #ffffff;
     }
+    /* Esconder elementos com a classe .criar */
 
     .criar{
         display: none!important;
     }
 }
+/* Estilização do elemento com classe .logo-header */
 
 .logo-header{
     padding-bottom: 20px;
 }
+/* Estilos aplicados quando a largura da tela é menor ou igual a 820px */
 
 @media screen and (max-width: 820px){
     .logo-header{
         padding-top: 20px;
     }
 }
+/* Estilos aplicados quando a largura da tela é menor ou igual a 1024px */
 
 @media screen and (max-width: 1024px){
+  /* Estilização do elemento com classe .logo-header */
+
     .logo-header{
         padding-top: 5px;
     }
 }
+/* Estilos aplicados quando a largura da tela é menor ou igual a 819px */
 
 @media screen and (max-width: 819px) {
+    /* Estilização do input dentro do header */
+
     header input{
         width: min(5vw, 300px);
         margin-right: 60px;
     }
+ /* Esconder elementos com a classe .criar */
 
     .criar{
         padding: 0;
     }
+    /* Exibir o elemento com classe .logo-short */
 
     .logo-short{
         display: block!important;
     }
+    /* Esconder o elemento com classe .logo-header */
 
     .logo-header{
         display: none!important;
@@ -87,28 +105,35 @@ header{
 }
 /*FIM MEDIA QUERY*/
 
+/* Estilização do elemento com classe .logo-header */
+
 .logo-header{
     margin-bottom: -45px;
 }
+/* Estilização do input dentro do header */
 
 header input{
     width: min(45vw, 700px);
     border-radius: 40px;
     border: #b25abf 2px solid;
 }
+/* Estilização do input dentro do header no hover */
 
 header input:hover{
     border: #b25abf 3px solid;
     transition-duration: all 0.4s;
 }
+/* Estilização da área de pesquisa */
 
 .area-pesquisar{
     position: relative;
 }
+/* Estilização do input de tipo 'search' */
 
 input[type='search']{
     padding-left: 10px;
 }
+/* Estilização do botão de pesquisa */
 
 .btn-pesquisar{
     background-color: transparent;
@@ -120,6 +145,7 @@ input[type='search']{
     max-height: 25px;
     position: absolute;
 }
+/* Estilização do botão de criar evento */
 
 .btn-criar-evento{
     background-color: #b25abf;
@@ -129,31 +155,37 @@ input[type='search']{
     width: 141px;
     font-size: min(3vw, 14px);
 }
+/* Estilização do botão de criar evento no hover */
 
 .btn-criar-evento:hover{
     background-color: #b900d5;
     transition-duration: all 0.4s;
 }
+/* Estilização do botão de login */
 
 .btn-login{
     font-size: min(4vw, 18px);
     font-weight: bold;
 }
+/* Estilização do botão de login no hover */
 
 .btn-login:hover{
     color: #b25abf;
     transition-duration: all 0.4s;
 }
+/* Estilização do botão de login quando pressionado */
 
 .btn-login:active{
     color: #b900d5 !important;
     border: none !important;
 }
+/* Estilização do elemento com classe .eventosR */
 
 .eventosR{
     font-size: min(4vw, 24px);
     font-weight: bold;
 }
+/* Estilização da barra de eventos */
 
 .barraE{
     margin-top: 20px;
@@ -164,6 +196,7 @@ input[type='search']{
     align-items: center;
     overflow:auto; 
 }
+/* Estilização do elemento de evento */
 
 .evento{
     width: 150px;
@@ -174,11 +207,13 @@ input[type='search']{
     border-color: #770089;
     cursor: pointer;
 }
+/* Estilização do elemento de evento no hover */
 
 .evento:hover {
     border: 6px solid #770089;
     transition-duration: all 0.4s;
 }
+/* Estilização do elemento com ID "slogan" */
 
 #slogan{
     font-weight: bold;
