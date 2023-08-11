@@ -1,0 +1,17 @@
+*{ /*Fonte utilizada no site*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Cor de fundo utilizada na tela*/
+body{
+    background-color: #ededed;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #bedef2;
+    height: 80px;
+}

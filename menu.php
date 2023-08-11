@@ -37,7 +37,9 @@
         </div>
     
         <div class="col d-flex align-items-center justify-content-end adicionais">
-            <button class="criar" name="criar" onclick="CriarEvento()"> Criar Evento </button>
+            <a href = "criarEventoP.php">
+                <button class="criar" name="criar" onclick="CriarEvento()"> Criar Evento </button>
+            </a>
     
             <button class="d-none short-criar criar" name="criar" onclick="CriarEvento()">
                 <i class="fa fa-plus" aria-hidden="true"></i>
