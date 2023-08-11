@@ -34,21 +34,21 @@
 		</div>
 
         <div class="col col-md-2 d-flex flex-wrap align-content-center justify-content-end criar">
-			<a href = "login.html"> 
+			<a href = "login.php"> 
 				<button class="btn-criar-evento"> Criar Evento </button>
 			</a>
 		</div>
 
         <div class="col-1 d-none justify-content-center flex-wrap align-content-center short-criar">
             <button class="">
-                <a href = "login.html"> 
+                <a href = "login.php"> 
                     <i class="fa fa-plus mais" aria-hidden="true"></i>
                 </a> 
             </button>
         </div>
 
         <div class = "col col-md-2 mt-1 d-flex flex-wrap justify-content-end align-content-center login">
-            <a href = "login.html">
+            <a href = "login.php">
                 <button class = "btn btn-login">
                     <i class = "fa fa-arrow-right-to-bracket"></i> 
                     &nbsp;LOGIN
@@ -57,7 +57,7 @@
 		</div>
 
         <div class = "d-none justify-content-center flex-wrap align-content-center col-1 short-login">
-            <a class="d-flex align-content-center flex-wrap" href = "login.html">
+            <a class="d-flex align-content-center flex-wrap" href = "login.php">
                 <button class = "btn btn-login d-flex align-content-center flex-wrap">
                     <i class = "fa fa-arrow-right-to-bracket"></i>
                 </button>
@@ -106,7 +106,7 @@
 						<a href="https://www.instagram.com/eventando.nozes/" class="me-1 mb-1" target="_blank">
 							<i id="instagram" class="fa-brands fa-instagram mt-0 mb-1 me-1"></i>
 						</a>
-						<a href="sobreNos.html" class="mb-1" id="sobreNozes">SOBRE NÓS</a>
+						<a href="sobreNos.php" class="mb-1" id="sobreNozes">SOBRE NÓS</a>
 					</p>
 				</div>
 		

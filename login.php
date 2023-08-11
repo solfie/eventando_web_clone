@@ -29,7 +29,7 @@
         <div class="row">
 
             <div class="col-md-6">
-                <a href="index.html" id="esquerda">
+                <a href="index.php" id="esquerda">
                     <button class="btn fs-5">
                         <i class="fa-solid fa-circle-left"></i>
                         <b>HOME</b>
@@ -60,7 +60,7 @@
 
                     <div id="divLogin" class="row">
                         <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
-                        <form id="formulario" action="menu.html">
+                        <form id="formulario" action="menu.php">
                             <input class="form-control mt-4" type="email" id="emEmail" placeholder="Email" required>
 
                             <input class="form-control mt-4" type="password" id="pwdSenha" placeholder="Senha" required>
@@ -78,7 +78,7 @@
                                 </div>
                             </div>
 
-                            <!-- botão "ENTRAR" que redireciona para uma página "menu.html" quando clicado -->
+                            <!-- botão "ENTRAR" que redireciona para uma página "menu.php" quando clicado -->
                             <button type="submit" class="botao mt-3" type="submit" id="entrar"> ENTRAR </button>
 
                             <div id="buttonG"></div>

@@ -113,12 +113,12 @@ document.getElementById("formulario2").addEventListener("submit", function(event
 
   /* E-mail correto, exiba um alerta e redirecione para a página de login*/
   alert("Verifique sua caixa de e-mail para instruções de recuperação de senha.");
-  window.location.href = "login.html";
+  window.location.href = "login.php";
 });
 
 function exibirLogin() {
   /* Redirecione para a página de login*/
-  window.location.href = "login.html";
+  window.location.href = "login.php";
 }
 
 /*Mascaras Cadastro*/
@@ -174,6 +174,6 @@ formulario.addEventListener('submit', function(event) {
   /* Verifica se o formulário é válido*/
   if (formulario.checkValidity()) {
     /* Redireciona para a página de destino após o cadastro*/
-    window.location.href = "login.html";
+    window.location.href = "login.php";
   }
 });
