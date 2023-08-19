@@ -14,7 +14,7 @@ class BuscaCest
     // tests
     public function buscarResultadosNaPaginaTest(AcceptanceTester $I)
     {
-		$I->amOnPage('/eventando_web/menu.html');
+		$I->amOnPage('/eventando_web/menu.php');
 	    	$I->click('btn');
 		$I->click('PERFIL');
 		$I->seeCurrentURLEquals('/eventando_web/perfil.php');
