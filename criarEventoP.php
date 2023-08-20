@@ -12,12 +12,12 @@
 	<!-- CSS externo -->
 	<link rel="stylesheet" href="css/css_header.css">
 	<link rel = "stylesheet" type = "text/css" href = "css/css_criarEventoP.css" />
+    <!-- JS externo-->
+    <script src="js/js_criarEventoP.js" defer></script>
 	<!-- Definimos o título da página -->
 	<title> CRIAR EVENTO PRESENCIAL </title>
     <!-- Definimos o ícone na aba da página-->
 	<link rel="shortcut icon" type="image/png" href="img/schedule (2).png"/>
-
-    <script src="js/js_criarEventoP.js" defer></script>
 </head>
 
 <body>
@@ -101,12 +101,12 @@
                             <input class="form-control" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')" required>
                             <label class="ms-4" >Horário:</label>
                             <input class="horario" type="time"/>
-                            <!-- <input class="horario form-control" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')" required/> -->
+                            <!-- <input class="form-control horario" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')" required/> -->
                         </div>
                         <div class = "mt-3">
-                            <label class="mt-5 mb-3 complemento" for = "buffet">Complementos:</label>
+                            <label class="mt-5 mb-3 complemento" for="buffet">Complementos:</label>
                             <div class="d-flex justify-content-between">
-                                <input id = "buffet" placeholder="Buffet" class="buffet"/>
+                                <input id="buffet" placeholder="Buffet" class="buffet"/>
                                 <input placeholder="Atrações" class="atracoes"/>
                                 <!-- <textarea id = "buffet" placeholder="Buffet" class="buffet"></textarea>
                                 <textarea placeholder="Atrações" class="atracoes"></textarea> -->
