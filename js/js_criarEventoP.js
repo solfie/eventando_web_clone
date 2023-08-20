@@ -5,7 +5,7 @@ privacidade.addEventListener('click', () => {
     if(estado === 'privado'){
         privacidade.setAttribute('estado', 'publico')
         privacidade.innerHTML = `
-            <i class="fa-solid fa-lock-open fa-flip-horizontal"></i>
+        <i class="mt-2 fa-solid fa-lock-open fa-flip-horizontal fa-xl" style="color: #b25abf;"></i>
             <p class="ms-2">Público</p>
         `
     }
@@ -13,7 +13,7 @@ privacidade.addEventListener('click', () => {
         console.log('oiiiiiiiiii')
         privacidade.setAttribute('estado', 'privado')
         privacidade.innerHTML = `
-            <i class="fa-solid fa-lock"></i
+            <i class="mt-2 fa-solid fa-lock fa-xl"></i
             <p class="ms-2">Privado</p>
         `
     }

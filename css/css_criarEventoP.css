@@ -17,7 +17,7 @@ a{
 
 .bagulhete{
     background-color: #dccce0;
-    width: 97%!important;
+    width: 97% !important;
     border-radius: 13px;
 }
 
@@ -119,7 +119,7 @@ input{
 }
 
 input[type="time"]{
-    width: 130px;
+    width: 200px;
 }
 
 .horario{
@@ -129,7 +129,7 @@ input[type="time"]{
 }
 
 select{
-    width: 270px!important;
+    width: 270px !important;
     height: 37px;
 }
 
@@ -140,6 +140,9 @@ label{
 .buffet, .atracoes{
     height: 75px;
     width: 49%;
+    /* border: none;
+    border-radius: 6px;
+    margin-bottom: 20px; */
 }
 
 .info{

@@ -108,6 +108,8 @@
                             <div class="d-flex justify-content-between">
                                 <input id = "buffet" placeholder="Buffet" class="buffet"/>
                                 <input placeholder="Atrações" class="atracoes"/>
+                                <!-- <textarea id = "buffet" placeholder="Buffet" class="buffet"></textarea>
+                                <textarea placeholder="Atrações" class="atracoes"></textarea> -->
                             </div>
                             <div class="d-flex justify-content-between">
                                 <select class="form-select info">
@@ -120,7 +122,7 @@
                                 <input class="info" placeholder="Contato"/>
                             </div>
                             <div id="privacidade" estado="publico" class="mt-3 d-flex publico_privado">
-                                <i class="fa-solid fa-lock-open fa-flip-horizontal"></i>
+                                <i class="mt-2 fa-solid fa-lock-open fa-flip-horizontal fa-xl" style="color: #b25abf;"></i>
                                 <p class="ms-2">Público</p>
                             </div>
                         </div>
