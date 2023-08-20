@@ -104,7 +104,7 @@
                             <!-- <input class="horario form-control" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')" required/> -->
                         </div>
                         <div class = "mt-3">
-                            <label class="mt-5 mb-3" for = "buffet">Complementos:</label>
+                            <label class="mt-5 mb-3 complemento" for = "buffet">Complementos:</label>
                             <div class="d-flex justify-content-between">
                                 <input id = "buffet" placeholder="Buffet" class="buffet"/>
                                 <input placeholder="Atrações" class="atracoes"/>
