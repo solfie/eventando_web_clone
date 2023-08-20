@@ -45,7 +45,7 @@
             <div class="col-2 collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav teste-3">         
                     <div class="nav-link">
-                        <a href = "index.php"> 
+                        <a href = "menu.php"> 
                                 <i class="fa-solid fa-house"></i>
                     	</a>
                     </div>
@@ -99,29 +99,31 @@
                         </div>
                         <div class="d-flex align-items-center datetime">
                             <input class="form-control" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')" required>
-                            <label class="ms-4">Horário</label>
+                            <label class="ms-4" >Horário:</label>
                             <input class="horario" type="time"/>
+                            <!-- <input class="horario form-control" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')" required/> -->
                         </div>
-                        <label class="mt-5 mb-3">Complementos:</label>
-                        <div class="d-flex justify-content-between">
-                            <input placeholder="Buffet" class="buffet"/>
-                            <input placeholder="Atrações" class="atracoes"/>
+                        <div class = "mt-3">
+                            <label class="mt-5 mb-3" for = "buffet">Complementos:</label>
+                            <div class="d-flex justify-content-between">
+                                <input id = "buffet" placeholder="Buffet" class="buffet"/>
+                                <input placeholder="Atrações" class="atracoes"/>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <select class="form-select info">
+                                    <option>Tipo de Contato</option>
+                                    <option>Telefone</option>
+                                    <option>E-mail</option>
+                                    <option>Instagram</option>
+                                    <option>Tik Tok</option>
+                                </select>
+                                <input class="info" placeholder="Contato"/>
+                            </div>
+                            <div id="privacidade" estado="publico" class="mt-3 d-flex publico_privado">
+                                <i class="fa-solid fa-lock-open fa-flip-horizontal"></i>
+                                <p class="ms-2">Público</p>
+                            </div>
                         </div>
-                        <div class="d-flex justify-content-between">
-                            <select class="form-select info">
-                                <option>Tipo de Contato</option>
-                                <option>Abacate</option>
-                                <option>Banana</option>
-                                <option>Caju</option>
-                                <option>Damasco</option>
-                                <option>Esfregadinha</option>
-                            </select>
-                            <input class="info" placeholder="Contato"/>
-                        </div>
-                        <div id="privacidade" estado="publico" class="mt-3 d-flex publico_privado">
-                            <i class="fa-solid fa-lock-open fa-flip-horizontal"></i>
-                            <p class="ms-2">Público</p>
-                        </div> 
                     </div>
                    
                 </form>
