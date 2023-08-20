@@ -122,6 +122,10 @@ input[type="time"]{
     width: 200px;
 }
 
+.h{
+    color:#000;
+}
+
 .horario{
     width: 50px;
     margin-left: 30px;
@@ -129,9 +133,9 @@ input[type="time"]{
 }
 
 .complemento{
-    font-size: 18px;
-    color: #424242;
-    font-weight: bolder; 
+    font-size: 18px !important;
+    color: #424242 !important; 
+    font-weight: bolder !important; 
 }
 
 select{

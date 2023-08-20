@@ -45,8 +45,8 @@
             <div class="col-2 collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav teste-3">         
                     <div class="nav-link">
-                        <a href = "menu.php"> 
-                                <i class="fa-solid fa-house"></i>
+                        <a href = "menu.php">
+                            <i class="fa-solid fa-house"></i>
                     	</a>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                         </div>
                         <div class="d-flex align-items-center datetime">
                             <input class="form-control" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')" required>
-                            <label class="ms-4" >Horário:</label>
+                            <label class="ms-4 me-0 h" >Horário:</label>
                             <input class="horario" type="time"/>
                             <!-- <input class="form-control horario" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')" required/> -->
                         </div>
