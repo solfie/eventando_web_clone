@@ -55,7 +55,7 @@
     </nav>
 
 	<div class="container-fluid mt-5 ms-0 d-flex justify-content-start titulo">
-		<p class="">INFORMAÇÕES DO EVENTO</p>
+		<p class="ms-3">INFORMAÇÕES DO EVENTO</p>
 	</div>
     <div class="container-fluid d-flex p-0 bagulhete">
         <div class="div_passos">
@@ -98,10 +98,10 @@
                             <input placeholder="Objetivo do evento" class="obj"/>
                         </div>
                         <div class="d-flex align-items-center datetime">
-                            <input class="form-control" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                            <input class="form-control" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')">
                             <label class="ms-4 me-0 h" >Horário:</label>
                             <input class="horario" type="time"/>
-                            <!-- <input class="form-control horario" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')" required/> -->
+                            <!-- <input class="form-control horario" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')"/> -->
                         </div>
                         <div class = "mt-3">
                             <label class="mt-5 mb-3 complemento" for="buffet">Complementos:</label>
@@ -121,13 +121,13 @@
                                 </select>
                                 <input class="info" placeholder="Contato"/>
                             </div>
-                            <div id="privacidade" estado="publico" class="mt-3 d-flex publico_privado">
+                            <div id="privacidade" estado="publico" class="mt-4 d-flex publico_privado">
                                 <i class="mt-2 fa-solid fa-lock-open fa-flip-horizontal fa-xl" style="color: #b25abf;"></i>
-                                <p class="ms-2">Público</p>
+                                <p class="ms-2 pp">Público</p>
                             </div>
+                            <!-- <button type="submit" class="botao">&#10140; PRÓXIMO PASSO</button> -->
                         </div>
                     </div>
-                   
                 </form>
             </div>
         </div>

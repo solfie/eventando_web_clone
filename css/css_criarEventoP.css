@@ -13,6 +13,8 @@ a{
 
 .titulo p{
     font-size: 20px;
+    color:#000;
+    font-weight: bold;
 }
 
 .bagulhete{
@@ -123,7 +125,8 @@ input[type="time"]{
 }
 
 .h{
-    color:#000;
+    color: #424242 !important;
+    font-size: 18px !important;
 }
 
 .horario{
@@ -158,3 +161,29 @@ label{
 .info{
     width: 49%!important;
 }
+
+.pp{
+    font-size: 18px;
+    color:#000;
+    font-weight: bold;
+}
+
+/* .botao{
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    border: solid 2px #770089 !important;
+    width: min(45vw, 695px) !important;
+    color:#770089 !important;
+    font-size: 14px;
+    font-size: min(3vw, 16px);
+    font-weight: bold;
+    position: relative;
+    left:0%;
+    top:15%;
+}
+
+.botao:hover{
+    background-color: #770089 !important;
+    border: 2px solid #ffffff !important;
+    color:#ffffff !important;
+} */
