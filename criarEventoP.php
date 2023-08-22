@@ -10,7 +10,10 @@
 	<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity = "sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin = "anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 	<!-- CSS externo -->
+	<link rel="stylesheet" href="css/css_header.css">
 	<link rel = "stylesheet" type = "text/css" href = "css/css_criarEventoP.css" />
+    <!-- JS externo-->
+    <script src="js/js_criarEventoP.js" defer></script>
 	<!-- Definimos o título da página -->
 	<title> CRIAR EVENTO PRESENCIAL </title>
     <!-- Definimos o ícone na aba da página-->
@@ -18,38 +21,117 @@
 </head>
 
 <body>
-	<!-- <header class="py-3 mb-3 border-bottom">
-		<div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
-		<div class="col-2">
-			<a href="#" class="d-flex align-items-center col-2 mb-2 mb-lg-0 link-dark text-decoration-none" aria-expanded="false">
-				<img class="logo-header" src="./img/logo.png">
-			</a>
-		</div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid row d-flex justify-content-around align-items-center">
+                <div class="div-img col-3 navbar-brand d-flex justify-content-center align-items-center" href="#">
+                    <img class="logo-header img-fluid ms-5 ms-md-0 mt-xl-4" src="./img/logo.png">
+                </div>
+                <div class="col-3 navbar-brand d-md-none d-flex justify-content-end div-pesquisar">
+                    <button class = "btn-pesquisar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
+                    <form class="d-flex mb-0 form-pesquisar">
+                        <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
+                        <button class="btn" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-2 navbar-brand justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav teste-3">         
+                        <div class="nav-link">
+                            <a href = "menu.php">
+                                <i class="fa-solid fa-house fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-		<div class="d-flex align-items-center">
-			<form class="w-100 me-3" role="search">
-			<input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-			</form>
-
-			<div class="flex-shrink-0 dropdown">
-			<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-				<img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-			</a>
-			<ul class="dropdown-menu text-small shadow" style="">
-				<li><a class="dropdown-item" href="#">New project...</a></li>
-				<li><a class="dropdown-item" href="#">Settings</a></li>
-				<li><a class="dropdown-item" href="#">Profile</a></li>
-				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item" href="#">Sign out</a></li>
-			</ul>
-			</div>
-		</div>
-		</div>
-	</header> -->
-    <header class="row p-0 m-0 d-flex flex-wrap justify-content-center align-content-center">
-        <div class="col-2">
-			<img class="logo-header img-fluid" src="./img/logo.png">
-		</div>
-	</header>
+	<div class="container-fluid mt-5 ms-0 d-flex justify-content-start titulo">
+		<p class="ms-3">INFORMAÇÕES DO EVENTO</p>
+	</div>
+    <div class="container-fluid d-flex p-0 bagulhete">
+        <div class="div_passos">
+            <div class="passo1 mb-2">
+                <p class="m-0">PASSO 1</p>
+            </div>
+            <div class="passo2 mb-2">
+                <p class="m-0">PASSO 2</p>
+            </div>
+            <div class="passo3">
+                <p class="m-0">PASSO 3</p>
+            </div>
+        </div>
+        <div class="w-100">
+            <div class="div-form">
+                <form class="d-flex">
+                    <div>
+                        <div class="ms-5 div-img">
+                            <label class="imagem" for="file">FOTO DO EVENTO</label>
+                            <input id="file" type="file"/>
+                        </div>
+                        <div class="endereco">
+                            <label for="cep" class="mb-3 localizacao">Localização:</label>
+                            <div class="d-flex justify-content-between cep-estado">
+                                <input id="cep" class="form-control" placeholder="CEP"/>
+                                <input placeholder="Estado" class="form-control" readonly/>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <input placeholder="Cidade" class="form-control" readonly/>
+                                <input placeholder="Bairro" class="form-control" readonly/>
+                            </div>
+                            <div>
+                                <input placeholder="Logradouro" class="log" readonly/>
+                                <!-- <input placeholder="Logradouro" class="form-control log" readonly/> -->
+                                <input placeholder="N°" class="num"/>
+                                <!-- <input placeholder="N°" type="number" class="num form-control"/> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ms-5 lado2">
+                        <div>
+                            <input placeholder="Objetivo do evento" class="obj form-control"/>
+                        </div>
+                        <div class="d-flex align-items-center datetime">
+                            <input class="form-control" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')">
+                            <label class="ms-0 me-0 h">Horário:</label>
+                            <input class="horario form-control" type="time"/>
+                            <!-- <input class="form-control horario" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')"/> -->
+                        </div>
+                        <div class = "mt-3">
+                            <label class="mt-5 mb-3 complemento" for="buffet">Complementos:</label>
+                            <div class="d-flex justify-content-between">
+                                <input id="buffet" placeholder="Buffet" class="buffet form-control"/>
+                                <input placeholder="Atrações" class="atracoes form-control"/>
+                                <!-- <textarea id = "buffet" placeholder="Buffet" class="buffet"></textarea>
+                                <textarea placeholder="Atrações" class="atracoes"></textarea> -->
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <select class="form-select info">
+                                    <option>Tipo de Contato</option>
+                                    <option>Telefone</option>
+                                    <option>E-mail</option>
+                                    <option>Instagram</option>
+                                    <option>Tik Tok</option>
+                                </select>
+                                <input class="info form-control" placeholder="Contato"/>
+                            </div>
+                            <div id="privacidade" estado="publico" class="mt-4 d-flex publico_privado">
+                                <i class="mt-2 fa-solid fa-lock-open fa-flip-horizontal fa-xl" style="color: #b25abf;"></i>
+                                <p class="ms-2 pp">Público</p>
+                            </div>
+                            <!-- <button type="submit" class="botao">&#10140; PRÓXIMO PASSO</button> -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

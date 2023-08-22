@@ -10,6 +10,7 @@
 	<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity = "sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin = "anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 	<!-- CSS externo -->
+    <link rel="stylesheet" href="css/css_header.css">
 	<link rel = "stylesheet" type = "text/css" href = "css/css_index.css"/>
 	<!-- Definimos o título da página -->
 	<title> HOME </title>
@@ -18,51 +19,49 @@
 </head>
 
 <body>
-    <header class="row p-0 m-0 d-flex flex-wrap justify-content-center align-content-center">
-        <div class="col-2">
-			<img class="logo-header img-fluid" src="./img/logo.png">
-            <img class="logo-short d-none img-fluid" src="./img/logo_short.png" alt="">
-		</div>
-
-        <div class="col-6 col-lg-6 d-flex flex-wrap justify-content-center align-content-center">
-			<div class="area-pesquisar">
-                <input type="search" class="me-2" placeholder="Buscar eventos">
-                <button class = "btn-pesquisar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid row d-flex justify-content-around align-items-center">
+                <div class="div-img col-3 navbar-brand d-flex justify-content-center align-items-center" href="#">
+                    <img class="logo-header img-fluid ms-5 ms-md-0 mt-xl-4" src="./img/logo.png">
+                </div>
+                <div class="col-3 navbar-brand d-md-none d-flex justify-content-end div-pesquisar">
+                    <button class = "btn-pesquisar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
+                    <form class="d-flex mb-0 form-pesquisar">
+                        <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
+                        <button class="btn" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <button class="col-2 navbar-toggler btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="col-2 collapse navbar-collapse justify-content-end mt-0" id="navbarNavAltMarkup">
+                    <div class="navbar-nav teste-3">         
+                        <div class="nav-link">
+                            <a href = "login.php"> 
+                                <button class="btn-criar-evento"> 
+                                <i class = "fa fa-plus"></i> 
+                                &nbsp;CRIAR EVENTO </button>
+                            </a>
+                        </div>
+                        <div class="nav-link">
+                        <a href = "login.php">
+                            <button class = "btn btn-login">
+                                <i class = "fa fa-arrow-right-to-bracket"></i> 
+                                &nbsp;LOGIN
+                            </button>
+                        </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-		</div>
-
-        <div class="col col-md-2 d-flex flex-wrap align-content-center justify-content-end criar">
-			<a href = "login.php"> 
-				<button class="btn-criar-evento"> Criar Evento </button>
-			</a>
-		</div>
-
-        <div class="col-1 d-none justify-content-center flex-wrap align-content-center short-criar">
-            <button class="">
-                <a href = "login.php"> 
-                    <i class="fa fa-plus mais" aria-hidden="true"></i>
-                </a> 
-            </button>
-        </div>
-
-        <div class = "col col-md-2 mt-1 d-flex flex-wrap justify-content-end align-content-center login">
-            <a href = "login.php">
-                <button class = "btn btn-login">
-                    <i class = "fa fa-arrow-right-to-bracket"></i> 
-                    &nbsp;LOGIN
-                </button>
-            </a>
-		</div>
-
-        <div class = "d-none justify-content-center flex-wrap align-content-center col-1 short-login">
-            <a class="d-flex align-content-center flex-wrap" href = "login.php">
-                <button class = "btn btn-login d-flex align-content-center flex-wrap">
-                    <i class = "fa fa-arrow-right-to-bracket"></i>
-                </button>
-            </a>
-		</div>
+        </nav>
     </header>
 
     <div class="m-5">
