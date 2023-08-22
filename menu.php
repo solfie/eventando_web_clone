@@ -24,7 +24,7 @@
 
 <body>
     <!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
-    <header id="Cabecalho" name="Cabecalho" class="row">
+    <header id="Cabecalho" name="Cabecalho" class="row">JJJJJJJJJJJ
         <div id="divLogoP" name="divLogoP" class="col ">
             <img id=logo src="img/logo.png">
         </div>
