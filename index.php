@@ -97,11 +97,10 @@
     </div>
     
 	<!-- Criamos um footer -->
-    <br>
 	<footer>
 		<div class="container-fluid mt-0">
 			<div class="row align-items-center justify-content-between">
-				<div class="col-4 mt-5 d-none d-sm-flex align-items-center justify-content-start"  style= "background-color: #dccce0;">
+				<div class="col-4 mt-5 d-none d-sm-flex align-items-center justify-content-start">
 					<p class="d-flex align-items-center ms-1 mt-5 mb-0" id="sobreN">
 						<a href="https://www.instagram.com/eventando.nozes/" class="me-1 mb-1" target="_blank">
 							<i id="instagram" class="fa-brands fa-instagram mt-0 mb-1 me-1"></i>
@@ -110,11 +109,11 @@
 					</p>
 				</div>
 		
-				<div class="col-4 mt-5 d-none d-sm-flex align-items-center justify-content-center"  style= "background-color: #dccce0;">
+				<div class="col-4 mt-5 d-none d-sm-flex align-items-center justify-content-center" >
 					<img class="img-fluid" id="from" src="img/rodape.png" alt="from">
 				</div>
 
-				<div class="col-4 mt-5 d-none d-sm-flex flex-column align-items-end text-center"  style= "background-color: #dccce0;">
+				<div class="col-4 mt-5 d-none d-sm-flex flex-column align-items-end text-center">
 					<p id="app" class="mb-0 mt-3 me-2"> Obtenha o aplicativo </p>
 					<img class="img-fluid mt-1 my-0" id="baixar" src="img/baixar.png" alt="baixar">
 				</div>

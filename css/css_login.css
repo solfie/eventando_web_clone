@@ -5,8 +5,8 @@ body {
     display: flex;
     align-items: center;
 }
-/* Definindo a estilização do elemento com ID "btn"*/
 
+/* Definindo a estilização do elemento com ID "btn"*/
 .btn {
     top: 2%;
     left: 1%;
@@ -18,12 +18,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color: #333333;
+    color: #000;
     background-color: #bedef2;
 }
 
 .btn:hover {
-    color: #b900d5 !important;
+    color: #b25abf !important;
     transition-duration: all 0.4s !important;
 }
 
@@ -63,9 +63,8 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     }
 }
 /* Estilização do botão no menu de login */
-
 #menu-login button {
-    color: #333333;
+    color: #000;
     background-color: #f2e9f4;
     border: 0px;
     font-size: 20;
@@ -91,26 +90,16 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 
 /* Definindo a estilização do elemento com ID "emEmail"*/
 #emEmail {
-    color: #333333;
+    color: #424242;
     border: #770089 solid 1px;
     border-radius: 8px;
 }
 
 /* Definindo a estilização do elemento com ID "pwdSenha"*/
 #pwdSenha {
-    color: #333333;
+    color: #424242;
     border: #770089 solid 1px;
     border-radius: 8px;
-}
-/* Estilização do botão "Entrar com Google" */
-
-#buttonG span {
-    color: #770089 !important;
-    font-weight: 600;
-}
-
-#buttonG .nsm7Bb-HzV7m-LgbsSe {
-    border: 2px #770089 solid;
 }
 
 #txt_ckb {
@@ -133,7 +122,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 }
 
 #entrar:hover {
-    background-color: #b900d5;
+    background-color: #b25abf;
     transition-duration: all 0.4s;
 }
 
@@ -143,12 +132,22 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     cursor: pointer;
     border: solid 3px;
     border-radius: 20px;
-    border-color: #ffffff;
+    border-color: #fff;
     background-color: #770089;
     text-align: center;
     height: 40px;
     font-weight: bold;
     color: white;
+}
+
+/* Estilização do botão "Entrar com Google" */
+#buttonG span {
+    color: #770089 !important;
+    font-weight: 600;
+}
+
+#buttonG .nsm7Bb-HzV7m-LgbsSe {
+    border: 2px #770089 solid;
 }
 
 #buttonG {
@@ -158,7 +157,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 }
 
 #emEmail3 {
-    color: #333333;
+    color: #424242;
     border: #770089 solid 1px;
     border-radius: 8px;
 }
@@ -168,7 +167,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 }
 
 #enviar:hover {
-    background-color: #b900d5;
+    background-color: #b25abf;
     transition-duration: all 0.4s;
 }
 
@@ -181,12 +180,12 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 }
 
 .loginR:hover {
-    color: #b900d5;
+    color: #b25abf;
     transition-duration: all 0.4s;
 }
 
 #login2 {
-    color: #333333;
+    color: #424242;
     top: 15px;
     left: 40px;
     height: 10%;
@@ -202,7 +201,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 }
 
 #cadastro2 {
-    color: #333333;
+    color: #424242;
     top: 15px;
     left: 160px;
     height: 10%;
@@ -229,39 +228,39 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 
 #date {
     font-family: 'Montserrat', sans-serif;
-    color: #333333;
+    color: #424242;
     border: #37008a solid 1px;
     border-radius: 8px;
 }
 
 #sltEstado {
     border: #37008a solid 1px;
-    color: #333333;
+    color: #424242;
     border-radius: 8px;
 }
 
 #telTelefone {
-    color: #333333;
+    color: #424242;
     border: #37008a solid 1px;
     border-radius: 8px;
 }
 
 /* Definindo a estilização do elemento com ID "emEmail"*/
 #emEmail2 {
-    color: #333333;
+    color: #424242;
     border: #37008a solid 1px;
     border-radius: 8px;
 }
 
 /* Definindo a estilização dos elementos com ID definido*/
 #pwdSenha2 {
-    color: #333333;
+    color: #424242;
     border: #37008a solid 1px;
     border-radius: 8px;
 }
 
 #pwdConfSenha {
-    color: #333333;
+    color: #424242;
     border: #37008a solid 1px;
     border-radius: 8px;
 }

@@ -1,17 +1,19 @@
-*{ /*Fonte utilizada no site*/
+*{ 
+    /*Fonte utilizada no site*/
     font-family: 'Montserrat', sans-serif;
 } 
-     /*Cor de fundo utilizada na tela*/
+
+/*Cor de fundo utilizada na tela*/
 body{
     background-color: #ededed;
 }
-/* Remove a decoração de texto dos links */
 
+/* Remove a decoração de texto dos links */
 a{
     text-decoration: none;
 }
-/* Estilização do cabeçalho */
 
+/* Estilização do cabeçalho */
 header{
     background-color: #bedef2;
     height: 80px;
@@ -97,13 +99,11 @@ header{
 /*FIM MEDIA QUERY*/
 
 /* Estilização do elemento "logo-header" */
-
-
 .logo-header{
     margin-bottom: -45px;
 }
-/* Estilização do botão no cabeçalho */
 
+/* Estilização do botão no cabeçalho */
 header input{
     width: min(45vw, 700px);
     height: min(45vw, 29px);
