@@ -56,6 +56,7 @@ a{
 
 /* Definindo a estilização do elemento com ID "sobre"*/
 #sobre{
+    color: #000;
     font-weight: bold;
     font-size: min(2vw, 18px);
 }
@@ -69,8 +70,13 @@ a{
 
 
 /* INICIO FOOTER */
+
+.linha{
+    border-top: 1px solid #424242;
+}
+
 #instagram{
-    color: black;
+    color: #424242;
     font-size: 25px;
     font-weight: bold;
     cursor: pointer;
@@ -87,7 +93,7 @@ a{
 }
 
 #sobreNozes{
-    color: black !important;
+    color: #424242 !important;
     font-weight: bold;
     text-decoration: underline;
 }

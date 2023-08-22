@@ -64,7 +64,7 @@ nav input{
     width: min(45vw, 700px);
     height: 30px;
     border-radius: 8px !important;
-    border: #b25abf 2px solid !important;
+    border: #b25abf 1px solid !important;
 }
 /* Estilização do input dentro do header no hover */
 
@@ -85,7 +85,7 @@ input[type='search']{
 
 .btn-pesquisar{
     background-color: transparent;
-    color: #000000;
+    color: #000;
     border: 1px solid rgb(162, 189, 206);
     border-radius: 4px;
     height: 45px;

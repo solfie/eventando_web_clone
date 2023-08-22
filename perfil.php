@@ -138,7 +138,7 @@
 				<div class="col-xxl-6 mt-5 mb-5 mb-xxl-0">
 					<div class="bg-secondary-soft mt-5 px-4 py-5 rounded">
 						<div class="row g-3">
-							<h2 class="mb-4 mt-0"><i class="fa-solid fa-user me-2"></i>INFORMAÇÕES BÁSICAS</h2>
+							<h2 class="mb-4 mt-0 infos"><i class="fa-solid fa-user me-2"></i>INFORMAÇÕES BÁSICAS</h2>
 							
 							<div class="col-md-12">
 								<label class="form-label">Nome</label>
@@ -190,7 +190,7 @@
 				<div class="col-xxl-6 mt-5 mb-5 mb-xxl-0">
 					<div class="bg-secondary-soft mt-5 px-4 py-5 rounded">
 						<div class="row g-3">
-							<h2 class="my-4 mb-4 mt-0"><i class="fa-solid fa-phone me-2"></i>INFORMAÇÕES DE CONTATO</h2>
+							<h2 class="my-4 mb-4 mt-0 infos"><i class="fa-solid fa-phone me-2"></i>INFORMAÇÕES DE CONTATO</h2>
 					
 							<div class="col-md-12">
 								<label for="exampleInputPassword2" class="form-label">Telefone</label>

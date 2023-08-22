@@ -336,6 +336,8 @@ a {
 .titulo{
     font-size: min(3vw, 24px);
     margin: 0 0 -100px 0;
+    color: #000;
+    font-weight: bold;
 }
 
 .divSobre{
@@ -501,7 +503,7 @@ a {
 }
 
 #instagram{
-    color: black !important;
+    color: #424242 !important;
     font-weight: bold;
     text-decoration: underline;
 }

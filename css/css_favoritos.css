@@ -292,13 +292,14 @@ a {
 /* FIM MODAL*/
 
 /* Estilização geral da classe .titulo */
-
 .titulo{
     font-size: min(3vw, 24px);
     margin: 0 0 -100px 0;
+    color: #000;
+    font-weight: bold;
 }
-/* Estilização do elemento de seleção de formulário */
 
+/* Estilização do elemento de seleção de formulário */
 .form-select{
     width: 200px;
     min-width: 140px;
@@ -307,11 +308,11 @@ a {
     font-size: 1.2rem !important;
     font-weight: 400;
     line-height: 1.6;
-    color: #333333;
+    color: #424242;
     background-color: #ededed;
     background-clip: padding-box;
-    border: solid 2px #770089 !important;
-    border-radius: 40px;
+    border: solid 1px #770089 !important;
+    border-radius: 8px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -353,7 +354,7 @@ a {
 /* Definindo a estilização do elemento com ID "instagram"*/
 
 #instagram{
-    color: black !important;
+    color: #424242 !important;
     font-weight: bold;
     text-decoration: underline;
 }
