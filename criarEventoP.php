@@ -21,38 +21,40 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid row d-flex justify-content-around align-items-center">
-            <div class="div-img col-3 navbar-brand d-flex justify-content-center align-items-center" href="#">
-                <img class="logo-header img-fluid ms-5 ms-md-0 mt-xl-4" src="./img/logo.png">
-            </div>
-            <div class="col-3 navbar-brand d-md-none d-flex justify-content-end div-pesquisar">
-                <button class = "btn-pesquisar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
-            <div class="col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
-                <form class="d-flex mb-0 form-pesquisar">
-                    <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
-                    <button class="btn" type="submit">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid row d-flex justify-content-around align-items-center">
+                <div class="div-img col-3 navbar-brand d-flex justify-content-center align-items-center" href="#">
+                    <img class="logo-header img-fluid ms-5 ms-md-0 mt-xl-4" src="./img/logo.png">
+                </div>
+                <div class="col-3 navbar-brand d-md-none d-flex justify-content-end div-pesquisar">
+                    <button class = "btn-pesquisar">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                </form>
-            </div>
-            <button class="col-2 navbar-toggler btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="col-2 collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav teste-3">         
-                    <div class="nav-link">
-                        <a href = "menu.php">
-                            <i class="fa-solid fa-house"></i>
-                    	</a>
+                </div>
+                <div class="col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
+                    <form class="d-flex mb-0 form-pesquisar">
+                        <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
+                        <button class="btn" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <button class="col-2 navbar-toggler btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-2 collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav teste-3">         
+                        <div class="nav-link">
+                            <a href = "menu.php">
+                                <i class="fa-solid fa-house fa-xl"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
 	<div class="container-fluid mt-5 ms-0 d-flex justify-content-start titulo">
 		<p class="ms-3">INFORMAÇÕES DO EVENTO</p>
@@ -80,34 +82,36 @@
                         <div class="endereco">
                             <label for="cep" class="mb-3 localizacao">Localização:</label>
                             <div class="d-flex justify-content-between cep-estado">
-                                <input id="cep" placeholder="CEP"/>
-                                <input placeholder="Estado" readonly/>
+                                <input id="cep" class="form-control" placeholder="CEP"/>
+                                <input placeholder="Estado" class="form-control" readonly/>
                             </div>
                             <div class="d-flex flex-column">
-                                <input placeholder="Cidade" readonly/>
-                                <input placeholder="Bairro" readonly/>
+                                <input placeholder="Cidade" class="form-control" readonly/>
+                                <input placeholder="Bairro" class="form-control" readonly/>
                             </div>
                             <div>
                                 <input placeholder="Logradouro" class="log" readonly/>
+                                <!-- <input placeholder="Logradouro" class="form-control log" readonly/> -->
                                 <input placeholder="N°" class="num"/>
+                                <!-- <input placeholder="N°" type="number" class="num form-control"/> -->
                             </div>
                         </div>
                     </div>
                     <div class="ms-5 lado2">
                         <div>
-                            <input placeholder="Objetivo do evento" class="obj"/>
+                            <input placeholder="Objetivo do evento" class="obj form-control"/>
                         </div>
                         <div class="d-flex align-items-center datetime">
                             <input class="form-control" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')">
-                            <label class="ms-4 me-0 h" >Horário:</label>
-                            <input class="horario" type="time"/>
+                            <label class="ms-0 me-0 h">Horário:</label>
+                            <input class="horario form-control" type="time"/>
                             <!-- <input class="form-control horario" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')"/> -->
                         </div>
                         <div class = "mt-3">
                             <label class="mt-5 mb-3 complemento" for="buffet">Complementos:</label>
                             <div class="d-flex justify-content-between">
-                                <input id="buffet" placeholder="Buffet" class="buffet"/>
-                                <input placeholder="Atrações" class="atracoes"/>
+                                <input id="buffet" placeholder="Buffet" class="buffet form-control"/>
+                                <input placeholder="Atrações" class="atracoes form-control"/>
                                 <!-- <textarea id = "buffet" placeholder="Buffet" class="buffet"></textarea>
                                 <textarea placeholder="Atrações" class="atracoes"></textarea> -->
                             </div>
@@ -119,7 +123,7 @@
                                     <option>Instagram</option>
                                     <option>Tik Tok</option>
                                 </select>
-                                <input class="info" placeholder="Contato"/>
+                                <input class="info form-control" placeholder="Contato"/>
                             </div>
                             <div id="privacidade" estado="publico" class="mt-4 d-flex publico_privado">
                                 <i class="mt-2 fa-solid fa-lock-open fa-flip-horizontal fa-xl" style="color: #b25abf;"></i>

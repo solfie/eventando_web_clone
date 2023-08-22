@@ -19,46 +19,49 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid row d-flex justify-content-around align-items-center">
-            <div class="div-img col-3 navbar-brand d-flex justify-content-center align-items-center" href="#">
-                <img class="logo-header img-fluid ms-5 ms-md-0 mt-xl-4" src="./img/logo.png">
-            </div>
-            <div class="col-3 navbar-brand d-md-none d-flex justify-content-end div-pesquisar">
-                <button class = "btn-pesquisar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
-            <div class="col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
-                <form class="d-flex mb-0 form-pesquisar">
-                    <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
-                    <button class="btn" type="submit">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid row d-flex justify-content-around align-items-center">
+                <div class="div-img col-3 navbar-brand d-flex justify-content-center align-items-center" href="#">
+                    <img class="logo-header img-fluid ms-5 ms-md-0 mt-xl-4" src="./img/logo.png">
+                </div>
+                <div class="col-3 navbar-brand d-md-none d-flex justify-content-end div-pesquisar">
+                    <button class = "btn-pesquisar">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                </form>
-            </div>
-            <button class="col-2 navbar-toggler btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="col-2 collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav teste-3">         
-                    <div class="nav-link">
-                        <a href = "login.php"> 
-				            <button class="btn-criar-evento"> Criar Evento </button>
-			            </a>
-                    </div>
-                    <div class="nav-link">
-                    <a href = "login.php">
-                        <button class = "btn btn-login">
-                            <i class = "fa fa-arrow-right-to-bracket"></i> 
-                            &nbsp;LOGIN
+                </div>
+                <div class="col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
+                    <form class="d-flex mb-0 form-pesquisar">
+                        <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
+                        <button class="btn" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
-                    </a>
+                    </form>
+                </div>
+                <button class="col-2 navbar-toggler btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-2 collapse navbar-collapse justify-content-end mt-0" id="navbarNavAltMarkup">
+                    <div class="navbar-nav teste-3">         
+                        <div class="nav-link">
+                            <a href = "login.php"> 
+                                <button class="btn-criar-evento"> Criar Evento </button>
+                            </a>
+                        </div>
+                        <div class="nav-link">
+                        <a href = "login.php">
+                            <button class = "btn btn-login">
+                                <i class = "fa fa-arrow-right-to-bracket"></i> 
+                                &nbsp;LOGIN
+                            </button>
+                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
     <div class="m-5">
         <p class="eventosR">EVENTOS RECENTES</p>
         <div class = "barraE">

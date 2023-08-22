@@ -14,7 +14,7 @@ privacidade.addEventListener('click', () => {
         privacidade.setAttribute('estado', 'privado')
         privacidade.innerHTML = `
             <i class="mt-2 fa-solid fa-lock fa-xl"></i
-            <p class="ms-2 pp">Privado</p>
+        <p class="ms-2 pp" style = "font-size: 18px; color:#000; font-weight: bold;">Privado</p>
         `
     }
 })

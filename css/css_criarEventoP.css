@@ -40,15 +40,17 @@ a{
 
 .passo1{
     background-color: #770089;
-    box-shadow: 16px 16px rgb(126, 126, 126, 0.13) !important;
+    box-shadow: 3px 3px rgb(0, 0, 0, 0.21) !important;
 }
 
 .passo2{
-    background-color: #d37ae0 ;
+    background-color: #d37ae0;
+    box-shadow: 3px 3px rgb(0, 0, 0, 0.21) !important;
 }
 
 .passo3{
     background-color: #dfb1e6;
+    box-shadow: 3px 3px rgb(0, 0, 0, 0.21) !important;
 }
 
 .div-img{
@@ -117,17 +119,17 @@ input{
 }
 
 #date{
-    width: 250px;
+    width: 400px;
     margin-right: 60px;
 }
 
 input[type="time"]{
-    width: 200px;
+    width: 250px;
 }
 
 .h{
     color: #424242 !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
 }
 
 .horario{
