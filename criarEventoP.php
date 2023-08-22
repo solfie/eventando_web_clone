@@ -40,10 +40,7 @@
                         </button>
                     </form>
                 </div>
-                <button class="col-2 navbar-toggler btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="col-2 collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="col-2 navbar-brand justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav teste-3">         
                         <div class="nav-link">
                             <a href = "menu.php">

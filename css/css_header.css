@@ -63,7 +63,7 @@ nav{
 nav input{
     width: min(45vw, 700px);
     height: 30px;
-    border-radius: 15px !important;
+    border-radius: 8px !important;
     border: #b25abf 2px solid !important;
 }
 /* Estilização do input dentro do header no hover */
@@ -103,17 +103,24 @@ input[type='search']{
 /* Estilização do botão de criar evento */
 
 .btn-criar-evento{
-    background-color: #b25abf;
-    border: #770089 3px solid;
-    color: #ffffff;
-    border-radius: 40px;
-    width: 141px;
-    font-size: min(3vw, 14px);
+    /* background-color: #b25abf;
+    border: #770089 3px solid; */
+    background-color: transparent;
+    border: none;
+    /* color: #ffffff; */
+    color: #000;
+    font-weight: bold;
+    /* border-radius: 40px; */
+    width: 180px;
+    /* font-size: min(3vw, 14px); */
+    font-size: min(4vw, 18px);
 }
 /* Estilização do botão de criar evento no hover */
 
 .btn-criar-evento:hover{
-    background-color: #b900d5;
+    /* background-color: #b900d5;
+    transition-duration: all 0.4s; */
+    color: #b25abf;
     transition-duration: all 0.4s;
 }
 /* Estilização do botão de login */
@@ -121,6 +128,7 @@ input[type='search']{
 .btn-login{
     font-size: min(4vw, 18px);
     font-weight: bold;
+    color: #000;
 }
 /* Estilização do botão de login no hover */
 

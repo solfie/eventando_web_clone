@@ -45,7 +45,9 @@
                     <div class="navbar-nav teste-3">         
                         <div class="nav-link">
                             <a href = "login.php"> 
-                                <button class="btn-criar-evento"> Criar Evento </button>
+                                <button class="btn-criar-evento"> 
+                                <i class = "fa fa-plus"></i> 
+                                &nbsp;CRIAR EVENTO </button>
                             </a>
                         </div>
                         <div class="nav-link">
