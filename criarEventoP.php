@@ -86,11 +86,11 @@
                                 <input placeholder="Cidade" class="form-control" readonly/>
                                 <input placeholder="Bairro" class="form-control" readonly/>
                             </div>
-                            <div>
-                                <input placeholder="Logradouro" class="log" readonly/>
-                                <!-- <input placeholder="Logradouro" class="form-control log" readonly/> -->
-                                <input placeholder="N°" class="num"/>
-                                <!-- <input placeholder="N°" type="number" class="num form-control"/> -->
+                            <div >
+                                <!-- <input placeholder="Logradouro" class="log" readonly/> -->
+                                <input placeholder="Logradouro" class="form-control log" readonly/>
+                                <!-- <input placeholder="N°" type="number" class="num"/> -->
+                                <input placeholder="N°" class="num form-control"/>
                             </div>
                         </div>
                     </div>
@@ -106,11 +106,9 @@
                         </div>
                         <div class = "mt-3">
                             <label class="mt-5 mb-3 complemento" for="buffet">Complementos:</label>
-                            <div class="d-flex justify-content-between">
-                                <input id="buffet" placeholder="Buffet" class="buffet form-control"/>
-                                <input placeholder="Atrações" class="atracoes form-control"/>
-                                <!-- <textarea id = "buffet" placeholder="Buffet" class="buffet"></textarea>
-                                <textarea placeholder="Atrações" class="atracoes"></textarea> -->
+                            <div class="mb-3 d-flex justify-content-between">
+                                <textarea id = "buffet" placeholder="Buffet" class="form-control buffet"></textarea>
+                                <textarea placeholder="Atrações" class="form-control atracoes"></textarea>
                             </div>
                             <div class="d-flex justify-content-between">
                                 <select class="form-select info">
@@ -126,8 +124,8 @@
                                 <i class="mt-2 fa-solid fa-lock-open fa-flip-horizontal fa-xl" style="color: #b25abf;"></i>
                                 <p class="ms-2 pp">Público</p>
                             </div>
-                            <!-- <button type="submit" class="botao">&#10140; PRÓXIMO PASSO</button> -->
                         </div>
+                        <button type="submit" class="botao">&#10140; PRÓXIMO PASSO</button>
                     </div>
                 </form>
             </div>

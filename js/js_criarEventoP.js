@@ -6,10 +6,11 @@ privacidade.addEventListener('click', () => {
         privacidade.setAttribute('estado', 'publico')
         privacidade.innerHTML = `
         <i class="mt-2 fa-solid fa-lock-open fa-flip-horizontal fa-xl" style="color: #b25abf;"></i>
-            <p class="ms-2">Público</p>
+            <p class="ms-2 pp">Público</p>
         `
     }
-    if(estado === 'publico'){
+
+    else{
         console.log('oiiiiiiiiii')
         privacidade.setAttribute('estado', 'privado')
         privacidade.innerHTML = `
