@@ -101,12 +101,12 @@
                         <div class="d-flex align-items-center datetime">
                             <input class="form-control" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')">
                             <label class="ms-0 me-0 h">Horário:</label>
-                            <input class="horario form-control" type="time"/>
-                            <!-- <input class="form-control horario" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')"/> -->
+                            <!-- <input class="horario form-control" type="time"/> -->
+                            <input class="form-control horario" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')"/>
                         </div>
                         <div class = "mt-3">
                             <label class="mt-5 mb-3 complemento" for="buffet">Complementos:</label>
-                            <div class="mb-3 d-flex justify-content-between">
+                            <div class="mb-2 d-flex justify-content-between">
                                 <textarea id = "buffet" placeholder="Buffet" class="form-control buffet"></textarea>
                                 <textarea placeholder="Atrações" class="form-control atracoes"></textarea>
                             </div>
@@ -121,7 +121,7 @@
                                 <input class="info form-control" placeholder="Contato"/>
                             </div>
                             <div id="privacidade" estado="publico" class="mt-4 d-flex publico_privado">
-                                <i class="mt-2 fa-solid fa-lock-open fa-flip-horizontal fa-xl" style="color: #b25abf;"></i>
+                                <i class="mt-2 fa-solid fa-lock-open fa-flip-horizontal fa-xl" style="color: #770089;"></i>
                                 <p class="ms-2 pp">Público</p>
                             </div>
                         </div>

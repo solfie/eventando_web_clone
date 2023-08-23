@@ -307,7 +307,7 @@ a {
 .botao{
     background-color: #770089 !important;
     border-radius: 15px !important;
-    border: solid 1px #fff !important;
+    border: solid 3px #fff !important;
     width: min(45vw, 695px) !important;
     color:#fff !important;
     font-size: min(3vw, 16px);
@@ -319,8 +319,6 @@ a {
 
 .botao:hover{
     background-color: #b25abf !important;
-    border: 1px solid #fff !important;
-    color:#fff !important;
 }
 
 .bg-secondary-soft {
