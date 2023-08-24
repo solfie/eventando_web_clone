@@ -41,7 +41,9 @@
 
         <div class="col col-md-2 d-flex flex-wrap align-content-center justify-content-end criar">
 			<a href = "#"> 
-				<button class="btn-criar-evento"> Criar Evento </button>
+			<button class="btn-criar-evento">
+				<i class="fa-regular fa-calendar-plus"></i>
+				&nbsp;CRIAR EVENTO </button>
 			</a>
 		</div>
 
@@ -142,12 +144,14 @@
 							
 							<div class="col-md-12">
 								<label class="form-label">Nome</label>
-								<input type="text" class="form-control" value="TIAGO ROSA" placeholder="">
+								<input type="text" class="form-control" placeholder="">
+								<!-- <input type="text" class="form-control" value="TIAGO ROSA" placeholder=""> -->
 							</div>
 							
 							<div class="col-md-12">
 								<label class="form-label">Data de nascimento</label>
-								<input class="form-control" type="text" id="date" value="12/11/1981" placeholder="" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+								<input class="form-control" type="text" id="date"  placeholder="" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+								<!-- <input class="form-control" type="text" id="date" value="12/11/1981" placeholder="" onfocus="(this.type='date')" onblur="(this.type='text')" required> -->
 							</div>
 							
 							<div class="col-md-12">
@@ -159,7 +163,8 @@
 									<option value="AP">Amapá</option>
 									<option value="AM">Amazonas</option>
 									<option value="BA">Bahia</option>
-									<option value="CE" selected>Ceará</option>
+									<option value="CE">Ceará</option>
+									<!-- <option value="CE" selected>Ceará</option> -->
 									<option value="DF">Distrito Federal</option>
 									<option value="ES">Espirito Santo</option>
 									<option value="GO">Goiás</option>
@@ -194,12 +199,14 @@
 					
 							<div class="col-md-12">
 								<label for="exampleInputPassword2" class="form-label">Telefone</label>
-								<input class="form-control" type="tel" id="telTelefone" value="(85) 99812-4767" placeholder="" maxlength="15" required>
+								<input class="form-control" type="tel" id="telTelefone" placeholder="" maxlength="15" required>
+								<!-- <input class="form-control" type="tel" id="telTelefone" value="(85) 99812-4767" placeholder="" maxlength="15" required> -->
 							</div>
 							
 							<div class="col-md-12">
 								<label for="exampleInputPassword3" class="form-label">E-mail</label>
-								<input class="form-control" type="email" id="emEmail2" value="tiagorosa@gmail.com" placeholder="" disabled>
+								<input class="form-control" type="email" id="emEmail2" placeholder="" disabled>
+								<!-- <input class="form-control" type="email" id="emEmail2" value="tiagorosa@gmail.com" placeholder="" disabled> -->
 							</div>
 						</div>
 					</div>

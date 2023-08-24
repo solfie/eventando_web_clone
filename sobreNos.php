@@ -39,7 +39,9 @@
 
         <div class="col col-md-2 d-flex flex-wrap align-content-center justify-content-end criar">
 			<a href = "#"> 
-				<button class="btn-criar-evento"> Criar Evento </button>
+            <button class="btn-criar-evento">
+				<i class="fa-regular fa-calendar-plus"></i>
+				&nbsp;CRIAR EVENTO </button>
 			</a>
 		</div>
 

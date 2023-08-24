@@ -35,17 +35,22 @@ a{
     display: flex;
     align-items: center;
     border-radius: 0px 8px 8px 0px;
-    cursor: pointer;
 }
 
 .passo1{
     background-color: #770089;
+    cursor: pointer;
     box-shadow: 3px 3px rgb(0, 0, 0, 0.21) !important;
 }
 
 .passo2{
     background-color: #d37ae0;
+    cursor: pointer;
     box-shadow: 3px 3px rgb(0, 0, 0, 0.21) !important;
+}
+
+.passo2:hover{
+    background-color: #770089;
 }
 
 .passo3{
@@ -80,7 +85,7 @@ input[type="file"]{
     width: 362px;
     height: 125px;
     border-radius: 8px;
-    border: #d37ae0 2px solid;
+    border: #b25abf 2px solid;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -98,11 +103,11 @@ input{
 }
 
 .log{
-    width: 415px;
+    width: 425px !important;
 }
 
 .num{
-    width: 100px;
+    width: 100px !important;
 }
 
 .lado2{
@@ -123,19 +128,9 @@ input{
     margin-right: 60px;
 }
 
-/* input[type="time"]{
-    width: 250px;
-} */
-
-.h{
-    color: #424242 !important;
-    font-size: 17px !important;
-}
-
 .horario{
     width: 250px !important;
     margin-left: 20px !important;
-    /* margin-right: 10px; */
 }
 
 .complemento{
@@ -170,17 +165,27 @@ label{
     font-weight: bold;
 }
 
+.b{
+    position: absolute !important;
+    justify-content: end !important;
+    align-items: end !important;
+    right: 50 !important;
+    top: 590 !important;
+}
+
 .botao{
-    background-color: #770089 !important;
+    background-color: #fff !important;
     border-radius: 8px !important;
-    border: solid 3px #fff !important;
+    border: solid 3px #770089 !important;
     width: min(45vw, 250px) !important;
-    height: 30px !important;
-    color: #fff !important;
+    height: 35px !important;
+    color: #770089 !important;
     font-size: min(3vw, 16px);
     font-weight: bold;
 }
 
 .botao:hover{
-    background-color: #b25abf !important;
+    background-color: #770089 !important;
+    border: solid 3px #770089 !important;
+    color: #fff !important;
 }

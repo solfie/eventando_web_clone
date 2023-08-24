@@ -39,7 +39,9 @@
 
         <div class="col col-md-2 d-flex flex-wrap align-content-center justify-content-end criar">
 			<a href = "#"> 
-				<button class="btn-criar-evento"> Criar Evento </button>
+			<button class="btn-criar-evento">
+				<i class="fa-regular fa-calendar-plus"></i>
+				&nbsp;CRIAR EVENTO </button>
 			</a>
 		</div>
 
@@ -128,9 +130,9 @@
 				</h1>
 			</div>
 
-			<div class="col-6 ms-5 mt-5 py-4 d-block d-sm-flex d-md-flex justify-content-end">
+			<div class="col-5 ms-5 mt-5 py-4 d-block d-sm-flex d-md-flex justify-content-end">
 				<!-- <i class="fa-solid fa-filter filtro mt-3 me-3 d-none d-sm-flex" style="color: #770089;"></i> -->
-				<select class="form-select mt-2" id="sltFiltros">
+				<select class="form-select mt-3" id="sltFiltros">
 					<option value="">&#xf0b0; Todos Eventos</option>
 					<option value="ME">&#xf274; Meus Eventos</option>
 					<option value="ER">&#xf073; Eventos Recentes</option>

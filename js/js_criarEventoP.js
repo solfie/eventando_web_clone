@@ -1,21 +1,19 @@
 const privacidade = document.getElementById('privacidade');
-const estado = privacidade.getAttribute('estado')
+privacidade.setAttribute('estado', 'privado')
 privacidade.addEventListener('click', () => {
-    console.log(estado)
-    if(estado === 'privado'){
-        privacidade.setAttribute('estado', 'publico')
-        privacidade.innerHTML = `
-        <i class="mt-2 fa-solid fa-lock-open fa-flip-horizontal fa-xl" style="color: #b25abf;"></i>
-            <p class="ms-2 pp">Público</p>
-        `
-    }
-
-    else{
-        console.log('oiiiiiiiiii')
+    if(privacidade.getAttribute('estado') === 'publico'){
         privacidade.setAttribute('estado', 'privado')
         privacidade.innerHTML = `
-            <i class="mt-2 fa-solid fa-lock fa-xl"></i
-        <p class="ms-2 pp" style = "font-size: 18px; color:#000; font-weight: bold;">Privado</p>
+            <i class="mt-2 fa-solid fa-lock fa-xl"></i>
+            <p class="ms-2 pp" style = "font-size: 18px; color:#000; font-weight: bold;">Privado</p>
+        `
+    }
+    
+    else{
+        privacidade.setAttribute('estado', 'publico')
+        privacidade.innerHTML = `
+        <i class="mt-2 fa-solid fa-unlock fa-flip-horizontal fa-xl" style="color: #b25abf;"></i>
+        <p class="ms-2 pp">Público</p>
         `
     }
 })

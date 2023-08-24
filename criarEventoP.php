@@ -80,8 +80,7 @@
                             <label for="cep" class="mb-3 localizacao">Localização:</label>
                             <div class="d-flex justify-content-between cep-estado">
                                 <input id="cep" class="form-control" placeholder="CEP"/>
-                                <!-- <input placeholder="Estado" class="form-control" readonly/> -->
-                                <select class="form-select ms-2" id="sltEstado" required>
+                                <select class="form-select ms-2" id="sltEstado">
 									<option value="">Estado</option>
 									<option value="AC">Acre</option>
 									<option value="AL">Alagoas</option>
@@ -116,11 +115,9 @@
                                 <input placeholder="Cidade" class="form-control" readonly/>
                                 <input placeholder="Bairro" class="form-control" readonly/>
                             </div>
-                            <div >
-                                <!-- <input placeholder="Logradouro" class="log" readonly/> -->
+                            <div class="d-flex">
                                 <input placeholder="Logradouro" class="form-control log" readonly/>
-                                <!-- <input placeholder="N°" type="number" class="num"/> -->
-                                <input placeholder="N°" class="num form-control"/>
+                                <input placeholder="N°" class="ms-2 num form-control"/>
                             </div>
                         </div>
                     </div>
@@ -130,13 +127,11 @@
                         </div>
                         <div class="d-flex align-items-center datetime">
                             <input class="form-control" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')">
-                            <label class="ms-0 me-0 h">Horário:</label>
-                            <!-- <input class="horario form-control" type="time"/> -->
                             <input class="form-control horario" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')"/>
                         </div>
                         <div class = "mt-3">
                             <label class="mt-5 mb-3 complemento" for="buffet">Complementos:</label>
-                            <div class="mb-2 d-flex justify-content-between">
+                            <div class="mb-3 d-flex justify-content-between">
                                 <textarea id = "buffet" placeholder="Buffet" class="form-control buffet"></textarea>
                                 <textarea placeholder="Atrações" class="form-control atracoes"></textarea>
                             </div>
@@ -151,11 +146,15 @@
                                 <input class="info form-control" placeholder="Contato"/>
                             </div>
                             <div id="privacidade" estado="publico" class="mt-4 d-flex publico_privado">
-                                <i class="mt-2 fa-solid fa-lock-open fa-flip-horizontal fa-xl" style="color: #770089;"></i>
+                                <i class="mt-2 fa-solid fa-unlock fa-flip-horizontal fa-xl" style="color: #b25abf;"></i>
                                 <p class="ms-2 pp">Público</p>
                             </div>
                         </div>
-                        <button type="submit" class="botao">&#10140; PRÓXIMO PASSO</button>
+                        <div class="b">
+                            <a href = "passo2.php">
+                                <button type="submit" class="botao">&#10140; PRÓXIMO PASSO</button>
+                            </a>
+                        </div>
                     </div>
                 </form>
             </div>

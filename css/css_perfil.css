@@ -129,18 +129,25 @@ input[type='search']{
     font-size: min(3vw, 16px);
 }
 
+/* Estilização do botão de criar evento */
 .btn-criar-evento{
-    background-color: #b25abf;
-    border: #770089 3px solid;
-    color: #ffffff;
-    border-radius: 40px;
-    width: 141px;
-    font-size: min(3vw, 14px);
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    width: 180px;
+    font-size: min(4vw, 18px);
 }
 
+/* Estilização do botão de criar evento no hover */
 .btn-criar-evento:hover{
-    background-color: #b900d5;
+    color: #b25abf;
     transition-duration: all 0.4s;
+}
+
+.btn-criar-evento:active{
+    color: #b25abf !important;
+    border: none !important;
 }
 
 /* INICIO MODAL */
@@ -306,7 +313,7 @@ a {
 
 .botao{
     background-color: #770089 !important;
-    border-radius: 15px !important;
+    border-radius: 8px !important;
     border: solid 3px #fff !important;
     width: min(45vw, 695px) !important;
     color:#fff !important;
