@@ -146,7 +146,7 @@ input{
 
 select{
     width: 270px !important;
-    height: 37px;
+    height: 35px !important;
 }
 
 label{
@@ -158,7 +158,6 @@ label{
     width: 49%;
     border: none !important;
     border-radius: 6px !important;
-    margin-bottom: 20px !important;
 }
 
 .info{
