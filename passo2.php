@@ -12,6 +12,7 @@
 	<!-- CSS externo -->
 	<link rel="stylesheet" href="css/css_header.css">
 	<link rel = "stylesheet" type = "text/css" href = "css/css_criarEventoP.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/css_passo2.css" />
     <!-- JS externo-->
     <script src="js/js_criarEventoP.js" defer></script>
 	<!-- Definimos o título da página -->
@@ -56,6 +57,7 @@
 	<div class="container-fluid mt-5 ms-0 d-flex justify-content-start titulo">
 		<p class="ms-3">LISTA DE CONVIDADOS</p>
 	</div>
+
     <div class="container-fluid d-flex p-0 bagulhete">
         <div class="div_passos">
             <div class="passo1 mb-2">
@@ -68,9 +70,23 @@
                 <p class="m-0">PASSO 3</p>
             </div>
         </div>
+        
         <div class="w-100">
             <div class="div-form">
+                <form class="d-flex">
+                    <div class= "row justify-content-between ms-2 mt-4 w-100">
+                        <div class = "inserir ms-5 col-3">
+                            <input type= "text" class = "form-control" placeholder = "Nome do convidado">
+                        </div>
+                        <div class="col-3 ms-2">
+                            <input type= "email" class = "form-control" placeholder = "E-mail do convidado">
+                        </div>
+                        <div class="col-4">
+                            <button class = "btn-add mt-1"> ADICIONAR </button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-
+    </div>
 </html>

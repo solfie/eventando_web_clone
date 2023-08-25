@@ -129,7 +129,7 @@ input{
 }
 
 .horario{
-    width: 250px !important;
+    width: 280px !important;
     margin-left: 20px !important;
 }
 
@@ -157,6 +157,10 @@ label{
 
 .info{
     width: 49%!important;
+}
+
+#privacidade{
+    cursor: pointer;
 }
 
 .pp{
