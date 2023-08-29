@@ -48,7 +48,7 @@
 
 	<div class="container-fluid mt-5 ms-0 d-flex justify-content-between titulo">
 		<p class="ms-3">INFORMAÇÕES DO EVENTO</p>
-        <p class="me-3">Nome do Evento</p>
+        <p class="me-3 nomeE">NOME DO EVENTO</p>
 	</div>
     <div class="container-fluid d-flex p-0 bagulhete">
         <div class="div_passos">
@@ -70,7 +70,7 @@
                                 <label class="imagem" for="file">FOTO DO EVENTO</label>
                                 <input id="file" type="file"/>
                             </div>
-                            <div class="ms-4">
+                            <div class="ms-5">
                                 <input placeholder="Objetivo do evento" class="obj form-control"/>
                                 <div class="d-flex">
                                     <input class="form-control" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')">

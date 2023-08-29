@@ -37,6 +37,12 @@ a{
     font-weight: bold;
 }
 
+.nomeE{
+    font-size: 24px !important;
+    color:#000;
+    font-weight: bold;
+}
+
 .bagulhete{
     background-color: #dccce0;
     width: 97% !important;
@@ -127,7 +133,7 @@ input{
 }
 
 .log{
-    width: 425px !important;
+    width: 570px !important;
 }
 
 .num{
@@ -282,9 +288,9 @@ label{
     max-width: 500px;
 }
 
-.body-lista span:nth-child(2){
+/* .body-lista span:nth-child(2){
    
-}
+} */
 
 .header-lista p:nth-child(2){
     margin-left: 378px;
