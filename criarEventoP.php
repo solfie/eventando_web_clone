@@ -21,44 +21,38 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid row d-flex justify-content-around align-items-center">
-                <div class="div-img col-3 navbar-brand d-flex justify-content-center align-items-center" href="#">
-                    <img class="logo-header img-fluid ms-5 ms-md-0 mt-xl-4" src="./img/logo.png">
-                </div>
-                <div class="col-3 navbar-brand d-md-none d-flex justify-content-end div-pesquisar">
-                    <button class = "btn-pesquisar">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+    <header class="container-fluid">
+        <div class="container-fluid row d-flex justify-content-around align-items-center">
+            <div class="div-img criar-evento col-3 navbar-brand d-flex justify-content-center align-items-center" href="#">
+                <img class="logo-header img-fluid ms-5 ms-md-0 mt-xl-4" src="./img/logo.png">
+            </div>
+            <div class="div-pesquisar col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
+                <form class="d-flex mb-0 form-pesquisar">
+                    <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
+                    <button class="btn" type="submit">
+                        <i class="lupa fa-solid fa-magnifying-glass"></i>
                     </button>
-                </div>
-                <div class="col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
-                    <form class="d-flex mb-0 form-pesquisar">
-                        <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
-                        <button class="btn" type="submit">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
-                </div>
-                <div class="col-2 navbar-brand justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav teste-3">         
-                        <div class="nav-link">
-                            <a href = "menu.php">
-                                <i class="fa-solid fa-house fa-xl"></i>
-                            </a>
-                        </div>
+                </form>
+            </div>
+            <div class="div-home col-2 navbar-brand justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav teste-3">         
+                    <div class="nav-link">
+                        <a href = "menu.php">
+                            <i class="fa-solid fa-house fa-xl"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
 
-	<div class="container-fluid mt-5 ms-0 d-flex justify-content-start titulo">
+	<div class="container-fluid mt-5 ms-0 d-flex justify-content-between titulo">
 		<p class="ms-3">INFORMAÇÕES DO EVENTO</p>
+        <p class="me-3">NOME DO EVENTO</p>
 	</div>
     <div class="container-fluid d-flex p-0 bagulhete">
         <div class="div_passos">
-            <div class="passo1 mb-2">
+            <div id="btn-passo1" class="passo1 mb-2">
                 <p class="m-0">PASSO 1</p>
             </div>
             <div class="passo2 mb-2">
@@ -68,69 +62,72 @@
                 <p class="m-0">PASSO 3</p>
             </div>
         </div>
-        <div class="w-100">
+        <div class="w-100 div-passo1">
             <div class="div-form">
-                <form class="d-flex">
-                    <div>
-                        <div class="ms-5 div-img">
-                            <label class="imagem" for="file">FOTO DO EVENTO</label>
-                            <input id="file" type="file"/>
-                        </div>
+                <form class="d-flex flex-wrap">
+                    <div class="div-img d-flex flex-wrap w-100">
+                            <div class="div-imagem">
+                                <label class="imagem" for="file">FOTO DO EVENTO</label>
+                                <input id="file" type="file"/>
+                            </div>
+                            <div class="infos-basicas">
+                                <input placeholder="Objetivo do evento" class="obj form-control"/>
+                                <div class="d-flex justify-content-between mt-5 datetime">
+                                    <input class="form-control me-3" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                    <input class="form-control horario" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')"/>
+                                </div>
+                            </div>
+                            <!-- <div class="d-flex align-items-center datetime"></div> -->
+                    </div>
+                    <div class="lado1">
                         <div class="endereco">
                             <label for="cep" class="mb-3 localizacao">Localização:</label>
-                            <div class="d-flex justify-content-between cep-estado">
+                            <div class="d-flex cep-estado">
                                 <input id="cep" class="form-control" placeholder="CEP"/>
-                                <select class="form-select ms-2" id="sltEstado">
-									<option value="">Estado</option>
-									<option value="AC">Acre</option>
-									<option value="AL">Alagoas</option>
-									<option value="AP">Amapá</option>
-									<option value="AM">Amazonas</option>
-									<option value="BA">Bahia</option>
-									<option value="CE">Ceará</option>
-									<option value="DF">Distrito Federal</option>
-									<option value="ES">Espirito Santo</option>
-									<option value="GO">Goiás</option>
-									<option value="MA">Maranhão</option>
-									<option value="MS">Mato Grosso do Sul</option>
-									<option value="MT">Mato Grosso</option>
-									<option value="MG">Minas Gerais</option>
-									<option value="PA">Pará</option>
-									<option value="PB">Paraíba</option>
-									<option value="PR">Paraná</option>
-									<option value="PE">Pernambuco</option>
-									<option value="PI">Piauí</option>
-									<option value="RJ">Rio de Janeiro</option>
-									<option value="RN">Rio Grande do Norte</option>
-									<option value="RS">Rio Grande do Sul</option>
-									<option value="RO">Rondônia</option>
-									<option value="RR">Roraima</option>
-									<option value="SC">Santa Catarina</option>
-									<option value="SP">São Paulo</option>
-									<option value="SE">Sergipe</option>
-									<option value="TO">Tocantins</option>
-								</select>
+                                <select class="form-select uf me-5" id="sltEstado">
+                                    <option value="">Estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espirito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
                             </div>
-                            <div class="d-flex flex-column">
+                            <div class="d-flex flex-column pe-5">
                                 <input placeholder="Cidade" class="form-control" readonly/>
                                 <input placeholder="Bairro" class="form-control" readonly/>
                             </div>
-                            <div class="d-flex">
+                            <div class="d-flex justify-content-between pe-5">
                                 <input placeholder="Logradouro" class="form-control log" readonly/>
-                                <input placeholder="N°" class="ms-2 num form-control"/>
+                                <input placeholder="N°" class="ms-2 form-control num"/>
                             </div>
                         </div>
                     </div>
-                    <div class="ms-5 lado2">
-                        <div>
-                            <input placeholder="Objetivo do evento" class="obj form-control"/>
-                        </div>
-                        <div class="d-flex align-items-center datetime">
-                            <input class="form-control" type="text" id="date" placeholder="Data Prevista" onfocus="(this.type='date')" onblur="(this.type='text')">
-                            <input class="form-control horario" type="text" id="time" placeholder="Horário" onfocus="(this.type='time')" onblur="(this.type='text')"/>
-                        </div>
-                        <div class = "mt-3">
-                            <label class="mt-5 mb-3 complemento" for="buffet">Complementos:</label>
+                    <div class="ms-5 lado2">                
+                        <div class = "complementos">
+                            <label class="mb-3 complemento" for="buffet">Complementos:</label>
                             <div class="mb-3 d-flex justify-content-between">
                                 <textarea id = "buffet" placeholder="Buffet" class="form-control buffet"></textarea>
                                 <textarea placeholder="Atrações" class="form-control atracoes"></textarea>
@@ -150,13 +147,34 @@
                                 <p class="ms-2 pp">Público</p>
                             </div>
                         </div>
-                        <div class="b">
-                            <a href = "passo2.php">
-                                <button type="submit" class="botao">&#10140; PRÓXIMO PASSO</button>
-                            </a>
-                        </div>
+                    </div>
+                    <div class="b">
+                        <a href = "passo2.php">
+                            <button type="submit" id="btn-passo2" class="botao">&#10140; PRÓXIMO PASSO</button>
+                        </a>
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="w-100 div-passo2 d-none justify-content-center flex-wrap">
+            <div class="w-100 d-flex justify-content-center mt-5">
+                <form action="" class="form-convidado">
+                    <input type="text" name="" id="" placeholder="Nome do Convidado">
+                    <input type="email" name="" id="" placeholder="Email do Convidado">
+                    <button type="submit">ADICIONAR</button>
+                </form>
+            </div>
+            <div>
+                <div class="lista">
+                    <div class="d-flex header-lista align-items-center">
+                        <p class="me-3">CONVIDADO</p>
+                        <p>EMAIL</p>
+                    </div>
+                    <div class="body-lista">
+                        <span>Ester Moras Nacimento</span>
+                        <span>tete@hotmail.com</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

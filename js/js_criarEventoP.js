@@ -17,3 +17,26 @@ privacidade.addEventListener('click', () => {
         `
     }
 })
+
+document.getElementById("btn-passo1").addEventListener("click", e => {
+    e.preventDefault();
+    const div = document.querySelector(".div-passo1");
+    div.classList.add("mostrar");
+
+    const div2 = document.querySelector(".div-passo2");
+    div2.classList.add("d-none");
+
+})
+
+document.getElementById("btn-passo2").addEventListener("click", e => {
+    e.preventDefault();
+    
+    const div1 = document.querySelector(".div-passo1");
+    div1.classList.remove("mostrar");
+    div1.classList.add("esconder");
+
+    const div2 = document.querySelector(".div-passo2");
+    div2.classList.remove("d-none");
+    div2.classList.add("mostrar");
+})
+
