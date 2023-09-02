@@ -4,26 +4,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.criar-evento{
-    margin: 0!important;
-}
-
-.logo-header{
-    margin-top: -8!important;
-}
-
-.div-pesquisar{
-    margin-top: -20px;
-}
-
-.div-home{
-    margin-top: -40px;
-}
-
-.lupa{
-    margin-top: -15px;
-}
-
 /*Cor de fundo utilizada na tela*/
 body{
     background-color: #ededed;
@@ -72,10 +52,6 @@ a{
     display: flex;
     align-items: center;
     border-radius: 0px 8px 8px 0px;
-}
-
-.uf{
-    margin-left: 10px;
 }
 
 .passo1{
