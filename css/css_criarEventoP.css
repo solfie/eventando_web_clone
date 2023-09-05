@@ -80,9 +80,13 @@ a{
 /* PASSO 1 */
 
 .titulo p{
-    font-size: 25px;
+    font-size: 20px;
     color:#000;
     font-weight: bold;
+}
+
+.nomeE{
+    font-size: 25px !important;
 }
 
 .bagulhete{
