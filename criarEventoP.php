@@ -48,7 +48,7 @@
 
 	<div class="container-fluid mt-5 ms-0 d-flex justify-content-between titulo">
 		<p class="ms-3">INFORMAÇÕES DO EVENTO</p>
-        <p class="me-3 nomeE">NOME DO EVENTO</p>
+        <p class="me-3">NOME DO EVENTO</p>
 	</div>
     <div class="container-fluid d-flex p-0 bagulhete">
         <div class="div_passos">
