@@ -78,7 +78,6 @@ a{
 
 
 /* PASSO 1 */
-
 .titulo p{
     font-size: 20px;
     color:#000;
@@ -397,21 +396,30 @@ label{
 @media (max-width: 1440px) {
     .b{
         right: 97px;
-        bottom: 45px;
+        bottom: 125px;
+        /* bottom: 65px; */
     } 
 }
 
 @media(max-width: 1024px){
     .b{
         right: 55px;
-        bottom: 45px;
+        /* bottom: -35px; */
+        bottom: 12px;
     }
 }
 
 @media(max-width: 768px){
     .b{
         right: 50px;
-        bottom: -403px;
+        bottom: -425px;
+    }
+}
+
+@media(max-width: 425px){
+    .b{
+        right: 50px;
+        bottom: -500px;
     }
 }
 
