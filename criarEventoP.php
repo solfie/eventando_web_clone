@@ -156,11 +156,12 @@
                 </form>
             </div>
         </div>
+        
         <div class="w-100 div-passo2 d-none justify-content-center flex-wrap">
             <div class="w-100 d-flex justify-content-center mt-5">
                 <form action="" class="form-convidado">
-                    <input type="text" name="" id="" placeholder="Nome do Convidado">
-                    <input type="email" name="" id="" placeholder="Email do Convidado">
+                    <input type="text" name="" id=""  class="form-control" placeholder="Nome do Convidado">
+                    <input type="email" name="" id=""  class="form-control" placeholder="Email do Convidado">
                     <button type="submit">ADICIONAR</button>
                 </form>
             </div>
