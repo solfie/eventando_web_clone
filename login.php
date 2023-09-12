@@ -63,7 +63,7 @@
                         <form id="formulario" action="menu.php">
                             <input class="form-control mt-4" type="email" id="emEmail" placeholder="Email" required>
 
-                            <input class="form-control mt-4" type="password" id="pwdSenha" placeholder="Senha" required>
+                            <input class="form-control mt-4" type="password" id="pwdSenha" placeholder="Senha" minlength="8" maxlength="20" required>
 
                             <div class="row mt-4">
                                 <div class="col">
@@ -151,9 +151,9 @@
 
                             <input class="form-control" type="email" id="emEmail2" placeholder="Email" required>
 
-                            <input class="form-control" type="password" id="pwdSenha2" placeholder="Senha" required>
+                            <input class="form-control" type="password" id="pwdSenha2" placeholder="Senha" minlength="8" maxlength="20" required>
 
-                            <input class="form-control" type="password" id="pwdConfSenha" placeholder="Confirmar Senha" required>
+                            <input class="form-control" type="password" id="pwdConfSenha" placeholder="Confirmar Senha" minlength="8" maxlength="20" required>
 
                             <!-- botão "CADASTRAR" que redireciona para o login quando clicado -->
                             <button class="botao mt-3" type="submit" id="cadastrar"> CADASTRAR </button>
