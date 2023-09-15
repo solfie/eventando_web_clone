@@ -108,7 +108,7 @@
                             </div>
                         </form>
                     </div>
-                    <!--  -->
+                    
                     <div id="divCadastro" name="divCadastro" class="d-none mt-4" >
                         <!-- Formulário CADASTRO, com sete campos de entrada: nome, data de nascimento, estado, telefone, email, senha e confirmação de senha -->
                         <form action="<?php echo $_SERVER['PHP_SELF']; ?>"  method="POST" id="formulario3">
@@ -135,8 +135,6 @@
                                 <option value="PB">Paraíba</option>
                                 <option value="PR">Paraná</option>
                                 <option value="PE">Pernambuco</option>
-
-                                
                                 <option value="PI">Piauí</option>
                                 <option value="RJ">Rio de Janeiro</option>
                                 <option value="RN">Rio Grande do Norte</option>
@@ -162,25 +160,16 @@
                         </form>
                     </div>
                     <?php
-
                         if (isset($_POST['cadastrar'])):
                             echo "Enviou <br>";
                             
                             $nome = $_POST['txtNome'];
                             echo $_POST['txtNome'];
-
-                        
                         endif;
-
-
-                        ?>
-                 
-
+                    ?>
                 </div>
             </div>
-
         </div>
     </div>
-
 </body>
 </html>
