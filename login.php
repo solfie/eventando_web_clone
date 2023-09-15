@@ -61,9 +61,9 @@
                     <div id="divLogin" class="row">
                         <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
                         <form action="menu.php" method="POST" id="formulario" >                        
-                            <input class="form-control mt-4" type="email" id="emEmail" placeholder="Email" required>
+                            <input class="form-control mt-4" type="email" id="emEmail" name="emEmail" placeholder="Email" required>
 
-                            <input class="form-control mt-4" type="password" id="pwdSenha" placeholder="Senha" required>
+                            <input class="form-control mt-4" type="password" id="pwdSenha" name="pwdSenha" placeholder="Senha" required>
 
                             <div class="row mt-4">
                                 <div class="col">
@@ -93,7 +93,7 @@
                                 <br>
                                 <br>
 
-                                <input class="form-control" type="email" id="emEmail3" placeholder="Email" required>
+                                <input class="form-control" type="email" id="emEmail3" name="emEmail3" placeholder="Email" required>
                                 <br>
 
                                 <!-- botão "ENVIAR" que futuramente terá a funcionalidade de enviar um código de verificação para poder trocar a senha, quando clicado -->
@@ -114,7 +114,7 @@
                         <form action="<?php echo $_SERVER['PHP_SELF']; ?>"  method="POST" id="formulario3">
                             <input class="form-control" type="text" id="txtNome" placeholder="Nome" name="txtNome" required>
 
-                            <input class="form-control" type="text" id="date" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                            <input class="form-control" type="text" id="date" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="(this.type='text')" maxlength="8" required>
 
                             <select class="form-control" id="sltEstado" required>
                                 <option value="">Estado</option>
@@ -159,14 +159,8 @@
                             <button class="botao mt-3" type="submit" id="cadastrar" name="cadastrar"> CADASTRAR </button>
                         </form>
                     </div>
-                    <?php
-                        if (isset($_POST['cadastrar'])):
-                            echo "Enviou <br>";
-                            
-                            $nome = $_POST['txtNome'];
-                            echo $_POST['txtNome'];
-                        endif;
-                    ?>
+                    
+                    
                 </div>
             </div>
         </div>
