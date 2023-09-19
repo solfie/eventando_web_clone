@@ -35,35 +35,42 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
-    
-        <div class="col d-flex align-items-center justify-content-end adicionais">
-            <a href = "criarEventoP.php">
-                <button class="criar" name="criar" onclick="CriarEvento()"> Criar Evento </button>
-            </a>
-    
-            <button class="d-none short-criar criar" name="criar" onclick="CriarEvento()">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-            </button>
 
-            <!-- Modal -->
-            <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
-                        </div>
+        <div class="col col-md-2 d-flex flex-wrap align-content-center justify-content-end criar">
+            <a href = "criarEventoP.php"> 
+            <button class="btn-criar-evento">
+                <i class="fa-regular fa-calendar-plus"></i>
+                &nbsp;CRIAR EVENTO </button>
+            </a>
+		</div>
+
+        <div class="col-1 d-none justify-content-center flex-wrap align-content-center short-criar">
+            <button class="">
+                <a href = "criarEventoP.php"> 
+                    <i class="fa fa-plus mais" aria-hidden="true"></i>
+                </a> 
+            </button>
+        </div>    
+
+        <!-- Modal -->
+        <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
                     </div>
                 </div>
-            </div> -->
-        </div>  
+            </div>
+        </div> -->
+          
     
         <nav class="col navbar d-inline">
             <div class="navbar-container container-fluid pt-4 bg-primaria align-items-end flex-column bd-highlight">
@@ -205,18 +212,18 @@
                     </div>
                 </div>
     
-                <div class="col-md-6 moment justify-content-aroun" >
-                    <!-- Criamos uma div, onde nela vamos ter um slideShow com os principais eventos do momento -->
+                <!-- <div class="col-md-6 moment justify-content-around" >
+                    Criamos uma div, onde nela vamos ter um slideShow com os principais eventos do momento
                     <p id="EventosM">EVENTOS DO MOMENTO</p>
                     <div id="myCarousel" class="carousel slide" data-ride="carousel" >
-                        <!-- Indicators -->
+                        Indicators
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ol>
                 
-                        <!-- Wrapper for slides -->
+                        Wrapper for slides
                         <div class="carousel-inner">
                             <div class="item active">
                                 <img src="img/evento24.jpg" alt="evento24" class="img-fluid mx-auto" >
@@ -231,6 +238,68 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+  
+                <div class="col-md-5 moment">
+                    <p id="EventosM">EVENTOS DO MOMENTO</p>
+                    <table class="table table-striped">
+                        <thead style="background: #d9d5d4" >
+                            <tr>
+                            <th scope="col">Dia da semana</th>
+                            <th scope="col">Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>Horario</td>
+                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>
+                            </tr>
+                            <tr>
+                            <td>Horario</td>
+                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                            </tr>
+                            <tr>
+                            <td>Horario</td>
+                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                            </tr>
+                        </tbody>
+                        <thead style="background: #d9d5d4">
+                            <tr>
+                            <th scope="col">Dia da semana</th>
+                            <th scope="col">Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>Horario</td>
+                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                            </tr>
+                            <tr>
+                            <td>Horario</td>
+                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                            </tr>
+                            <tr>
+                            <td>Horario</td>                            
+                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                        </tr>
+                        </tbody>
+                        <thead style="background: #d9d5d4">
+                            <tr>
+                            <th scope="col">Dia da semana</th>
+                            <th scope="col">Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>Horario</td>                            
+                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                            </tr>
+                            <tr>
+                            <td>Horario</td>                            
+                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                           
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

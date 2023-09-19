@@ -58,19 +58,25 @@ html {
     color: #000000;
 }
 
-/* Definindo a estilização do elemento com ID "Criar"*/
-.criar {
-    border: solid 3px;
-    border-color: #770089;
-    border-radius: 40px;
-    background-color: #b25abf;
-    text-align: center;
-    height: 33px;
-    width: 170px;
-    font-size: 15px;
-    color: white;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+/* Estilização do botão de criar evento */
+.btn-criar-evento{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    width: 180px;
+    font-size: min(4vw, 18px);
+}
+
+/* Estilização do botão de criar evento no hover */
+.btn-criar-evento:hover{
+    color: #b25abf;
+    transition-duration: all 0.4s;
+}
+
+.btn-criar-evento:active{
+    color: #b25abf !important;
+    border: none !important;
 }
 
 .short-criar {
@@ -89,7 +95,7 @@ html {
         display: block !important;
     }
 
-    .criar {
+    .btn-criar-evento {
         display: none;
     }
   
@@ -215,9 +221,9 @@ html {
         transition-duration: all 0.4s;
     }
     
-    .moment{
+    /* .moment{
         display: none;
-    }
+    } */
 
     footer{
         display: none;
@@ -226,7 +232,7 @@ html {
 
 @media screen and (min-width: 798px) {
 
-    .criar {
+    .btn-criar-evento {
         display: block !important;
     }
 
@@ -242,7 +248,7 @@ html {
         width: 90%;
     }
 
-    .criar {
+    .btn-criar-evento {
         position: absolute;
         left: 65%;
         top: 2.5%;
@@ -301,9 +307,9 @@ html {
         display: block;
     }
 
-    .moment{
+    /* .moment{
         display: none;
-    }
+    } */
 
     footer{
         position: absolute;
@@ -593,30 +599,13 @@ a {
     color: #770089;
 }
 
-/* Definindo a estilização do elemento com ID "container" */
-.container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+thead{
+   background-color: #d9d5d4 !important; 
 }
 
-/* Estlizando a cor de fundo do elemento com id "active "*/
-.active {
-    background-color: #ededed;
-}
-
-.carousel .item {
-    height: 90% !important;
-    width: 90% !important;
-    border-radius: 3px;
-    border: 3px solid #770089 !important; 
-}
-
-.item img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-height: 90%;   
+.moment{
+    margin-top: 7rem !important; 
+    margin-left: 10rem !important;
 }
 
 /* Definindo a estilização do elemento com ID "slogan"*/
@@ -639,7 +628,7 @@ a {
     border-color: #770089;
 }
 
-/* Definindo a estilização do elemento com ID "insta"*/
+/* Definindo a estilização do elemento com ID "insta"
 #insta{
     font-size: 20px;
 }

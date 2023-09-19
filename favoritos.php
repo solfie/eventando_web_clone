@@ -38,7 +38,7 @@
 		</div>
 
         <div class="col col-md-2 d-flex flex-wrap align-content-center justify-content-end criar">
-			<a href = "#"> 
+			<a href = "criarEventoP.php"> 
 			<button class="btn-criar-evento">
 				<i class="fa-regular fa-calendar-plus"></i>
 				&nbsp;CRIAR EVENTO </button>
@@ -47,7 +47,7 @@
 
         <div class="col-1 d-none justify-content-center flex-wrap align-content-center short-criar">
             <button class="">
-                <a href = "#"> 
+                <a href = "criarEventoP.php"> 
                     <i class="fa fa-plus mais" aria-hidden="true"></i>
                 </a> 
             </button>
