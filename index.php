@@ -97,62 +97,29 @@
     </div>
     
 	<!-- Criamos um footer -->
-	<!-- <footer>
-		<div class="container-fluid mt-0">
-			<div class="row align-items-center justify-content-between">
-				<div class="col-4 mt-5 d-none d-sm-flex align-items-center justify-content-start">
-					<p class="d-flex align-items-center ms-1 mt-5 mb-0" id="sobreN">
-						<a href="https://www.instagram.com/eventando.nozes/" class="me-1 mb-1" target="_blank">
-							<i id="instagram" class="fa-brands fa-instagram mt-0 mb-1 me-1"></i>
-						</a>
-						<a href="sobreNos.php" class="mb-1" id="sobreNozes">SOBRE NÓS</a>
-					</p>
-				</div>
-		
-				<div class="col-4 mt-5 d-none d-sm-flex align-items-center justify-content-center" >
-					<img class="img-fluid" id="from" src="img/rodape.png" alt="from">
-				</div>
-
-				<div class="col-4 mt-5 d-none d-sm-flex flex-column align-items-end text-center">
-					<p id="app" class="mb-0 mt-3 me-2"> Obtenha o aplicativo </p>
-					<img class="img-fluid mt-1 my-0" id="baixar" src="img/baixar.png" alt="baixar">
-				</div>
-			</div>
-		</div>
-	</footer> -->
-
-    <footer class="text-center text-white mt-2" style="background-color: #e3e1e1">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Google -->
-                <a class="btn text-white btn-floating m-1 rounded-circle" style="background-color: #ac2bac;" href="#!" role="button">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-
-                <!-- Instagram -->
-                <a class="btn text-white btn-floating m-1 rounded-circle" style="background-color: #ac2bac;" href="#!" role="button">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-    
-                <!-- Github -->
-                <a class="btn text-white btn-floating m-1 rounded-circle" style="background-color: #ac2bac;" href="#!" role="button">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </section>
-            <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-
+    <footer class="mt-5 mb-0">
         <!-- Copyright -->
-        <div class="text-center p-3 text-black" style="background-color: #e3e1e1;">
-            © 2023 From
-            <a class="text-black" href="#">Nozes</a>
+        <div class="text-center p-4" style="background-color: #cfcfd1">
+            © 2023 From Nozes
+
+            <!-- Youtube -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39; border: none; border-radius: 8px;" href="https://youtube.com/@eventando?si=ykYjtu4G9KHIxp-V" target="_blank" role="button">
+                <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac; border: none; border-radius: 8px;" href="https://www.instagram.com/eventando.nozes/" target="_blank" role="button">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- E-mail -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee; border: none; border-radius: 8px;" href="mailto:eventando.nozes@gmail.com" target="_blank" role="button">
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+            </a>
         </div>
         <!-- Copyright -->
     </footer>
+    <!-- Footer -->
 
 </body>
 </html>

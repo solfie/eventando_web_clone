@@ -69,54 +69,6 @@ a{
     border-color: #770089;
 }
 
-
-/* INICIO FOOTER */
-/* #instagram{
-    color: #000;
-    font-size: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-}
-
-#instagram:hover{
-    color: #b25abf;
-    transition-duration: all 0.4s;
-}
-
-#sobreN{
-    font-size: min(3vh, 20px);
-}
-
-#sobreNozes{
-    color: #000 !important;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-#sobreNozes:hover{
-    color: #b25abf !important;
-    transition-duration: all 0.4s;
-}
-
-
-#from{
-    width: min(50vw, 150px);
-}
-
-
-#baixar{
-    width: min(50vw, 130px);
-}
-
-
-#app{
-    font-size: min(3vh, 11px);
-    font-weight: bold;
-    color: #000;
-} */
-/* FIM FOOTER */
-
 /* Definindo a estilização do html scrollbar*/
 html ::-webkit-scrollbar {
     height: 14px;

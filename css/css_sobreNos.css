@@ -504,39 +504,6 @@ a {
     color:#b25abf;
 }
 
-/* INICIO FOOTER */
-#insta{
-    font-size: min(3vh, 20px);
-}
-
-#instagram{
-    color: #000 !important;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-#instagram:hover{
-    color: #b25abf !important;
-    transition-duration: all 0.4s;
-}
-
-/* Definindo a estilização do elemento com ID "from"*/
-#from{
-    width: min(50vw, 150px);
-}
-
-/* Definindo a estilização do elemento com ID "baixar"*/
-#baixar{
-    width: min(50vw, 130px);
-}
-
-/* Definindo a estilização do elemento com ID "app"*/
-#app{
-    font-size: min(3vh, 11px);
-    font-weight: bold;
-}
-/* FIM FOOTER */
-
 /* Definindo a estilização do html scrollbar*/
 html ::-webkit-scrollbar {
     height: 14px;

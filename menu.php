@@ -25,7 +25,7 @@
 <body>
     <!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
     <header id="Cabecalho" name="Cabecalho" class="row">
-        <div id="divLogoP" name="divLogoP" class="col ">
+        <div id="divLogoP" name="divLogoP" class="col">
             <img id=logo src="img/logo.png">
         </div>
     
@@ -176,7 +176,7 @@
                         <br>
                         <div id="barraMyE" class="row ms-1">
                             <div class="row teste mt-2 me-3">
-                                <div class="row-sm col-md-3 mb-3">
+                                <div class="row-sm col-md-3 mb-3 my-3">
                                     <img src="img/evento14.jfif" alt="Imagem 14" class="img-fluid mb-5 eventoAparece1">
                                     <img src="img/evento14.jfif" alt="Imagem 14" class="img-fluid evento1">
                                 </div>
@@ -211,34 +211,6 @@
                         </div>
                     </div>
                 </div>
-    
-                <!-- <div class="col-md-6 moment justify-content-around" >
-                    Criamos uma div, onde nela vamos ter um slideShow com os principais eventos do momento
-                    <p id="EventosM">EVENTOS DO MOMENTO</p>
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
-                        Indicators
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-                
-                        Wrapper for slides
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="img/evento24.jpg" alt="evento24" class="img-fluid mx-auto" >
-                            </div>
-                    
-                            <div class="item">
-                                <img src="img/evento25.jpg" alt="evento25" class="img-fluid mx-auto estiloimagem" >
-                            </div>
-                        
-                            <div class="item">
-                                <img src="img/evento26.jpg" alt="evento26" class="img-fluid mx-auto estiloimagem" >
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
   
                 <div class="col-md-5 moment">
                     <p id="EventosM">EVENTOS DO MOMENTO</p>
@@ -305,26 +277,29 @@
         </div>
     </div>
 
-    <!-- Criamos um footer -->
-	<footer>
-		<div class="container-fluid mt-5">
-			<div class="row align-items-center justify-content-between">
-				<div class="col-4 mt-5 d-none d-sm-flex align-items-center justify-content-start">
-					<p class="d-flex align-items-center ms-2 mt-5 mb-0" id="insta">
-						<a href="https://www.instagram.com/eventando.nozes/" target="_blank" id="instagram">INSTAGRAM</a>
-					</p>
-				</div>
-		
-				<div class="col-4 mt-5 d-none d-sm-flex align-items-center justify-content-center">
-					<img class="img-fluid" id="from" src="img/rodape.png" alt="from">
-				</div>
+	<!-- Criamos um footer -->
+    <footer class="mt-5 mb-0">
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: #cfcfd1">
+            © 2023 From Nozes
 
-				<div class="col-4 mt-5 d-none d-sm-flex flex-column align-items-end text-center">
-					<p id="app" class="mb-0 mt-0 me-3"> Obtenha o aplicativo </p>
-					<img class="img-fluid mt-3 my-0" id="baixar" src="img/baixar.png" alt="baixar">
-				</div>
-			</div>
-		</div>
-	</footer>	
+            <!-- Youtube -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39; border: none; border-radius: 8px;" href="https://youtube.com/@eventando?si=ykYjtu4G9KHIxp-V" target="_blank" role="button">
+                <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac; border: none; border-radius: 8px;" href="https://www.instagram.com/eventando.nozes/" target="_blank" role="button">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- E-mail -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee; border: none; border-radius: 8px;" href="mailto:eventando.nozes@gmail.com" target="_blank" role="button">
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+            </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->	
 </body>
 </html>
