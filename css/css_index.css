@@ -71,7 +71,7 @@ a{
 
 
 /* INICIO FOOTER */
-#instagram{
+/* #instagram{
     color: #000;
     font-size: 25px;
     font-weight: bold;
@@ -99,22 +99,22 @@ a{
     transition-duration: all 0.4s;
 }
 
-/* Definindo a estilização do elemento com ID "from"*/
+
 #from{
     width: min(50vw, 150px);
 }
 
-/* Definindo a estilização do elemento com ID "baixar"*/
+
 #baixar{
     width: min(50vw, 130px);
 }
 
-/* Definindo a estilização do elemento com ID "app"*/
+
 #app{
     font-size: min(3vh, 11px);
     font-weight: bold;
     color: #000;
-}
+} */
 /* FIM FOOTER */
 
 /* Definindo a estilização do html scrollbar*/

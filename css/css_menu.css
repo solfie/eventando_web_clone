@@ -66,6 +66,7 @@ html {
     font-weight: bold;
     width: 180px;
     font-size: min(4vw, 18px);
+    text-decoration: none !important;
 }
 
 /* Estilização do botão de criar evento no hover */
@@ -603,6 +604,10 @@ thead{
    background-color: #d9d5d4 !important; 
 }
 
+tbody{
+    background-color: #e3e1e1;
+}
+
 .moment{
     margin-top: 7rem !important; 
     margin-left: 10rem !important;
@@ -628,7 +633,7 @@ thead{
     border-color: #770089;
 }
 
-/* Definindo a estilização do elemento com ID "insta"
+/* Definindo a estilização do elemento com ID "insta"*/
 #insta{
     font-size: 20px;
 }

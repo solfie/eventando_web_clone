@@ -245,58 +245,58 @@
                     <table class="table table-striped">
                         <thead style="background: #d9d5d4" >
                             <tr>
-                            <th scope="col">Dia da semana</th>
-                            <th scope="col">Data</th>
+                                <th scope="col">Segunda-feira</th>
+                                <th scope="col">18 de setembro</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <td>Horario</td>
-                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>
+                                <td>14h00</td>
+                                <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>
                             </tr>
                             <tr>
-                            <td>Horario</td>
-                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                                <td>16h00</td>
+                                <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
                             </tr>
                             <tr>
-                            <td>Horario</td>
-                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                                <td>19h30</td>
+                                <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
                             </tr>
                         </tbody>
                         <thead style="background: #d9d5d4">
                             <tr>
-                            <th scope="col">Dia da semana</th>
-                            <th scope="col">Data</th>
+                                <th scope="col">Terça-feira</th>
+                                <th scope="col">20 de setembro</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <td>Horario</td>
-                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                                <td>8h30</td>
+                                <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
                             </tr>
                             <tr>
-                            <td>Horario</td>
-                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                                <td>13h30</td>
+                                <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
                             </tr>
                             <tr>
-                            <td>Horario</td>                            
-                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
-                        </tr>
+                                <td>22h00</td>                            
+                                <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                            </tr>
                         </tbody>
                         <thead style="background: #d9d5d4">
                             <tr>
-                            <th scope="col">Dia da semana</th>
-                            <th scope="col">Data</th>
+                                <th scope="col">Quarta-feira</th>
+                                <th scope="col">21 de setembro</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <td>Horario</td>                            
-                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
+                                <td>10h45</td>                            
+                                <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
                             </tr>
                             <tr>
-                            <td>Horario</td>                            
-                            <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                           
+                                <td>15h30</td>                            
+                                <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                           
                             </tr>
                         </tbody>
                     </table>

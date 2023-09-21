@@ -97,7 +97,7 @@
     </div>
     
 	<!-- Criamos um footer -->
-	<footer>
+	<!-- <footer>
 		<div class="container-fluid mt-0">
 			<div class="row align-items-center justify-content-between">
 				<div class="col-4 mt-5 d-none d-sm-flex align-items-center justify-content-start">
@@ -119,7 +119,40 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
+
+    <footer class="text-center text-white mt-2" style="background-color: #e3e1e1">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1 rounded-circle" style="background-color: #ac2bac;" href="#!" role="button">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1 rounded-circle" style="background-color: #ac2bac;" href="#!" role="button">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+    
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1 rounded-circle" style="background-color: #ac2bac;" href="#!" role="button">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 text-black" style="background-color: #e3e1e1;">
+            © 2023 From
+            <a class="text-black" href="#">Nozes</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
 </body>
 </html>
