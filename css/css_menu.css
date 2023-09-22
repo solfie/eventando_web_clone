@@ -185,13 +185,10 @@ html {
     }
     
     #barraMyE {
-        position: absolute;
-        top: 42rem;
-        left: -2%;
-        width: 37rem !important;
-        height: 30rem !important;
+        /* width: 37rem !important;
+        height: 30rem !important; */
         /* height: 40rem !important; */
-        display: block;
+        /* display: block; */
         align-items: center !important;
         overflow: auto;
         overflow-x: hidden;
@@ -568,11 +565,15 @@ a {
     margin-top: 4px;
     background-color: #dccce0;
     border-radius: 13px;
-    height: 70%;
     display: flex;
     flex-wrap: wrap; /* Adicionado */
     justify-content: center;
     padding: 36px 26px;
+    align-items: center !important;
+    overflow: auto;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    white-space: nowrap
 }
 
 .teste{
