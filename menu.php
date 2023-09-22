@@ -27,7 +27,7 @@
     <!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
     <header id="Cabecalho" name="Cabecalho" class="row">
         <div id="divLogoP" name="divLogoP" class="col">
-            <img id=logo src="img/logo.png">
+            <img id=logo class="ms-5" src="img/logo.png">
         </div>
     
         <div class="col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
@@ -177,27 +177,27 @@
                     <div class = "barraMyE">
                         <label id="MyEventos"> MEUS <br> EVENTOS </label>
                         <br>
-                        <div id="barraMyE" class="row ms-1">
-                            <div class="row teste">
-                                <div class="row-sm col-md-3 mb-3 my-3">
+                        <div id="barraMyE" class="row ms-1 justify-content-between">
+                            <div class="row teste mt-0">
+                                <div class="row-sm col-md-3 mb-3 my-1">
                                     <img src="img/evento14.jfif" alt="Imagem 14" class="img-fluid mb-5 eventoAparece1">
                                     <img src="img/evento14.jfif" alt="Imagem 14" class="img-fluid evento1">
                                 </div>
-                                <div class="row-sm col-md-3 mb-3 my-3">
+                                <div class="row-sm col-md-3 mb-3 my-1">
                                     <img src="img/evento15.jfif" alt="Imagem 15" class="img-fluid my-4 eventoAparece1">
                                     <img src="img/evento15.jfif" alt="Imagem 15" class="img-fluid evento1">
                                 </div>
-                                <div class="row-sm col-md-3 mb-3 my-3">
+                                <div class="row-sm col-md-3 mb-3 my-1">
                                     <img src="img/evento16.jpeg" alt="Imagem 16" class="img-fluid my-4 eventoAparece1">
                                     <img src="img/evento16.jpeg" alt="Imagem 16" class="img-fluid evento1">
                                 </div>
-                                <div class="row-sm col-md-3 mb-3 my-3">
+                                <div class="row-sm col-md-3 mb-3 my-1">
                                     <img src="img/evento17.jpeg" alt="Imagem 17" class="img-fluid my-4 eventoAparece1">
                                     <img src="img/evento17.jpeg" alt="Imagem 17" class="img-fluid evento1">
                                 </div>   
                             </div>
     
-                            <div class="row teste me-3">
+                            <div class="row teste">
                                 <div class="col-md-3 mt-3">
                                     <img src="img/evento18.jpeg" alt="Imagem 18" class="img-fluid evento1">
                                 </div> 
@@ -215,7 +215,7 @@
                     </div>
                 </div>
   
-                <div class="col-md-5 moment">
+                <div class="col-md-6">
                     <p id="EventosM">EVENTOS DO MOMENTO</p>
                     <table class="table table-striped">
                         <thead style="background: #d9d5d4" >
