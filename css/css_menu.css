@@ -4,6 +4,14 @@ body{
     background-color: #ededed !important
 }
 
+a{ 
+    text-decoration: none;
+}
+
+a:hover{ 
+    text-decoration: none;
+}
+
 /* Definindo a estilização do elemento com ID "Cabecalho"*/
 #Cabecalho {
     background-color: #bedef2;
@@ -73,6 +81,7 @@ html {
 .btn-criar-evento:hover{
     color: #b25abf;
     transition-duration: all 0.4s;
+    text-decoration: none !important;
 }
 
 .btn-criar-evento:active{

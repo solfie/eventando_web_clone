@@ -1,33 +1,32 @@
 <!-- Aqui iniciamos o código html -->
 <html>
 <head>
-	<meta charset = "utf-8">
-	<!-- Definição a escala da página para se adequar ao tamanho da tela do dispositivo -->
-	<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1">
+    <meta charset = "utf-8">
+    <!-- Definição a escala da página para se adequar ao tamanho da tela do dispositivo -->
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1">
     <!-- Icons -->
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <!-- Bootstrap -->
     <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin = "anonymous">
-	<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin = "anonymous"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin = "anonymous"></script>
     <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity = "sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin = "anonymous"></script>
     <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity = "sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin = "anonymous"></script>
     <link href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel = "stylesheet">
     <!-- CSS externo-->
     <link rel = "stylesheet" type = "text/css" href = "css/css_login.css"/>
     <!-- JS externo-->
-    <script src = 'js/js_login.js' defer></script>
+    <script src = 'js/js_login.js' defer></script> 
     <!-- JS botão do google-->
     <script src = "https://accounts.google.com/gsi/client" async defer></script>
-	<script src = "https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
-	<title> LOGIN </title>
+    <script src = "https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+    <title> LOGIN </title>
     <!-- Definimos o ícone na aba da página-->
-	<link rel="shortcut icon" type="image/png" href="img/schedule (2).png"/>
+    <link rel="shortcut icon" type="image/png" href="img/schedule (2).png"/>
 </head>
 
 <body>
     <div class="container m-10">
         <div class="row">
-
             <div class="col-md-6">
                 <a href="index.php" id="esquerda">
                     <button class="btn fs-5">
@@ -61,9 +60,9 @@
                     <div id="divLogin" class="row">
                         <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
                         <form action="menu.php" method="POST" id="formulario" >                        
-                            <input class="form-control mt-4" type="email" id="emEmail" name="emEmail" placeholder="Email" required>
+                            <input class="form-control mt-4" type="email" id="emEmail" placeholder="Email" required>
 
-                            <input class="form-control mt-4" type="password" id="pwdSenha" name="pwdSenha" placeholder="Senha" required>
+                            <input class="form-control mt-4" type="password" id="pwdSenha" placeholder="Senha" required>
 
                             <div class="row mt-4">
                                 <div class="col">
@@ -93,7 +92,7 @@
                                 <br>
                                 <br>
 
-                                <input class="form-control" type="email" id="emEmail3" name="emEmail3" placeholder="Email" required>
+                                <input class="form-control" type="email" id="emEmail3" placeholder="Email" required>
                                 <br>
 
                                 <!-- botão "ENVIAR" que futuramente terá a funcionalidade de enviar um código de verificação para poder trocar a senha, quando clicado -->
@@ -108,15 +107,15 @@
                             </div>
                         </form>
                     </div>
-                    
-                    <div id="divCadastro" name="divCadastro" class="d-none mt-4" >
+                    <!--  class="d-none mt-4"  -->
+                    <div id="divCadastro" name="divCadastro" class="d-none mt-4">
                         <!-- Formulário CADASTRO, com sete campos de entrada: nome, data de nascimento, estado, telefone, email, senha e confirmação de senha -->
                         <form action="<?php echo $_SERVER['PHP_SELF']; ?>"  method="POST" id="formulario3">
                             <input class="form-control" type="text" id="txtNome" placeholder="Nome" name="txtNome" required>
 
-                            <input class="form-control" type="text" id="date" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="(this.type='text')" maxlength="8" required>
+                            <input class="form-control" type="text" id="date" placeholder="Data de Nascimento" name="date" onfocus="(this.type='date')" onblur="(this.type='text')" required>
 
-                            <select class="form-control" id="sltEstado" required>
+                            <select class="form-control" name="sltEstado" id="sltEstado" required>
                                 <option value="">Estado</option>
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
@@ -151,16 +150,86 @@
 
                             <input class="form-control" type="email" id="emEmail2" placeholder="Email" name="emEmail2" required>
 
-                            <input class="form-control" type="password" id="pwdSenha2" placeholder="Senha" minlength="6" maxlength="20" required>
+                            <input class="form-control" type="password" id="pwdSenha2" name="pwdSenha2" placeholder="Senha" minlength="6" maxlength="20" required>
 
-                            <input class="form-control" type="password" id="pwdConfSenha" placeholder="Confirmar Senha" required>
+                            <input class="form-control" type="password" id="pwdConfSenha" name="pwdConfSenha" placeholder="Confirmar Senha" required>
 
                             <!-- botão "CADASTRAR" que redireciona para o login quando clicado -->
                             <button class="botao mt-3" type="submit" id="cadastrar" name="cadastrar"> CADASTRAR </button>
                         </form>
                     </div>
-                    
-                    
+
+                    <?php
+                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                            // Função para validar o nome
+                            function validate_name($name) {
+                                return preg_match('/^[A-Za-z\s]+$/', $name);
+                            }
+                            
+                            // Função para validar a data de nascimento
+                            function validate_date($date) {
+                                return preg_match('/^\d{4}-\d{2}-\d{2}$/', $date);
+                            }
+                            
+                            // Função para validar o telefone
+                            function validate_phone($phone) {
+                                return preg_match('/^\d{10,15}$/', $phone);
+                            }
+                            
+                            // Função para validar o email
+                            function validate_email($email) {
+                                return filter_var($email, FILTER_VALIDATE_EMAIL);
+                            }
+                            
+                            // Verifica se o campo Nome foi preenchido e é válido
+                            if (empty($_POST["txtNome"]) || !validate_name($_POST["txtNome"])) {
+                                echo "Nome é inválido.<br>";
+                            }
+                            
+                            // Verifica se o campo Data de Nascimento foi preenchido e é válido
+                            if (empty($_POST["date"]) || !validate_date($_POST["date"])) {
+                                echo "Data de Nascimento é inválida.<br>";
+                            }
+                            
+                            // Verifica se o campo Estado foi selecionado
+                            if (empty($_POST["sltEstado"])) {
+                                echo "Por favor, selecione um Estado.<br>";
+                            }
+                            
+                            // Verifica se o campo Telefone foi preenchido e é válido
+                            if (empty($_POST["telTelefone"]) || !validate_phone($_POST["telTelefone"])) {
+                                echo "Telefone é inválido.<br>";
+                            }
+                            
+                            // Verifica se o campo Email foi preenchido e é válido
+                            if (empty($_POST["emEmail2"]) || !validate_email($_POST["emEmail2"])) {
+                                echo "Email é inválido.<br>";
+                            }
+                            
+                            // Verifica se as senhas correspondem
+                            if ($_POST["pwdSenha2"] !== $_POST["pwdConfSenha"]) {
+                                echo "As senhas não correspondem.<br>";
+                            }
+                        }
+                                
+                        $nome = $_POST["txtNome"];
+                        $datanasc = $_POST["date"];
+                        $estado = $_POST["sltEstado"];
+                        $telefone = $_POST["telTelefone"];
+                        $email = $_POST["emEmail2"];
+                        $senha = $_POST["pwdSenha2"];
+                        $confsenha = $_POST["pwdConfSenha"];
+                        $mensagem = $_POST["mensagem"];
+                        $erro = 0;
+
+                        if (isset($_POST['cadastrar'])):
+                            echo "Enviou <br>";
+                            $nome = $_POST['txtNome'];
+                            echo "Nome: " . $_POST['txtNome'];
+                            echo "<br>";
+                            echo "Email " . $_POST['emEmail2'];
+                        endif;
+                    ?>
                 </div>
             </div>
         </div>
