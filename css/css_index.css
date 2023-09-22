@@ -8,6 +8,10 @@ body{
     background-color: #ededed;
 }
 
+.navbar-collapse{
+    background-color: #bedef2;
+}
+
 a{
     text-decoration: none;
     color: #000;

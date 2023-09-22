@@ -13,6 +13,7 @@
 	<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity = "sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin = "anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <!-- CSS externo-->
+    <link rel="stylesheet" href="css/css_header.css">
     <link rel="stylesheet" type="text/css" href="css/css_menu.css"/>
     <!-- JS externo-->
     <script src = 'js/js_menu.js' defer></script>
@@ -29,11 +30,13 @@
             <img id=logo src="img/logo.png">
         </div>
     
-        <div class="divBuscar col-md-6 col-sm me-5">
-            <input type="search" class="buscar" placeholder="Buscar eventos">
-            <button class = "pesquisa">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+        <div class="col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
+            <form class="d-flex mb-0 form-pesquisar">
+                <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
+                <button class="btn" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
         </div>
 
         <div class="col col-md-2 d-flex flex-wrap align-content-center justify-content-end criar">

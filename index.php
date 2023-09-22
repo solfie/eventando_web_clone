@@ -22,8 +22,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid row d-flex justify-content-around align-items-center">
-                <div class="div-img col-3 navbar-brand d-flex justify-content-center align-items-center" href="#">
-                    <img class="logo-header img-fluid ms-5 ms-md-0 mt-xl-4" src="./img/logo.png">
+                <div class="div-img col-3 mt-xl-2 navbar-brand d-flex justify-content-center align-items-center" href="#">
+                    <img class="logo-header mt-4 img-fluid ms-5 ms-md-0" src="./img/logo.png">
                 </div>
                 <div class="col-3 navbar-brand d-md-none d-flex justify-content-end div-pesquisar">
                     <button class = "btn-pesquisar">
@@ -41,9 +41,9 @@
                 <button class="col-2 navbar-toggler btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="col-2 collapse navbar-collapse justify-content-end mt-0" id="navbarNavAltMarkup">
+                <div class="col-2 collapse navbar-collapse justify-content-end mt-0 mb-0" id="navbarNavAltMarkup">
                     <div class="navbar-nav teste-3">         
-                        <div class="nav-link">
+                        <div class="nav-link mt-0 mb-0">
                             <a href = "login.php"> 
                                 <button class="btn-criar-evento"> 
                                 <i class="fa-regular fa-calendar-plus"></i>
