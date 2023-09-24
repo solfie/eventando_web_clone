@@ -33,39 +33,6 @@ html {
     overflow: visible;
 }
 
-/* Definindo a estilização do elemento com ID "divBuscar"*/
-.divBuscar {
-    position: relative;
-    transform: translate(-0%, - 50%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Definindo a estilização do elemento com ID "buscar"*/
-.buscar {
-    background-color: #ededed;
-    height: 15px;
-    padding: 15px;
-    border: 2px solid #b25abf;
-    border-radius: 40px;
-    width: 100%;
-}
-
-.buscar:focus {
-    outline: none !important;
-}
-
-.pesquisa {
-    position: absolute;
-    right: 30px;
-    background-color: transparent;
-    cursor: pointer;
-    height: 20px;
-    border: none;
-    color: #000000;
-}
-
 /* Estilização do botão de criar evento */
 .btn-criar-evento{
     background-color: transparent;
@@ -614,9 +581,9 @@ thead{
    background-color: #d9d5d4 !important; 
 }
 
-tbody{
+/* tbody{
     background-color: #e3e1e1;
-}
+} */
 
 .moment{
     margin-left: 10rem !important;

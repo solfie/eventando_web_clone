@@ -22,7 +22,6 @@
 
 <body>
     <header class="container-fluid">
-        //<?php $_seila = 1; include_once ?>
         <div class="container-fluid row d-flex justify-content-around align-items-center">
             <div class="div-img criar-evento col-3 navbar-brand d-flex justify-content-center align-items-center" href="#">
                 <img class="logo-header img-fluid ms-5 ms-md-0 mt-xl-4" src="./img/logo.png">

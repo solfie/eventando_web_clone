@@ -27,7 +27,7 @@
     <!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
     <header id="Cabecalho" name="Cabecalho" class="row">
         <div id="divLogoP" name="divLogoP" class="col">
-            <img id=logo class="ms-5" src="img/logo.png">
+            <img id = "logo" class="ms-5" src="img/logo.png">
         </div>
     
         <div class="col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
@@ -50,7 +50,7 @@
         <div class="col-1 d-none justify-content-center flex-wrap align-content-center short-criar">
             <button class="">
                 <a href = "criarEventoP.php"> 
-                    <i class="fa fa-plus mais" aria-hidden="true"></i>
+                    <i class="fa-regular fa-calendar-plus" aria-hidden="true"></i>
                 </a> 
             </button>
         </div>    
