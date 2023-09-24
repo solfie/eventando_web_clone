@@ -26,20 +26,19 @@
 <body>
     <!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
     <header id="Cabecalho" name="Cabecalho" class="row">
-        <div id="divLogoP" name="divLogoP" class="col">
-            <img id = "logo" class="ms-5" src="img/logo.png">
+        <div class="div-img criar-evento col-3 navbar-brand d-flex justify-content-center align-items-center" href="#">
+                <img class="logo-header img-fluid ms-5 ms-md-0 mt-xl-4" src="./img/logo.png">
         </div>
-    
-        <div class="col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
+        <div class="div-pesquisar col-6 navbar-brand d-md-flex d-none justify-content-center align-items-center" href="#">
             <form class="d-flex mb-0 form-pesquisar">
                 <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
                 <button class="btn" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="lupa fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
         </div>
 
-        <div class="col col-md-2 d-flex flex-wrap align-content-center justify-content-end criar">
+        <div class="col col-md-2 d-flex flex-wrap align-content-center justify-content-end">
             <a href = "criarEventoP.php"> 
             <button class="btn-criar-evento">
                 <i class="fa-regular fa-calendar-plus"></i>
@@ -47,8 +46,8 @@
             </a>
 		</div>
 
-        <div class="col-1 d-none justify-content-center flex-wrap align-content-center short-criar">
-            <button class="">
+        <div class="col-1 d-none justify-content-center flex-wrap align-content-center">
+            <button class="short-criar">
                 <a href = "criarEventoP.php"> 
                     <i class="fa-regular fa-calendar-plus" aria-hidden="true"></i>
                 </a> 
@@ -150,8 +149,8 @@
                 <div class="container-fluid EventosR ps-5 mt-5" id="EventosR">
                     <label>EVENTOS RECENTES</label>
                     <div class="barraE">
-                        <img id="eventoAparece" src="img/evento1.jpeg" alt="evento1">
-                        <i class="fa-solid fa-angles-right d-none" id="seta" style="color: #1f003d;"></i>
+                        <!-- <img id="eventoAparece" src="img/evento1.jpeg" alt="evento1">
+                        <i class="fa-solid fa-angles-right d-none" id="seta" style="color: #1f003d;"></i> -->
                         <img class="evento" src="img/evento1.jpeg" alt="evento1">
                         <img class="evento" src="img/evento2.jpeg" alt="evento2">
                         <img class="evento" src="img/evento3.jpeg" alt="evento3">
@@ -180,19 +179,19 @@
                         <div id="barraMyE" class="row ms-1 justify-content-between">
                             <div class="row teste mt-0">
                                 <div class="row-sm col-md-3 mb-3 my-1">
-                                    <img src="img/evento14.jfif" alt="Imagem 14" class="img-fluid mb-5 eventoAparece1">
+                                    <!-- <img src="img/evento14.jfif" alt="Imagem 14" class="img-fluid mb-5 eventoAparece1"> -->
                                     <img src="img/evento14.jfif" alt="Imagem 14" class="img-fluid evento1">
                                 </div>
                                 <div class="row-sm col-md-3 mb-3 my-1">
-                                    <img src="img/evento15.jfif" alt="Imagem 15" class="img-fluid my-4 eventoAparece1">
+                                    <!-- <img src="img/evento15.jfif" alt="Imagem 15" class="img-fluid my-4 eventoAparece1"> -->
                                     <img src="img/evento15.jfif" alt="Imagem 15" class="img-fluid evento1">
                                 </div>
                                 <div class="row-sm col-md-3 mb-3 my-1">
-                                    <img src="img/evento16.jpeg" alt="Imagem 16" class="img-fluid my-4 eventoAparece1">
+                                    <!-- <img src="img/evento16.jpeg" alt="Imagem 16" class="img-fluid my-4 eventoAparece1"> -->
                                     <img src="img/evento16.jpeg" alt="Imagem 16" class="img-fluid evento1">
                                 </div>
                                 <div class="row-sm col-md-3 mb-3 my-1">
-                                    <img src="img/evento17.jpeg" alt="Imagem 17" class="img-fluid my-4 eventoAparece1">
+                                    <!-- <img src="img/evento17.jpeg" alt="Imagem 17" class="img-fluid my-4 eventoAparece1"> -->
                                     <img src="img/evento17.jpeg" alt="Imagem 17" class="img-fluid evento1">
                                 </div>   
                             </div>
