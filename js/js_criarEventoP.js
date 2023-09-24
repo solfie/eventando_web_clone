@@ -39,4 +39,3 @@ document.getElementById("btn-passo2").addEventListener("click", e => {
     div2.classList.remove("d-none");
     div2.classList.add("mostrar");
 })
-

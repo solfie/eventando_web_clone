@@ -24,6 +24,12 @@ a{
     color: #000;
 }
 
+@media (max-width: 1024px) {
+    .eventosR{
+        margin-top: 5rem;
+    }
+}
+
 /* Estilização da barra de eventos */
 .barraE{
     margin-top: 20px;
