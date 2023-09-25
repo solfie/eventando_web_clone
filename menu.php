@@ -87,7 +87,7 @@
                 <div class="navbar-container container-fluid pt-0SSS bg-primaria align-items-end flex-column bd-highlight">
                     
                     <!-- Toggler do Modal -->
-                    <div class="divBtn">
+                    <div class="mt-0">
                         <button type="button" name="btn" class="btn p-2 pt-0 bd-highlight btn-lg mt-0" data-bs-toggle="modal" data-bs-target="#modalId">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -184,7 +184,7 @@
                     <div class = "barraMyE">
                         <label id="MyEventos"> MEUS <br> EVENTOS </label>
                         <br>
-                        <div id="barraMyE" class="row ms-1 me-1 d-flex justify-content-between">
+                        <div id="barraMyE" class="row ms-1 me-1 mt-4 d-flex justify-content-between">
                             <div class="row teste mt-0">
                                 <div class="row-sm col-md-3 mb-3 my-1">
                                     <img src="img/evento14.jfif" alt="Imagem 14" class="img-fluid evento1">
