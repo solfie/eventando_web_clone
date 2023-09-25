@@ -11,6 +11,7 @@ a{
 header{
     background-color: #bedef2;
     height: 80px;
+    /* position: fixed !important; */
 }
 
 nav{
@@ -29,7 +30,7 @@ nav{
 
 @media (width: 375px) {
     .btn-pesquisar{
-        margin-left: 10px;
+        margin-left: 50rem;
     }
 }
 
@@ -152,8 +153,8 @@ input[type='search']{
     border: none;
     color: #000;
     font-weight: bold;
-    width: 180px;
-    font-size: min(4vw, 18px);
+    height: 45px;
+    width: 50px!important;
 }
 
 .short-criar:hover{

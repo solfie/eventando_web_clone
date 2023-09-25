@@ -1,7 +1,7 @@
 /* Colocando a fonte e a cor em toda a tela html*/
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #ededed !important
+    background-color: #ededed !important;
 }
 
 a{ 
@@ -12,161 +12,21 @@ a:hover{
     text-decoration: none;
 }
 
+nav{
+    background-color: transparent;
+}
+
 /* Definindo a estilização do elemento com ID "Cabecalho"*/
 #Cabecalho {
     background-color: #bedef2;
-}
-
-/* Definindo a altura e largura da logo"*/
-#logo {
-    width: 350px;
-    position: relative;
 }
 
 html {
     overflow-x: hidden;
 }
 
-/* Definindo a estilização do elemento com ID "divLogoP"*/
-#divLogoP {
-    height: 85px;
-    overflow: visible;
-}
-
-/* .short-criar {
-    font-size: 14px;
-    width: 34px;
-} */
-
-
-#logo {
-    z-index: 2
-}
-
 /*mediaquery responsividade do header*/
-
 @media screen and (max-width: 600px) {
-    .short-criar {
-        display: block !important;
-    }
-
-    .btn-criar-evento {
-        display: none;
-    }
-  
-    /* .divLogoP{
-        position: absolute;
-        width: 100%;
-    }
-
-    .short-criar {
-        position: absolute;
-        left: 85%;
-        top:2%;
-    }
-    
-    .divBtn{
-        position: absolute;
-        left: -170%;
-        top:90%;
-    }
-
-    .divBuscar {                                    
-        position: absolute;
-        top: 65px;
-        left: 0px;
-        height: 11%;
-        width: 110% !important;
-        background: #bedef2;
-        padding: 20px;
-        margin-top: 4px;
-    }
-
-    .short-pesquisa {
-        padding: 0px 15px;
-    } */
-
-    /* #EventosR{
-        position: absolute !important;
-        left: -2%;
-        top: 17%;
-        height: 20% !important;
-        align-items: center !important;
-    }
-
-    .barraE{
-        position: absolute;
-        width: 90%;
-        overflow: none;
-        border: solid 3px #b25abf;
-    }
-
-    .evento {
-        display: none;
-    }
-
-    #eventoAparece{
-        display: block !important;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border-radius: 9px;
-    }
-
-    #seta{
-        position: relative;
-        display: block !important;
-    }
-
-    #seta:hover{
-        color:#b25abf;
-    }
-
-    #MyEventos {
-        font-size: 30px !important;
-        position: absolute;
-        top: 32rem !important;
-        left: -2% !important;
-    }
-    
-    #barraMyE {
-        align-items: center !important;
-        overflow: auto;
-        overflow-x: hidden;
-        white-space: nowrap
-    }
-
-    .barraMyE {
-        position: absolute;
-        top: 150%;
-        left: -2%;
-        height: 20%;
-        display: block;
-    }
-
-    .evento1{
-        display: none;
-    }
-    
-    .eventoAparece1{
-        display: block !important;
-        position: relative;
-        height: 100% !important;
-        border-radius: 9px;
-        border: solid 2px #770089;;
-        left: -1%;
-        top: 8% !important;
-    }
-
-    .eventoAparece1:hover {
-        border: 6px solid #770089;
-        transition-duration: all 0.4s;
-    } */
-    
-    /* .moment{
-        display: none;
-    } */
-
     footer{
         display: none;
     }
@@ -174,89 +34,10 @@ html {
 
 @media screen and (min-width: 798px) {
 
-    .btn-criar-evento {
-        display: block !important;
-    }
-
-    .short-criar {
-        display: none !important;
-    }
 }
 
 @media screen and (min-width: 798px) and (max-width: 1199px) {
   
-    /* .divLogoP{
-        position: absolute;
-        width: 90%;
-    }
-
-    .btn-criar-evento {
-        position: absolute;
-        left: 65%;
-        top: 2.5%;
-    }
-    
-    .divBtn{
-        position: absolute;
-        left: 70%;
-        top: 20%;
-    }
-
-    .divBuscar {
-        position: absolute;
-        top: 60px;
-        left: 0px;
-        height: 15%;
-        width: 100%;
-        background: #bedef2;
-        padding: 20px;
-        margin-top: 1%;
-    }
-
-    .short-pesquisa {
-        padding: 0px 15px;
-    } */
-
-    /* #EventosR{
-        position: absolute !important;
-        left: 0%;
-        top: 24%;
-        height: 20% !important;
-        align-items: center !important;
-    }
-
-    #MyEventos {
-        font-size: 34px !important;
-        position: absolute;
-        top: 37rem !important;
-        left: 0% !important;
-    }
-    
-    #barraMyE {
-        position: absolute;
-        top: 48rem;
-        left: 0%;
-        width: 75rem !important;
-        height: 30rem !important;
-        display: block;
-    }
-
-    .barraMyE {
-        position: absolute;
-        top: 150%;
-        left: 0%;
-        height: 20%;
-        display: block;
-    } */
-
-    /* .moment{
-        display: none;
-    } */
-
-    /* footer{
-        position: absolute;
-        top: 105%;
-    } */
 }
 /*final mediaquery>*/
 
@@ -284,9 +65,9 @@ html {
     background-color:transparent;
     width:5rem; 
     height: 5rem;
-    top: -4.5%;
+    /* top: -4.5%;
     position: relative;
-    left: -30% !important;
+    left: -30% !important; */
 }
 
 .btn:hover{
@@ -294,8 +75,8 @@ html {
     background-color:transparent ;
     width:5rem; 
     height: 5rem;
-    top: -4.5%;
-    position: relative;
+    /* top: -4.5%;
+    position: relative; */
 }
 
 .option{
