@@ -78,7 +78,6 @@
                 </div>
             </div>
         </div> -->
-          
     
         <nav class="col navbar d-inline">
             <div class="navbar-container container-fluid pt-4 bg-primaria align-items-end flex-column bd-highlight">
@@ -155,8 +154,6 @@
                 <div class="container-fluid EventosR ps-5 mt-5" id="EventosR">
                     <label>EVENTOS RECENTES</label>
                     <div class="barraE">
-                        <!-- <img id="eventoAparece" src="img/evento1.jpeg" alt="evento1">
-                        <i class="fa-solid fa-angles-right d-none" id="seta" style="color: #1f003d;"></i> -->
                         <img class="evento" src="img/evento1.jpeg" alt="evento1">
                         <img class="evento" src="img/evento2.jpeg" alt="evento2">
                         <img class="evento" src="img/evento3.jpeg" alt="evento3">
@@ -185,19 +182,15 @@
                         <div id="barraMyE" class="row ms-1 me-1 d-flex justify-content-between">
                             <div class="row teste mt-0">
                                 <div class="row-sm col-md-3 mb-3 my-1">
-                                    <!-- <img src="img/evento14.jfif" alt="Imagem 14" class="img-fluid mb-5 eventoAparece1"> -->
                                     <img src="img/evento14.jfif" alt="Imagem 14" class="img-fluid evento1">
                                 </div>
                                 <div class="row-sm col-md-3 mb-3 my-1">
-                                    <!-- <img src="img/evento15.jfif" alt="Imagem 15" class="img-fluid my-4 eventoAparece1"> -->
                                     <img src="img/evento15.jfif" alt="Imagem 15" class="img-fluid evento1">
                                 </div>
                                 <div class="row-sm col-md-3 mb-3 my-1">
-                                    <!-- <img src="img/evento16.jpeg" alt="Imagem 16" class="img-fluid my-4 eventoAparece1"> -->
                                     <img src="img/evento16.jpeg" alt="Imagem 16" class="img-fluid evento1">
                                 </div>
                                 <div class="row-sm col-md-3 mb-3 my-1">
-                                    <!-- <img src="img/evento17.jpeg" alt="Imagem 17" class="img-fluid my-4 eventoAparece1"> -->
                                     <img src="img/evento17.jpeg" alt="Imagem 17" class="img-fluid evento1">
                                 </div>   
                             </div>

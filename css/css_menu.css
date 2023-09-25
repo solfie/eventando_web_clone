@@ -16,6 +16,12 @@ nav{
     background-color: transparent;
 }
 
+@media screen and (min-width: 1485px) {
+    .logo-header{
+        margin-top: -10px;
+    }
+}
+
 /* Definindo a estilização do elemento com ID "Cabecalho"*/
 #Cabecalho {
     background-color: #bedef2;
