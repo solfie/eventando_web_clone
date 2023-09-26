@@ -11,6 +11,10 @@ nav{
     margin-left: -15px !important;
 }
 
+.logo-header{
+    width: 340px;
+}
+
 @media screen and (min-width: 1485px) {
     .div-img{
         margin-top: -10px;

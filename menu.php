@@ -31,7 +31,7 @@
         </div> -->
     <header>
         <div class="container-fluid row d-flex justify-content-around align-items-center">
-            <div class="div-img col-3 mt-xl-0 mt-xxl-0 navbar-brand d-flex justify-content-center align-items-center" href="#">
+            <div class="div-img col-3 mt-xxl-0 mt-xxl-0 navbar-brand d-flex justify-content-center align-items-center" href="#">
                 <img class="logo-header img-fluid ms-md-3 mt-0" src="./img/logo.png">
             </div>
 
