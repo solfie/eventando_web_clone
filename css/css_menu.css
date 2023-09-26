@@ -55,19 +55,19 @@ nav{
 .btn{
     border: none;
     background-color:transparent;
-    width:5rem; 
-    height: 5rem;
+    width:3rem; 
+    height: 3rem;
 }
 
 .btn:hover{
     border: none;
     background-color:transparent ;
-    width:5rem; 
-    height: 5rem;
+    width:3rem; 
+    height: 3rem;
 }
 
 .option{
-    width: 7rem;  
+    width: 5rem;  
 }
 
 .sidenav{
@@ -77,6 +77,7 @@ nav{
 .tamanhoLogo{
     width: 30rem;
 }
+
 .logot{
     height: fit-content;
 }
@@ -96,8 +97,7 @@ nav{
 }
 
 .modal-header{
-    background-color: #bedef2;
-    
+    background-color: #bedef2; 
 }
 
 .logo{
@@ -179,11 +179,6 @@ li#sair.list-group-item.d-flex.d-inline-flex:hover{
       opacity: 1;
       transform: translateX(0);
     }
-}
-/* Estilização dos links */
-
-a {
-    color: #000000;
 }
 
 /* Definindo a estilização do elemento com ID "EventosR*/
