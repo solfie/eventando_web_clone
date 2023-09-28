@@ -40,10 +40,6 @@ nav{
     animation: AnimationName 3s ease infinite;
 }
 
-.navbar-toggler-icon {
-    width: 3rem; 
-    height: 3rem;
-}
 
 .xis{
     position: relative;
@@ -73,10 +69,10 @@ nav{
 }
 
 .tamanhoLogo{
-    max-width: 10rem;
+    max-width: 15rem;
 }
 
-.logot{
+.logout{
     height: fit-content;
 }
 

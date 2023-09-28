@@ -58,17 +58,10 @@ input[type='search']{
     color: #000;
     border: 1px solid rgb(162, 189, 206);
     border-radius: 4px;
-    /* height: 2.813rem;
-    width: 3.125rem !important; */
 }
 
 .btn-pesquisar:hover{
     color: #b25abf;
-}
-
-.btn{
-    border: none;
-    background-color:transparent;
 }
 
 .btn-collapse{
@@ -166,14 +159,19 @@ input[type='search']{
     .div-img{
         padding-top: 0.625rem;
     }
+
+    nav{
+        height: 80px;
+    }
+}
+
+@media (width: 768px) {
+    nav{
+        height: 50px;
+    }
 }
 
 @media (min-width: 1024px) {
-    nav{
-        background-color: #bedef2;
-        height: 80px;
-    }
-
     .teste-3{
         align-items: center;
     }

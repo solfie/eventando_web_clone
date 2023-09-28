@@ -26,16 +26,16 @@
     <!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
     <header>
         <div class="container-fluid row d-flex justify-content-around align-items-center">
-            <div class="div-img col-3 mt-xxl-0 navbar-brand d-flex justify-content-center align-items-center" href="#">
-                <img class="logo-header img-fluid ms-md-3 mt-0" src="./img/logo.png">
+            <div class="col-2 div-img d-flex justify-content-center align-items-center" href="#">
+                <img class="logo-header img-fluid" src="./img/logo.png">
             </div>
 
-            <div class="div-pesquisar d-md-none">
+            <div class="div-pesquisar d-md-none d-flex">
                 <button class = "btn-pesquisar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
-            <div class="col-3 d-flex justify-content-end">
+            <div class="col-3 d-flex d-md-flex d-none justify-content-end">
                 <form class="d-flex form-pesquisar">
                     <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
                     <button class="btn-pesquisar" type="submit" class="">
@@ -46,9 +46,10 @@
             
             <div class="col col-md-2 d-md-flex d-none flex-wrap align-content-center justify-content-end mt-0">
                 <a href = "criarEventoP.php"> 
-                <button class="btn-criar-evento">
-                    <i class="fa-regular fa-calendar-plus"></i>
-                    &nbsp;CRIAR EVENTO </button>
+                    <button class="btn-criar-evento">
+                        <i class="fa-regular fa-calendar-plus"></i> 
+                        &nbsp;CRIAR EVENTO
+                    </button>
                 </a>
             </div>
             <div class="col-1 d-md-none d-flex justify-content-center flex-wrap align-content-center">
@@ -60,52 +61,43 @@
             </div>    
     
             <nav class="col navbar d-inline">
-                <div class="navbar-container container-fluid pt-0SSS bg-primaria align-items-end flex-column bd-highlight">
-                    
+                <div class="container-fluid pt-0 align-items-end flex-column">
                     <!-- Toggler do Modal -->
                     <div class="mt-0">
-                        <button type="button" name="btn" class="btn p-2 pt-0 bd-highlight btn-lg mt-0" data-bs-toggle="modal" data-bs-target="#modalId">
-                            <span class="navbar-toggler-icon"></span>
+                        <button type="button" name="btn" class="btn p-2 pt-0 mt-0" data-bs-toggle="modal" data-bs-target="#modalId" style="background-color: transparent;">
+                            <i class="fa-solid fa-bars fs-2"></i>
                         </button>
                     </div>
             
                     <!-- Logo -->
                     <div class="modal" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen sidenav bg-primaria" role="document">
+                        <div class="modal-dialog sidenav modal-fullscreen" role="document">
                             <div class="modal-content"> <!-- aberta -->
-                                <div class="modal-header border-bottom-0 bg-primaria">
+                                <div class="modal-header  border-bottom-0">
                                     <div class="logo">
-                                        <a href="#" class="navbar-brand logot">
-                                            <img class="tamanhoLogo" src="img/logo.png" alt="">
+                                        <a href="#" class="navbar-brand logout">
+                                            <img class="tamanhoLogo img-fluid" src="img/logo.png" alt="">
                                         </a>
                                     </div>
                                     <button type="button" class=" btn-lg btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                     
-                                <div class="modal-body bg-secundaria">
+                                <div class="modal-body">
                                     <div class="container-fluid d-flex justify-content-start pe-5">
                                         <ul class="list-group list-group-flush modal-ul my-auto">
                                             <li id="opcao"class="list-group-item d-flex d-inline-flex">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle option" viewBox="0 0 16 16">
-                                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                                </svg> 
-                                                <a class="fts-5 my-auto mx-2 nav-link" href="perfil.php" style="color: black; text-decoration: none;">PERFIL</a>
+                                                <i class="fa-solid fa-circle-user fs-1"></i>
+                                                <a class="fs-5 my-auto mx-2 nav-link ms-2" href="perfil.php" style="color: black; text-decoration: none;">PERFIL</a>
                                             </li>
                         
                                             <li  id="opcao" class="list-group-item d-flex d-inline-flex">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill option" viewBox="0 0 16 16">
-                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                </svg> 
-                                                <a class="fts-5 my-auto mx-2"href="favoritos.php" style="color: black; text-decoration: none;">FAVORITOS</a>   
+                                                <i class="fa-solid fa-star fs-1"></i>
+                                                <a class="fs-5 my-auto mx-2 mt-2" href="favoritos.php" style="color: black; text-decoration: none;">FAVORITOS</a>   
                                             </li>
                                             
                                             <li  id="opcao" class="list-group-item d-flex d-inline-flex">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-info-circle option" viewBox="0 0 16 16">
-                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                                                </svg> 
-                                                <a class="fts-5 my-auto mx-2"href="sobreNos.php" style="color: black; text-decoration: none;">SOBRE NÓS</a>
+                                                <i class="fa-solid fa-circle-info fs-1"></i> 
+                                                <a class="fs-5 my-auto mx-2 mt-2" href="sobreNos.php" style="color: black; text-decoration: none;">SOBRE NÓS</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -113,11 +105,8 @@
         
                                 <div class="modal-footer">
                                     <li id="sair" class=" w-auto p-3 list-group-item d-flex d-inline-flex">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-right  " viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-                                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-                                        </svg> 
-                                        <a id="sair" class="fts-5 my-auto mx-2" href="index.php" >ENCERRAR SESSÃO</a>
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                        <a id="sair" class="my-auto mx-2" href="index.php">ENCERRAR SESSÃO</a>
                                     </li>
                                 </div>
                             </div>
