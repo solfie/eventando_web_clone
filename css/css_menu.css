@@ -11,10 +11,6 @@ nav{
     margin-left: -15px !important;
 }
 
-.logo-header{
-    width: 340px;
-}
-
 @media screen and (min-width: 1485px) {
     .div-img{
         margin-top: -10px;
@@ -23,9 +19,7 @@ nav{
 
 /*mediaquery responsividade do header*/
 @media screen and (max-width: 600px) {
-    footer{
-        display: none;
-    }
+
 }
 
 @media screen and (min-width: 798px) {
@@ -79,7 +73,7 @@ nav{
 }
 
 .tamanhoLogo{
-    width: 30rem;
+    max-width: 10rem;
 }
 
 .logot{

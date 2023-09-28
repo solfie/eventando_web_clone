@@ -12,11 +12,6 @@ body{
     background-color: #bedef2;
 }
 
-a{
-    text-decoration: none;
-    color: #000;
-}
-
 /* Estilização do elemento com classe .eventosR */
 .eventosR{
     font-size: min(4vw, 24px);

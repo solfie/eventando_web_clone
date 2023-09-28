@@ -22,8 +22,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid row d-flex justify-content-around align-items-center">
-                <div class="div-img col-3 mt-xl-2 navbar-brand d-flex justify-content-center align-items-center" href="#">
-                    <img class="logo-header mt-4 img-fluid ms-5 ms-md-0" src="./img/logo.png">
+                <div class="div-img col-3 mt-xl-2 ms-0 navbar-brand d-flex justify-content-center align-items-center" href="#">
+                    <img class="logo-header ms-md-0 mt-4 img-fluid" src="./img/logo.png">
                 </div>
 
                 <div class="col-3 navbar-brand d-md-none d-flex justify-content-end div-pesquisar">

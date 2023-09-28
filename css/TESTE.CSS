@@ -14,7 +14,7 @@ a:hover{
 
 header{
     background-color: #bedef2;
-    height: 80px;
+    height: 5rem;
     /* position: fixed !important; */
 }
 
@@ -29,12 +29,12 @@ nav{
 
 /* Estilização do input dentro do header */
 .form-pesquisar{
-    width: 400px;
+    width: 25rem;
 }
 
 nav input, header input{
     width: min(45vw, 700px);
-    height: 30px;
+    height: 1.875rem;
     border-radius: 8px !important;
     border: #b25abf 2px solid !important;
 }
@@ -45,12 +45,12 @@ nav input:hover, header input:hover{
 
 /* Estilização do input de tipo 'search' */
 input[type='search']{
-    padding-left: 10px;
+    padding-left: 0.625rem;
 }
 
 /* Estilização do botão de pesquisa */
 .div-pesquisar{
-    margin-left: 45px;
+    margin-left: 2.813rem;
 }
 
 .btn-pesquisar{
@@ -58,16 +58,21 @@ input[type='search']{
     color: #000;
     border: 1px solid rgb(162, 189, 206);
     border-radius: 4px;
-    height: 45px;
-    width: 50px!important;
+    /* height: 2.813rem;
+    width: 3.125rem !important; */
 }
 
 .btn-pesquisar:hover{
     color: #b25abf;
 }
 
+.btn{
+    border: none;
+    background-color:transparent;
+}
+
 .btn-collapse{
-    width: 60px;
+    width: 3.75rem;
 }
 
 /* Estilização do botão de criar evento */
@@ -76,7 +81,7 @@ input[type='search']{
     border: none;
     color: #000;
     font-weight: bold;
-    width: 180px;
+    width: 11.25rem;
     font-size: min(4vw, 18px);
 }
 
@@ -96,8 +101,8 @@ input[type='search']{
     border: none;
     color: #000;
     font-weight: bold;
-    height: 45px;
-    width: 50px!important;
+    height: 2.813rem;
+    width: 3.125rem !important;
 }
 
 .short-criar:hover{
@@ -108,7 +113,7 @@ input[type='search']{
 /* Estilização do botão de login */
 .btn-login{
     font-size: min(4vw, 18px);
-    width: 115px;
+    width: 7.188rem;
     font-weight: bold;
     color: #000;
 }
@@ -132,7 +137,7 @@ input[type='search']{
     }
 
     .div-img{
-        margin-left: 10px!important;
+        margin-left: 0.625rem !important;
     }
 }
 
@@ -144,22 +149,22 @@ input[type='search']{
 
 @media (max-width: 376px){
     .logo-header{
-        margin-left: 85px !important;
+        margin-left: 5.313rem !important;
     }
 }
 
 @media (max-width: 426px){
     .logo-header{
-        margin-left: 95px!important;
+        margin-left: 5.938rem!important;
     }
 }
 
 @media (max-width: 768px) {
     .logo-header{
-        margin-top: 0px;
+        margin-top: 0rem;
     }
     .div-img{
-        padding-top: 10px;
+        padding-top: 0.625rem;
     }
 }
 
@@ -176,12 +181,12 @@ input[type='search']{
 
 @media (width: 1024px) {
     .form-pesquisar{
-        margin-left: -90px;
+        margin-left: -5.625rem;
     }
 }
 
 @media (max-width: 1024px) {
     .logo-header{
-        margin-top: 25px;
+        margin-top: 1.563rem;
     }
 }
