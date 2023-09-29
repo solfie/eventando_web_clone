@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <!-- CSS externo-->
     <!-- <link rel="stylesheet" href="css/css_header.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/css_menu.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="css/css_menu.css"/> -->
     <link rel="stylesheet" href="css/teste.css">
     <!-- JS externo-->
     <script src = 'js/js_menu.js' defer></script>
@@ -38,7 +38,7 @@
             <div class="col-3 d-flex d-md-flex d-none align-self-center mb-4 ms-5 me-5">
                 <form class="d-flex form-pesquisar w-100">
                     <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
-                    <button class="btn-pesquisar" type="submit" class="">
+                    <button class="btn-pesquisar" type="submit">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>

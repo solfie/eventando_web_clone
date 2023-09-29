@@ -3,6 +3,7 @@ body{
     background-color: #ededed !important;
 }
 
+/* modal */
 nav{
     background-color: transparent;
 }
@@ -170,6 +171,7 @@ li#sair.list-group-item.d-flex.d-inline-flex:hover{
       transform: translateX(0);
     }
 }
+/* modal */
 
 /* Definindo a estilização do elemento com ID "EventosR*/
 .EventosR {
