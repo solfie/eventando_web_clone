@@ -26,17 +26,17 @@
     <!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
     <header>
         <div class="container-fluid row d-flex justify-content-around align-items-center">
-            <div class="col-2 div-img d-flex justify-content-center align-items-center" href="#">
+            <div class="col-3 div-img d-flex justify-content-center align-items-center" href="#">
                 <img class="logo-header img-fluid" src="./img/logo.png">
             </div>
 
             <div class="div-pesquisar d-md-none d-flex">
-                <button class = "btn-pesquisar">
+                <button class="btn-pesquisar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
-            <div class="col-3 d-flex d-md-flex d-none justify-content-end">
-                <form class="d-flex form-pesquisar">
+            <div class="col-3 d-flex d-md-flex d-none align-self-center mb-4 ms-5 me-5">
+                <form class="d-flex form-pesquisar w-100">
                     <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Search"/>
                     <button class="btn-pesquisar" type="submit" class="">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -44,7 +44,7 @@
                 </form>
             </div>
             
-            <div class="col col-md-2 d-md-flex d-none flex-wrap align-content-center justify-content-end mt-0">
+            <div class="col col-md-2 d-md-flex d-none flex-wrap align-self-center mb-5 mt-2 ms-5">
                 <a href = "criarEventoP.php"> 
                     <button class="btn-criar-evento">
                         <i class="fa-regular fa-calendar-plus"></i> 
@@ -52,7 +52,7 @@
                     </button>
                 </a>
             </div>
-            <div class="col-1 d-md-none d-flex justify-content-center flex-wrap align-content-center">
+            <div class="col-1 d-md-none d-flex justify-content-center flex-wrap">
                 <button class="short-criar">
                     <a href = "criarEventoP.php"> 
                         <i class="fa-regular fa-calendar-plus" aria-hidden="true"></i>
@@ -60,7 +60,7 @@
                 </button>
             </div>    
     
-            <nav class="col navbar d-inline">
+            <nav class="col-3 navbar align-self-stretch mb-5 mt-3">
                 <div class="container-fluid pt-0 align-items-end flex-column">
                     
                     <!-- Toggler do Modal -->
@@ -78,10 +78,10 @@
                                 <div class="modal-header border-bottom-0">
                                     <div class="logo">
                                         <a href="#" class="navbar-brand logout">
-                                            <img class="tamanhoLogo img-fluid" src="img/logo.png" alt="">
+                                            <img class="tamanhoLogo img-fluid ms-1 mt-4" src="img/logo.png" alt="">
                                         </a>
                                     </div>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close mb-5 align-self-baseline" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                     
                                 <div class="modal-body">
@@ -106,9 +106,9 @@
                                 </div>
         
                                 <div class="modal-footer">
-                                    <li id="sair" class=" w-auto p-0 list-group-item d-flex d-inline-flex">
-                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                        <a id="sair" class="my-auto mx-2" href="index.php">ENCERRAR SESSÃO</a>
+                                    <li id="sair" class="w-100 p-0 list-group-item d-flex d-inline-flex">
+                                        <i class="fa-solid fa-arrow-right-from-bracket mt-1 ms-2"></i>
+                                        <a id="sair" class="mx-2 mt-0 mb-1" href="index.php">ENCERRAR SESSÃO</a>
                                     </li>
                                 </div>
 
