@@ -34,12 +34,10 @@ nav{
 .css-selector {
     background: linear-gradient(22deg, #69d006, #dd8448, #ae17d0);
     background-size: 600% 600%;
-
     -webkit-animation: AnimationName 3s ease infinite;
     -moz-animation: AnimationName 3s ease infinite;
     animation: AnimationName 3s ease infinite;
 }
-
 
 .xis{
     position: relative;
@@ -77,9 +75,11 @@ nav{
 }
 
 .modal-header{
+    background-color: #bedef2; 
     width: 100%;
     height: fit-content;
 }
+
 .modal-footer {
     width: 100%;
     border: none;
@@ -88,10 +88,6 @@ nav{
 
 #sair:hover {
     color: rgb(255, 255, 255);
-}
-
-.modal-header{
-    background-color: #bedef2; 
 }
 
 .logo{

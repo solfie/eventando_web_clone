@@ -13,7 +13,7 @@
     <!-- CSS externo-->
     <!-- <link rel="stylesheet" href="css/css_header.css"> -->
     <link rel="stylesheet" type="text/css" href="css/css_menu.css"/>
-    <link rel="stylesheet" href="css/TESTE.css">
+    <link rel="stylesheet" href="css/teste.css">
     <!-- JS externo-->
     <script src = 'js/js_menu.js' defer></script>
     <!-- Definimos o título da página -->
@@ -62,6 +62,7 @@
     
             <nav class="col navbar d-inline">
                 <div class="container-fluid pt-0 align-items-end flex-column">
+                    
                     <!-- Toggler do Modal -->
                     <div class="mt-0">
                         <button type="button" name="btn" class="btn p-2 pt-0 mt-0" data-bs-toggle="modal" data-bs-target="#modalId" style="background-color: transparent;">
@@ -73,13 +74,14 @@
                     <div class="modal" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
                         <div class="modal-dialog sidenav modal-fullscreen" role="document">
                             <div class="modal-content"> <!-- aberta -->
-                                <div class="modal-header  border-bottom-0">
+                                
+                                <div class="modal-header border-bottom-0">
                                     <div class="logo">
                                         <a href="#" class="navbar-brand logout">
                                             <img class="tamanhoLogo img-fluid" src="img/logo.png" alt="">
                                         </a>
                                     </div>
-                                    <button type="button" class=" btn-lg btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                     
                                 <div class="modal-body">
@@ -104,11 +106,12 @@
                                 </div>
         
                                 <div class="modal-footer">
-                                    <li id="sair" class=" w-auto p-3 list-group-item d-flex d-inline-flex">
+                                    <li id="sair" class=" w-auto p-0 list-group-item d-flex d-inline-flex">
                                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
                                         <a id="sair" class="my-auto mx-2" href="index.php">ENCERRAR SESSÃO</a>
                                     </li>
                                 </div>
+
                             </div>
                         </div>
                     </div> 
