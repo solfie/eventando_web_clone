@@ -13,7 +13,7 @@
     <!-- CSS externo-->
     <!-- <link rel="stylesheet" href="css/css_header.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/css_menu.css"/> -->
-    <link rel="stylesheet" href="css/teste.css">
+    <link rel="stylesheet" href="css/css_header2.css">
     <!-- JS externo-->
     <script src = 'js/js_menu.js' defer></script>
     <!-- Definimos o título da página -->
@@ -117,6 +117,7 @@
                     </div> 
                 </div>
             </nav>
-        </div> 
+        </div>
+    </header>
 </body>
 </html>

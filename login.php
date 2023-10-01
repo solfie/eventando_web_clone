@@ -25,7 +25,6 @@
 </head>
 
 <?php
-
         function sanitizeString($input) {
             return preg_replace("/[^a-zA-Z0-9]/", "", $input);
         }
@@ -155,7 +154,7 @@
                         </form>
                     </div>
                     
-                    <div id="divCadastro" name="divCadastro" class=" mt-4" >
+                    <div id="divCadastro" name="divCadastro" class="d-none mt-4" >
                         <!-- Formulário CADASTRO, com sete campos de entrada: nome, data de nascimento, estado, telefone, email, senha e confirmação de senha -->
                         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" id="formulario3">
                             <input class="form-control" type="text" id="txtNome" placeholder="Nome" name="txtNome" required>

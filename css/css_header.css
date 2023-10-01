@@ -23,7 +23,6 @@ nav{
 }
 
 .logo-header{
-    
     min-width: 12.5rem;
 }
 
@@ -60,6 +59,10 @@ input[type='search']{
     border-radius: 4px;
     height: 45px;
     width: 50px!important;
+}
+
+.btn:hover{
+    color: #b25abf !important;
 }
 
 .btn-pesquisar:hover{
