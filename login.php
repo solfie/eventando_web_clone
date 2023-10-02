@@ -25,48 +25,50 @@
 </head>
 
 <?php
-        function sanitizeString($input) {
-            return preg_replace("/[^a-zA-Z0-9]/", "", $input);
-        }
+    session_start();
+    function sanitizeString($input) {
+        return preg_replace("/[^a-zA-Z0-9]/", "", $input);
+    }
 
-        function sanitizeEmail($input) {
-            // Remove caracteres não permitidos
-            return preg_replace('/[^a-zA-Z0-9.@]+/', '', $input);
-        }
+    function sanitizeEmail($input) {
+        // Remove caracteres não permitidos
+        return preg_replace('/[^a-zA-Z0-9.@]+/', '', $input);
+    }
 
-        // Verifique se o formulário foi enviado
-        if (isset($_POST["cadastrar"])){
+    // Verifique se o formulário foi enviado
+    if (isset($_POST["cadastrar"])){
 
-            // Recupere os dados do formulário e aplique a sanitização
-            $nome = $_POST["txtNome"];
-            $dataNascimento = $_POST["date"];
-            $estado = $_POST["sltEstado"];// Não é necessário sanitizar estado
-            $telefone = filter_var($_POST["telTelefone"], FILTER_SANITIZE_NUMBER_INT);
-            $email = $_POST["emEmail2"];
-            $senha = $_POST["pwdSenha2"];// Não é necessário sanitizar senhas
+        // Recupere os dados do formulário e aplique a sanitização
+        $nome = $_POST["txtNome"];
+        $dataNascimento = $_POST["date"];
+        $estado = $_POST["sltEstado"];// Não é necessário sanitizar estado
+        $telefone = filter_var($_POST["telTelefone"], FILTER_SANITIZE_NUMBER_INT);
+        $email = $_POST["emEmail2"];
+        $senha = $_POST["pwdSenha2"];// Não é necessário sanitizar senhas
+        
+        $Nomesanitized = sanitizeString($nome);
+        $Emailsanitized = sanitizeEmail($email);
+
+        // Agora você pode imprimir esses valores
+        echo "Nome: " . $Nomesanitized . "<br>";
+        echo "Data de Nascimento: " . $dataNascimento . "<br>";
+        echo "Estado: " . $estado . "<br>";
+        echo "Telefone: " . $telefone . "<br>";
+        echo "Email: " . $Emailsanitized . "<br>";
+        echo "Senha: " . $senha . "<br>";
+    }
+
+    if (isset($_POST["entrar"])){
+        // Recupere os dados do formulário e aplique a sanitização
+        $email1 = filter_var($_POST["emEmail"], FILTER_SANITIZE_EMAIL);
+        $senha1 = $_POST["pwdSenha"]; // Não é necessário sanitizar senhas
+
+        $_SESSION['email_txt'] = $email1;
             
-            $Nomesanitized = sanitizeString($nome);
-            $Emailsanitized = sanitizeEmail($email);
-
-            // Agora você pode imprimir esses valores
-            echo "Nome: " . $Nomesanitized . "<br>";
-            echo "Data de Nascimento: " . $dataNascimento . "<br>";
-            echo "Estado: " . $estado . "<br>";
-            echo "Telefone: " . $telefone . "<br>";
-            echo "Email: " . $Emailsanitized . "<br>";
-            echo "Senha: " . $senha . "<br>";
-        }
-
-        // if (isset($_POST["entrar"])){
-    
-        //     // Recupere os dados do formulário e aplique a sanitização
-        //     $email = filter_var($_POST["emEmail2"], FILTER_SANITIZE_EMAIL);
-        //     $senha = $_POST["pwdSenha2"]; // Não é necessário sanitizar senhas
-            
-        //     // Agora você pode imprimir esses valores
-        //     echo "Email: " . $email . "<br>";
-        //     echo "Senha: " . $senha . "<br>";
-        // }
+        // Agora você pode imprimir esses valores
+        // echo "Email: " . $email1 . "<br>";
+        // echo "Senha: " . $_SESSION['email_txt'] . "<br>";
+    }
 ?>
 
 <body>
@@ -103,9 +105,11 @@
                         </div>
                     </div>
 
+                   
+
                     <div id="divLogin" class="row">
                         <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
-                        <form action="menu.php" method="POST" id="formulario" >                        
+                        <form action="menu.php" method="post" id="formulario" >                        
                             <input class="form-control mt-4" type="email" id="emEmail" name="emEmail" placeholder="Email" required>
 
                             <input class="form-control mt-4" type="password" id="pwdSenha" name="pwdSenha" placeholder="Senha" required>

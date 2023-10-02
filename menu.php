@@ -75,7 +75,7 @@
                 <div class="col-md-6">
                     <p id="EventosM">EVENTOS DO MOMENTO</p>
                     <table class="table table-striped" style="border-radius: 4px;">
-                        <thead style="background: #d9d5d4">
+                        <thead>
                             <tr>
                                 <th scope="col">Segunda-feira</th>
                                 <th scope="col">18 de setembro</th>
@@ -95,7 +95,7 @@
                                 <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
                             </tr>
                         </tbody>
-                        <thead style="background: #d9d5d4">
+                        <thead>
                             <tr>
                                 <th scope="col">Terça-feira</th>
                                 <th scope="col">20 de setembro</th>
@@ -115,7 +115,7 @@
                                 <td style="color: #b25abf; font-weight: bold;">Nome do Evento</td>                            
                             </tr>
                         </tbody>
-                        <thead style="background: #d9d5d4">
+                        <thead>
                             <tr>
                                 <th scope="col">Quarta-feira</th>
                                 <th scope="col">21 de setembro</th>

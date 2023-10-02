@@ -3,6 +3,7 @@
     include_once 'header.php'
 ?>
 
+
     <div class="m-5">
         <p class="eventosR">EVENTOS RECENTES</p>
         <div class = "barraE">

@@ -1,4 +1,9 @@
 <?php 
+    session_start();
+    if(!(isset($_SESSION['email_txt']))){
+        $_SESSION['email_txt'] = 'PERFIL';
+    }
+
     if($_seila == 1){
         echo '
         <!-- Aqui iniciamos o código html -->
@@ -101,9 +106,9 @@
             <!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
             <header>
                 <div class="container-fluid row d-flex justify-content-around align-items-center">
-                    <div class="col-3 div-img d-flex justify-content-center align-items-center" href="#">
+                    <div class="col-3 div-img d-flex justify-content-center align-items-center mt-1" href="#">
                         <a href="menu.php">
-                            <img class="logo-header img-fluid" src="./img/logo.png">
+                            <img class="logo-header img-fluid" src="./img/logo.png" style="height: 8rem;">
                         </a>
                     </div>
 
@@ -166,7 +171,7 @@
                                                 <ul class="list-group list-group-flush modal-ul my-auto">
                                                     <li id="opcao"class="list-group-item d-flex d-inline-flex">
                                                         <i class="fa-solid fa-circle-user fs-1"></i>
-                                                        <a class="fs-5 my-auto mx-2 nav-link ms-2" href="perfil.php" style="color: black; text-decoration: none;">PERFIL</a>
+                                                        <a class="fs-5 my-auto mx-2 nav-link ms-2" href="perfil.php" style="color: black; text-decoration: none;">'. $_SESSION['email_txt'] .'</a>
                                                     </li>
                                 
                                                     <li  id="opcao" class="list-group-item d-flex d-inline-flex">
