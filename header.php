@@ -88,9 +88,11 @@
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
             <!-- CSS externo-->
             <link rel="stylesheet" href="css/css_header2.css">
-            ' . $css_js . '
+            ' . $css . '
+            <!-- JS externo-->
+            ' . $js . '
             <!-- Definimos o título da página -->
-            <title> MENU </title>
+            <title> ' . $title . ' </title>
             <!-- Definimos o ícone na aba da página-->
             <link rel="shortcut icon" type="image/png" href="img/schedule (2).png"/>
         </head>
@@ -100,7 +102,9 @@
             <header>
                 <div class="container-fluid row d-flex justify-content-around align-items-center">
                     <div class="col-3 div-img d-flex justify-content-center align-items-center" href="#">
-                        <img class="logo-header img-fluid" src="./img/logo.png">
+                        <a href="menu.php">
+                            <img class="logo-header img-fluid" src="./img/logo.png">
+                        </a>
                     </div>
 
                     <div class="div-pesquisar d-md-none d-flex">

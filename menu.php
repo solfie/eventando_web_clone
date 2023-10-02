@@ -1,6 +1,8 @@
 <?php 
     $_seila = 2;
-    $css_js = '<link rel="stylesheet" type="text/css" href="css/css_menu.css"/> <script src = "js/js_menu.js" defer></script>';
+    $css = '<link rel="stylesheet" type="text/css" href="css/css_menu.css"/>';
+    $js = '<script src = "js/js_menu.js" defer></script>';
+    $title = 'MENU';
     include_once 'header.php'
 ?>
     
