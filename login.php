@@ -64,10 +64,8 @@
         $senha1 = $_POST["pwdSenha"]; // Não é necessário sanitizar senhas
 
         $_SESSION['email_txt'] = $email1;
-            
-        // Agora você pode imprimir esses valores
-        // echo "Email: " . $email1 . "<br>";
-        // echo "Senha: " . $_SESSION['email_txt'] . "<br>";
+
+        header('Location: menu.php');
     }
 ?>
 
@@ -109,7 +107,7 @@
 
                     <div id="divLogin" class="row">
                         <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
-                        <form action="menu.php" method="post" id="formulario" >                        
+                        <form action="login.php" method="post" id="formulario" >                        
                             <input class="form-control mt-4" type="email" id="emEmail" name="emEmail" placeholder="Email" required>
 
                             <input class="form-control mt-4" type="password" id="pwdSenha" name="pwdSenha" placeholder="Senha" required>
