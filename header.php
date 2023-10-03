@@ -190,7 +190,7 @@
                                         <div class="modal-footer">
                                             <li id="sair" class="w-100 p-0 list-group-item d-flex d-inline-flex">
                                                 <i class="fa-solid fa-arrow-right-from-bracket mt-1 ms-2"></i>
-                                                <a id="sair" class="mx-2 mt-0 mb-1" href="index.php">ENCERRAR SESSÃO</a>
+                                                <a id="sair" class="mx-2 mt-0 mb-1" href="logout.php">ENCERRAR SESSÃO</a>
                                             </li>
                                         </div>
 
