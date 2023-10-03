@@ -1,7 +1,10 @@
 <?php 
+    // Define a variável $_seila como 1
     $_seila = 1;
-    include_once 'header.php'
+    // Inclui o arquivo 'header.php', que contém código HTML e PHP
+    include_once 'header.php';
 ?>
+
 
 
     <div class="m-5">
@@ -37,5 +40,6 @@
     </div>
 
     <?php
-        include_once 'footer.php'
+        // Inclui o arquivo 'footer.php', que geralmente contém código HTML e PHP relacionado ao rodapé da página
+        include_once 'footer.php';
     ?>

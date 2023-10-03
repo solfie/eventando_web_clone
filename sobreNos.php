@@ -1,10 +1,16 @@
 <?php 
+    // Define a variável $_seila como 2
     $_seila = 2;
+    // Define a variável $css com um link para um arquivo CSS externo chamado 'css_sobreNos.css'
     $css = ' <link rel = "stylesheet" type = "text/css" href = "css/css_sobreNos.css" />';
+    // Define a variável $js como vazia, ou seja, não inclui nenhum arquivo JavaScript
     $js = '';
+    // Define a variável $title como 'SOBRE NÓS', que será o título da página
     $title = 'SOBRE NÓS';
-    include_once 'header.php'
+    // Inclui o arquivo 'header.php', que contém código HTML e PHP
+    include_once 'header.php';
 ?>
+
 
     <div class="mae">
         <div class="col-xxl-6 mb-0 ms-5">
@@ -148,5 +154,6 @@
     </div>
 
     <?php
-        include_once 'footer.php'
+        // Inclui o arquivo 'footer.php', que geralmente contém código HTML e PHP relacionado ao rodapé da página
+        include_once 'footer.php';
     ?>

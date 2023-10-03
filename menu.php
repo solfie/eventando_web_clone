@@ -1,10 +1,16 @@
 <?php 
+    // Define a variável $_seila como 2
     $_seila = 2;
+    // Define a variável $css com um link para um arquivo CSS externo
     $css = '<link rel="stylesheet" type="text/css" href="css/css_menu.css"/>';
-    $js = '<script src = "js/js_menu.js" defer></script>';
+    // Define a variável $js com um link para um arquivo JavaScript externo com atributo 'defer'
+    $js = '<script src="js/js_menu.js" defer></script>';
+    // Define a variável $title como 'MENU'
     $title = 'MENU';
-    include_once 'header.php'
+    // Inclui o arquivo 'header.php', que contém código HTML e PHP
+    include_once 'header.php';
 ?>
+
     
     <!-- Criamos uma div, onde nela vamos ter uma outra div onde tem as imagens de vários eventos -->
     <div class="container-fluid mb-5">
@@ -138,5 +144,6 @@
     </div>
 
 	<?php
-        include_once 'footer.php'
+        // Inclui o arquivo 'footer.php', que geralmente contém código HTML e PHP relacionado ao rodapé da página
+        include_once 'footer.php';
     ?>

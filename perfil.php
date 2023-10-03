@@ -1,9 +1,14 @@
 <?php 
+    // Define a variável $_seila como 2
     $_seila = 2;
+    // Define a variável $css com um link para um arquivo CSS externo chamado 'css_perfil.css'
     $css = '<link rel = "stylesheet" type = "text/css" href = "css/css_perfil.css" />';
+    // Define a variável $js com um link para um arquivo JavaScript externo chamado 'js_perfil.js' e com o atributo 'defer'
     $js = '<script src = "js/js_perfil.js" defer></script>';
+    // Define a variável $title como 'PERFIL', que será o título da página
     $title = 'PERFIL';
-    include_once 'header.php'
+    // Inclui o arquivo 'header.php', que contém código HTML e PHP
+    include_once 'header.php';
 ?>
 
 	<div class="mae mt-5 mb-0">
@@ -19,9 +24,9 @@
 		</div>	
 		
 		<div class = "row ms-5 me-5 mt-5 mb-5 teste">
-			<div class="row ms-2 me-2 mt-5 mb-5 gx-5">
+			<div class="row ms-2 me-2 mt-5 mb-5 gx-4">
 				<div class="col-xxl-6 mt-5 mb-5 mb-xxl-0">
-					<div class="bg-secondary-soft mt-5 px-4 py-5 rounded">
+					<div class="bg-secondary-soft mt-0 px-4 py-5 rounded">
 						<div class="row g-3">
 							<h2 class="mb-4 mt-0 infos"><i class="fa-solid fa-user me-2"></i>INFORMAÇÕES BÁSICAS</h2>
 							
@@ -102,6 +107,8 @@
 		</div>
 	</div>
 
+
 	<?php
-        include_once 'footer.php'
+        // Inclui o arquivo 'footer.php', que geralmente contém código HTML e PHP relacionado ao rodapé da página
+        include_once 'footer.php';
     ?>

@@ -1,10 +1,16 @@
 <?php 
+    // Define a variável $_seila como 2
     $_seila = 2;
+    // Define a variável $css com um link para um arquivo CSS externo chamado 'css_favoritos.css'
     $css = '<link rel = "stylesheet" type = "text/css" href = "css/css_favoritos.css" />';
+    // Define a variável $js como vazia, ou seja, não inclui nenhum arquivo JavaScript
     $js = '';
+    // Define a variável $title como 'FAVORITOS', que será o título da página
     $title = 'FAVORITOS';
-    include_once 'header.php'
+    // Inclui o arquivo 'header.php', que contém código HTML e PHP anteriormente comentado
+    include_once 'header.php';
 ?>
+
 	
 	<div class="mae">
 		<div class="row">
@@ -204,5 +210,6 @@
 	</div>
 	
 	<?php
-        include_once 'footer.php'
+        // Inclui o arquivo 'footer.php', que geralmente contém código HTML e PHP relacionado ao rodapé da página
+        include_once 'footer.php';
     ?>

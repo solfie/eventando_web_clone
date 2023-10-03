@@ -1,9 +1,13 @@
 <?php 
     session_start();
+    
+    // Verifica se a sessão 'email_txt' não está definida e a define como 'PERFIL' se não estiver.
     if(!(isset($_SESSION['email_txt']))){
         $_SESSION['email_txt'] = 'PERFIL';
     }
 
+    // Verifica o valor da variável $_seila
+    // Se o valor da variável $_seila for igual a 1 incluirá esse header abaixo
     if($_seila == 1){
         echo '
         <!-- Aqui iniciamos o código html -->
@@ -77,6 +81,8 @@
             </header>
         ';
     }
+
+    // Mas, se o valor da variável $_seila for igual a 2 incluirá esse header abaixo
     else if($_seila == 2){
         echo '
         <!-- Aqui iniciamos o código html, e já chamamos o arquivo css para estilizar -->
@@ -93,9 +99,9 @@
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
             <!-- CSS externo-->
             <link rel="stylesheet" href="css/css_header2.css">
-            ' . $css . '
+            ' . $css . ' <!-- Inclui o CSS externo definido na variável $css -->
             <!-- JS externo-->
-            ' . $js . '
+            ' . $js . ' <!-- Inclui o JS externo definido na variável $js -->
             <!-- Definimos o título da página -->
             <title> ' . $title . ' </title>
             <!-- Definimos o ícone na aba da página-->
@@ -171,7 +177,7 @@
                                                 <ul class="list-group list-group-flush modal-ul my-auto">
                                                     <li id="opcao"class="list-group-item d-flex d-inline-flex">
                                                         <i class="fa-solid fa-circle-user fs-1"></i>
-                                                        <a class="fs-5 my-auto mx-2 nav-link ms-2" href="perfil.php" style="color: black; text-decoration: none;">'. $_SESSION['email_txt'] .'</a>
+                                                        <a class="fs-5 my-auto mx-2 nav-link ms-2" href="perfil.php" style="color: black; text-decoration: none;">'. $_SESSION['email_txt'] .'</a> <!-- Se a pessoa tiver feito login com a sessão o local de PERFIL no menu estará com o email colocado no login -->
                                                     </li>
                                 
                                                     <li  id="opcao" class="list-group-item d-flex d-inline-flex">
