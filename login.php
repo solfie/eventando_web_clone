@@ -38,7 +38,7 @@
     // Verifique se o formulário foi enviado
     if (isset($_POST["cadastrar"])){
 
-        // Recupere os dados do formulário e aplique a sanitização
+        // Recupere os dados do formulário CADASTRAR e aplique a sanitização
         $nome = $_POST["txtNome"];
         $dataNascimento = $_POST["date"];
         $estado = $_POST["sltEstado"];// Não é necessário sanitizar estado
@@ -48,24 +48,23 @@
         
         $Nomesanitized = sanitizeString($nome);
         $Emailsanitized = sanitizeEmail($email);
-
-        // Agora você pode imprimir esses valores
-        echo "Nome: " . $Nomesanitized . "<br>";
-        echo "Data de Nascimento: " . $dataNascimento . "<br>";
-        echo "Estado: " . $estado . "<br>";
-        echo "Telefone: " . $telefone . "<br>";
-        echo "Email: " . $Emailsanitized . "<br>";
-        echo "Senha: " . $senha . "<br>";
     }
 
     if (isset($_POST["entrar"])){
-        // Recupere os dados do formulário e aplique a sanitização
-        $email1 = filter_var($_POST["emEmail"], FILTER_SANITIZE_EMAIL);
+        // Recupere os dados do formulário LOGIN e aplique a sanitização
+        $email1 = $_POST["emEmail"];
+        $Emailsanitized1 = sanitizeEmail($email1);
         $senha1 = $_POST["pwdSenha"]; // Não é necessário sanitizar senhas
+        
+        $_SESSION['email_txt'] = $Emailsanitized1;
+        header('Location: menu.php?login_success=true');
+    }
+    
 
-        $_SESSION['email_txt'] = $email1;
-
-        header('Location: menu.php');
+    if (isset($_POST["enviar"])){
+        // Recupere os dados do formulário RECUPERAR e aplique a sanitização
+        $email3 = $_POST["emEmail3"];
+        $Emailsanitized3 = sanitizeEmail($email3);
     }
 ?>
 

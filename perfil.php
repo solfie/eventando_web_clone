@@ -13,19 +13,14 @@
 
 	<div class="mae mt-5 mb-0">
 		<div class="container-fluid row-2 col-11 ms-5">
-			<!-- Upload profile -->
-			<div class="d-flex">
-				<div class="flex-grow-1 justify-content-md-start"> 
-					<button class="btn mt-5 rounded-circle w-0 h-0 avatar">
-						<i class="fa-solid fa-circle-user text-center avatarU"></i>
-					</button>
-				</div>
-			</div>
+			<button class="btn mt-5 rounded-circle w-0 h-0 avatar">
+				<i class="fa-solid fa-circle-user text-center avatarU"></i>
+			</button>
 		</div>	
 		
-		<div class = "row ms-5 me-5 mt-5 mb-5 teste">
-			<div class="row ms-2 me-2 mt-5 mb-5 gx-4">
-				<div class="col-xxl-6 mt-5 mb-5 mb-xxl-0">
+		<div class = "row teste">
+			<div class="row d-flex justify-content-center mt-5 mb-5 gx-4">
+				<div class="col-xxl-5 mt-5 mb-5 me-5 mb-xxl-0">
 					<div class="bg-secondary-soft mt-0 px-4 py-5 rounded">
 						<div class="row g-3">
 							<h2 class="mb-4 mt-0 infos"><i class="fa-solid fa-user me-2"></i>INFORMAÇÕES BÁSICAS</h2>
@@ -80,7 +75,7 @@
 					</div>
 				</div>
 
-				<div class="col-xxl-6 mt-5 mb-5 mb-xxl-0">
+				<div class="col-xxl-5 mb-5 ms-5 mb-xxl-0">
 					<div class="bg-secondary-soft mt-5 px-4 py-5 rounded">
 						<div class="row g-3">
 							<h2 class="my-4 mb-4 mt-0 infos"><i class="fa-solid fa-phone me-2"></i>INFORMAÇÕES DE CONTATO</h2>

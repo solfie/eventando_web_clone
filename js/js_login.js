@@ -193,16 +193,37 @@ function autenticaNome() {
   }
 }
 
-/*Verificando o formulário*/
-const formulario = document.getElementById('formulario3');
-formulario.addEventListener('submit', function(event) {
+/*Verificando o formulário CADASTRAR*/
+const formularioC = document.getElementById('formulario3');
+formularioC.addEventListener('submit', function(event) {
   event.preventDefault(); /* Impede o envio padrão do formulário*/
   autenticaNome();
   autenticacao(); /* Executa a função de autenticação*/
 
   /* Verifica se o formulário é válido*/
-  if (formulario.checkValidity()) {
+  if (formularioC.checkValidity()) {
     /* Redireciona para a página de destino após o cadastro*/
     window.location.href = "login.php";
   }
 });
+
+/*Verificando o formulário LOGIN*/
+
+document.getElementById("formulario1").addEventListener("submit", function(event) {
+  event.preventDefault(); /* Impede o envio padrão do formulário*/
+
+  var emailInputL = document.getElementById("emEmail1");
+  var emailL = emailInputL.value.trim();
+  
+  /* Expressão regular para validar o formato do e-mail*/
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(emailL)) {
+      /* E-mail inválido, exiba uma mensagem de erro*/
+      alert("Por favor, informe um endereço de e-mail válido.");
+      return false;
+  }
+  else{
+    mostrarAlerta();
+  }
+})
