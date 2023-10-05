@@ -148,7 +148,7 @@
                         </button>
                     </div>    
             
-                    <nav class="col-3 navbar align-self-stretch mb-5 mt-3">
+                    <nav class="col navbar align-self-center mb-5 mt-3">
                         <div class="container-fluid pt-0 align-items-end flex-column">
                             
                             <!-- Toggler do Modal -->
