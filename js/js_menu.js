@@ -42,9 +42,13 @@ function exibirAlerta() {
 }
 
 // Verifica se há um parâmetro "login_success" na URL
+// Verifica se há um parâmetro "login_success" na URL
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.has("login_success")) {
-    exibirAlerta();
+    // Verifica se a largura da tela é maior que 768 pixels (pode ajustar esse valor conforme necessário)
+    if (window.innerWidth > 500) {
+        exibirAlerta();
+    }
     // Remove o parâmetro da URL para que o alerta não seja exibido novamente ao atualizar a página
     history.replaceState(null, "", window.location.pathname);
 }

@@ -196,7 +196,7 @@ function autenticaNome() {
 /*Verificando o formulário CADASTRAR*/
 const formularioC = document.getElementById('formulario3');
 formularioC.addEventListener('submit', function(event) {
-  event.preventDefault(); /* Impede o envio padrão do formulário*/
+  //event.preventDefault(); 
   autenticaNome();
   autenticacao(); /* Executa a função de autenticação*/
 

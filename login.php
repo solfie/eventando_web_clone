@@ -16,6 +16,8 @@
     <link rel = "stylesheet" type = "text/css" href = "css/css_login.css"/>
     <!-- JS externo-->
     <script src = 'js/js_login.js' defer></script>
+
+
     <!-- JS botão do google-->
     <script src = "https://accounts.google.com/gsi/client" async defer></script>
     <script src = "https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
@@ -50,6 +52,10 @@
         
         $Nomesanitized = sanitizeString($nome);
         $Emailsanitized = sanitizeEmail($email);
+
+        // echo "Email $Emailsanitized </br>";
+        // echo "Marta $Nomesanitized </br>";
+        // echo "Dados gravados!";
     }
  // Esta condição verifica se o formulário de login foi enviado
     if (isset($_POST["entrar"])){
@@ -159,7 +165,8 @@
                         </form>
                     </div>
                     
-                    <div id="divCadastro" name="divCadastro" class="d-none mt-4" >
+                    
+                    <div id="divCadastro" name="divCadastro"  class="d-none mt-4">
                         <!-- Formulário CADASTRO, com sete campos de entrada: nome, data de nascimento, estado, telefone, email, senha e confirmação de senha -->
                         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" id="formulario3">
                             <input class="form-control" type="text" id="txtNome" placeholder="Nome" name="txtNome" required>
