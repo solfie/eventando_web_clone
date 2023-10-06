@@ -28,7 +28,7 @@
 
 <?php
     //Conexão
-    include_once 'Bancodedados/connect_teste.php';
+    include_once 'BD/connect_web.php';
     // Iniciar a sessão
     session_start();
     // Função para limpar strings
