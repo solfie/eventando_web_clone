@@ -1,9 +1,9 @@
 <?php
     //Conexão com banco de dados
     $servername = "db4free.net"; //endereço do servidor
-    $username="eventando";
-    $password="eventando2023";
-    $db_name="eventando";
+    $username = "eventando";
+    $password = "eventando2023";
+    $db_name = "eventando";
 
     //pdo - somente orientado objeto
     $connect = mysqli_connect($servername,$username,$password,$db_name);

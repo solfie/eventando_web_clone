@@ -1,10 +1,11 @@
 <?php
     // Abre uma conexao com o BD.
-    $host = "host = 127.0.0.1;";
-    $port = "port = 6649;";
-    $dbname = "dbname = pg_products;";
-    $dbuser = "postgres";
-    $dbpassword	= "00000000";
+    $host = "flora.db.elephantsql.com"; // endereço do servidor PostgreSQL
+    $port = "5432"; // A porta padrão do PostgreSQL
+    $dbname = "iqtdtttt"; // nome do banco de dados é o mesmo que o nome de usuário
+    $dbuser = "iqtdtttt"; // nome de usuário
+    $dbpassword = "mUCUlwPPX-APw6ctYt0SC_FgDxWvvOrv";
+
 
     // para conectar ao mysql, substitua pgsql por mysql
     $db_con= new PDO('pgsql:' . $host . $port . $dbname, $dbuser, $dbpassword);
