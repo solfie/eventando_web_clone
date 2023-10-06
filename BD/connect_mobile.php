@@ -1,16 +1,22 @@
 <?php
-    $host = 'localhost'; // Endereço do servidor PostgreSQL
-    $port = '5432'; // Porta do servidor PostgreSQL (normalmente 5432)
-    $dbname = 'seu_banco_de_dados'; // Nome do banco de dados PostgreSQL
-    $user = 'seu_usuario'; // Nome de usuário do PostgreSQL
-    $password = 'sua_senha'; // Senha do PostgreSQL
+// Abre uma conexao com o BD.
+$host = "host = 127.0.0.1;";
+$port = "port = 6649;";
+$dbname = "dbname = pg_products;";
+$dbuser = "postgres";
+$dbpassword	= "00000000";
 
-    try {
-        $conexao = new PDO("pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$password");
-        // Configura o PDO para lançar exceções em caso de erros
-        $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo 'Conexão bem-sucedida';
-    } catch (PDOException $e) {
-        echo 'Erro na conexão: ' . $e->getMessage();
-    }
+// dados de conexao com o b4app. Usar somente caso esteja usando b4app
+// $host        = "host = " . getenv("BD_HOST") . ";";
+// $port        = "port = " . getenv("BD_PORT") . ";";
+// $dbname      = "dbname = " . getenv("BD_DATABASE") . ";";
+// $dbuser 	 = getenv("BD_USER");
+// $dbpassword	 = getenv("BD_PASSWORD");
+
+// para conectar ao mysql, substitua pgsql por mysql
+$db_con= new PDO('pgsql:' . $host . $port . $dbname, $dbuser, $dbpassword);
+
+//alguns atributos de performance.
+$db_con->setAttribute(PDO::ATTR_EMULATE_PREPARES,false);
+$db_con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 ?>
