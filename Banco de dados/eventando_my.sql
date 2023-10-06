@@ -1,7 +1,3 @@
--- DELETANDO AS TABELAS
--- drop table USUARIO, EVENTO_PRESENCIAL, EVENTO_ONLINE, EVENTO, CONVITE, LISTA_CONVIDADOS, LOCALIZACAO, TIPO_LOGRADOURO, BAIRRO, CIDADE, ESTADO, TIPO_CONTATO, buffet, plataforma, Favorita, Possui_bairro_cidade, Possui_cidade_estado, Possui_tipo_contato_evento, Tem_tipo_contato_usuario;
-
--- CREATE TABLES
 CREATE TABLE USUARIO (
     nome varchar(90),
     data_nasc date,
@@ -118,7 +114,6 @@ CREATE TABLE TEM_TIPO_CONTATO_USUARIO (
     descricao varchar(150)
 );
 
--- ALTER TABLES
 ALTER TABLE USUARIO ADD CONSTRAINT FK_USUARIO_2
     FOREIGN KEY (FK_ESTADO_id_estado)
     REFERENCES ESTADO (id_estado)
@@ -214,7 +209,6 @@ ALTER TABLE TEM_TIPO_CONTATO_USUARIO ADD CONSTRAINT FK_Tem_2
     REFERENCES TIPO_CONTATO (id_tipo_contato)
     ON DELETE SET NULL;
 
--- INSERÇÃO DOS DADOS NAS TABELAS
 INSERT INTO ESTADO (descricao) VALUES
     ('AC'), 
     ('AL'), 
