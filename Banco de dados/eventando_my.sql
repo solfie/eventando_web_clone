@@ -20,8 +20,8 @@ CREATE TABLE EVENTO_ONLINE (
 
 CREATE TABLE EVENTO (
     objetivo varchar(255),
-    data_prevista,
-    privacidade_restrita BOOL,
+    data_prevista date,
+    privacidade_restrita bool,
     horario time,
     src_img text,
     nome varchar(100),
