@@ -1,3 +1,5 @@
+-- drop table USUARIO, EVENTO_PRESENCIAL, EVENTO_ONLINE, EVENTO, CONVITE, LISTA_CONVIDADOS, LOCALIZACAO, TIPO_LOGRADOURO, BAIRRO, CIDADE, ESTADO, TIPO_CONTATO, buffet, plataforma, Favorita, POSSUI_BAIRRO_CIDADE, POSSUI_CIDADE_ESTADO, POSSUI_TIPO_CONTATO_EVENTO, TEM_TIPO_CONTATO_USUARIO;
+
 CREATE TABLE USUARIO (
     nome varchar(90),
     data_nasc date,
@@ -21,6 +23,7 @@ CREATE TABLE EVENTO_ONLINE (
 CREATE TABLE EVENTO (
     objetivo varchar(255),
     data_prevista date,
+    atracoes varchar (300),
     privacidade_restrita bool,
     horario time,
     src_img text,
@@ -842,7 +845,7 @@ INSERT INTO EVENTO_PRESENCIAL (FK_buffet_buffet_PK, FK_EVENTO_id_evento, FK_LOCA
     (12, 24, 24),
     (13, 25, 25);
 
-INSERT INTO Possui_bairro_cidade (FK_BAIRRO_id_bairro, FK_CIDADE_id_cidade) VALUES
+INSERT INTO POSSUI_BAIRRO_CIDADE (FK_BAIRRO_id_bairro, FK_CIDADE_id_cidade) VALUES
     (1, 1),
     (4, 2),
     (7, 3),
@@ -869,7 +872,7 @@ INSERT INTO Possui_bairro_cidade (FK_BAIRRO_id_bairro, FK_CIDADE_id_cidade) VALU
     (40, 24),
     (43, 25);
 
-INSERT INTO Possui_cidade_estado (FK_CIDADE_id_cidade, FK_ESTADO_id_estado) VALUES
+INSERT INTO POSSUI_CIDADE_ESTADO (FK_CIDADE_id_cidade, FK_ESTADO_id_estado) VALUES
     (1, 1),
     (2, 2),
     (3, 3),
@@ -898,7 +901,7 @@ INSERT INTO Possui_cidade_estado (FK_CIDADE_id_cidade, FK_ESTADO_id_estado) VALU
     (26, 26),
     (27, 27);
 
-INSERT INTO Possui_tipo_contato_evento (descricao, FK_TIPO_CONTATO_id_tipo_contato, FK_EVENTO_id_evento) VALUES
+INSERT INTO POSSUI_TIPO_CONTATO_EVENTO (descricao, FK_TIPO_CONTATO_id_tipo_contato, FK_EVENTO_id_evento) VALUES
     ('tecconferencia' ,3, 1),
     ('jemnoivos' ,3, 2),
     ('fotoshop' , 3, 3),

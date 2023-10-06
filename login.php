@@ -27,13 +27,15 @@
 </head>
 
 <?php
-// Iniciar a sessão
+    //Conexão
+    include_once 'Bancodedados/connect_teste.php';
+    // Iniciar a sessão
     session_start();
-// Função para limpar strings
+    // Função para limpar strings
     function sanitizeString($input) {
         return preg_replace("/[^a-zA-Z0-9]/", "", $input);
     }
-// Função para limpar endereços de e-mail
+    // Função para limpar endereços de e-mail
     function sanitizeEmail($input) {
         // Remove caracteres não permitidos
         return preg_replace('/[^a-zA-Z0-9.@]+/', '', $input);
@@ -69,7 +71,7 @@
     }
     
    
-// Esta condição verifica se o formulário de recuperação de senha foi enviado
+    // Esta condição verifica se o formulário de recuperação de senha foi enviado
 
     if (isset($_POST["enviar"])){
         // Recupere os dados do formulário RECUPERAR e aplique a sanitização
