@@ -1,72 +1,73 @@
 <?php
- 
-/*
- * O código abaixo registra um novo usuário.
- * Método do tipo POST.
- */
+	/*
+	* O código abaixo registra um novo usuário.
+	* Método do tipo POST.
+	*/
 
-require_once('BD/mobile/conexao_mobile.php');
+	require_once('BD/mobile/conexao_mobile.php');
 
-// array de resposta
-$resposta = array();
- 
-// verifica se todos os campos necessários foram enviados ao servidor
-if (isset($_POST['novo_nome']) && isset($_POST['nova_data_nasc']) && isset($_POST['novo_estado']) && isset($_POST['novo_telefone']) && isset($_POST['novo_email']) 
-&& isset($_POST['nova_senha'])) {
- 
-    // o método trim elimina caracteres especiais/ocultos da string
-    $novo_nome= trim($_POST['novo_nome']);
-	$nova_data_nasc = trim($_POST['nova_data_nasc']);
-    $novo_estado = trim($_POST['novo_estado']);
-    $novo_telefone = trim($_POST['novo_telefone']);
-	$novo_email = trim($_POST['novo_email']);
-	$nova_senha = trim($_POST['nova_senha']);
+	// array de resposta
+	$resposta = array();
 	
-	// o bd não armazena diretamente a senha do usuário, mas sim 
-	// um código hash que é gerado a partir da senha.
-	$token = password_hash($nova_senha, PASSWORD_DEFAULT);
+	// verifica se todos os campos necessários foram enviados ao servidor
+	if (isset($_POST['novo_nome']) && isset($_POST['nova_data_nasc']) && isset($_POST['novo_estado']) && isset($_POST['novo_telefone']) && isset($_POST['novo_email']) 
+	&& isset($_POST['nova_senha'])) {
 	
-	// antes de registrar o novo usuário, verificamos se ele já
-	// não existe.
-	$consulta_usuario_existe = $db_con->prepare("SELECT email FROM USUARIO WHERE email='$novo_email'");
-	$consulta_usuario_existe->execute();
-	if ($consulta_usuario_existe->rowCount() > 0) { 
-		// se já existe um usuario para login
-		// indicamos que a operação não teve sucesso e o motivo
-		// no campo de erro.
-		$resposta["sucesso"] = 0;
-		$resposta["erro"] = "Usuario ja cadastrado";
-	}
-	else {
-		// se o usuário ainda não existe, inserimos ele no bd.
-        $consulta = $db_con->prepare("INSERT INTO USUARIO(nome, data_nasc, FK_ESTADO_id_estado, senha) VALUES('$novo_nome', '$nova_data_nasc, '$novo_estado', '$token')");
-
-	 
-		if ($consulta->execute()) {
-			// se a consulta deu certo, indicamos sucesso na operação.
-			// php pdo get id que acabou de ser criado (pesquisar)
-			$resposta["sucesso"] = 1;
+		// o método trim elimina caracteres especiais/ocultos da string
+		$novo_nome= trim($_POST['novo_nome']);
+		$nova_data_nasc = trim($_POST['nova_data_nasc']);
+		$novo_estado = trim($_POST['novo_estado']);
+		$novo_telefone = trim($_POST['novo_telefone']);
+		$novo_email = trim($_POST['novo_email']);
+		$nova_senha = trim($_POST['nova_senha']);
+		
+		// o bd não armazena diretamente a senha do usuário, mas sim 
+		// um código hash que é gerado a partir da senha.
+		$token = password_hash($nova_senha, PASSWORD_DEFAULT);
+		
+		// antes de registrar o novo usuário, verificamos se ele já
+		// não existe.
+		$consulta_usuario_existe = $db_con->prepare("SELECT email FROM USUARIO WHERE email='$novo_email'");
+		$consulta_usuario_existe->execute();
+		if ($consulta_usuario_existe->rowCount() > 0) { 
+			// se já existe um usuario para login
+			// indicamos que a operação não teve sucesso e o motivo
+			// no campo de erro.
+			$resposta["sucesso"] = 0;
+			$resposta["erro"] = "Usuario ja cadastrado";
 		}
 		else {
-			// se houve erro na consulta, indicamos que não houve sucesso
-			// na operação e o motivo no campo de erro.
-			$resposta["sucesso"] = 0;
-			$resposta["erro"] = "erro BD: " . $consulta->error .$consulta2->error;
+			// se o usuário ainda não existe, inserimos ele no bd.
+			$consulta = $db_con->prepare("INSERT INTO USUARIO(nome, data_nasc, FK_ESTADO_id_estado, senha) VALUES('$novo_nome', '$nova_data_nasc, 
+			'$novo_estado', '$token') RETURNING id_usuario");
+		
+			if ($consulta->execute()) {
+				// se a consulta deu certo, indicamos sucesso na operação.
+
+				// php pdo get id que acabou de ser criado (pesquisar)
+
+				$resposta["sucesso"] = 1;
+			}
+			else {
+				// se houve erro na consulta, indicamos que não houve sucesso
+				// na operação e o motivo no campo de erro.
+				$resposta["sucesso"] = 0;
+				$resposta["erro"] = "erro BD: " . $consulta->error .$consulta2->error;
+			}
 		}
 	}
-}
-else {
-	// se não foram enviados todos os parâmetros para o servidor, 
-	// indicamos que não houve sucesso
-	// na operação e o motivo no campo de erro.
-    $resposta["sucesso"] = 0;
-	$resposta["erro"] = "faltam parametros";
-}
+	else {
+		// se não foram enviados todos os parâmetros para o servidor, 
+		// indicamos que não houve sucesso
+		// na operação e o motivo no campo de erro.
+		$resposta["sucesso"] = 0;
+		$resposta["erro"] = "faltam parametros";
+	}
 
-// A conexão com o bd sempre tem que ser fechada
-$db_con = null;
+	// A conexão com o bd sempre tem que ser fechada
+	$db_con = null;
 
-// converte o array de resposta em uma string no formato JSON e 
-// imprime na tela.
-echo json_encode($resposta);
+	// converte o array de resposta em uma string no formato JSON e 
+	// imprime na tela.
+	echo json_encode($resposta);
 ?>
