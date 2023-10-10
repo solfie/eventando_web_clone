@@ -4,6 +4,7 @@
 -- CREATE DAS TABELAS
 CREATE TABLE USUARIO (
     nome varchar (90),
+    email varchar(150),
     data_nasc date,
     senha varchar(50),
     id_usuario serial PRIMARY KEY,
@@ -78,7 +79,7 @@ CREATE TABLE ESTADO (
 
 CREATE TABLE TIPO_CONTATO (
     id_tipo_contato serial PRIMARY KEY,
-    contato varchar(50)
+    contato varchar(150)
 );
 
 CREATE TABLE buffet (
@@ -254,7 +255,7 @@ INSERT INTO ESTADO (descricao) VALUES
     ('SE'),
     ('TO');
 
-INSERT INTO USUARIO (nome, data_nasc, senha, FK_ESTADO_id_estado) VALUES
+INSERT INTO USUARIO (nome, email, data_nasc, senha, FK_ESTADO_id_estado) VALUES
     ('Tiago Rosa', '1981-11-12', 'tiaguin123', 6),
     ('Maria Souza', '1985-10-20', 'abc123', 2),
     ('Pedro Santos', '1992-07-01', '123456', 3),
@@ -956,6 +957,7 @@ INSERT INTO Possui_tipo_contato_evento (descricao, FK_TIPO_CONTATO_id_tipo_conta
     ('@eventpresent15' ,5, 39),
     ('@eventpresent16' ,5, 40);
 
+--TIRAR OS EMAIL DAQUI E COLOCAR EM USUARIO
 INSERT INTO TEM_TIPO_CONTATO_USUARIO (FK_TIPO_CONTATO_id_tipo_contato, descricao, FK_USUARIO_id_usuario) VALUES
     (1,'tiagorosa@gmail.com',1),
     (2,'85998124767', 1),

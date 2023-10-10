@@ -28,7 +28,7 @@ if (isset($_POST['novo_nome']) && isset($_POST['nova_data_nasc']) && isset($_POS
 	
 	// antes de registrar o novo usuário, verificamos se ele já
 	// não existe.
-	$consulta_usuario_existe = $db_con->prepare("SELECT descricao FROM TEM_TIPO_CONTATO_USUARIO WHERE descricao='$novo_email'");
+	$consulta_usuario_existe = $db_con->prepare("SELECT email FROM USUARIO WHERE email='$novo_email'");
 	$consulta_usuario_existe->execute();
 	if ($consulta_usuario_existe->rowCount() > 0) { 
 		// se já existe um usuario para login
@@ -39,15 +39,12 @@ if (isset($_POST['novo_nome']) && isset($_POST['nova_data_nasc']) && isset($_POS
 	}
 	else {
 		// se o usuário ainda não existe, inserimos ele no bd.
-        $consulta = $db_con->prepare("INSERT INTO USUARIO(nome) VALUES('$novo_nome')");
-        $consulta2 = $db_con->prepare("INSERT INTO USUARIO(data_nasc) VALUES('$nova_data_nasc')");
-        $consulta3 = $db_con->prepare("INSERT INTO USUARIO(FK_ESTADO_id_estado) VALUES('$novo_estado')");
-		$consulta4 = $db_con->prepare("INSERT INTO TEM_TIPO_CONTATO_USUARIO(descricao) VALUES('$novo_telefone')");
-        $consulta5 = $db_con->prepare("INSERT INTO TEM_TIPO_CONTATO_USUARIO(descricao) VALUES('$novo_email')");
-        $consulta6 = $db_con->prepare("INSERT INTO USUARIO(senha) VALUES('$token')");
+        $consulta = $db_con->prepare("INSERT INTO USUARIO(nome, data_nasc, FK_ESTADO_id_estado, senha) VALUES('$novo_nome', '$nova_data_nasc, '$novo_estado', '$token')");
+
 	 
-		if ($consulta->execute() && $consulta2->execute() && $consulta3->execute() && $consulta4->execute() && $consulta5->execute() && $consulta6->execute()) {
+		if ($consulta->execute()) {
 			// se a consulta deu certo, indicamos sucesso na operação.
+			// php pdo get id que acabou de ser criado (pesquisar)
 			$resposta["sucesso"] = 1;
 		}
 		else {
