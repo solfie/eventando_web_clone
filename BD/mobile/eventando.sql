@@ -79,7 +79,7 @@ CREATE TABLE ESTADO (
 
 CREATE TABLE TIPO_CONTATO (
     id_tipo_contato serial PRIMARY KEY,
-    contato varchar(150)
+    contato varchar(50)
 );
 
 CREATE TABLE buffet (
@@ -894,7 +894,7 @@ INSERT INTO Possui_cidade_estado (FK_CIDADE_id_cidade, FK_ESTADO_id_estado) VALU
     (5, 5),
     (6, 6),
     (7, 7),
-    (8,8),
+    (8, 8),
     (9, 9),
     (10, 10),
     (11, 11),
