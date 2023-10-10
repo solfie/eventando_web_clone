@@ -1,9 +1,4 @@
 <?php
-	/*
-	* O código abaixo registra um novo usuário.
-	* Método do tipo POST.
-	*/
-
 	require_once('BD/mobile/conexao_mobile.php');
 
 	// array de resposta
