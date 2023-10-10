@@ -38,23 +38,53 @@
 		}
 		else {
 			// se o usuário ainda não existe, inserimos ele no bd.
-			$consulta = $db_con->prepare("INSERT INTO USUARIO(nome, data_nasc, FK_ESTADO_id_estado, senha) VALUES('$novo_nome', '$nova_data_nasc, 
-			'$novo_estado', '$token') RETURNING id_usuario");
+			$consulta = $db_con->prepare("INSERT INTO USUARIO(nome, data_nasc, FK_ESTADO_id_estado, senha) VALUES('$novo_nome', 
+			'$nova_data_nasc, '$novo_estado', '$token') RETURNING id_usuario");
 		
 			if ($consulta->execute()) {
-				// se a consulta deu certo, indicamos sucesso na operação.
-
-				// php pdo get id que acabou de ser criado (pesquisar)
-
-				$resposta["sucesso"] = 1;
-			}
+				$novo_id_usuario = $db_con->lastInsertId();
+		
+				// usar $novo_id_usuario para inserir informações na tabela tem_tipo_contato_usuario
+				$consulta2 = $db_con->prepare("INSERT INTO TEM_TIPO_CONTATO_USUARIO(FK_TIPO_CONTATO_id_tipo_contato, descricao, 
+				FK_USUARIO_id_usuario) VALUES(2, '$novo_telefone', '$novo_id_usuario')");
+		
+				if ($consulta2->execute()) {
+					$resposta["sucesso"] = 1;
+				} 
+				else {
+					// se houve erro na consulta para a tabela de tem_tipo_contato_usuario, indicamos que não houve sucesso
+					// na operação e o motivo no campo de erro.
+					$resposta["sucesso"] = 0;
+					$resposta["erro"] = "Erro na inserção na tabela TEM_TIPO_CONTATO_USUARIO: " . $consulta2->errorInfo()[2];
+				}
+			} 
 			else {
-				// se houve erro na consulta, indicamos que não houve sucesso
+				// se houve erro na consulta para a tabela de usuário, indicamos que não houve sucesso
 				// na operação e o motivo no campo de erro.
 				$resposta["sucesso"] = 0;
-				$resposta["erro"] = "erro BD: " . $consulta->error .$consulta2->error;
+				$resposta["erro"] = "Erro na inserção na tabela de USUARIO: " . $consulta->errorInfo()[2];
 			}
 		}
+		
+		// else {
+		// 	// se o usuário ainda não existe, inserimos ele no bd.
+		// 	$consulta = $db_con->prepare("INSERT INTO USUARIO(nome, data_nasc, FK_ESTADO_id_estado, senha) VALUES('$novo_nome', '$nova_data_nasc, 
+		// 	'$novo_estado', '$token') RETURNING id_usuario");
+		
+		// 	if ($consulta->execute()) {
+		// 		// se a consulta deu certo, indicamos sucesso na operação.
+
+		// 		// php pdo get id que acabou de ser criado (pesquisar)
+
+		// 		$resposta["sucesso"] = 1;
+		// 	}
+		// 	else {
+		// 		// se houve erro na consulta, indicamos que não houve sucesso
+		// 		// na operação e o motivo no campo de erro.
+		// 		$resposta["sucesso"] = 0;
+		// 		$resposta["erro"] = "erro BD: " . $consulta->error .$consulta2->error;
+		// 	}
+		// }
 	}
 	else {
 		// se não foram enviados todos os parâmetros para o servidor, 
