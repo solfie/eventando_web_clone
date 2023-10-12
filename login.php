@@ -51,15 +51,44 @@
         $telefone = filter_var($_POST["telTelefone"], FILTER_SANITIZE_NUMBER_INT);
         $email = $_POST["emEmail2"];
         $senha = $_POST["pwdSenha2"];// Não é necessário sanitizar senhas
+        $senhaSegura = password_hash($senha, PASSWORD_DEFAULT);
+
         
         $Nomesanitized = sanitizeString($nome);
         $Emailsanitized = sanitizeEmail($email);
 
-        // echo "Email $Emailsanitized </br>";
-        // echo "Marta $Nomesanitized </br>";
-        // echo "Dados gravados!";
+        $estado = mysqli_real_escape_string($connect, $estado);
+        $sql = "SELECT id_estado FROM ESTADO WHERE descricao = '$estado';";
+        $qualquer = mysqli_query($connect, $sql);
+        if($qualquer){
+            if(mysqli_num_rows($qualquer)>0){
+                $linha = mysqli_fetch_assoc($qualquer);
+                $id_estado_db = $linha['id_estado'];
+                $Nomesanitized = mysqli_real_escape_string($connect, $Nomesanitized);
+                $Emailsanitized = mysqli_real_escape_string($connect, $Emailsanitized);
+                $dataNascimento = mysqli_real_escape_string($connect, $dataNascimento);
+                $sql = "INSERT INTO USUARIO(nome, email, data_nasc, senha, FK_ESTADO_id_estado) VALUE ('$Nomesanitized', '$Emailsanitized', 
+                '$dataNascimento', '$senhaSegura', '$id_estado_db');";
+                $qualquer = mysqli_query($connect, $sql);
+                if($qualquer){
+                    $usuario_id = mysqli_insert_id($connect);
+                    $telefone = mysqli_real_escape_string($connect, $telefone);
+                    $sql = "INSERT INTO TEM_TIPO_CONTATO_USUARIO(fk_USUARIO_id_usuario, fk_TIPO_CONTATO_id_tipo_contato, descricao) VALUE 
+                    ('$usuario_id', 2, '$telefone');";
+                    $qualquer = mysqli_query($connect, $sql);
+                    if($qualquer){
+                        header('Location: login.php');
+                    }
+                }
+            }
+        }
+        else{
+            echo 'VAI PRA PUTA QUE PARIU, MARTA!';
+        }
+
+        
     }
- // Esta condição verifica se o formulário de login foi enviado
+    // Esta condição verifica se o formulário de login foi enviado
     if (isset($_POST["entrar"])){
         // Recupere os dados do formulário LOGIN e aplique a sanitização
         $email1 = $_POST["emEmail"];
@@ -67,12 +96,32 @@
         $senha1 = $_POST["pwdSenha"]; // Não é necessário sanitizar senhas
         
         $_SESSION['email_txt'] = $Emailsanitized1;
-        header('Location: menu.php?login_success=true');
+
+        $Emailsanitized1 = mysqli_real_escape_string($connect, $Emailsanitized1);
+        $sql = "SELECT senha FROM USUARIO WHERE email = '$Emailsanitized1';";
+        $qualquer = mysqli_query($connect, $sql);
+        if($qualquer){
+            if(mysqli_num_rows($qualquer)>0){
+                $linha = mysqli_fetch_assoc($qualquer);
+                $senha_db = $linha['senha'];
+                if(password_verify($senha1, $senha_db)){
+                    header('Location: menu.php?login_success=true');
+                }
+                else{
+                    echo 'IMBECIL, OU VC N SABE DIGITAR OU É BURRO, GRATILUZ';
+                } 
+            }
+            else{
+                echo 'IMBECIL, OU VC N SABE DIGITAR OU É BURRO, GRATILUZ';
+            }
+        }
+        else{
+            echo 'VAI PRA PUTA QUE PARIU, MARTA!';
+        }
     }
     
    
     // Esta condição verifica se o formulário de recuperação de senha foi enviado
-
     if (isset($_POST["enviar"])){
         // Recupere os dados do formulário RECUPERAR e aplique a sanitização
         $email3 = $_POST["emEmail3"];

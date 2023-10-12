@@ -4,7 +4,7 @@ CREATE TABLE USUARIO (
     nome varchar(90),
     email varchar(150),
     data_nasc date,
-    senha varchar(50),
+    senha text,
     id_usuario int AUTO_INCREMENT PRIMARY KEY,
     FK_ESTADO_id_estado int
 );
