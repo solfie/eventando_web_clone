@@ -27,6 +27,7 @@
 <?php
     //Conexão
     include_once 'BD/web/connect_web.php';
+    //include_once 'BD/web/login_banco.php';
 
     // Iniciar a sessão
     session_start();
@@ -44,7 +45,6 @@
 
     // Verifique se o formulário foi enviado
     if (isset($_POST["cadastrar"])){
-
         // Recupere os dados do formulário CADASTRAR e aplique a sanitização
         $nome = $_POST["txtNome"];
         $Nomesanitized = sanitizeString($nome);
@@ -64,29 +64,32 @@
         try{
             $estado = mysqli_real_escape_string($connect, $estado);
             $sql = "SELECT id_estado FROM ESTADO WHERE descricao = '$estado';";
-            $qualquer = mysqli_query($connect, $sql);
-            if($qualquer){
-                if(mysqli_num_rows($qualquer)>0){
-                    $linha = mysqli_fetch_assoc($qualquer);
+            $result = mysqli_query($connect, $sql);
+            if($result){
+                if(mysqli_num_rows($result)>0){
+                    $linha = mysqli_fetch_assoc($result);
                     $id_estado_db = $linha['id_estado'];
                     $Nomesanitized = mysqli_real_escape_string($connect, $Nomesanitized);
                     $Emailsanitized = mysqli_real_escape_string($connect, $Emailsanitized);
                     $dataNascimento = mysqli_real_escape_string($connect, $dataNascimento);
                     $sql = "INSERT INTO USUARIO(nome, email, data_nasc, senha, FK_ESTADO_id_estado) VALUE ('$Nomesanitized', '$Emailsanitized', 
                     '$dataNascimento', '$senhaSegura', '$id_estado_db');";
-                    $qualquer = mysqli_query($connect, $sql);
-                    if($qualquer){
+                    $result = mysqli_query($connect, $sql);
+                    if($result){
                         $usuario_id = mysqli_insert_id($connect);
                         $telefone = mysqli_real_escape_string($connect, $telefone);
                         $sql = "INSERT INTO TEM_TIPO_CONTATO_USUARIO(fk_USUARIO_id_usuario, fk_TIPO_CONTATO_id_tipo_contato, descricao) 
                         VALUE ('$usuario_id', 2, '$telefone');";
-                        $qualquer = mysqli_query($connect, $sql);
-                        if($qualquer){
+                        $result = mysqli_query($connect, $sql);
+                        if($result){
                             header('Location: login.php');
                         }
                     }
                     else{
                         $erro = "Desculpe, ocorreu um erro e não foi possível concluir o cadastro. Por favor, tente novamente.";
+                        if (isset($erro)) {
+                            echo "<script>alert('$erro')</script>";
+                        };
                     }
                 }
             }
@@ -102,41 +105,42 @@
             };
         }
     }
+
     // Esta condição verifica se o formulário de login foi enviado
-    if (isset($_POST["entrar"])){
+    if (isset($_POST["entrar"])) {
         // Recupere os dados do formulário LOGIN e aplique a sanitização
         $email1 = $_POST["emEmail"];
         $Emailsanitized1 = sanitizeEmail($email1);
         $senha1 = $_POST["pwdSenha"]; // Não é necessário sanitizar senhas
-        
+    
         $_SESSION['email_txt'] = $Emailsanitized1;
-
+    
         $Emailsanitized1 = mysqli_real_escape_string($connect, $Emailsanitized1);
         $sql = "SELECT senha FROM USUARIO WHERE email = '$Emailsanitized1';";
-        $qualquer = mysqli_query($connect, $sql);
-        if($qualquer){
-            if(mysqli_num_rows($qualquer)>0){
-                $linha = mysqli_fetch_assoc($qualquer);
+        $result = mysqli_query($connect, $sql);
+    
+        if ($result) {
+            if (mysqli_num_rows($result) > 0) {
+                $linha = mysqli_fetch_assoc($result);
                 $senha_db = $linha['senha'];
-                if(password_verify($senha1, $senha_db)){
+                if (password_verify($senha1, $senha_db)) {
                     header('Location: menu.php?login_success=true');
-                }
-                else{
+                } 
+                else {
                     echo "<script>alert('Lamentamos, ocorreu um erro. As credenciais de email ou senha que você forneceu são inválidas. 
                     Por favor, tente novamente.');</script>";
-                } 
-            }
-            else{
+                }
+            } 
+            else {
                 echo "<script>alert('Lamentamos, ocorreu um erro. As credenciais de email ou senha que você forneceu são inválidas. 
                 Por favor, tente novamente.');</script>";
             }
-        }
-        else{
+        } 
+        else {
             echo 'Conexão mal sucedida!';
         }
     }
     
-   
     // Esta condição verifica se o formulário de recuperação de senha foi enviado
     if (isset($_POST["enviar"])){
         // Recupere os dados do formulário RECUPERAR e aplique a sanitização
