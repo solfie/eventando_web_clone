@@ -236,7 +236,7 @@
                     <div id="divCadastro" name="divCadastro"  class="d-none mt-4">
                         <!-- Formulário CADASTRO, com sete campos de entrada: nome, data de nascimento, estado, telefone, email, senha e confirmação de senha -->
                         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" id="formulario3">
-                            <input class="form-control" type="text" id="txtNome" placeholder="Nome" name="txtNome" required>
+                            <input class="form-control" type="text" id="txtNome" placeholder="Nome completo" name="txtNome" required>
 
                             <input class="form-control" type="text" id="date" name="date" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="(this.type='text')" maxlength="8" required>
 
