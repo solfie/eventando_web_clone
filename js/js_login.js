@@ -61,7 +61,7 @@ function exibirRecuperar(){
 /*Botão do Google*/
 function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential)
-  /* Exibe algumas informações do usuário (nome, e-mail, etc.) na página*/
+    /* Exibe algumas informações do usuário (nome, e-mail, etc.) na página*/
     console.log(data);
   
     fullName.textContent = data.name

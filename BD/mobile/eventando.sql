@@ -3,93 +3,94 @@
 
 -- CREATE DAS TABELAS
 CREATE TABLE USUARIO (
-    nome varchar (90),
-    email varchar(150),
-    data_nasc date,
-    senha varchar(50),
+    nome varchar (90) NOT NULL,
+    email varchar(150) UNIQUE NOT NULL,
+    data_nasc date NOT NULL,
+    senha text NOT NULL,
     id_usuario serial PRIMARY KEY,
-    FK_ESTADO_id_estado int
+    FK_ESTADO_id_estado int NOT NULL
 );
 
 CREATE TABLE EVENTO_PRESENCIAL (
     FK_buffet_buffet_PK int,
     FK_EVENTO_id_evento int PRIMARY KEY,
-    FK_LOCALIZACAO_id_localizacao int
+    FK_LOCALIZACAO_id_localizacao int NOT NULL
 );
 
 CREATE TABLE EVENTO_ONLINE (
-    link varchar (500),
-    FK_plataforma_plataforma_PK int,
+    link varchar (500) NOT NULL,
+    FK_plataforma_plataforma_PK int NOT NULL,
     FK_EVENTO_id_evento int PRIMARY KEY
 );
 
 CREATE TABLE EVENTO (
-    objetivo varchar (255),
-    data_prevista date,
+    objetivo varchar (255) NOT NULL,
+    data_prevista date NOT NULL,
     atracoes varchar (300),
-    privacidade_restrita BOOL,
-    horario time,
-    src_img text,
-    nome varchar(100),
+    privacidade_restrita BOOL DEFAULT false,
+    horario time NOT NULL,
+    src_img text NOT NULL,
+    nome varchar(100) NOT NULL,
     id_evento serial PRIMARY KEY,
-    FK_USUARIO_id_usuario int
+    FK_USUARIO_id_usuario int NOT NULL
 );
 
 CREATE TABLE CONVITE (
-    estilo varchar (20),
-    cores varchar (15),
+    estilo varchar (20) NOT NULL,
+    cores varchar (15) NOT NULL,
     id_convite serial PRIMARY KEY,
-    FK_EVENTO_id_evento int
+    FK_EVENTO_id_evento int NOT NULL
 );
 
 CREATE TABLE LISTA_CONVIDADOS (
-    nome_convidado varchar (90),
+    nome_convidado varchar (90) NOT NULL UNIQUE,
     id_lista_convidados serial PRIMARY KEY,
-    email_convidado varchar(150),
-    FK_CONVITE_id_convite int
+    email_convidado varchar(150) NOT NULL,
+    FK_CONVITE_id_convite int NOT NULL
 );
 
 CREATE TABLE LOCALIZACAO (
     numero int,
-    logradouro varchar(250),
-    cep varchar(9),
+    logradouro varchar(250) NOT NULL,
+    cep varchar(9) NOT NULL,
     id_localizacao serial PRIMARY KEY,
-    FK_TIPO_LOGRADOURO_id_tipo_logradouro int,
-    FK_BAIRRO_id_bairro int
+    FK_TIPO_LOGRADOURO_id_tipo_logradouro int NOT NULL,
+    FK_BAIRRO_id_bairro int NOT NULL
 );
 
 CREATE TABLE TIPO_LOGRADOURO (
-    descricao varchar(50),
+    descricao varchar(50) NOT NULL UNIQUE,
     id_tipo_logradouro serial PRIMARY KEY
 );
 
 CREATE TABLE CIDADE (
-    descricao varchar(100),
+    descricao varchar(100) NOT NULL UNIQUE,
     id_cidade serial PRIMARY KEY
 );
+
 CREATE TABLE BAIRRO (
-    descricao varchar(100),
+    descricao varchar(100) NOT NULL UNIQUE,
     id_bairro serial PRIMARY KEY
 );
 
 CREATE TABLE ESTADO (
-    descricao varchar(2),
+    descricao varchar(2) NOT NULL UNIQUE,
     id_estado serial PRIMARY KEY
 );
 
 CREATE TABLE TIPO_CONTATO (
     id_tipo_contato serial PRIMARY KEY,
-    contato varchar(50)
+    contato varchar(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE buffet (
-    buffet_PK serial NOT NULL PRIMARY KEY,
-    buffet varchar (100)
+    buffet_PK serial PRIMARY KEY,
+    buffet varchar (100) NOT NULL
 );
 
 CREATE TABLE plataforma (
-    plataforma_PK serial NOT NULL PRIMARY KEY,
-    plataforma varchar(50)
+    plataforma_PK serial PRIMARY KEY,
+    plataforma varchar(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE Favorita (
@@ -110,13 +111,13 @@ CREATE TABLE POSSUI_CIDADE_ESTADO (
 CREATE TABLE POSSUI_TIPO_CONTATO_EVENTO (
     fk_TIPO_CONTATO_id_tipo_contato int,
     fk_EVENTO_id_evento int,
-    descricao varchar(150)
+    descricao varchar(150) NOT NULL
 );
 
 CREATE TABLE TEM_TIPO_CONTATO_USUARIO (
     fk_USUARIO_id_usuario int,
     fk_TIPO_CONTATO_id_tipo_contato int,
-    descricao varchar (150)
+    descricao varchar (150) NOT NULL
 );
 
 -- ALTER DAS TABELAS
@@ -239,7 +240,7 @@ INSERT INTO ESTADO (descricao) VALUES
     ('MA'),
     ('MG'),
     ('MS'),
-    ('MG'),
+    ('MT'),
     ('PA'),
     ('PB'),
     ('PN'),
@@ -602,8 +603,8 @@ INSERT INTO LISTA_CONVIDADOS (nome_convidado, email_convidado, FK_CONVITE_id_con
     ('Marcelo Sousa', 'marcelo.sousa@example.com', 9),
     ('Camila Costa', 'camila.costa@example.com', 10),
     ('Gustavo Almeida', 'gustavo.almeida@example.com', 10),
-    ('Carolina Ferreira', 'carolina.ferreira@example.com', 10),
-    ('Ricardo Santos', 'ricardo.santos@example.com', 10),
+    ('Carolina Ferraz', 'carolina.ferraz@example.com', 10),
+    ('Ricardo Santana', 'ricardo.santana@example.com', 10),
     ('Emily Johnson', 'emily.johnson@example.com', 10),
     ('Arthur Sampaio', 'arthursampaio@example.com', 11),
     ('Olivia Almeida', 'oliviaalmeida@example.com', 11),
@@ -859,7 +860,7 @@ INSERT INTO EVENTO_PRESENCIAL (FK_buffet_buffet_PK, FK_EVENTO_id_evento, FK_LOCA
     (12, 24, 24),
     (13, 25, 25);
 
-INSERT INTO Possui_bairro_cidade (FK_BAIRRO_id_bairro, FK_CIDADE_id_cidade) VALUES
+INSERT INTO POSSUI_BAIRRO_CIDADE (FK_BAIRRO_id_bairro, FK_CIDADE_id_cidade) VALUES
     (1, 1),
     (4, 2),
     (7, 3),
@@ -886,7 +887,7 @@ INSERT INTO Possui_bairro_cidade (FK_BAIRRO_id_bairro, FK_CIDADE_id_cidade) VALU
     (40, 24),
     (43, 25);
 
-INSERT INTO Possui_cidade_estado (FK_CIDADE_id_cidade, FK_ESTADO_id_estado) VALUES
+INSERT INTO POSSUI_CIDADE_ESTADO (FK_CIDADE_id_cidade, FK_ESTADO_id_estado) VALUES
     (1, 1),
     (2, 2),
     (3, 3),
@@ -894,7 +895,7 @@ INSERT INTO Possui_cidade_estado (FK_CIDADE_id_cidade, FK_ESTADO_id_estado) VALU
     (5, 5),
     (6, 6),
     (7, 7),
-    (8, 8),
+    (8,8),
     (9, 9),
     (10, 10),
     (11, 11),
@@ -915,7 +916,7 @@ INSERT INTO Possui_cidade_estado (FK_CIDADE_id_cidade, FK_ESTADO_id_estado) VALU
     (26, 26),
     (27, 27);
 
-INSERT INTO Possui_tipo_contato_evento (descricao, FK_TIPO_CONTATO_id_tipo_contato, FK_EVENTO_id_evento) VALUES
+INSERT INTO POSSUI_TIPO_CONTATO_EVENTO (descricao, FK_TIPO_CONTATO_id_tipo_contato, FK_EVENTO_id_evento) VALUES
     ('tecconferencia' ,3, 1),
     ('jemnoivos' ,3, 2),
     ('fotoshop' , 3, 3),
@@ -964,14 +965,14 @@ INSERT INTO TEM_TIPO_CONTATO_USUARIO (FK_TIPO_CONTATO_id_tipo_contato, descricao
     (2,'92992124767', 4),
     (2,'71993124767', 5),
     (2,'68998128888', 6),
-    (2,'82998122425',7),
+    (2,'82998122425', 7),
     (2,'96998134767', 8),
     (2,'92995024767', 9),
     (2,'71999124767', 10),
     (2,'68991124767', 11),
     (2,'82998124467', 12),
     (2,'96998124755', 13),
-    (2,'9299504616', 14),
+    (2,'92995046168', 14),
     (2,'71995046166', 15),
     (2,'68981815344', 16),
     (2,'82981574947', 17),

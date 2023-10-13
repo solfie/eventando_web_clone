@@ -1,121 +1,121 @@
 -- drop table USUARIO, EVENTO_PRESENCIAL, EVENTO_ONLINE, EVENTO, CONVITE, LISTA_CONVIDADOS, LOCALIZACAO, TIPO_LOGRADOURO, BAIRRO, CIDADE, ESTADO, TIPO_CONTATO, buffet, plataforma, Favorita, POSSUI_BAIRRO_CIDADE, POSSUI_CIDADE_ESTADO, POSSUI_TIPO_CONTATO_EVENTO, TEM_TIPO_CONTATO_USUARIO;
 
 CREATE TABLE USUARIO (
-    nome varchar(90),
-    email varchar(150),
-    data_nasc date,
-    senha text,
-    id_usuario int AUTO_INCREMENT PRIMARY KEY,
-    FK_ESTADO_id_estado int
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(90) NOT NULL,
+    email VARCHAR(150) UNIQUE NOT NULL,
+    data_nasc DATE NOT NULL,
+    senha TEXT NOT NULL,
+    FK_ESTADO_id_estado INT NOT NULL
 );
 
 CREATE TABLE EVENTO_PRESENCIAL (
-    FK_buffet_buffet_PK int,
-    FK_EVENTO_id_evento int PRIMARY KEY,
-    FK_LOCALIZACAO_id_localizacao int
+    FK_buffet_buffet_PK INT,
+    FK_EVENTO_id_evento INT PRIMARY KEY,
+    FK_LOCALIZACAO_id_localizacao INT NOT NULL
 );
 
 CREATE TABLE EVENTO_ONLINE (
-    link varchar(500),
-    FK_plataforma_plataforma_PK int,
-    FK_EVENTO_id_evento int PRIMARY KEY
+    link VARCHAR(500) NOT NULL,
+    FK_plataforma_plataforma_PK INT NOT NULL,
+    FK_EVENTO_id_evento INT PRIMARY KEY
 );
 
 CREATE TABLE EVENTO (
-    objetivo varchar(255),
-    data_prevista date,
-    atracoes varchar (300),
-    privacidade_restrita bool,
-    horario time,
-    src_img text,
-    nome varchar(100),
-    id_evento int AUTO_INCREMENT PRIMARY KEY,
-    FK_USUARIO_id_usuario int
+    id_evento INT AUTO_INCREMENT PRIMARY KEY,
+    objetivo VARCHAR(255) NOT NULL,
+    data_prevista DATE NOT NULL,
+    atracoes VARCHAR(300),
+    privacidade_restrita BOOLEAN DEFAULT false,
+    horario TIME NOT NULL,
+    src_img TEXT NOT NULL,
+    nome VARCHAR(100) NOT NULL,
+    FK_USUARIO_id_usuario INT NOT NULL
 );
 
 CREATE TABLE CONVITE (
-    estilo varchar(20),
-    cores varchar(15),
-    id_convite int AUTO_INCREMENT PRIMARY KEY,
-    FK_EVENTO_id_evento int
+    estilo VARCHAR(20) NOT NULL,
+    cores VARCHAR(15) NOT NULL,
+    id_convite INT AUTO_INCREMENT PRIMARY KEY,
+    FK_EVENTO_id_evento INT NOT NULL
 );
 
 CREATE TABLE LISTA_CONVIDADOS (
-    nome_convidado varchar(90),
-    id_lista_convidados int AUTO_INCREMENT PRIMARY KEY,
-    email_convidado varchar(150),
-    FK_CONVITE_id_convite int
+    id_lista_convidados INT AUTO_INCREMENT PRIMARY KEY,
+    nome_convidado VARCHAR(90) NOT NULL UNIQUE,
+    email_convidado VARCHAR(150) NOT NULL,
+    FK_CONVITE_id_convite INT NOT NULL
 );
 
 CREATE TABLE LOCALIZACAO (
-    numero int,
-    logradouro varchar(250),
-    cep varchar(9),
-    id_localizacao int AUTO_INCREMENT PRIMARY KEY,
-    FK_TIPO_LOGRADOURO_id_tipo_logradouro int,
-    FK_BAIRRO_id_bairro int
+    id_localizacao INT AUTO_INCREMENT PRIMARY KEY,
+    numero INT,
+    logradouro VARCHAR(250) NOT NULL,
+    cep VARCHAR(9) NOT NULL,
+    FK_TIPO_LOGRADOURO_id_tipo_logradouro INT NOT NULL,
+    FK_BAIRRO_id_bairro INT NOT NULL
 );
 
 CREATE TABLE TIPO_LOGRADOURO (
-    descricao varchar(50),
-    id_tipo_logradouro int AUTO_INCREMENT PRIMARY KEY
+    id_tipo_logradouro INT AUTO_INCREMENT PRIMARY KEY,
+    descricao VARCHAR(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE CIDADE (
-    descricao varchar(100),
-    id_cidade int AUTO_INCREMENT PRIMARY KEY
+    id_cidade INT AUTO_INCREMENT PRIMARY KEY,
+    descricao VARCHAR(100) NOT NULL UNIQUE
 );
 
 CREATE TABLE BAIRRO (
-    descricao varchar(100),
-    id_bairro int AUTO_INCREMENT PRIMARY KEY
+    id_bairro INT AUTO_INCREMENT PRIMARY KEY,
+    descricao VARCHAR(100) NOT NULL UNIQUE
 );
 
 CREATE TABLE ESTADO (
-    descricao varchar(2),
-    id_estado int AUTO_INCREMENT PRIMARY KEY
+    id_estado INT AUTO_INCREMENT PRIMARY KEY,
+    descricao VARCHAR(2) NOT NULL UNIQUE
 );
 
 CREATE TABLE TIPO_CONTATO (
-    id_tipo_contato int AUTO_INCREMENT PRIMARY KEY,
-    contato varchar(50)
+    id_tipo_contato INT AUTO_INCREMENT PRIMARY KEY,
+    contato VARCHAR(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE buffet (
-    buffet_PK int AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    buffet varchar(100)
+    buffet_PK INT AUTO_INCREMENT PRIMARY KEY,
+    buffet VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE plataforma (
-    plataforma_PK int AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    plataforma varchar(50)
+    plataforma_PK INT AUTO_INCREMENT PRIMARY KEY,
+    plataforma VARCHAR(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE Favorita (
-    fk_EVENTO_id_evento int,
-    fk_USUARIO_id_usuario int
+    fk_EVENTO_id_evento INT,
+    fk_USUARIO_id_usuario INT
 );
 
 CREATE TABLE POSSUI_BAIRRO_CIDADE (
-    fk_BAIRRO_id_bairro int,
-    fk_CIDADE_id_cidade int
+    fk_BAIRRO_id_bairro INT,
+    fk_CIDADE_id_cidade INT
 );
 
 CREATE TABLE POSSUI_CIDADE_ESTADO (
-    fk_CIDADE_id_cidade int,
-    fk_ESTADO_id_estado int
+    fk_CIDADE_id_cidade INT,
+    fk_ESTADO_id_estado INT
 );
 
 CREATE TABLE POSSUI_TIPO_CONTATO_EVENTO (
-    fk_TIPO_CONTATO_id_tipo_contato int,
-    fk_EVENTO_id_evento int,
-    descricao varchar(150)
+    fk_TIPO_CONTATO_id_tipo_contato INT,
+    fk_EVENTO_id_evento INT,
+    descricao VARCHAR(150) NOT NULL
 );
 
 CREATE TABLE TEM_TIPO_CONTATO_USUARIO (
-    fk_USUARIO_id_usuario int,
-    fk_TIPO_CONTATO_id_tipo_contato int,
-    descricao varchar(150)
+    fk_USUARIO_id_usuario INT,
+    fk_TIPO_CONTATO_id_tipo_contato INT,
+    descricao VARCHAR(150) NOT NULL
 );
 
 ALTER TABLE USUARIO ADD CONSTRAINT FK_USUARIO_2
@@ -226,7 +226,7 @@ INSERT INTO ESTADO (descricao) VALUES
     ('MA'),
     ('MG'),
     ('MS'),
-    ('MG'),
+    ('MT'),
     ('PA'),
     ('PB'),
     ('PN'),
@@ -589,8 +589,8 @@ INSERT INTO LISTA_CONVIDADOS (nome_convidado, email_convidado, FK_CONVITE_id_con
     ('Marcelo Sousa', 'marcelo.sousa@example.com', 9),
     ('Camila Costa', 'camila.costa@example.com', 10),
     ('Gustavo Almeida', 'gustavo.almeida@example.com', 10),
-    ('Carolina Ferreira', 'carolina.ferreira@example.com', 10),
-    ('Ricardo Santos', 'ricardo.santos@example.com', 10),
+    ('Carolina Ferraz', 'carolina.ferraz@example.com', 10),
+    ('Ricardo Santana', 'ricardo.santana@example.com', 10),
     ('Emily Johnson', 'emily.johnson@example.com', 10),
     ('Arthur Sampaio', 'arthursampaio@example.com', 11),
     ('Olivia Almeida', 'oliviaalmeida@example.com', 11),
