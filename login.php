@@ -96,7 +96,7 @@
         }
         catch (Exception $erro) {
             // echo "Erro: " . $e->getMessage();
-            $erro = "Desculpe, ocorreu um erro. Não foi possível concluir o cadastro. Tente novamente.";
+            $erro = "Desculpe, ocorreu um erro e não foi foi possível concluir o cadastro. Por favor, Tente novamente.";
             if (isset($erro)) {
                 echo "<script>alert('$erro')</script>";
             };
