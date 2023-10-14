@@ -27,7 +27,7 @@
             <!-- Definimos o título da página -->
             <title> HOME </title>
             <!-- Definimos o ícone na aba da página-->
-            <link rel="shortcut icon" type="image/png" href="img/schedule (2).png"/>
+            <link rel="shortcut icon" type="image/png" href="img/calendar_icon.png"/>
         </head>
         
         <body>
@@ -105,7 +105,7 @@
             <!-- Definimos o título da página -->
             <title> ' . $title . ' </title>
             <!-- Definimos o ícone na aba da página-->
-            <link rel="shortcut icon" type="image/png" href="img/schedule (2).png"/>
+            <link rel="shortcut icon" type="image/png" href="img/calendar_icon.png"/>
         </head>
 
         <body>

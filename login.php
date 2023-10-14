@@ -21,7 +21,7 @@
     <script src = "https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
     <title> LOGIN </title>
     <!-- Definimos o ícone na aba da página-->
-    <link rel="shortcut icon" type="image/png" href="img/schedule (2).png"/>
+    <link rel="shortcut icon" type="image/png" href="img/calendar_icon.png"/>
 </head>
 
 <?php
