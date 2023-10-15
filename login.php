@@ -111,6 +111,7 @@
         // Recupere os dados do formulário LOGIN e aplique a sanitização
         $email1 = $_POST["emEmail"];
         $Emailsanitized1 = sanitizeEmail($email1);
+        
         $senha1 = $_POST["pwdSenha"]; // Não é necessário sanitizar senhas
     
         $_SESSION['email_txt'] = $Emailsanitized1;
@@ -183,11 +184,9 @@
                         </div>
                     </div>
 
-                   
-
                     <div id="divLogin" class="row">
                         <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
-                        <form action="login.php" method="post" id="formulario" >                        
+                        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" id="formulario">                        
                             <input class="form-control mt-4" type="email" id="emEmail" name="emEmail" placeholder="Email" required>
 
                             <input class="form-control mt-4" type="password" id="pwdSenha" name="pwdSenha" placeholder="Senha" required>
@@ -235,7 +234,6 @@
                             </div>
                         </form>
                     </div>
-                    
                     
                     <div id="divCadastro" name="divCadastro"  class="d-none mt-4">
                         <!-- Formulário CADASTRO, com sete campos de entrada: nome, data de nascimento, estado, telefone, email, senha e confirmação de senha -->
