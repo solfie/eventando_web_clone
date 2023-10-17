@@ -9,7 +9,7 @@
 	&& isset($_POST['nova_senha'])) {
 	
 		// o método trim elimina caracteres especiais/ocultos da string
-		$novo_nome= trim($_POST['novo_nome']);
+		$novo_nome = trim($_POST['novo_nome']);
 		$nova_data_nasc = trim($_POST['nova_data_nasc']);
 		$novo_estado = trim($_POST['novo_estado']);
 		$novo_telefone = trim($_POST['novo_telefone']);
@@ -22,7 +22,7 @@
 		
 		// antes de registrar o novo usuário, verificamos se ele já
 		// não existe.
-		$consulta_usuario_existe = $db_con->prepare("SELECT email FROM USUARIO WHERE email='$novo_email'");
+		$consulta_usuario_existe = $db_con->prepare("SELECT email FROM USUARIO WHERE email ='$novo_email'");
 		$consulta_usuario_existe->execute();
 		if ($consulta_usuario_existe->rowCount() > 0) { 
 			// se já existe um usuario para login

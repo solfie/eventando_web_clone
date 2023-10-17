@@ -33,7 +33,7 @@
 		// Verifica antes se o parâmetro de login foi enviado ao servidor
 		if(!is_null($email)){
 			// realiza a consula no bd pelo usuário login
-			$consulta = $db_con->prepare("SELECT senha FROM usuarios WHERE email='$email'");
+			$consulta = $db_con->prepare("SELECT senha FROM USUARIO WHERE email='$email'");
 			$consulta->execute();
 
 			// caso o usuário exista, obtem-se o token de autenticação e 
