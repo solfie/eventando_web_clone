@@ -114,10 +114,10 @@
         
         $senha1 = $_POST["pwdSenha"]; // Não é necessário sanitizar senhas
     
-        $_SESSION['email_txt'] = $Emailsanitized1;
+       
     
         $Emailsanitized1 = mysqli_real_escape_string($connect, $Emailsanitized1);
-        $sql = "SELECT senha FROM USUARIO WHERE email = '$Emailsanitized1';";
+        $sql = "SELECT senha, nome FROM USUARIO WHERE email = '$Emailsanitized1';";
         $result = mysqli_query($connect, $sql);
     
         if ($result) {
@@ -125,6 +125,9 @@
                 $linha = mysqli_fetch_assoc($result);
                 $senha_db = $linha['senha'];
                 if (password_verify($senha1, $senha_db)) {
+                    $_SESSION['email_txt'] = $Emailsanitized1;
+                    $_SESSION['nome_txt'] = $linha['nome'];
+
                     header('Location: menu.php?login_success=true');
                 } 
                 else {

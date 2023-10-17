@@ -1,9 +1,9 @@
 <?php 
     session_start();
     
-    // Verifica se a sessão 'email_txt' não está definida e a define como 'PERFIL' se não estiver.
-    if(!(isset($_SESSION['email_txt']))){
-        $_SESSION['email_txt'] = 'PERFIL';
+    // Verifica se a sessão 'nome_txt' não está definida e a define como 'PERFIL' se não estiver.
+    if(!(isset($_SESSION['nome_txt']))){
+        $_SESSION['nome_txt'] = 'PERFIL';
     }
 
     // Verifica o valor da variável $_seila
@@ -177,7 +177,7 @@
                                                 <ul class="list-group list-group-flush modal-ul my-auto">
                                                     <li id="opcao"class="list-group-item d-flex d-inline-flex">
                                                         <i class="fa-solid fa-circle-user fs-1"></i>
-                                                        <a class="fs-5 my-auto mx-2 nav-link ms-2" href="perfil.php" style="color: black; text-decoration: none;">'. $_SESSION['email_txt'] .'</a> <!-- Se a pessoa tiver feito login com a sessão o local de PERFIL no menu estará com o email colocado no login -->
+                                                        <a class="fs-5 my-auto mx-2 nav-link ms-2" href="perfil.php" style="color: black; text-decoration: none;">'. $_SESSION['nome_txt'] .'</a> <!-- Se a pessoa tiver feito login com a sessão o local de PERFIL no menu estará com o email colocado no login -->
                                                     </li>
                                 
                                                     <li  id="opcao" class="list-group-item d-flex d-inline-flex">
