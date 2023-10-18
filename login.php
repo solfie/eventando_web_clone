@@ -34,7 +34,7 @@
 
     // Função para limpar strings
     function sanitizeString($input) {
-        return preg_replace("/[^a-zA-Z0-9]/", "", $input);
+        return preg_replace("/[^a-zA-Z0-9 ]/", "", $input);
     }
 
     // Função para limpar endereços de e-mail
@@ -54,6 +54,7 @@
         $estado = $_POST["sltEstado"];// Não é necessário sanitizar estado
 
         $telefone = filter_var($_POST["telTelefone"], FILTER_SANITIZE_NUMBER_INT);
+        $telefone = preg_replace("/[^0-9]/", "", $_POST["telTelefone"]);
 
         $email = $_POST["emEmail2"];
         $Emailsanitized = sanitizeEmail($email);
@@ -70,6 +71,7 @@
                     $linha = mysqli_fetch_assoc($result);
                     $id_estado_db = $linha['id_estado'];
                     $Nomesanitized = mysqli_real_escape_string($connect, $Nomesanitized);
+                    $Nomesanitized = strtoupper($Nomesanitized); // Converte o nome para maiúsculo
                     $Emailsanitized = mysqli_real_escape_string($connect, $Emailsanitized);
                     $dataNascimento = mysqli_real_escape_string($connect, $dataNascimento);
                     $sql = "INSERT INTO USUARIO(nome, email, data_nasc, senha, FK_ESTADO_id_estado) VALUE ('$Nomesanitized', '$Emailsanitized', 
@@ -114,8 +116,6 @@
         
         $senha1 = $_POST["pwdSenha"]; // Não é necessário sanitizar senhas
     
-       
-    
         $Emailsanitized1 = mysqli_real_escape_string($connect, $Emailsanitized1);
         $sql = "SELECT senha, nome FROM USUARIO WHERE email = '$Emailsanitized1';";
         $result = mysqli_query($connect, $sql);
@@ -125,7 +125,7 @@
                 $linha = mysqli_fetch_assoc($result);
                 $senha_db = $linha['senha'];
                 if (password_verify($senha1, $senha_db)) {
-                    $_SESSION['email_txt'] = $Emailsanitized1;
+                    // $_SESSION['email_txt'] = $Emailsanitized1;
                     $_SESSION['nome_txt'] = $linha['nome'];
 
                     header('Location: menu.php?login_success=true');
@@ -294,5 +294,3 @@
     </div>
 </body>
 </html>
-
-
