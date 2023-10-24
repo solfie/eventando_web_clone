@@ -1,5 +1,5 @@
 <?php
-    require_once('BD/mobile/conexao_mobile.php');
+    require_once('BD/mobile/connect_mobile.php');
     require_once('BD/mobile/autenticacao.php');
 
     // array de resposta
