@@ -34,7 +34,7 @@
 		else {
 			// se o usuário ainda não existe, inserimos ele no bd.
 			$consulta = $db_con->prepare("INSERT INTO USUARIO(nome, data_nasc, FK_ESTADO_id_estado, senha) VALUES('$novo_nome', 
-			'$nova_data_nasc, '$novo_estado', '$token') RETURNING id_usuario");
+			'$nova_data_nasc', '$novo_estado', '$token') RETURNING id_usuario");
 		
 			if ($consulta->execute()) {
 				$novo_id_usuario = $db_con->lastInsertId();
