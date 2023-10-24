@@ -1,6 +1,6 @@
 <?php
     function getInfoUsuarios($email){
-        require_once('BD/mobile/conexao_mobile.php');
+        require_once('BD/mobile/connect_mobile.php');
         // array de resposta
         $resposta = array();
 
